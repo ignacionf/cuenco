@@ -1,0 +1,113 @@
+{% load static %}<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>El cuenco de plata</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static "css/animate.css" %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static "css/icomoon.css" %}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="{% static "css/owl.carousel.min.css" %}">
+	<link rel="stylesheet" href="{% static "css/owl.theme.default.min.css" %}">
+
+	<link rel="stylesheet" href="{% static "css/style.css" %}">
+
+    {% block "style" %}{% endblock %}
+
+	<!-- Modernizr JS -->
+	<script src="{% static "js/modernizr-2.6.2.min.js" %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+
+	</head>
+	<body>
+	<header>
+		<div class="container text-center">
+<!--
+			<div class="fh5co-navbar-brand">
+				<a class="fh5co-logo" href="index.html"><img src='images/logo_b_300.png' /></a>
+			</div>
+-->
+			<nav id="fh5co-main-nav" role="navigation">
+				<ul>
+					<li id="home"><a href="{% url "home" %}">Inicio</a></li>
+					<li id=""><a href="#">Novedades</a></li>
+					<li id=""><a href="#">Colecciones</a></li>
+				    <li><img src="{% static 'images/logo_b_300.png' %}" /></li>
+					<li id=""><a href="#">Recomendados</a></li>
+					<li id="autores"><a href="{% url "autores" %}">Autores</a></li>
+					<li id=""><a href="#">Contacto</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+    <div style="width: 1024px; margin: auto;">
+{% block "content" %}{% endblock %}
+    </div>
+
+	<footer>
+		<div id="footer" class="fh5co-border-line">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<p>Copyright 2018</p>
+						<p class="fh5co-social-icons">
+							<a href="#"><i class="icon-twitter-with-circle"></i></a>
+							<a href="#"><i class="icon-facebook-with-circle"></i></a>
+							<a href="#"><i class="icon-instagram-with-circle"></i></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- jQuery -->
+	<script src="{% static "js/jquery.min.js" %}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static "js/jquery.easing.1.3.js" %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static "js/bootstrap.min.js" %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static "js/jquery.waypoints.min.js" %}"></script>
+	<!-- Owl carousel -->
+	<script src="{% static "js/owl.carousel.min.js" %}"></script>
+	<!-- Stellar -->
+	<script src="{% static "js/jquery.stellar.min.js" %}"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="{% static "js/main.js" %}"></script>
+
+{% block "js" %}{% endblock %}
+	</body>
+</html>
+

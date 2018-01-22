@@ -21,10 +21,11 @@ class Autor(Model):
     nombre = models.CharField("Nombre", max_length=255)
     apellido = models.CharField("Apellido", max_length=255)
     texto = models.TextField("Texto")
-    imagen = VersatileImageField('Foto', upload_to="autor/", blank=True, null=True)
+    imagen = VersatileImageField('Imagen', upload_to="imagenes/autor/", blank=True, null=True)
 
     class Meta:
         verbose_name_plural = "Autores"
+        ordering = ['apellido', 'nombre', 'created_at']
 
 
 class Coleccion(Model):
