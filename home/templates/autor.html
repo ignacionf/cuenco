@@ -11,7 +11,7 @@
     <div class='col-md-8' style='text-align: justify;'>
         <h3>{{ object.apellido|title }}, {{ object.nombre|title }}</h3>
         <br />
-        {{ object.texto|escape }}
+        {{ object.texto|safe }}
 
     </div> <!-- col-md-8 -->
 </div> <!-- row -->
@@ -20,12 +20,10 @@
         {% for libro in object.libro_set.all %}
             <div class="item">
                 <img src="{{ libro.imagen.url}}" alt="image">
-                <a href="#" class="pop-up-overlay text-center">
                     <div class="desc">
-                        <h3>{{ libro.autor }}</h3>
-                        <span>{{ libro.titulo }}</span>
+                        <b style="color: #F05736">{{ libro.autor }}</b>
+                        <p>{{ libro.titulo }}</p>
                     </div>
-                </a>
             </div> <!-- item -->
 
         {% endfor %}
@@ -47,7 +45,7 @@ $('.libros').owlCarousel({
     autoplay: true,
     items: 5,
     loop:true,
-    margin:10,
+    margin:50,
     nav:true,
     dots: true,
     navText: [
