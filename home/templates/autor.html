@@ -2,29 +2,40 @@
 {% load static %}
 
 {% block "content" %}
-
-<div class="heading-section text-center"><h2>Autores y Autoras</h2></div>
-
+{{ object.libro_set.all }}
 <div class="row">
-{% for autor in object_list %}
-    <div class='col-md-2 {{ autor.apellido.0 }}' style='height: 315px; text-align: center;'>
-        <a href="{% url "autor" autor.id %}" class='autor-link'>
-        {% if autor.imagen %}<img src="{{ autor.imagen.crop.200x200 }}" class='img-circle' style='width: 100%; max-height: 200px;' />{% endif %}
+    <div class='col-md-2'>
+        {% if object.imagen %}
+        <img src="{{ object.imagen.crop.200x200 }}" style='width: 100%' class='img-circle' />
+        {% endif %}
+    </div> <!-- col-md-2 -->
+    <div class='col-md-8' style='text-align: justify;'>
+        <h3>{{ object.apellido|title }}, {{ object.nombre|title }}</h3>
+        <br />
+        {{ object.texto|escape }}
 
-        <p>{{ autor.apellido|title }}, {{ autor.nombre }}</p>
-        </a>
-    </div> <!-- col-md-3-->
-{% endfor %}
+        <div class="owl-carousel owl-carousel2">
+        {% for libro in object.libro_set.all %}
+            <div class="item">
+                <img src="{{ libro.imagen.url}}" alt="image" style='width: 200px; height: 100%;'>
+                <a href="#" class="pop-up-overlay text-center">
+                    <div class="desc">
+                        <h3>{{ libro.autor }}</h3>
+                        <span>{{ libro.titulo }}</span>
+                    </div>
+                </a>
+            </div> <!-- item -->
+
+        {% endfor %}
+        </div> <!-- owl-carousel2 -->
+
+    </div> <!-- col-md-8 -->
 </div> <!-- row -->
 
 {% endblock %}
 
-
 {% block "style" %}
 <style>
-.autor-link:hover{
-    opacity: 0.3;
-}
 </style>
 {% endblock %}
 

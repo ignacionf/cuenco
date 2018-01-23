@@ -7,7 +7,7 @@ class AutorAdmin(admin.ModelAdmin):
     date_hierarchy = 'created_at'
     search_display = ("nombre", "apellido")
     list_filter = ("user",)
-    list_display = ("nombre", "apellido", "imagen", "created_at", "user")
+    list_display = ("id","nombre", "apellido", "imagen", "created_at", "user")
 
     def save_model(self, request, obj, form, change):
         obj.user = request.user

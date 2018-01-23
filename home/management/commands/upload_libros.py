@@ -1,7 +1,7 @@
 from django.core.management.base import BaseCommand, CommandError
 from django.conf import settings
 from django.utils.html import strip_tags
-from home.models import Autor
+from home.models import *
 from django.core.files import File
 from django.contrib.auth.models import User
 
@@ -16,27 +16,32 @@ class Command(BaseCommand):
         #self.stdout.write(self.style.SUCCESS('Successfully closed poll "%s"' % poll_id))
 
         user = User.objects.get(pk=1)
-        Autor.objects.all().delete()
-        with open(os.path.join(settings.BASE_DIR, 'OLD_DB/autores.csv'),'r') as f:
+        Libro.objects.all().delete()
+        with open(os.path.join(settings.BASE_DIR, 'OLD_DB/libros.csv'),'r') as f:
             reader = csv.reader(f, delimiter="|", quotechar='"')
             datos = list(reader)
 
         for i in datos:
             try:
-                nombre= i[1].split(",")[1]
-            except: 
-                nombre= i[1]
-
-            try:
-                imagen = File(open(os.path.join(settings.BASE_DIR, "media/imagenes/autores/", i[3]), 'rb'))
+                imagen = File(open(os.path.join(settings.BASE_DIR, "media/imagenes/libros/", i[6]), 'rb'))
             except FileNotFoundError:
                 imagen = None
-            a=Autor(nombre=nombre,
-                texto=strip_tags(i[2]),
-                apellido=i[4],
+
+            autor = Autor.objects.get(pk=int(i[1]))
+            coleccion = Coleccion.objects.get(pk=int(i[9]))
+            traductor = i[4] if i[4] != 'NULL' else None
+            subtitulo = i[8] if i[8] != 'NULL' else None
+            a=Libro(autor=autor,
+                coleccion=coleccion,
+                texto=strip_tags(i[5]),
+                titulo=i[7],
+                isbn=i[2],
+                traductor=traductor,
+                subtitulo=subtitulo,
                 imagen=imagen,
                 user=user)
-            a.id= int(i[0])
+            a.id = int(i[0])
             a.save()
-            a.imagen="imagenes/autores/%s" % i[3]
+
+            a.imagen="imagenes/libros/%s" % i[6]
             a.save()

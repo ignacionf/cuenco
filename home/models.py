@@ -27,6 +27,9 @@ class Autor(Model):
         verbose_name_plural = "Autores"
         ordering = ['apellido', 'nombre', 'created_at']
 
+    def __str__(self):
+        return "%s, %s" % (self.apellido, self.nombre)
+
 
 class Coleccion(Model):
     nombre = models.CharField("Nombre", max_length=255)
@@ -34,6 +37,9 @@ class Coleccion(Model):
     class Meta:
         verbose_name = "Colección"
         verbose_name_plural = "Colecciones"
+
+    def __str__(self):
+        return self.nombre
 
 class Libro(Model):
     autor = models.ForeignKey(Autor, on_delete=models.CASCADE)
@@ -48,3 +54,6 @@ class Libro(Model):
 
     class Meta:
         verbose_name_plural = "Libros"
+
+    def __str__(self):
+        return "%s, %s" % (self.titulo, self.autor)
