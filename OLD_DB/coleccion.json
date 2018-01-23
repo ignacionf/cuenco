@@ -1,0 +1,132 @@
+[
+{
+    "model": "home.coleccion",
+    "pk": 1,
+    "fields": {
+        "created_at": "2018-01-22T20:52:28.833Z",
+        "updated_at": "2018-01-22T20:52:28.833Z",
+        "user": 1,
+        "nombre": "Extraterritorial"
+    }
+},
+{
+    "model": "home.coleccion",
+    "pk": 2,
+    "fields": {
+        "created_at": "2018-01-22T20:52:28.839Z",
+        "updated_at": "2018-01-22T20:52:28.839Z",
+        "user": 1,
+        "nombre": "Teor\u00eda y ensayo"
+    }
+},
+{
+    "model": "home.coleccion",
+    "pk": 3,
+    "fields": {
+        "created_at": "2018-01-22T20:52:28.844Z",
+        "updated_at": "2018-01-22T20:52:28.844Z",
+        "user": 1,
+        "nombre": "El libertino erudito"
+    }
+},
+{
+    "model": "home.coleccion",
+    "pk": 4,
+    "fields": {
+        "created_at": "2018-01-22T20:52:28.848Z",
+        "updated_at": "2018-01-22T20:52:28.848Z",
+        "user": 1,
+        "nombre": "Registros"
+    }
+},
+{
+    "model": "home.coleccion",
+    "pk": 5,
+    "fields": {
+        "created_at": "2018-01-22T20:52:28.853Z",
+        "updated_at": "2018-01-22T20:52:28.853Z",
+        "user": 1,
+        "nombre": "Latinoamericana"
+    }
+},
+{
+    "model": "home.coleccion",
+    "pk": 6,
+    "fields": {
+        "created_at": "2018-01-22T20:52:28.858Z",
+        "updated_at": "2018-01-22T20:52:28.858Z",
+        "user": 1,
+        "nombre": "Biblioteca Juan Filloy"
+    }
+},
+{
+    "model": "home.coleccion",
+    "pk": 7,
+    "fields": {
+        "created_at": "2018-01-22T20:52:28.863Z",
+        "updated_at": "2018-01-22T20:52:28.863Z",
+        "user": 1,
+        "nombre": "Cr\u00f3nicas"
+    }
+},
+{
+    "model": "home.coleccion",
+    "pk": 8,
+    "fields": {
+        "created_at": "2018-01-22T20:52:28.868Z",
+        "updated_at": "2018-01-22T20:52:28.868Z",
+        "user": 1,
+        "nombre": "Nueva narrativa"
+    }
+},
+{
+    "model": "home.coleccion",
+    "pk": 9,
+    "fields": {
+        "created_at": "2018-01-22T20:52:28.873Z",
+        "updated_at": "2018-01-22T20:52:28.874Z",
+        "user": 1,
+        "nombre": "Hojas del Arca"
+    }
+},
+{
+    "model": "home.coleccion",
+    "pk": 10,
+    "fields": {
+        "created_at": "2018-01-22T20:52:28.879Z",
+        "updated_at": "2018-01-22T20:52:28.879Z",
+        "user": 1,
+        "nombre": "Cuadernos de plata"
+    }
+},
+{
+    "model": "home.coleccion",
+    "pk": 11,
+    "fields": {
+        "created_at": "2018-01-22T20:52:28.883Z",
+        "updated_at": "2018-01-22T20:52:28.883Z",
+        "user": 1,
+        "nombre": "Cine"
+    }
+},
+{
+    "model": "home.coleccion",
+    "pk": 12,
+    "fields": {
+        "created_at": "2018-01-22T20:52:28.889Z",
+        "updated_at": "2018-01-22T20:52:28.889Z",
+        "user": 1,
+        "nombre": "Biblioteca Gombrowicz"
+    }
+},
+{
+    "model": "home.coleccion",
+    "pk": 13,
+    "fields": {
+        "created_at": "2018-01-22T20:52:28.894Z",
+        "updated_at": "2018-01-22T20:52:28.894Z",
+        "user": 1,
+        "nombre": "Pascal Quignard"
+    }
+}
+]

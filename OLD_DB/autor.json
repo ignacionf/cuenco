@@ -1,0 +1,1848 @@
+[
+{
+    "model": "home.autor",
+    "pk": 1,
+    "fields": {
+        "created_at": "2018-01-22T20:39:21.760Z",
+        "updated_at": "2018-01-22T20:39:21.765Z",
+        "user": 1,
+        "nombre": " David",
+        "apellido": "Halperin",
+        "texto": "David Halperin es profesor en el departamento de literatura inglesa de la universidad de Michigan en Ann Arbor. Helenista de formaci\u00f3n, tambi\u00e9n ense\u00f1\u00f3 sociolog\u00eda, estudios feministas y teor\u00eda queer . Es el autor de Cent ans d'honosexualit\u00e9 et autres essais sur l'amour grec . Dirigi\u00f3 The Lesbian and Gay Studies Reader (1993) y es coeditor de la revista GLQ: A Journal of Lesbian and Gay Studies . Halperin ha recibido numerosos premios honor\u00edficos tanto por sus trabajos universitarios como por su acci\u00f3n pol\u00edtica. Ahora contin\u00faa sus investigaciones sobre la historia de la homosexualidad.",
+        "imagen": "imagenes/autores/1halperin.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 2,
+    "fields": {
+        "created_at": "2018-01-22T20:39:21.795Z",
+        "updated_at": "2018-01-22T20:39:21.799Z",
+        "user": 1,
+        "nombre": " Manuel",
+        "apellido": "Puig",
+        "texto": "Manuel Puig (General Villegas,1932- Cuernavaca, 1990). Tuvo el temprano reconocimieno de sus pares: Severo Sarduy, Juan Goytisolo, \u00cdtalo Calvino, Jos\u00e9 Bianco, y de figuras se\u00f1eras de la cr\u00edtica literaria como Emir Rodr\u00edguez Monegal, \u00c1ngel Rama y Enrique Pezzoni. A esto se sum\u00f3 el \u00e9xito de p\u00fablico, tanto de lectores como de espectadores de las versiones de sus obras. No oabstante, su figura a\u00fan hoy despierta pol\u00e9micas y genera incomodidad, tal vez por los efectos insospechados del autoritarismo en el terreno de la cultura que su escritura pone en cuesti\u00f3n.Es autor de las novelas La traici\u00f3n de Rita Hayword, Boquitas Pintadas, The Buenos Aires Affair, El beso de la mujer ara\u00f1a, Pubis angelical, Cae la noche tropical, Maldici\u00f3n eterna a quien lea estas p\u00e1ginas, Sangre de amor correspondido. El beso de la mujer ara\u00f1a fue llevada al cine y adaptada para teatro con gran \u00e9xito. ",
+        "imagen": "imagenes/autores/puig_.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 3,
+    "fields": {
+        "created_at": "2018-01-22T20:39:21.807Z",
+        "updated_at": "2018-01-22T20:39:21.817Z",
+        "user": 1,
+        "nombre": " Juan",
+        "apellido": "Filloy",
+        "texto": "Juan Filloy (1894-2000) naci\u00f3 y vivi\u00f3 en C\u00f3rdoba, Argentina, y fue uno de los autores m\u00e1s secretos y prol\u00edficos de nuestra literatura. Elogiado por Cort\u00e1zar y Alfonso Reyes, su novela Caterva influy\u00f3 en Leopoldo Marechal y muy especialmente en su Ad\u00e1n Buenosayres. Su obra incluye m\u00e1s de 50 t\u00edtulos (algunos todav\u00eda in\u00e9ditos), que abarcan los g\u00e9neros novela, cuento, poes\u00eda y ensayo. Traducida recientemente al alem\u00e1n, su novela Op Oloop se convirti\u00f3 en un \u00e9xito de cr\u00edtica y de lectores. Principales obras: Novela: \u00a1Estafen! (1932), Op Oloop (1934), Caterva (1937), La potra (1973), Vil&amp;Vil (1975), La purga (1977). Relatos: Los Ochoa (1972), Tal cual (1980), Gentuza (1991). Poes\u00eda: Balumba (1933), Sonetos (1996). Cr\u00f3nica: Periplo (1931), Aquende (1935). Ensayo: Urumpta (1976), Sagesse (1994).",
+        "imagen": "imagenes/autores/1foto-filloy.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 4,
+    "fields": {
+        "created_at": "2018-01-22T20:39:21.826Z",
+        "updated_at": "2018-01-22T20:39:21.830Z",
+        "user": 1,
+        "nombre": " D. H.",
+        "apellido": "Lawrence",
+        "texto": "David Herbert Richards Lawrence (1885-1930) fue un escritor ingl\u00e9s, autor de novelas, cuentos, poemas, relatos de viaje, ensayos y cr\u00edtica literaria.  Fue un escritor complejo, atormentado, de vasta y sostenida influencia en la literatura inglesa contempor\u00e1nea. Hijo de un minero y una maestra, Lawrence conoci\u00f3 y ahond\u00f3 desde sus inicios las contradicciones y contrastes en las relaciones humanas, y muy especialmente entre hombre y mujer.Principales obras: Novela: Hijos y amantes (1913), El aroiris (1915), Mujeres enamoradas (1920), La vara de Aar\u00f3n (1922), Canguro (1923), La serpiente emplumada (1926), El amante de Lady Chatterley (1928). Cuento: El oficial prusiano y otros relatos (1914), Inglaterra, mi Inglaterra y otros relatos (1922), Sol (1926), El amor entre las parvas (1930). Poes\u00eda: (1916), Tortugas (1921), P\u00e1jaros, bestias y flores (1923), \u00daltimos poemas (1932). Relato de viaje: Ma\u00f1anas en M\u00e9xico (1927), Paseos etruscos (1932). Ensayo: El psicoan\u00e1lisis y lo inconsciente (1921), Ensayos sobre literatura cl\u00e1sica norteamericana (1923), Pornograf\u00eda y obscenidad (1929), Apocalipsis (1931).",
+        "imagen": "imagenes/autores/1dh.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 5,
+    "fields": {
+        "created_at": "2018-01-22T20:39:21.838Z",
+        "updated_at": "2018-01-22T20:39:21.843Z",
+        "user": 1,
+        "nombre": " Marosa",
+        "apellido": "di Giorgio",
+        "texto": "Marosa di Giorgio naci\u00f3 en Salto, Uruguay en 1932 y muri\u00f3 en Montevideo el 17 de agosto de 2004. Tal como se\u00f1al\u00f3 \u00c1ngel Rama, es una de las voces mayores de la l\u00edrica latinoamericana. Su extensa obra po\u00e9tica est\u00e1 compilada en Los papeles salvajes, que re\u00fane su producci\u00f3n desde su primer libro, Poemas (1954), hasta Diamelas a Clementina M\u00e9dici (2000). En narrativa ha publicado Misales (1993, traducido al franc\u00e9s y reeditado en Chile y en Colombia), Camino de las pedrer\u00edas (1997), Reina Amelia (1999) y Rosa m\u00edstica (2003). Sus Relatos Er\u00f3ticos completos est\u00e1n reunidos en su libro p\u00f3stumo El Gran Rat\u00f3n Dorado, el Gran Rat\u00f3n de lilas. Su obra ha sido traducida al ingl\u00e9s, franc\u00e9s, portugu\u00e9s e italiano.",
+        "imagen": "imagenes/autores/marosa2.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 6,
+    "fields": {
+        "created_at": "2018-01-22T20:39:21.849Z",
+        "updated_at": "2018-01-22T20:39:21.854Z",
+        "user": 1,
+        "nombre": " Leopold",
+        "apellido": "Sacher-Masoch",
+        "texto": "Leopold von Sacher-Masoch naci\u00f3 en 1836 en Lemberg, Galitzia (actual Lvov, Ucrania), en el seno de una familia de ascendencia espa\u00f1ola, alemana y eslava. Su padre era jefe de polic\u00eda. Estudi\u00f3 en las universidades de Praga y Graz. En esta ciudad, entre 1856 y 1870, se desempe\u00f1\u00f3 como privatdozent de historia general, cargo que abandon\u00f3 para dedicarse a la literatura. Sus novelas y relatos, en los que lo hist\u00f3rico se une con lo folcl\u00f3rico, lo pol\u00edtico y lo er\u00f3tico, le reportaron en su momento un \u00e9xito considerable. En 1873 se cas\u00f3 con Aurora von R\u00fcmelin, quien adopt\u00f3 el nombre de Wanda, la protagonista de La venus de las pieles . Muri\u00f3 en Lindheim, Alemania, en 1895. Al mismo tiempo que su obra ca\u00eda injustamente en el olvido, su nombre empez\u00f3 a designar una entidad cl\u00ednica, el &quot;masoquismo&quot;, campo al que ha quedado asociado. Su obra m\u00e1s significativa est\u00e1 agrupada en el ciclo El legado de Ca\u00edn, en el que se incluyen, entre otras novelas, La Venus de las pieles, La mujer divorciada, La madre de Dios, La pescadora de almas y El amor de Plat\u00f3n.",
+        "imagen": "imagenes/autores/masoch.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 7,
+    "fields": {
+        "created_at": "2018-01-22T20:39:21.861Z",
+        "updated_at": "2018-01-22T20:39:21.865Z",
+        "user": 1,
+        "nombre": " Haroldo",
+        "apellido": "de Campos",
+        "texto": "Haroldo de Campos (1929-2003), poeta, traductor y ensayista brasile\u00f1o, fue tambi\u00e9n uno de los fundadores del movimiento de Poes\u00eda Concreta, junto con Augusto de Campos y D\u00e9cio Pignatari. Autor de m\u00e1s de treinta libros y centenares de ensayos, traducidos a varios idiomas. Profesor em\u00e9rito de la PUC/SP y profesor invitado de las Universidades de Yale y Austin, entre otras. Tradujo textos de Mallarm\u00e9, Ezra Pound, James Joyce, Dante Alighieri, Octavio Paz, Maiak\u00f3vski, adem\u00e1s de poemas b\u00edblicos, teatro japon\u00e9s, poes\u00eda griega y latina. Ha publicado, entre otros libros, Gal\u00e1xias, Crisantempo, A m\u00e1quina do mundo repensada (poes\u00eda); Metalinguagem e outras metas, O arco-\u00edris branco. Ensaios de literatura e cultura (ensayo). Fue galardonado con el Premio Jabuti (1991, 1992, 1994, 1999), Premio Roger Caillois (1999) y Premio Octavio Paz (1999), entre otras distinciones.",
+        "imagen": "imagenes/autores/haroldo2.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 8,
+    "fields": {
+        "created_at": "2018-01-22T20:39:21.881Z",
+        "updated_at": "2018-01-22T20:39:21.885Z",
+        "user": 1,
+        "nombre": " Mora",
+        "apellido": "Torres",
+        "texto": "Mora Torres naci\u00f3 en la ciudad de Santa Fe en 1949; actualmente vive en Buenos Aires. Trabaja en diferentes medios editoriales y period\u00edsticos. Ha publicado Como quien entra en una fiesta, poes\u00eda,Torres Ag\u00fcero, 1988. Otros libros in\u00e9ditos suyos son: Si sue\u00f1as con Li Po, Env\u00edos de la ni\u00f1a de piedra, Cuadernos de la dicha, Las se\u00f1oras que amaban a se\u00f1oras, La medida del vaso de plata, Los cornalitos en la red y la poes\u00eda, El calendario, El azar es una flor Recibi\u00f3 el primer premio de poes\u00eda Jos\u00e9 Pedroni -(Premios Trienales de Literatura de la Pcia. de Santa Fe), en 1970; el primer premio del Fondo Nacional de las Artes, poes\u00eda, en 1987, y el tercer premio del Fondo Nacional de la Artes, poes\u00eda, en 2003.",
+        "imagen": "imagenes/autores/1morita.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 9,
+    "fields": {
+        "created_at": "2018-01-22T20:39:21.892Z",
+        "updated_at": "2018-01-22T20:39:21.896Z",
+        "user": 1,
+        "nombre": " Oliverio",
+        "apellido": "Coelho",
+        "texto": "Oliverio Coelho naci\u00f3 en Buenos Aires, el 13 agosto de 1977. Fue editado en Argentina, en Espa\u00f1a y en M\u00e9xico. Entre otras distinciones, recibi\u00f3 el Premio Latinoamericano de cuento Edmundo Valad\u00e9s, en M\u00e9xico, y el Premio \u00danico Bienal Latinoamericana Jos\u00e9 Rafael Pocaterra, en Venezuela, por sus relatos in\u00e9ditos . Public\u00f3 Tierra de vigilia (novela), La v\u00edctima y los sue\u00f1os (nouvelle), El umbral (cuento), y Los invertebrables (novela). Borneo es el segundo libro de una trilog\u00eda futurista iniciada con Los invertebrables",
+        "imagen": "imagenes/autores/oliverio_ch.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 10,
+    "fields": {
+        "created_at": "2018-01-22T20:39:21.904Z",
+        "updated_at": "2018-01-22T20:39:21.909Z",
+        "user": 1,
+        "nombre": " Daniel",
+        "apellido": "Link",
+        "texto": "Daniel Link (Buenos Aires, 1959) es catedr&aacute;tico y escritor. Dicta cursos de Literatura del Siglo XX en la Universidad de Buenos Aires. Es miembro de la Latin American Studies Asociation y de la Associa&ccedil;&atilde;o Brasileira de Literaturas Comparadas. Ha publicado las recopilaciones cr&iacute;ticas El juego de los cautos. La literatura policial de Edgar Poe a P. D. James y Escalera al cielo. Utop&iacute;as y ciencia ficci&oacute;n, los libros de ensayos La chancha con cadenas y C&oacute;mo se lee, los poemarios La clausura de febrero y otros poemas malos y Campo intelectual y otros poemas y las novelas Los a&ntilde;os noventa y Monserrat. Organiz&oacute; los vol&uacute;menes especiales La voz del otro y Literaturas comparadas: la construcci&oacute;n de una teor&iacute;a, de la revista Filolog&iacute;a, y edit&oacute; la obra de Rodolfo Walsh (El violento oficio de escribir, Ese hombre y otros papeles personales). En octubre de 2003 recibi&oacute; una beca de la Fundaci&oacute;n Rockefeller para terminar La ansiedad en el Bellagio Study and Conference Center.",
+        "imagen": "imagenes/autores/link01.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 11,
+    "fields": {
+        "created_at": "2018-01-22T20:39:21.916Z",
+        "updated_at": "2018-01-22T20:39:21.921Z",
+        "user": 1,
+        "nombre": " Enrique",
+        "apellido": "Symns",
+        "texto": "Enrique Symns naci\u00f3 en Lan\u00fas, provincia de Buenos Aires. Su presencia aport\u00f3 una cuota innovadora a revistas como Erotic\u00f3n, Fin de siglo, El cazador y La Maga. Fue colaborador especial del diario Clar\u00edn, prosecretario de redacci\u00f3n de Satiric\u00f3n, jefe de redacci\u00f3n de El Porte\u00f1o, redactor de los diarios La Voz y Sur, y creador y director de la m\u00edtica Cerdos & Peces, revista que dej\u00f3 una impronta dif\u00edcil de superar por su estilo alejado de cualquier convencionalismo. En Chile, cre\u00f3 la revista The Clinic. Fue presentador de los shows de Los Redonditos de Ricota, Los Piojos, La Bersuit Vergarabat y Los Caballeros de la Quema. Actualmente se desempe\u00f1a como redactor en los diarios Cr\u00edtica y Sur, en las revistas Contraeditorial, THC y Un Ca\u00f1o. Tambi\u00e9n forma parte del staff del programa que conduce Gillespi en Rock&Pop, \u201cEl falso impostor\u201d.",
+        "imagen": "imagenes/autores/symns_ch.bmp"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 12,
+    "fields": {
+        "created_at": "2018-01-22T20:39:21.928Z",
+        "updated_at": "2018-01-22T20:39:21.932Z",
+        "user": 1,
+        "nombre": " Henry",
+        "apellido": "James",
+        "texto": "Henry James, maestro indiscutido de la narrativa moderna, naci\u00f3 en Washington en 1843 y muri\u00f3 en Londres en 1916. Suele afirmarse que fue un espectador privilegiado de la existencia de los otros, pero las ochocientas p\u00e1ginas de la Vida de Henry James, de Leon Edel, tan sobrias como apasionadas, quiz\u00e1s desmientan esta leyenda, agregando que James no s\u00f3lo fue un mero y \u00e1vido espectador de los rasgos psicol\u00f3gicos y sociales de su tiempo, sino que adem\u00e1s supo construir una intensa y prol\u00edfica vida \u00edntima, escribir un n\u00famero abrumador de novelas y cuentos, viajar, y sufrir pasiones amorosas no correspondidas. Al primer per\u00edodo de su producci\u00f3n, llamado &quot;de tema internacional&quot;, corresponden novelas como Daisy Miller (1879), Washington Square (1881) y Retrato de una dama; al segundo, su &quot;per\u00edodo social&quot; pertenecen Las bostonianas y La princesa Casamassima, ambas de 1886. Los grandes t\u00edtulos de su \u00faltimo per\u00edodo son Lo que Maisie sab\u00eda (1897), Otra vuelta de tuerca (1898), Las alas de la paloma (1902), Los embajadores (1903), y La copa dorada (1904).",
+        "imagen": "imagenes/autores/1henry2.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 13,
+    "fields": {
+        "created_at": "2018-01-22T20:39:21.942Z",
+        "updated_at": "2018-01-22T20:39:21.946Z",
+        "user": 1,
+        "nombre": " Esteban",
+        "apellido": "L\u00f3pez Brusa",
+        "texto": "Esteban L\u00f3pez Brusa naci\u00f3 en la ciudad de La Plata en 1964. Egresado de la carrera de Letras, ejerce la docencia en el nivel secundario y dirige talleres de escritura. Fue fundador y codirector de la revista de literatura La muela del juicio . Durante a\u00f1os condujo el programa Huevo o cigota en Radio Universidad de La Plata. A cargo de ediciones el broche llev\u00f3 adelante tareas como editor literario. Con su primera novela La temporada (1999) fue finalista del Premio Novela Planeta 1996. Tiene un libro de poemas, Dorotea la rosa del 90 (in\u00e9dito). La yugoslava obtuvo el Primer Premio en el Concurso Nacional de Novela Breve Leopoldo Marechal 2001.",
+        "imagen": "imagenes/autores/1brusa.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 14,
+    "fields": {
+        "created_at": "2018-01-22T20:39:21.962Z",
+        "updated_at": "2018-01-22T20:39:21.966Z",
+        "user": 1,
+        "nombre": " Denis",
+        "apellido": "Diderot",
+        "texto": "\u201cAdversario fraterno\u201d de Voltaire, Denis Diderot (1713-1784) conjug\u00f3 en una vasta obra \u2013que se extiende desde piezas literarias y trabajos filos\u00f3ficos hasta la cr\u00edtica de arte y el estudio de los organismos vivos\u2013 las tesis del de\u00edsmo ingl\u00e9s con el materialismo sensualista, el empirismo de Locke y el atomismo antiguo de inspiraci\u00f3n lucreciana. Su nombre (junto a los de Voltaire, Montesquieu, La Mettrie, Rousseau, Condorcet, D'Alembert, Condillac, Sade...) est\u00e1 en el preciso centro de esa extraordinaria aventura intelectual que tuvo lugar en el siglo XVIII franc\u00e9s, en el que la Republique des Lettres alcanzar\u00e1 su fruto m\u00e1s sublime con la Enciclopedia, proyecto colectivo de un Diccionario razonado de las ciencias, las artes y los oficios que se concret\u00f3 en diecisiete vol\u00famenes.",
+        "imagen": "imagenes/autores/1diderot.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 15,
+    "fields": {
+        "created_at": "2018-01-22T20:39:21.973Z",
+        "updated_at": "2018-01-22T20:39:21.978Z",
+        "user": 1,
+        "nombre": " Marguerite",
+        "apellido": "Duras",
+        "texto": "Marguerite Duras, hija de franceses, naci\u00f3 en los suburbios de Saig\u00f3n en 1914. Su padre era profesor de matem\u00e1ticas, y al morir, cuando ella ten\u00eda cuatro a\u00f1os, su madre decidi\u00f3 permanecer en Indochina con sus tres hijos. En 1932 se traslad\u00f3 a Par\u00eds, donde estudi\u00f3 Derecho, Matem\u00e1ticas y Ciencias Pol\u00edticas. En 1943 public\u00f3 su primera novela, Les imprudents, inaugurando una producci\u00f3n incesante y diversa, que incluye m\u00e1s de veinte novelas, obras de teatro y guiones cinematogr\u00e1ficos. En 1975 dirigi\u00f3 India Song, una de sus obras fundamentales, donde lleva al l\u00edmite los temas centrales de su creaci\u00f3n: el amor, la tragedia de la p\u00e9rdida, y la recuperaci\u00f3n por la memoria. En 1984 public\u00f3 El amante, novela con la que gan\u00f3 el premio Goncourt, y que la consagr\u00f3 como una de las grandes escritoras del siglo XX. Muri\u00f3 en Par\u00eds en 1996. Principales obras. Novela: La vida tranquila (1944), Moderato cantabile (1958), Le Ravisssement de Lol. V. Stein (1964), El vice-c\u00f3nsul (1965), La amante inglesa (1967), El amor (1971), El amante (1984), El dolor (1985), El amante de la China del Norte (1991); Teatro: Los viaductos del Seine-et-oise (1959), El square (1965), La m\u00fasica (1966), D\u00edas enteros en las ramas (1968); Adaptaciones teatrales: La bestia en la jungla (1984, sobre el cuento de Henry James), Los papeles de Aspern (1984, sobre la novela de Henry James). Films: Hiroshima, mon amour (1959, gui\u00f3n y di\u00e1logos, dirigido por Alain Resanais), D\u00e9truire, dit-elle (1969), India Song (1975), Le Camion (1977), Le Naviere Night (1978), L\u00b4Homme Atlantique (1981).",
+        "imagen": "imagenes/autores/1duras.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 16,
+    "fields": {
+        "created_at": "2018-01-22T20:39:21.984Z",
+        "updated_at": "2018-01-22T20:39:21.988Z",
+        "user": 1,
+        "nombre": " Julien Offray",
+        "apellido": "La Mettrie",
+        "texto": "M&eacute;dico y fil&oacute;sofo, Julien Offray de La Mettrie (1709-1751) fue un exponente mayor del neoepicure&iacute;smo materialista del siglo XVIII y su pensamiento una anomal&iacute;a salvaje en pleno siglo de Las Luces. Cr&iacute;tico del cartesianismo, heredero del atomismo antiguo y de la tradici&oacute;n libertina moderna, obtuvo la un&aacute;nime denostaci&oacute;n de todas las corrientes filos&oacute;ficas de su tiempo, no s&oacute;lo por la radicalidad de su mecanicismo, sino tambi&eacute;n por una &eacute;tica que afirma el placer sensible como sabidur&iacute;a de vida y la b&uacute;squeda de la felicidad individual como condici&oacute;n de una sociedad emancipada de los terrores teol&oacute;gicos y pol&iacute;ticos. Viejo motivo de la &ldquo;escuela del jard&iacute;n&rdquo;, la voluptuosidad abandona con La Mettrie su clandestinidad filos&oacute;fica para constituirse en la piedra de toque de una educaci&oacute;n sentimental orientada siempre por la libertad y la meditaci&oacute;n de la vida, a resguardo de las ret&oacute;ricas tan&aacute;ticas que alberga la moral tradicional. Seg&uacute;n el autor del Discurso sobre la felicidad, la filosof&iacute;a revela el ideal asc&eacute;tico y el poder espectral que los remordimientos ejercen sobre las conciencias como puros dispositivos sacrificiales inventados por las religiones.",
+        "imagen": "imagenes/autores/1LaMettrie.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 17,
+    "fields": {
+        "created_at": "2018-01-22T20:39:21.995Z",
+        "updated_at": "2018-01-22T20:39:22.000Z",
+        "user": 1,
+        "nombre": " Pier Paolo",
+        "apellido": "Pasolini",
+        "texto": "Pier Paolo Pasolini naci\u00f3 en Bolonia en 1922. Hijo de un militar y una maestra, su infancia transcurri\u00f3 en el norte de Italia. Entre 1942 y 1949 residi\u00f3 en el Friul, donde se dedic\u00f3 a la ense\u00f1anza, a los estudios filol\u00f3gicos y a la escritura. Este per\u00edodo, signado por la muerte de su hermano Guido en la lucha partisana, represent\u00f3 para Pasolini no s\u00f3lo el momento de \u201cdescubrimiento\u201d de una lengua po\u00e9tica \u201cvirgen\u201d y \u201cabsoluta\u201d, sino tambi\u00e9n el de la radicalidad pol\u00edtica y el de la diversidad del eros. En 1942 public\u00f3 su primer libro de versos en lengua friulana (Poes\u00edas a Casarsa) a los que seguir\u00edan varios vol\u00famenes en friulano (reunidos en La mejor juventud, 1954) y en italiano ( Las cenizas de Gramsci,1957, y Trashumanar y organizar, 1971, entre otros). Acusado de \u201cactos impuros\u201d, abandon\u00f3 la regi\u00f3n materna en 1949 y residi\u00f3 hasta su muerte en Roma, ciudad cuya experiencia resultar\u00eda determinante tanto en su producci\u00f3n literaria como cinematogr\u00e1fica. Su primer gran \u00e9xito literario fue la novela Muchachos de la calle (1955), objeto de un proceso por supuesta \u201cobscenidad\u201d, a la que siguieron Una vida violenta (1959) y El sue\u00f1o de una cosa (1962). En 1961 dirigi\u00f3 Accattone, la primera de una serie de pel\u00edculas entre las que se destacan El Evangelio seg\u00fan Mateo (1964), Teorema (1968), Medea (1970) y Sal\u00f3 o los 120 d\u00edas de Sodoma (1975). El 1 de noviembre de 1975 fue asesinado en las playas de Ostia, en las cercan\u00edas de Roma. Trabajaba entonces en Petr\u00f3leo (publicado p\u00f3stumamente en 1992). ",
+        "imagen": "imagenes/autores/1pasolini.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 18,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.007Z",
+        "updated_at": "2018-01-22T20:39:22.012Z",
+        "user": 1,
+        "nombre": " Pascal",
+        "apellido": "Quignard",
+        "texto": "Pascal Quignard naci&oacute; en 1948 en Verneul-sur-Avre, Francia, en el seno de una familia de m&uacute;sicos y especialistas en literaturas cl&aacute;sicas. Su infancia estuvo marcada por per&iacute;odos de autismo y anorexia. Ya adolescente, sus gustos se inclinaron por la m&uacute;sica, el lat&iacute;n, el griego, los estudios etimol&oacute;gicos y la literatura. En 1968 estudi&oacute; filosof&iacute;a en Nanterre. En 1969 public&oacute; un ensayo sobre la obra de Sacher-Masoch, pero fueron las novelas El sal&oacute;n de Wurtemberg (1986) y Las escaleras de Chambord (1989) las que lo dieron a conocer. Fue profesor en la &Eacute;cole pratique des hautes &eacute;tudes en sciences sociales de la universidad de Vincennes, y fund&oacute; con el presidente Francois Mitterand el festival de &oacute;pera y teatro barroco de Versalles. Desde 1969 fue colaborador de la editorial Gallimard, hasta que en 1994 tom&oacute; la decisi&oacute;n de dedicarse exclusivamente a escribir. En 2002 gan&oacute; el premio Goncourt por su novela Sombras errantes, hecho que signific&oacute; la consagraci&oacute;n de una obra de una enorme riqueza y variedad, que incluye ensayos sobre filosof&iacute;a, m&uacute;sica, literatura y arte, novelas y poes&iacute;a. Otras obras. Novela: Carus (1990, Premio de la Cr&iacute;tica), Todas las ma&ntilde;anas del mundo (1991, sobre la vida del m&uacute;sico Marin Marais, llevada al cine por Alain Corneau), Vida secreta (1999, premio de la Academia Francesa), Terraza en Roma (2000). Ensayo: La voz del silencio (1985, sobre la obra de Ren&eacute;-Louis des Forets), Peque&ntilde;os tratados (1981-1990), La noche y el silencio (1995, sobre el pintor Georges de la Tour), Ret&oacute;rica especulativa (1997), El sexo y el espanto (1996), El odio de la m&uacute;sica (1997), El lector (1999).",
+        "imagen": "imagenes/autores/autor_18.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 19,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.018Z",
+        "updated_at": "2018-01-22T20:39:22.022Z",
+        "user": 1,
+        "nombre": " Jean-Luc",
+        "apellido": "Marion",
+        "texto": "Jean-Luc Marion es profesor de Historia de la Metaf\u00edsica y de Fenomenolog\u00eda en la Sorbona (Par\u00eds IV) y en la Universidad de Chicago. Es uno de los mayores especialistas en Descartes. Ha publicado, entre otros, los siguientes libros: Sur l'ontologie grise de Descartes (1975), Sur le prisme m\u00e9taphysique de Descartes (1986), Reduction et donation. Recherches sur Husserl, Heidegger et la ph\u00e9nomenologie (1989), Questions cart\u00e9siennes. M\u00e9thode et m\u00e9taphisique (1991), Questions cart\u00e9siennes II. Sur l'ego et sur Dieu (1996), Etant donn\u00e9. Essai d\u00b4une ph\u00e9nom\u00e9nologie de la donation (1997). Con El fen\u00f3meno er\u00f3tico (2003) culmina un proceso que se remonta a L\u00b4Idole et la Distance (1977) y se bosqueja en los Prol\u00e9gomenes a la charit\u00e9 (1986).",
+        "imagen": "imagenes/autores/marion.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 20,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.027Z",
+        "updated_at": "2018-01-22T20:39:22.031Z",
+        "user": 1,
+        "nombre": " Eduardo",
+        "apellido": "Muslip",
+        "texto": "Eduardo Muslip naci \u00f3 en Buenos Aires en 1965. Estudi\u00f3 Letras en la Universidad de Buenos Aires. Es docente universitario y cr\u00edtico. Actualmente reside en Estados Unidos, aunque pasa largas temporadas en Argentina. Public\u00f3 las novelas Hojas de la noche (Colihue, 1996), Fondo negro: los Lugones (Solaris, 1997) y los libros de cuentos Examen de residencia (Simurg, 2000) y La vida perdurable (Cencerro, 2004). Sus cuentos aparecieron tambi\u00e9n en diversas antolog\u00edas y en revistas literarias como V de Vian, Pisar el c\u00e9sped y Mil mamuts .",
+        "imagen": "imagenes/autores/muslip.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 21,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.036Z",
+        "updated_at": "2018-01-22T20:39:22.040Z",
+        "user": 1,
+        "nombre": " Carlo",
+        "apellido": "Altini",
+        "texto": "Carlo Altini (San Miniato, Pisa, 1965) estutor en la Scuola di Alti Studi de la Fondazione San Carlo de Modena, en dondecoordina tambi\u00e9n las actividades del Centro Cultural. Profesor contratado deHistoria de la filosof\u00eda pol\u00edtica en la Facultad de Letras y Filosof\u00eda de laUniversidad de Siena, actualmente desarrolla actividades de investigaci\u00f3n en elDepartamento de Filosof\u00eda de la Universidad de Pisa. Entre sus publicaciones,cabe se\u00f1alar el trabajo monogr\u00e1fico Leo Strauss. Linguaggio del potere elinguaggio della filosofia (Bologna, 2000) y La storia della filosofiacome filosofia politica (Pisa, 2004), como as\u00ed tambi\u00e9n diversos art\u00edculosde filosof\u00eda pol\u00edtica publicados en las revistas Comprendre, Filosofiapolitica, Intersezioni, Iride, La societ\u00e0 degli individui y Res Publica. Hasido adem\u00e1s editor de: L. Strauss, Filosofia e Legge (Firenze, 2003);A. Koj\u00e8ve e C. Schmitt, Carteggio (en \u201cFilosofia politica\u201d, 2003); L.Strauss e H.-G. Gadamer, Carteggio su \u201cVerit\u00e0 e metodo\u201d (en \u201cMicromega\u201d,2003).",
+        "imagen": "imagenes/autores/Altini.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 22,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.052Z",
+        "updated_at": "2018-01-22T20:39:22.056Z",
+        "user": 1,
+        "nombre": " Roberto",
+        "apellido": "Echevarren",
+        "texto": "Roberto Echavarren naci\u00f3 y vive en Montevideo. Ejerci\u00f3 como profesor titular de literatura iberoamericana y comparada en la Universidad de Nueva York. Fue guionista, co-director y montajista de la pel\u00edcula Casino Atl\u00e1ntico (1989) que recibi\u00f3 varios premios en festivales de Estados Unidos. \u00a0\u00a0\u00a0Entre sus \u00faltimas publicaciones se encuentran la novela Ave roc (editada en Uruguay y Argentina, 1995); su ensayo Arte andr\u00f3gino (Premio del Ministerio de Cultura del Uruguay, editado en Uruguay, Argentina y Espa\u00f1a, 1998-2003); una antolog\u00eda de sus varios libros de poemas, junto a una miscel\u00e1nea de art\u00edculos cr\u00edticos sobre su obra: Performance: g\u00e9nero y transg\u00e9nero (Buenos Aires, 2000); y los libros de poemas Casino Atl\u00e1ntico (Montevideo, 2004) y Centralasia (Buenos Aires, 2005).",
+        "imagen": "imagenes/autores/echavarren2.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 23,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.063Z",
+        "updated_at": "2018-01-22T20:39:22.067Z",
+        "user": 1,
+        "nombre": " Francois",
+        "apellido": "Le Vayer",
+        "texto": "Con sus amigos Pierre Gassendi, \u00c9lie Diodati y Gabriel Naud\u00e9, Fran\u00e7ois de La Mothe Le Vayer (1588-1672) conformar\u00e1 en los primeros decenios del siglo XVII la famosa T\u00e9trade, sociedad fundadora del libertinismo erudito, lugar de encuentro y de pensamiento protegido por las leyes del secreto fraternal. All\u00ed nacer\u00e1n varios de los escritos m\u00e1s audaces de la Modernidad cl\u00e1sica; entre ellos, los nueve di\u00e1logos que aparecen a partir de 1631, con un falso pie de imprenta y cuyo autor se ocultaba bajo el seud\u00f3nimo de Orasius Tubero, los Dialogues faits \u00e0 l'imitation des anciens.",
+        "imagen": "imagenes/autores/sin_foto.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 24,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.074Z",
+        "updated_at": "2018-01-22T20:39:22.080Z",
+        "user": 1,
+        "nombre": " Louis-Ren\u00e9 ",
+        "apellido": "des For\u00eats",
+        "texto": "Louis-Ren&eacute; des For&ecirc;ts naci&oacute; en Par&iacute;s en 1918. Asiste a colegios como interno desde los nueve a&ntilde;os, particularmente en un colegio religioso de Breta&ntilde;a. Luego estudia derecho y ciencias pol&iacute;ticas en Par&iacute;s, y escribe cr&iacute;ticas musicales. Despu&eacute;s de estar enrolado de 1939 a 1941, se instala en el campo donde termina su novela Los mendigos. Participa en la Resistencia. Tras la Liberaci&oacute;n, escribe El charlat&aacute;n. A partir de 1953, colabora en la editorial Gallimard. En 1969, La habitaci&oacute;n de los ni&ntilde;os obtiene el Premio de los Cr&iacute;ticos. En 1967, publica Las arp&iacute;as del mar, versi&oacute;n pros&oacute;dica del fragmento de una novela inconclusa. En 1988, publica los Poemas de Samuel Wood. En 1991, recibe el Gran Premio Nacional de las letras por \\el conjunto de su obra\\\". En 1997, publica los fragmentos autobiogr&aacute;ficos de Ostinato. Muere el 30 de diciembre de 2000. Conocido y valorado por sus pares (Georges Bataille, Michel Leiris, Raymond Queneau, Maurice Blanchot, Philippe Jaccottet, Yves Bonnefoy), Louis-Ren&eacute; des For&ecirc;ts fue conquistando tambi&eacute;n a autores j&oacute;venes franceses como Pascal Quignard, Richard Millet o G&eacute;rard Mac&eacute;, , que vieron en &eacute;l a uno de sus maestros. Con la reedici&oacute;n de su narrativa en Gallimard, la cr&iacute;tica lo descubri&oacute; en los a&ntilde;os 80, y la obra termin&oacute; de consagrarse en los '90 como una de las m&aacute;s originales de la literatura contempor&aacute;nea. Su obra p&oacute;stuma es Paso a paso hasta el &uacute;ltimo (El cuenco de plata, 2008).\"",
+        "imagen": "imagenes/autores/desforets2.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 25,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.100Z",
+        "updated_at": "2018-01-22T20:39:22.104Z",
+        "user": 1,
+        "nombre": " Fernanda",
+        "apellido": "Garcia Lao",
+        "texto": "Fernanda Garc\u00eda Lao naci\u00f3 en Mendoza en 1966. Su familia se exili\u00f3 en Madrid en 1976, donde residi\u00f3 con algunas idas y vueltas hasta 1993, a\u00f1o en que se instal\u00f3 en Buenos Aires. Estudi\u00f3 danza cl\u00e1sica, piano, actuaci\u00f3n, dramaturgia y periodismo.   Adem\u00e1s del Primer premio de Novela del Fondo Nacional de las Artes 2004, obtuvo el Tercer premio de Novela Julio Cort\u00e1zar 2004, el Subsidio a la creaci\u00f3n de la Fundaci\u00f3n Antorchas por su obra teatral Ser el amo (estrenada en 2002) y el Primer premio de la Secretar\u00eda de Cultura de la Naci\u00f3n, por La mirada horrible (estrenada en 2000), entre otros.  Es autora de Coro de Inmorales (relatos), Morder la mano (cuentos) y Vagabundas (desprop\u00f3sito), a\u00fan in\u00e9ditos. En teatro, tambi\u00e9n ha escrito La amante de Baudelaire, vestida de terciopelo (estrenada en 2004 con el auspicio de la Embajada de Francia y Proteatro), Desde el acantilado (publicada por el Instituto Nacional de Teatro), Accidente en la Ingle, Sill\u00f3n de tres cuerpos, El sol en la cara, Falso tenis y El cord\u00f3n.  Publicados por El cuenco de plata: Muerta de hambre y La perfecta otra cosa.Links:  Foro de Fernanda Garc\u00eda Lao   http://fernandagarcialao.blogspot.com",
+        "imagen": "imagenes/autores/fernanda.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 26,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.111Z",
+        "updated_at": "2018-01-22T20:39:22.116Z",
+        "user": 1,
+        "nombre": " Pedro",
+        "apellido": "Lipcovich",
+        "texto": "Pedro Lipcovich (Buenos Aires, 1950). Libros publicados: El nombre verdadero (1989), Mu\u00f1ecos chicos (El cuenco de plata, 2005). Unas polillas obtuvo el Primer Premio del Fondo Nacional de las Artes 2009. redaliz (incluido en este volumen) recibi\u00f3 el Premio Internacional de Cuento \u201cJuan Rulfo\u201d, otorgado por el Centro Cultural de M\u00e9xico en Par\u00eds y Radio Francia Internacional.",
+        "imagen": "imagenes/autores/PEDRO.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 27,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.124Z",
+        "updated_at": "2018-01-22T20:39:22.128Z",
+        "user": 1,
+        "nombre": " Homero",
+        "apellido": "Alsina Thevenet",
+        "texto": "Homero Alsina Thevenet naci\u00f3 en Montevideo en1922, y falleci\u00f3 en la misma ciudad en diciembre de 2005. Su primera influenciaen el campo del cine fue la de Arturo Despouey, un dandy que le inculc\u00f3 elrigor minucioso, que lo hizo entrar como cr\u00edtico en la revista Cine RadioActualidad. M\u00e1s adelante escribi\u00f3 para el c\u00e9lebre semanario Marcha,donde estableci\u00f3 una amistad duradera con Juan Carlos Onetti. Dirigi\u00f3 unafamosa secci\u00f3n de espect\u00e1culos en el diario El Pa\u00eds, en la quecolaboraron Emir Rodr\u00edguez Monegal y Taco Larreta. Con otros cr\u00edticos uruguayospercibieron antes que en otros pa\u00edses la importancia de Ingmar Bergman en unfestival de Punta del Este, y actuaron en consecuencia, alentando su carrera.Pas\u00f3 luego a Buenos Aires, donde trabaj\u00f3 en revistas como Ad\u00e1n, Panorama y los diarios P\u00e1gina 12 y La Raz\u00f3n. Tambi\u00e9n conoci\u00f3 all\u00ed a susegunda mujer, Eva Salvo. Con ella regresaron a Montevideo, donde fund\u00f3 en 1989el suplemento &quot;Cultural&quot; del diario El Pa\u00eds. Public\u00f3 m\u00e1s de veinte libros, muchos de ellosrecopilaciones de sus cr\u00edticas en publicaciones peri\u00f3dicas, famosas por susentido del humor, acidez y precisi\u00f3n en los datos, fechas y nombres. Entreestos t\u00edtulos se destacaron Censura y otras presiones sobre el cine (conreedici\u00f3n aumentada y corregida), Cine sonoro americano y los Oscars decine, Listas negras en el cine. Sac\u00f3 dos tomos de una Enciclopedia dedatos in\u00fatiles.  Con el catal\u00e1n Joaqu\u00edn Romaguera compil\u00f3 untomo de Textos y manifiestos del cine y otro de Fuentes y documentosdel cine. En Historia del cine americano escribi\u00f3 el tomocorrespondiente al cine mudo: Desde la creaci\u00f3n al primer sonido(1893-1930). Fue un fumador empedernido hasta los 80 a\u00f1os,gustaba de imitar a Groucho Marx, y su generosidad y buena disposici\u00f3n para serconsultado fueron muy apreciadas por varias generaciones de periodistas que lotomaron como maestro, puesto del que disfrutaba plenamente.Elvio E. Gandolfo",
+        "imagen": "imagenes/autores/homero4.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 28,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.136Z",
+        "updated_at": "2018-01-22T20:39:22.140Z",
+        "user": 1,
+        "nombre": " Tomasso",
+        "apellido": "Campanella",
+        "texto": "Siempre en la cornisa de la herej\u00eda, Campanella (1568-1639) sufri\u00f3 a lo largo de su vida m\u00faltiples procesos inquisitoriales \u2013el primero de los cu\u00e1les por sospecha de relaciones con el demonio, debido a que resultaba inconcebible la cantidad de conocimientos que ten\u00eda siendo casi un ni\u00f1o. Finalmente fue condenado a prisi\u00f3n perpetua por rebeli\u00f3n y herej\u00eda en 1599; veintisiete a\u00f1os m\u00e1s tarde, en 1626, se hizo pasar por loco y mediante este ardid logr\u00f3 ser liberado de las mazmorras napolitanas. All\u00ed escribi\u00f3 muchas de sus obras, entre ellas esta Apolog\u00eda de Galileo (1622).",
+        "imagen": "imagenes/autores/sin_foto.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 29,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.146Z",
+        "updated_at": "2018-01-22T20:39:22.150Z",
+        "user": 1,
+        "nombre": " Simone",
+        "apellido": "Weil",
+        "texto": "Simone Weil naci\u00f3 en Par\u00eds en 1909 y muri\u00f3 en Londres en 1943. Fue disc\u00edpula de Alain y ense\u00f1\u00f3 filosof\u00eda en la Escuela normal superior (1931-1934). Sus estudios apasionados \u2013y cr\u00edticos\u2013 de la doctrina marxista le dieron notoriedad. Un diario conservador la apod\u00f3 \u201cla virgen roja\u201d, por su extra\u00f1a combinaci\u00f3n de preocupaciones por la situaci\u00f3n social y su b\u00fasqueda de la pureza y la verdad. Convencida de que para comprender las luchas obreras deb\u00eda compartir las condiciones de vida del proletariado, abandon\u00f3 la ense\u00f1anza y, de 1934 a 1935, fue obrera de las f\u00e1bricas Renault (\u201cAll\u00ed recib\u00ed la marca del esclavo\u201d), experiencia que describi\u00f3 en La condici\u00f3n obrera. Al estallar la guerra civil espa\u00f1ola, acudi\u00f3 al frente de Barcelona, donde luch\u00f3 del lado de los republicanos. Poco despu\u00e9s atraves\u00f3 una crisis espiritual, y se acerc\u00f3 a la fe cat\u00f3lica. En 1942 se incorpor\u00f3 a las fuerzas de la Francia libre con base en Londres. Su obra, cada vez m\u00e1s prestigiada y le\u00edda por su lucidez y honestidad intelectual, ha concitado la atenci\u00f3n de escritores, fil\u00f3sofos, te\u00f3logos y soci\u00f3logos. Albert Camus y T.S. Eliot le profesaron una enorme admiraci\u00f3n.Principales obras, publicadas p\u00f3stumamente: Carta a un religioso, La condici\u00f3n obrera, La fuente griega, Opresi\u00f3n y libertad, Escritos de Londres, Escritos hist\u00f3ricos y pol\u00edticos, Sobre la ciencia, Reflexiones sobre las causas de la libertad y la opresi\u00f3n social.",
+        "imagen": "imagenes/autores/simone.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 30,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.167Z",
+        "updated_at": "2018-01-22T20:39:22.172Z",
+        "user": 1,
+        "nombre": " Jacques",
+        "apellido": "Le Brun",
+        "texto": "Jacques Le Brun es director de estudios de la \u00c9cole practique des hautes \u00e9tudes (secci\u00f3n de ciencias religiosas) y miembro de la \u00c9cole de psichanalyse Sigmund Freud. Es el editor de las Obras de F\u00e9nelon en la Biblioteca de la Pl\u00e9iade. Ha publicado, entre otros t\u00edtulos, La Spiritualit\u00e9 de Bossuet, Par\u00eds, Klincksieck, 1972, y Les Juifs pr\u00e9sent\u00e9s aux chr\u00e9tiens, Par\u00eds, Les Belles Lettres, 1998. Particip\u00f3 en las obras colectivas Nouvelle historie de l\u00b4Eglise, Par\u00eds, Seuil, 1966 y 1986 Ts. 3 y 4, e Histoire de l\u00b4enfance en Occidente, Par\u00eds, Seuil, 1998.",
+        "imagen": "imagenes/autores/sin_foto.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 31,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.179Z",
+        "updated_at": "2018-01-22T20:39:22.183Z",
+        "user": 1,
+        "nombre": " Giuliano",
+        "apellido": "Campioni",
+        "texto": "Egresado de la Scuola Normale Superiore de Pisa, Giuliano Campioni (1945) ha desarrollado su labor de investigador en torno al estudio de las fuentes y el contexto hist\u00f3rico de la empresa filos\u00f3fica y cultural de Nietzsche. Fue disc\u00edpulo de Mazzino Montinari y continu\u00f3 la tarea de la Edici\u00f3n Cr\u00edtica de las obras del fil\u00f3sofo emprendida por \u00e9ste y Giorgio Colli. Desde 1995 dirige el Centro \u201cColli-Montinari\u201d de estudios sobre Nietzsche y la cultura europea de la Universidad de Leche. Entre sus trabajos m\u00e1s importantes sobre el fil\u00f3sofo alem\u00e1n se cuentan Il genio tiranno (Mil\u00e1n, 1983), Leggere Nietzsche (en coautor\u00eda con Sandro Barbera, y Sulla strada di Nietzsche (Pisa, 1993), as\u00ed como numerosos art\u00edculos publicados en los Nietzsche-Studien y en diversas revistas europeas. Actualmente es Profesor de Historia de la Filosof\u00eda en la Universidad de Pisa.",
+        "imagen": "imagenes/autores/Campioni.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 32,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.191Z",
+        "updated_at": "2018-01-22T20:39:22.195Z",
+        "user": 1,
+        "nombre": " Ines",
+        "apellido": "Rieder",
+        "texto": "Ines Rieder naci&oacute; en Viena en 1954. Es traductora, periodista independiente y escritora. Ha publicado textos en Brasil, Estados Unidos, Inglaterra, Alemania y Austria. Entre sus libros m&aacute;s difundidos se cuentan Cuestiones de vida y muerte. Las mujeres hablan sobre Sida (1989). Cosm&oacute;polis; historias urbanas de mujeres (1990) y Feminismo en Europa del Este (1991).",
+        "imagen": "imagenes/autores/sin_foto.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 33,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.203Z",
+        "updated_at": "2018-01-22T20:39:22.208Z",
+        "user": 1,
+        "nombre": " Jean",
+        "apellido": "Allouch",
+        "texto": "Practica el psicoan&aacute;lisis. Fue miembro de la &Eacute;cole freudienne de Paris, hasta su disoluci&oacute;n. Dirigi&oacute; durante cuatro a&ntilde;os la revista Littoral, y desde 1985 hasta 1989 la &Eacute;cole lacanienne de psychanalyse, a la cual pertenece. Todos los a&ntilde;os dicta seminarios en Par&iacute;s y en diferentes ciudades del mundo.Obra publicada: En estos tiempos (1992), Letra por letra. Traducir, transcribir, transliterar (1993), Freud, y despu&eacute;s Lacan (1994), El doble crimen de las hermanas Papin (1995), La etificaci&oacute;n del psicoan&aacute;lisis. Calamidad (1997), El psicoan&aacute;lisis, una erotolog&iacute;a de pasaje (1998), &ndash;Hola... &iquest;Lacan? &ndash;Claro que no (1998), El sexo de la verdad. Erotolog&iacute;a anal&iacute;tica II (1999), Faltar a la cita. &ldquo;Kant con Sade&rdquo; de J. Lacan. Erotolog&iacute;a anal&iacute;tica III (2003),&nbsp;La sombra de tu perro. Discurso psicoanal&iacute;tico.&nbsp;Discurso lesbiano&nbsp;(El cuenco de plata /Ediciones Literales, 2004), Er&oacute;tica del duelo en el tiempo de la muerte seca (El cuenco de plata /Ediciones Literales, 2006), El psicoan&aacute;lisis, &iquest;es un ejercicio espiritual? (El cuenco de plata / Ediciones Literales, 2007), Marguerite, la Aim&eacute;e de Lacan (El cuenco de plata / Ediciones Literales, 2008), El sexo del amo. El erotismo desde Lacan (El cuenco de plata /Ediciones Literales, 2009), Contra la eternidad.&nbsp;Ogawa, Mallarm&eacute;, Lacan&nbsp;(El cuenco de plata /Ediciones Literales, 2009), El amor Lacan (El cuenco de plata /Ediciones Literales, 2011).",
+        "imagen": "imagenes/autores/allouch.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 34,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.215Z",
+        "updated_at": "2018-01-22T20:39:22.219Z",
+        "user": 1,
+        "nombre": " Torcuato",
+        "apellido": "Accetto",
+        "texto": "Poco se sabe de la vida de Torquato Accetto.Croce sostiene que naci\u00f3 en N\u00e1poles, en 1598; Nigro, con mayor precisi\u00f3ndocumental, afirma que naci\u00f3 en Trani, en 1588. Se conocen dos obras de suautor\u00eda: las Rime (1621) y Della dissimulazione honesta (1641).Por las referencias en su obra y la proximidad con la \u201cAcademia de losOciosos\u201d, sus preferencias se dirig\u00edan tanto a la poes\u00eda como a la filosof\u00edapero, por necesidad, su actividad se restringi\u00f3 casi completamente al trabajode secretario, al servicio de la familia Caraza, en la peque\u00f1a provinciade Andrea. Aunque alejado de los centros urbanos donde se reun\u00edan losintelectuales, mantuvo una amistad con \u00c1ngelo Grillo, uno de los poetas m\u00e1simportantes de su tiempo, y con Giambattista Manso, fundador de la Academiadegli Oziosi, por la que hab\u00eda pasado Quevedo.",
+        "imagen": "imagenes/autores/sin_foto.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 35,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.233Z",
+        "updated_at": "2018-01-22T20:39:22.239Z",
+        "user": 1,
+        "nombre": "An\u00f3mino clandestino del siglo XVIII",
+        "apellido": "An\u00f3mino",
+        "texto": "La historia de la difusi\u00f3n de este libroreviste una singular complejidad por su car\u00e1cter a la vez secreto y profuso. Setrata del documento m\u00e1s importante de la cultura clandestina que forj\u00f3 lailustraci\u00f3n radical de los siglos XVII y XVIII, escrito en un lenguaje extremoy concebido como un compendio de ideas antieclesi\u00e1sticas y antiabsolutistas. Setrata de una composici\u00f3n an\u00f3nima, no reticente y ya sustraida por completo a lacultura barroca de la disimulaci\u00f3n, collage de transcripciones y glosas desabidur\u00eda libertina en la que es inscripto del \u201cesp\u00edritu\u201d del spinozismo con elprop\u00f3sito de obtener una machine de guerre antirreligiosa de autorcolectivo (Hobbes, Spinoza, Maquiavelo, Vanini, Tertuliano, Charron, Naud\u00e9,Campanella, Pomponazzi...) cuyos nombres, referencias yfuentes son sin embargocuidadosamente omitidos.",
+        "imagen": "imagenes/autores/sin_foto.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 36,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.246Z",
+        "updated_at": "2018-01-22T20:39:22.251Z",
+        "user": 1,
+        "nombre": " Remo",
+        "apellido": "Bodei",
+        "texto": "Remo Bodei (1938) es profesor de filosof\u00eda en la Universidad de California, Los Angeles. Ha ense\u00f1ado en la Scuola Normale Superiore y en la Universidad de Pisa, como as\u00ed tambi\u00e9n en diversos centros de investigaci\u00f3n y universidades de Europa y los Estados Unidos.\u00a0Sus intereses, centrados inicialmente en el idealismo cl\u00e1sico alem\u00e1n, la est\u00e9tica y la teor\u00eda de lo tr\u00e1gico, se orientaron luego hacia el pensamiento ut\u00f3pico del siglo XX. En los \u00faltimos veinte a\u00f1os se ha dedicado al an\u00e1lisis de la individualidad en sus nexos con la memoria y el olvido, y a la comprensi\u00f3n de \u00e1reas de la experiencia humana dotadas, en su opini\u00f3n, de una l\u00f3gica peculiar propia: las pasiones, el delirio, el fen\u00f3meno del d\u00e9j\u00e0 vu etc. Entre sus libros traducidos al espa\u00f1ol se pueden recordar:\u00a0H\u00f6lderlin: la filosof\u00eda y lo tr\u00e1gico (Visor, 1990); Ordo amoris. Conflictos terrenos y felicidad celeste (Cuatro, 1998); Geometr\u00eda de las pasiones, (Muchnik, 1995; FCE, 1995); La forma de lo bello (Visor, 1998); Libro de la memoria y de la esperanza (Losada, 1998); La filosof\u00eda del siglo XX (Alianza, 2001); Las l\u00f3gicas del delirio. Raz\u00f3n, afectos, locura (C\u00e1tedra, 2002); El doctor Freud y los nervios del alma. Filosof\u00eda y sociedad a un siglo del nacimiento del psicoan\u00e1lisis (Pre-Textos, 2004); La chispa y el fuego. Invitaci\u00f3n a la filosof\u00eda (Nueva Visi\u00f3n, 2006). Destinos personales cierra la trilog\u00eda iniciada con Scomposizioni. Forme dell'individuo moderno y continuada con Geometr\u00eda de las pasiones. ",
+        "imagen": "imagenes/autores/remobodei.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 37,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.259Z",
+        "updated_at": "2018-01-22T20:39:22.263Z",
+        "user": 1,
+        "nombre": "CICCO",
+        "apellido": "Cicco",
+        "texto": "Cicco est\u00e1 considerado uno de los periodistas de habla hispana m\u00e1s descarados del \u00faltimo siglo. Se recibi\u00f3 con diploma de honor en la Universidad de Belgrano y es creador de un g\u00e9nero propio: el periodismo border, donde fue actor XXX, enterrador de cementerios y asistente de boxeo. Sus art\u00edculos son reproducidos en medios de los Estados Unidos, Colombia, Brasil, Panam\u00e1, Chile, M\u00e9xico, Uruguay y la Argentina. En reconocimiento a su labor, obtuvo el Premio Pl\u00e9yade, el Est\u00edmulo de la Escuela de Periodismo Tea, el Premio Emerald (la productora de cine condicionado que lo emple\u00f3 como actor) y se gan\u00f3 infinidad de enemigos. En la actualidad, es Editor de Revista Newsweek (Argentina) y ense\u00f1a su extra\u00f1a f\u00f3rmula period\u00edstica en diversas universidades del pa\u00eds. ",
+        "imagen": "imagenes/autores/cicco.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 38,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.270Z",
+        "updated_at": "2018-01-22T20:39:22.274Z",
+        "user": 1,
+        "nombre": " Mario",
+        "apellido": "Gonz\u00e1lez Su\u00e1rez",
+        "texto": "Mario Gonz\u00e1lez Su\u00e1rez naci\u00f3 en la ciudad de M\u00e9xico en 1964. Ha sido becario del Centro Mexicano de Escritores en los per\u00edodos 1989-1990 y 1991-1992; del Fondo Nacional para la Cultura y las Artes en 1992-1993; y del programa de Residencia Art\u00edsticas M\u00e9xico-Canad\u00e1 2000. Ha publicado La materia del insomnio (Aldus, 1997); De la infancia (Tusquets, 1998); El libro de las pasiones (Tusquets, 1999), por el cual obtuvo el Premio Nacional de Literatura &quot;Gilberto Owen&quot; 1997 y el Premio Nacional de Literatura &quot;Jos\u00e9 Fuentes Mares&quot; 2001; Paisajes del limbo. Una antolog\u00eda de la narrativa mexicana del siglo XX (Tusquets, 2001); Marcianos leninistas (Tusquets, 2002); Nostalgia de la luz (Tusquets, 2003). Miembro del Sistema Nacional de Creadores de Arte desde 2001. Ganador del Premio Internacional de relato Emec\u00e9/Zoetrope 2002. ",
+        "imagen": "imagenes/autores/mario.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 39,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.281Z",
+        "updated_at": "2018-01-22T20:39:22.285Z",
+        "user": 1,
+        "nombre": " Yves",
+        "apellido": "Bonnefoy",
+        "texto": "Yves Bonnefoy naci&oacute; en Tours el 24 de junio de 1923, traslad&aacute;ndose a Par&iacute;s para realizar estudios de matem&aacute;ticas primero y de filosof&iacute;a despu&eacute;s, estudios que conjug&oacute; con su dedicaci&oacute;n a la poes&iacute;a. De los a&ntilde;os 1945-1946 datan sus primeras publicaciones, la revista R&eacute;volution la Nuit y el Trait&eacute; du pianiste, de orientaci&oacute;n surrealista. En 1947, rompe sus contactos con Breton y su grupo e inicia un camino independiente que lo llevar&aacute; a ser uno de los grandes renovadores de la poes&iacute;a francesa contempor&aacute;nea. De 1953 data su primer libro po&eacute;tico, Du mouvement et de l'immobilit&eacute; de Douve, al que seguir&aacute;n, entre otros, Hier r&eacute;gnant d&eacute;sert (1958), Pierre &eacute;crite (1965), Ce qui fut sans lumi&egrave;re (1987), D&eacute;but et fin de la neige (1991), La Pluie d'&eacute;t&eacute; (1999), Les Planches courbes (2001). Son c&eacute;lebres sus traducciones de Shakespeare que acompa&ntilde;a con agudos estudios preliminares. Es autor de numerosos ensayos, entre ellos: L'Improbable; Arthur Rimbaud; L'Arri&egrave;re-Pays; La V&eacute;rite de parole; Entretiens sur la po&eacute;sie; Sous l'horizon du langage. A partir de 1960, es invitado a dictar ciclos de conferencias en numerosas universidades francesas y extranjeras. En 1981, es designado en la c&aacute;tedra de Estudios comparados de la funci&oacute;n po&eacute;tica en el Coll&egrave;ge de France, donde da clases hasta 1993. Falleci&oacute; en 2016 en Par&iacute;s.",
+        "imagen": "imagenes/autores/bonnefoy.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 40,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.293Z",
+        "updated_at": "2018-01-22T20:39:22.297Z",
+        "user": 1,
+        "nombre": " J. M. G.",
+        "apellido": "Le Cl\u00e9zio",
+        "texto": "Jean-Marie Gustave Le Cl&eacute;zio naci&oacute; en Niza en 1940. De ancestros bretones exiliados en la isla Mauricio, luego colonia inglesa, el hijo de \\brit&aacute;nicos\\\" se cri&oacute; con su madre y abuelos en un pueblito junto al Vesubio, en la Francia ocupada. A los 8 a&ntilde;os emprendi&oacute; su primer viaje &ndash;y su primera novela, escrita durante la traves&iacute;a&ndash; para conocer a su padre, que ejerc&iacute;a la medicina en Nigeria. Desde su debut con El atestado (Le proc&egrave;s-verbal, 1963, premio Renaudot), la extranjer&iacute;a, la locura, la aventura, la exploraci&oacute;n de s&iacute; mismo y el viaje inici&aacute;tico y cosmog&oacute;nico son marcas de su obra. \\\"Para m&iacute;, un isle&ntilde;o que arrastra los pies por los puertos, que no pertenece a ninguna ciudad sino a todas las ciudades, la lengua francesa es mi &uacute;nico pa&iacute;s, el &uacute;nico lugar que habito.\\\" Ha publicado m&aacute;s de 30 libros: entre ellos La fiebre, Le d&eacute;luge, Terra Amata, L'extasse mar&eacute;rielle , Le livre des fuites (en los a&ntilde;os 60), La guerra, Viajes del otro lado, L'inconnu sur la terre, Mondo y otras historias (en los 70), D&eacute;sert, El buscador de oro, Viaje a Rodr&iacute;guez (en los 80), Diego y Frida, La cuarentena, El pez dorado, Hasard suivi de Angoli Mala (en los 90), C&oelig;ur brul&eacute; et autres romances, R&eacute;volutions , L'Africain y Urania (Gallimard, 2006).PREMIO NOBEL DE LITERATURA 2008\"",
+        "imagen": "imagenes/autores/le-clezio.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 41,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.304Z",
+        "updated_at": "2018-01-22T20:39:22.309Z",
+        "user": 1,
+        "nombre": " Julio Cesare ",
+        "apellido": "Vanini",
+        "texto": "El s\u00e1bado 9 de febrero de 1619, despu\u00e9s de seis meses de prisi\u00f3n, el Parlamento de Toulouse conden\u00f3 a muerte por ateo y blasfemador del nombre de Dios a Julio Cesare Vanini. La pena iba a cumplirse el mismo d\u00eda y sus detalles no se han perdido gracias a Nicolas de Saint Pierre, redactor de los Annales de la ville de Toulouse en 1619. El reo fue llevado desde la c\u00e1rcel a la iglesia Saint-\u00c9tienne para que, en camisa, de rodillas y con una antorcha en la mano, pidiera perd\u00f3n a Dios, al rey y a la justicia; desde all\u00ed, siguiendo el camino acostumbrado, se lo condujo a la plaza de Salin donde, despu\u00e9s de cort\u00e1rsele la lengua con una tenaza, fue ahorcado y su cuerpo reducido a cenizas arrojadas al viento. Simulando motivos piadosos, casi infringiendo las leyes del disimulo, la obra de Vanini postula la defensa de un naturalismo radical en el que se identifica a Dios con la Naturaleza, se afirma la eternidad del mundo, se ironiza sobre la inmortalidad del alma y se niega de distintas maneras el libre albedr\u00edo y la providencia. Los teatrales di\u00e1logos de Los maravillosos secretos de la naturaleza presentan un hedonismo sensual y despreocupado que inclu\u00eda algo m\u00e1s que las conversaciones con los amigos o el disfrute sereno de la vida contemplativa. Fue considerado por sus enemigos como un &quot;ateo perfecto&quot;, que no s\u00f3lo se apart\u00f3 de Dios sino de la misma condici\u00f3n humana. ",
+        "imagen": "imagenes/autores/sin_foto.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 42,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.316Z",
+        "updated_at": "2018-01-22T20:39:22.320Z",
+        "user": 1,
+        "nombre": " Jos\u00e9",
+        "apellido": "Assandri",
+        "texto": "Jos\u00e9 Assandri vive en Montevideo. Es miembro de la \u00c9cole lacanienne de psychanalyse. Ha publicado Cl\u00ednica infantil. territorios y abordajes (1996) y art\u00edculos en revistas de Uruguay, Argentina, M\u00e9xico y Francia.\u00a0",
+        "imagen": "imagenes/autores/jose_assandri.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 43,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.327Z",
+        "updated_at": "2018-01-22T20:39:22.331Z",
+        "user": 1,
+        "nombre": " Philippe",
+        "apellido": "Sollers",
+        "texto": "Philippe Sollers, uno de los intelectuales m\u00e1s prestigiosos de la cultura europea contempor\u00e1nea, naci\u00f3 en Burdeos en 1936. Sus primeras obras, el relato El desaf\u00edo y la novela Una curiosa soledad (1959), fueron elogiadas por Francois Mauriac y Louis Aragon por su elegancia formal. En 1960 fund\u00f3 la revista Tel Quel, publicaci\u00f3n clave de la vanguardia literaria francesa. En 1961 recibi\u00f3 el premio M\u00e9dicis por la novela El parque. Tras una serie de ensayos y textos te\u00f3ricos, la publicaci\u00f3n de Mujeres, en 1983, constituy\u00f3 una sorprendente vuelta a la novela. A partir de ese a\u00f1o comenz\u00f3 a dirigir la colecci\u00f3n y la revista L\u00b4Infini , y pas\u00f3 a integrar el comit\u00e9 de lectura de la editorial Gallimard. En 1992 recibi\u00f3 el premio Paul Morand de la Academia Francesa. Principales obras. Ensayo: Teor\u00eda de la excepci\u00f3n (1985), Improvisaciones (1991), La guerra del gusto (1994), El para\u00edso de C\u00e9zanne (1995), La palabra de Rimbaud (1999), Elogio del infinito (2001). Novelas:\u00a0 Retrato del jugador (1985), El coraz\u00f3n absoluto (1987), El secreto (1993), Pasi\u00f3n fija (2000) y La estrella de los amantes (2002).",
+        "imagen": "imagenes/autores/sollers.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 44,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.338Z",
+        "updated_at": "2018-01-22T20:39:22.341Z",
+        "user": 1,
+        "nombre": " Guy",
+        "apellido": "Le Gaufey",
+        "texto": "Guy Le Gaufey, psicoanalista, fu\u00e9 miembro de la \u00c9cole freudienne de Paris hasta su disoluci\u00f3n. Integr\u00f3 el comit\u00e9 de redacci\u00f3n de la revista francesa Littoral desde su inicio en 1981 hasta 1989. Dirigi\u00f3 por dos per\u00edodos ( 1989 al 1993 y 2000 al 2004), la \u00c9cole lacanienne de psychanalyse a la que pertenece, y actualmente forma parte del comit\u00e9 editorial de EPEL. Ha dictado y contin\u00faa dictando seminarios en Paris y en otras ciudades de Argentina, M\u00e9xico, Costa Rica, Paraguay, Uruguay, etc. Ha publicado, adem\u00e1s de numerosos art\u00edculos en diferentes revistas, los siguientes libros: L'inncompl\u00e8tude du symb\u00f3lique (1991), La evicci\u00f3n del origen (1994), El lazo especular (1997), Anatom\u00eda de la tercera persona\u00a0(1998). ",
+        "imagen": "imagenes/autores/Guy_Le_Gaufey.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 45,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.348Z",
+        "updated_at": "2018-01-22T20:39:22.353Z",
+        "user": 1,
+        "nombre": " Patricio",
+        "apellido": "Pron",
+        "texto": "Patricio Pron naci\u00f3 en Rosario (Argentina) en diciembre de 1975. Trabaja como asistente en la Universidad de G\u00f6ttingen (Alemania), donde reside. Ha publicado las novelas Formas de morir (1998) y Nadadores muertos (2001) y los vol\u00famenes de cuento Hombres infames (1999) y El vuelo magn\u00edfico de la noche (2002). Su extenso relato &quot;Es el realismo&quot; ha sido distinguido con el Premio Juan Rulfo de Relato 2004, que otorgan el Instituto Cervantes, Uni\u00f3n Latina y Radio Francia Internacional. Es antologador junto con Burkhard Pohl de la m\u00e1s reciente antolog\u00eda de la literatura argentina en el \u00e1mbito germanohablante, Zerfurchtes Land. Neue Erz\u00e4hlungen aus Argentinien (2002) y actualmente prepara su tesis de doctorado acerca de los procedimientos transgresivos en la narrativa de Copi.En 2008 su obra El comienzo de la primavera gan\u00f3 en Espa\u00f1a el Premio Ja\u00e9n de novela.",
+        "imagen": "imagenes/autores/pron.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 46,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.361Z",
+        "updated_at": "2018-01-22T20:39:22.365Z",
+        "user": 1,
+        "nombre": " Enrique",
+        "apellido": "Butti",
+        "texto": "  Enrique Butti naci&oacute; en Santa Fe en 1949. Dedicado   durante un tiempo al cine en Argentina y en Italia, desde hace a&ntilde;os es   periodista y encargado del suplemento Cultura del diario El Litoral de   Santa Fe. Public&oacute; numerosas obras (muchas de ellas premiadas) que incluyen   cuentos, teatro y obras de literatura juvenil adem&aacute;s de novelas. Su novela Ind&iacute; (publicada en Losada en 1998 , luego de una primera edici&oacute;n en   italiano) recrea los &quot;a&ntilde;os argentinos&quot; del escritor italiano Carlo Emilio Gadda,   en una inusual escritura barroca y disgresiva emparentada con la de su   homenajeado.   &nbsp;  Principales   obras: &nbsp; Aiaiay (Novela. Premio Fondo Nacional   de las Artes. Sudamericana, 1986)&shy;, No me digan que no (Novela. Premio   Colihue. Buenos Aires, 1985)&shy;&shy;, Solfeo (Cuentos. Editorial Eco, M&eacute;xico,   1990. Primer Premio Alcides Greca 1999)&shy;, La fruta de la perdici&oacute;n (Teatro. Premio Fondo Nacional de las Artes, 1993)&shy;, Ind&iacute; (Premio Mario   de Andrade. Primera edici&oacute;n en italiano: Pasticciaccio argentino, Il   Saggiattore, 1996)&shy;, La daga latente (Relatos. Primer premio de cuento,   Fondo Nacional de las Artes, 2005). &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \"",
+        "imagen": "imagenes/autores/butti.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 47,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.371Z",
+        "updated_at": "2018-01-22T20:39:22.375Z",
+        "user": 1,
+        "nombre": " Nicole",
+        "apellido": "Loraux",
+        "texto": "Nicole Loraux (Par\u00eds, 1943 - Par\u00eds, 2003) fue directora de estudios en la \u00c9cole des hautes \u00e9tudes en sciences sociales (EHESS), donde dirigi\u00f3 en los \u00faltimos veinticinco a\u00f1os una serie de trabajos que renovaron notablemente la concepci\u00f3n de la Grecia antigua. Su \u00e1rea de investigaci\u00f3n abarc\u00f3 la pol\u00edtica, el v\u00ednculo entre los g\u00e9neros y la sutil relaci\u00f3n entre lo colectivo y las libertades individuales. Algunos de sus libros son: La invenci\u00f3n de Atenas (1981), Les Enfants d'\u00c1th\u00e8na (1981), Maneras tr\u00e1gicas de matar a una mujer (1985), Las experiencias de Tiresias (1990), Madres en duelo (1990) y La gr\u00e8ce au f\u00e9minin (2001). Esta es la primera edici\u00f3n en castellano de Nacido de la tierra, originalmente publicado por \u00c9ditions du Seuil en 1996.",
+        "imagen": "imagenes/autores/loraux.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 48,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.382Z",
+        "updated_at": "2018-01-22T20:39:22.386Z",
+        "user": 1,
+        "nombre": " Gabriela",
+        "apellido": "Mistral",
+        "texto": "Nacida Lucila de Mar\u00eda del Perpetuo Socorro Godoy Alcayaga, hija de un docente y una modista, Gabriela Mistral (Vicu\u00f1a, 1889 - Nueva York 1957).fue maestra y directora de escuela en diversos puntos de Chile, desde el extremo norte al sur. Ejerci\u00f3 la ense\u00f1anza con la misma devoci\u00f3n con que se entreg\u00f3 a la literatura. En 1914 edit\u00f3 su primer libro de poes\u00eda, &quot;Sonetos de la Muerte&quot;, y adopt\u00f3 el seud\u00f3nimo Gabriela Mistral en homenaje al italiano Gabriele d'Annunzio y al franc\u00e9s Fr\u00e9deric Mistral. En 1922, dej\u00f3 su pa\u00eds, invitada por el gobierno de M\u00e9xico para colaborar en los planes de reforma educativa, y residi\u00f3 casi siempre en el exterior, con el cargo de c\u00f3nsul desde 1932. Conocida por sus conferencias y clases en Centroam\u00e9rica, Estados Unidos y Europa, en 1939 se mencion\u00f3 su candidatura al Premio Nobel, que recibi\u00f3 en 1945. El Premio destac\u00f3 tanto su fe en la literatura como en la docencia. Entre sus principales libros de poes\u00eda destacan Desolaci\u00f3n (1922), Tala (1938) y Lagar (1954). Sus poemas exaltan el sentimiento, el paisaje americano y la infancia.",
+        "imagen": "imagenes/autores/sin_foto.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 49,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.395Z",
+        "updated_at": "2018-01-22T20:39:22.399Z",
+        "user": 1,
+        "nombre": " Paul",
+        "apellido": "Gadenne",
+        "texto": "Paul Gadenne naci\u00f3 en Armeti\u00e8res (Francia) en 1907 y muri\u00f3 en Cambo-les Bains, Pirineos Atl\u00e1nticos, en 1956, a la edad de 49 a\u00f1os. Tal vez el dato m\u00e1s relevante de su breve vida sea que pas\u00f3 los \u00faltimos veinte a\u00f1os entrando y saliendo de sanatorios para tuberculosos, donde escribi\u00f3 algunas de sus obras m\u00e1s ambiciosas. Con anterioridad, hab\u00eda escrito una tesis sobre Proust en la Sorbona, y hab\u00eda dado clases hasta que la tisis lo forz\u00f3 a jubilarse muy joven. A partir de los a\u00f1os 80 se produjo en Francia un renovado inter\u00e9s por su obra, y luego de la reedici\u00f3n de sus novelas y relatos, actualmente se est\u00e1n editando sus cuadernos de notas, art\u00edculos y ensayos. Escenas en el castillo se public\u00f3 p\u00f3stumamente, en 1986. Novelas: Silo\u00e9 (1941), Le vent noir (1947), La rue profonde (1948), L\u00b4avenue (1949), la plage de Scheveningen (1952), L\u00b4invitation chez les Stiri (1955) y Les Hauts-Quartiers (1956).",
+        "imagen": "imagenes/autores/gadenne.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 50,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.405Z",
+        "updated_at": "2018-01-22T20:39:22.409Z",
+        "user": 1,
+        "nombre": " Annie",
+        "apellido": "Le Brun",
+        "texto": "Annie Le Brun conoci\u00f3 a Andr\u00e9 Breton en 1963 y particip\u00f3 de las \u00faltimas actividades del movimiento surrealista. Conservar\u00e1 y defender\u00e1 ese esp\u00edritu en su poes\u00eda y en su obra cr\u00edtica. En L\u00e2chez tout (1977) se manifest\u00f3 contra el movimiento neo-feminista, que a su criterio desvaloriza el amor y la sexualidad. En Los castillos de la subversi\u00f3n (1982) analiz\u00f3 en profundidad el universo de la novela g\u00f3tica. Escribi\u00f3 tambi\u00e9n ensayos sobre Raymond Roussel y Aim\u00e9 C\u00e9saire, y numerosos pr\u00f3logos a obras er\u00f3ticas. En Du trop de r\u00e9alit\u00e9 (2001) plantea la necesidad de la utop\u00eda y el sue\u00f1o, en busca de una lucidez sin concesiones. Su \u00faltimo libro On n'encha\u00eene pas les volcans, publicado por Gallimard en 2006, re\u00fane cuatro conferencias sobre Sade y Bataille.Annie Le Brun puso en marcha junto a Jean-Jacques Pauvert la edici\u00f3n de las Obras Completas de Sade, de la cual Sade. De pronto un bloque de abismo\u2026 es la Introducci\u00f3n.",
+        "imagen": "imagenes/autores/le_brun_anniex.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 51,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.415Z",
+        "updated_at": "2018-01-22T20:39:22.419Z",
+        "user": 1,
+        "nombre": " Rita",
+        "apellido": "Gombrowicz",
+        "texto": "Rita Gombrowicz naci\u00f3 en Montreal. Estudi\u00f3 Letras en la universidad de Montreal y la Sorbona. Conoci\u00f3 a Gombrowicz en Royaumont, en mayo de 1964, y se instalaron en Vence en octubre del mismo a\u00f1o. Despu\u00e9s de la muerte de Gombrowicz, en 1969, vivi\u00f3 en Mil\u00e1n durante siete a\u00f1os. Actualmente reside en Par\u00eds.",
+        "imagen": "imagenes/autores/rita.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 52,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.425Z",
+        "updated_at": "2018-01-22T20:39:22.429Z",
+        "user": 1,
+        "nombre": " Georges",
+        "apellido": "Bataille",
+        "texto": "Georges Bataille (Francia 1897-1962). Junto con Jean-Paul Sartre y Albert Camus, es uno de los intelectuales franceses m\u00e1s destacados del siglo XX. En sus inicios fue miembro del movimiento surrealista, distanci\u00e1ndose posteriormente de Breton por razones pol\u00edticas. Luego fundar\u00eda junto a Roger Callois y Michel Leiris, el colegio de Sociolog\u00eda Sagrada. En 1946, fund\u00f3 la revista Critique, desde cuyas p\u00e1ginas se opuso a la figura del escritor comprometido que defend\u00eda a Sartre en Tiempos Modernos. Bataille ten\u00eda un inusual talento interdisciplinario, y utiliz\u00f3 diversas formas de discurso. Su novela La historia del ojo, por ejemplo, publicada bajo el pseud\u00f3nimo de Lord Auch, fue inicialmente le\u00edda como pura pornograf\u00eda, pero la interpretaci\u00f3n de la obra madur\u00f3 con el tiempo hasta revelar su considerable profundidad emocional y filos\u00f3fica. Las im\u00e1genes de la novela est\u00e1n construidas sobre una serie de met\u00e1foras que a su vez hacen referencia a conceptos filos\u00f3ficos desarrolladas en su trabajo: el ojo, el huevo, el sol, la tierra, el test\u00edculo.Sus Obras completas, en cuya presentaci\u00f3n de 1970 Michel Foucault exalt\u00f3 a Bataille como uno de los escritores m\u00e1s importantes del siglo, constan de doce vol\u00famenes donde conviven las novelas, la filosof\u00eda, la cr\u00edtica, el diario \u00edntimo, los proyectos, las pol\u00e9micas y la poes\u00eda.  Principales obras: Ensayo: La experiencia interior, Sobre Nietzche, El erotismo, La literatura y el mal, Las lagrimas de Eros, La parte maldita; Narrativa: Historia del ojo, Mi madre, Madame Edwarda, El peque\u00f1o. El cuenco de plata public\u00f3 en 2008 su correspondencia con Michel Leiris acompa\u00f1ada de textos in\u00e9ditos: Intercambios y Correspondencias 1924-1982.",
+        "imagen": "imagenes/autores/bataille.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 53,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.444Z",
+        "updated_at": "2018-01-22T20:39:22.448Z",
+        "user": 1,
+        "nombre": " Michel",
+        "apellido": "Leiris",
+        "texto": "Michel Leiris (Francia1901-1990). Escritor franc\u00e9s. Fue un destacado representante del surrealismo, cuyas ideas dejaron su huella, sobre todo, en Alto mal (1943). Con posterioridad, ahondando en la recreaci\u00f3n del lenguaje a trav\u00e9s del an\u00e1lisis psicoanal\u00edtico, desarroll\u00f3 una de las carreras literarias m\u00e1s f\u00e9rtiles e interesantes de la Francia contempor\u00e1nea (La regla del juego, 1948-1966; A voz en cuello 1988).",
+        "imagen": "imagenes/autores/leiris.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 54,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.455Z",
+        "updated_at": "2018-01-22T20:39:22.460Z",
+        "user": 1,
+        "nombre": " Sabine",
+        "apellido": "Richeb\u00e4cher",
+        "texto": "Sabine Richeb\u00e4cher, nacida en Dusseldorf, es psicoanalista y durante muchos a\u00f1os estuvo a cargo de la secci\u00f3n de &quot;Novedades de psicolog\u00eda&quot; del Neue Z\u00fcrcher Zeitung. Actualmente reside en Zurich. Ha dictado seminarios sobre outsiders del psicoan\u00e1lisis como Wilhelm Reich, Otto Fenichel y Otto Gross. En 1999 le encargaron una conferencia sobre Sabina Spielrein. El tema revel\u00f3 ser tan importante en relaci\u00f3n a los or\u00edgenes del psicoan\u00e1lisis, que suscito diversas investigaciones, como el art\u00edculo sobre Spielrein en el NZZ y en un extenso trabajo en el volumen Das Unbewusste in Z\u00fcrich [El inconsciente en Zurich], traducido al ingl\u00e9s. Como en este trabajo quedaron abiertas muchas cuestiones sobre la vida de Spielrein, Sabine Richeb\u00e4cher profundiz\u00f3 en el tema; y el resultado es esta biograf\u00eda.\u00a0\u00a0",
+        "imagen": "imagenes/autores/richebacher.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 55,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.467Z",
+        "updated_at": "2018-01-22T20:39:22.471Z",
+        "user": 1,
+        "nombre": " Diana",
+        "apellido": "VOIGT",
+        "texto": "Diana Voigt naci\u00f3 en Viena en 1960, donde fund\u00f3 su propia agencia literaria en 1996. Es editora y coautora de diversas publicaciones.",
+        "imagen": "imagenes/autores/sin_foto.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 56,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.478Z",
+        "updated_at": "2018-01-22T20:39:22.482Z",
+        "user": 1,
+        "nombre": " David",
+        "apellido": "Hume",
+        "texto": "En la presente selecci\u00f3n de ensayos, David Hume (1711-1776) retoma uno de los temas que dio inicio a sus inquisiciones filos\u00f3ficas; se trata, una vez m\u00e1s, de desentra\u00f1ar cu\u00e1l es la naturaleza de nuestra especie. Con letra m\u00e1s amena y menos pretenciosa que aquella que compuso los libros del Tratado de la naturaleza humana (1739-40), el autor  incluye en estos escritos varios temas autocensurados en su obra capital. Dichos trabajos gozaron de buena aceptaci\u00f3n por parte del p\u00fablico en general luego de su primera publicaci\u00f3n an\u00f3nima en 1741-42, y fueron reeditados en 1748 con la firma del fil\u00f3sofo.",
+        "imagen": "imagenes/autores/hume_cuadro.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 57,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.489Z",
+        "updated_at": "2018-01-22T20:39:22.493Z",
+        "user": 1,
+        "nombre": " \u00c9lisabeth",
+        "apellido": "Geblesco",
+        "texto": "\u00c9lisabeth Geblesco, naci\u00f3 en Bucarest, y lleg\u00f3 a M\u00f3naco con su madre y su hermana menor, luego del divorcio de sus padres durante la Segunda Guerra mundial. Se convirti\u00f3 en psicoanalista, primero miembro de la Escuela Freudiana de Par\u00eds y luego, tras la disoluci\u00f3n de la EFP, en miembro de la Escuela de la Causa Freudiana. Especialista en el novelista rumano de lengua francesa Pana\u00eft Istrati, y a su vez escritora, ense\u00f1\u00f3 en la Facultad de letras y ciencias humanas de Niza, donde a partir de 1977 dirigi\u00f3 un Seminario de investigaciones psicoanal\u00edticas. Tuvo all\u00ed una vasta audiencia e invit\u00f3 a sus seminarios a diversas personalidades, como el psicoanalista Ernest Freud, nieto de Sigmund, o el Profesor Harold Blum, por entonces a cargo del Fondo Freud en la Biblioteca del Congreso en Washington. Sus lectores y sus oyentes fueron analistas, psic\u00f3logos o psiquiatras, aunque tambi\u00e9n f\u00edsicos, matem\u00e1ticos, pensadores o artistas pl\u00e1sticos. A partir de 1979, su trabajo te\u00f3rico y cl\u00ednico se afirm\u00f3 a trav\u00e9s de numerosos art\u00edculos en revistas francesas y extranjeras, as\u00ed como en sus tres libros publicados: Pana\u00eft Istrati y la met\u00e1fora paterna, las Actas del Seminario de psicoan\u00e1lisis y su Seminario de Tur\u00edn.",
+        "imagen": "imagenes/autores/sin_foto.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 58,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.500Z",
+        "updated_at": "2018-01-22T20:39:22.505Z",
+        "user": 1,
+        "nombre": " Victoria",
+        "apellido": "Ocampo",
+        "texto": "",
+        "imagen": "imagenes/autores/sin_foto.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 59,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.512Z",
+        "updated_at": "2018-01-22T20:39:22.517Z",
+        "user": 1,
+        "nombre": " Armon\u00eda",
+        "apellido": "Somers",
+        "texto": "Armon\u00eda Somers, seud\u00f3nimo literario de Armon\u00eda Etchepare, naci\u00f3 en Pando en 1914 y muri\u00f3 en Montevideo en 1994. Hija de un comerciante anarquista y anticlerical y de una madre cat\u00f3lica, en la biblioteca de su padre encontr\u00f3 autores decisivos para su formaci\u00f3n: Kropotkin, Leopardi, Darwin, Dante Alighieri, Spencer, entre otros. Termin\u00f3 sus estudios en 1933 y comenz\u00f3 su carrera como maestra y pedagoga. A partir de 1960 fue invitada por la UNESCO y por distintos organismos educacionales a Par\u00eds, Londres, Ginebra y Madrid. Su primera novela, La mujer desnuda, se public\u00f3 en 1950, a la que le siguieron el volumen de cuentos El derrumbamiento (1953), De miedo en miedo (1967) y Un retrato para Dickens (1969). A fines de 1969 enferma gravemente de una rara dolencia, el quilot\u00f3rax, de lenta y dolorosa recuperaci\u00f3n. De esta experiencia nace, en un largo proceso de elaboraci\u00f3n creativa, entre 1972 a 1975, su novela monumental S\u00f3lo los elefantes encuentran mandr\u00e1gora (1986).En los a\u00f1os \u201970 comienza la recepci\u00f3n literaria internacional de su obra, que muchas veces se asocia con la de Lautr\u00e9amont, y es traducida al ingl\u00e9s, al franc\u00e9s y al alem\u00e1n. ",
+        "imagen": "imagenes/autores/somers.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 60,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.524Z",
+        "updated_at": "2018-01-22T20:39:22.528Z",
+        "user": 1,
+        "nombre": "GILLESPI",
+        "apellido": "GILLESPI",
+        "texto": "Trompetista, escritor, conductor de radio y TV. Como m\u00fasico ha participado de conciertos y grabaciones con los m\u00e1s reconocidos artistas de Argentina. Como l\u00edder ha grabado 5 discos solistas. Ha escrito art\u00edculos sobre m\u00fasica y diversos temas para Clar\u00edn, P\u00e1gina 12, La Raz\u00f3n, TXT y Satiric\u00f3n. En radio conduce su propio programa \\Falso Impostor\\\" y participa en \\\"La Venganza ser\u00e1 terrible\\\" junto a Alejandro Dolina.\"",
+        "imagen": "imagenes/autores/gullespi.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 61,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.535Z",
+        "updated_at": "2018-01-22T20:39:22.541Z",
+        "user": 1,
+        "nombre": " Felisberto",
+        "apellido": "HERN\u00c1NDEZ",
+        "texto": "Felisberto Hern\u00e1ndez (Montevideo 1902-1964). En 1925 public\u00f3 su primer libro, Fulano de Tal, al que le siguieron Libro sin Tapas (1929), La cara de Ana (1930), La envenenada (1931), Por los tiempos de Clemente Colling (1942), El caballo perdido (1943), Nadie encend\u00eda las l\u00e1mparas (1947), Las Hortensias (1949), La casa inundada (1960), El cocodrilo (1962), Tierras de la memoria (p\u00f3stuma, 1964).  ",
+        "imagen": "imagenes/autores/Felisberto.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 62,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.547Z",
+        "updated_at": "2018-01-22T20:39:22.553Z",
+        "user": 1,
+        "nombre": "COPI",
+        "apellido": "COPI",
+        "texto": " COPI, seud\u00f3nimo de Ra\u00fal Damonte Botana (Buenos  Aires, 1939 - Paris, 1987). Hijo de padres vinculados a la cultura y  pol\u00edtica criolla, la familia se exili\u00f3 en Uruguay y luego en Par\u00eds,  donde Copi se radic\u00f3 definitivamente en 1962. Junto a Fernando Arrabal,  Alejandro Jorodowsky y Roland Topor fund\u00f3 el grupo de acciones  teatrales P\u00e1nico. Paralelamente comenz\u00f3 a dibujar su historieta \u201cLa  mujer sentada\u201d, publicada regularmente en \u201cLe Nouvel Obvservateur\u201d, y  que se convirti\u00f3 en un personaje popular para los franceses: \u201copinadora  sin moral y poseedora de una ignorancia genial, que habla sobre sexo  con una violencia inusitada\u201d, seg\u00fan palabras del propio Copi. Toda su  obra (novelas, relatos, obras teatrales) hace gala de un humor  transgresor y una cr\u00edtica despiadada a la sociedad contempor\u00e1nea.  La ciudad de las ratas (La Cit\u00e9 des rats, 1979) es el cuarto libro de ficci\u00f3n publicado por Copi, despu\u00e9s de El uruguayo (L'Uruguayen, 1973), \u00a0El baile de las locas (Le Bal des folles, 1977) y los relatos de Una langosta para dos (Une Langouste pour deux, 1978); luego aparecer\u00edan: La vida es un tango (escrita originalmente en espa\u00f1ol, pero publicada primero en su versi\u00f3n francesa en 1979), La guerra de los putos (La Guerre des p\u00e9d\u00e9s, 1982), los cuentos de Virginia Woolf ataca de nuevo (Virginia Woolf a encore frapp\u00e9, 1982) y La Internacional Argentina (L'Internationale Argentine, 1988).\u00a0\"",
+        "imagen": "imagenes/autores/copi.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 63,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.561Z",
+        "updated_at": "2018-01-22T20:39:22.565Z",
+        "user": 1,
+        "nombre": "VOLTAIRE",
+        "apellido": "VOLTAIRE",
+        "texto": "   Voltaire, como todo gran escritor, es un imitador de voces: jud\u00edos,  ateos, jansenistas, paganos, turcos, romanos, maniqueos, desfilan por  su prosa afilada reproduciendo posibles argumentos, confrontaciones,  tonos, actitudes. En este punto encontramos tambi\u00e9n un motivo  importante de su pensamiento: la tolerancia religiosa no s\u00f3lo es  necesaria, sino que es algo crucial para fomentar el progreso y evitar  el fanatismo. El poder del fundamentalismo religioso \u2013sus ep\u00edtomes m\u00e1s  caracter\u00edsticos: la crueldad, la insensatez, la barbarie, la violencia,  el robo\u2013 es el principal adversario del proyecto ilustrado de Voltaire.  Argumenta que es mucho m\u00e1s viable una vida pac\u00edfica en una comunidad de  ateos que de fan\u00e1ticos religiosos: \u201cPuebla una ciudad de epic\u00fareos, de  sim\u00f3nides, de prot\u00e1goras y de spinozas, y puebla otra de jansenistas y  molinistas; probar\u00e1s de ese modo la verdad del pensamiento que acabo de  establecer\u201d.\"",
+        "imagen": "imagenes/autores/voltaire.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 64,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.573Z",
+        "updated_at": "2018-01-22T20:39:22.577Z",
+        "user": 1,
+        "nombre": " Paul",
+        "apellido": "Val\u00e9ry",
+        "texto": "Paul Valery naci&oacute; en Cette en 1871 y muri&oacute; en Par&iacute;s en 1945. Estudi&oacute; derecho en Pontpellier. En 1894 se instal&oacute; en Par&iacute;s. Su amistad con Pierre Lou&iuml;s le abri&oacute; las puertas del Par&iacute;s literario, donde conoci&oacute; a Andr&eacute; Gide y a St&eacute;phane Mallarm&eacute; (1891), a quien le unir&iacute;a una gran amistad.&nbsp; Su obra po&eacute;tica, que prolonga la tradici&oacute;n de Mallarm&eacute;, est&aacute; considerada como una de las m&aacute;s importantes de la poes&iacute;a francesa. Pero quiz&aacute;s su labor m&aacute;s perdurable de desarroll&oacute; en el campo del ensayo, donde su obra anticip&oacute; y sent&oacute; las bases de las corrientes fundamentales del pensamiento cr&iacute;tico del siglo XX en campo de la literatura, la est&eacute;tica y la po&eacute;tica.Principales obras: Cuadernos (1894-1945), Introducci&oacute;n al m&eacute;todo de Leonardo da Vinci (1895) La joven parca (1917), El cementerio marino (1920), Charmes (1922), Epaulinos o el arquitecto (1923), El alma y la danza (1924), Variedad I - V (1924-1944), Monsieur Teste (1926), Miradas al mundo actual (1931), La idea fija (1932), Tel quel (1943), Mi Fausto (1946).",
+        "imagen": "imagenes/autores/autor64.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 65,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.584Z",
+        "updated_at": "2018-01-22T20:39:22.587Z",
+        "user": 1,
+        "nombre": " Michel",
+        "apellido": "Foucault ",
+        "texto": "Michel Foucault (Poitiers, 15 de octubre de 1926 &ndash; Par&iacute;s, 25 de junio de 1984) fue unhistoriador de las ideas y fil&oacute;sofo franc&eacute;s. Fue profesor en varias universidades francesas y estadounidenses y catedr&aacute;tico de Historia de los sistemas de pensamiento en el Coll&egrave;ge de France (1970-1984). Su trabajo ha influido en importantes personalidades de las ciencias sociales y las humanidades.Foucault es conocido principalmente por sus estudios cr&iacute;ticos de las instituciones sociales, en especial la psiquiatr&iacute;a, medicina, las ciencias humanas, el sistema de prisiones, as&iacute; como por su trabajo sobre la historia de la sexualidad humana. Su trabajo sobre el poder y las relaciones entre poder, conocimiento y discurso ha sido ampliamente debatido. En los a&ntilde;os 1960, Foucault estuvo asociado al estructuralismo, un movimiento del que se distanci&oacute; m&aacute;s adelante. Foucault tambi&eacute;n rechaz&oacute; las etiquetas de postestructuralista y postmodernista, que le eran aplicadas habitualmente, prefiriendo clasificar su propio pensamiento como una cr&iacute;tica hist&oacute;rica de lamodernidad con ra&iacute;ces en Kant.",
+        "imagen": "imagenes/autores/foucault1.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 66,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.595Z",
+        "updated_at": "2018-01-22T20:39:22.600Z",
+        "user": 1,
+        "nombre": " Pierre",
+        "apellido": "Bayle",
+        "texto": "Pierre Bayle (1647-1706) Escritor y fil&oacute;sofo franc&eacute;s, esc&eacute;ptico, uno de los primeros representantes de la Ilustraci&oacute;n; fue profesor de la Academia de Sed&aacute;n y de la Universidad de Rotterdam. Despu&eacute;s de polemizar contra el catolicismo, renunci&oacute; a toda religi&oacute;n y propugn&oacute; la tolerancia. Bayle no era ateo, mas su indiferencia religiosa pose&iacute;a tal car&aacute;cter que permiti&oacute; decir a Voltaire, con fina observaci&oacute;n, que si bien no era ateo, hac&iacute;a ateos a los dem&aacute;s. Bayle sent&oacute; tambi&eacute;n las bases de la cr&iacute;tica de la doctrina cristiana como variedad de la mitolog&iacute;a pagana. Fundamentaba su argumentaci&oacute;n cr&iacute;tica en el escepticismo derivado de la duda cartesiana el cual, seg&uacute;n Marx, socav&oacute; la confianza en toda metaf&iacute;sica y en la teolog&iacute;a. Bayle formul&oacute; la idea de que los problemas &eacute;ticos no tienen que relacionarse con la religi&oacute;n, sino que han de ser examinados desde el punto de vista de la raz&oacute;n natural. Demostraba que es posible la existencia de una sociedad compuesta s&oacute;lo por ateos. Con sus obra (la m&aacute;s importante de todas ellas es el &laquo;Diccionario hist&oacute;rico y cr&iacute;tico&raquo;, 1695-1697), Bayle prepar&oacute; el terreno al materialismo franc&eacute;s del siglo XVIII.",
+        "imagen": "imagenes/autores/autor_66.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 67,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.609Z",
+        "updated_at": "2018-01-22T20:39:22.613Z",
+        "user": 1,
+        "nombre": " Clarice",
+        "apellido": "Lispector",
+        "texto": "Clarice Lispector (Tchetchelnik, Ucrania 1920 - R&iacute;o de Janeiro 1977) es una de las mayores novelistas del siglo XX, y fue comparada con Joyce y Virginia Wolf. Pas&oacute; su infancia en Recife y en 1937 se mud&oacute; a R&iacute;o de Janeiro. Estudi&oacute; Derecho en la Universidad de Brasil, al tiempo en que comenzaba a trabajar como periodista en la Agencia nacional y en el peri&oacute;dico A Noite. Se inici&oacute; muy joven en la literatura, con la publicaci&oacute;n de la novela Cerca del coraz&oacute;n salvaje (1943), que recibi&oacute; una calurosa acogida por parte de la cr&iacute;tica y obtuvo el premio Gra&ccedil;a Aranha. En 1943 se cas&oacute; con un diplom&aacute;tico y pas&oacute; quince a&ntilde;os de su vida viajando por Italia, Reino Unido, Suiza y Estados Unidos. Regres&oacute; a R&iacute;o en 1959, donde retom&oacute; la actividad period&iacute;stica y continu&oacute; con su excepcional producci&oacute;n literaria. Entre sus obras m&aacute;s importantes se cuentan las compilaciones de cuentos La legi&oacute;n extranjera (1964) y Lazos de familia (1972), y las novelas La pasi&oacute;n seg&uacute;n G. H. (1964), Agua viva (1977) y La hora de la estrella (1977). Sus novelas han sido traducidas a m&aacute;s de 15 idiomas.",
+        "imagen": "imagenes/autores/autor_67.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 68,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.620Z",
+        "updated_at": "2018-01-22T20:39:22.623Z",
+        "user": 1,
+        "nombre": " Cl\u00e9ment",
+        "apellido": "Rosset",
+        "texto": "Cl&eacute;ment Rosset (Carteret &ndash;Normand&iacute;a&ndash;, 1939). Fue alumno de la Ecole Normale Sup&eacute;rieure de Par&iacute;s, donde conoci&oacute; a Althusser y a Lacan. Tras una residencia de dos a&ntilde;os en Canad&aacute;, en 1967 se instala en Niza, en cuya Facultad de Letras y Ciencias Humanas ejerci&oacute; la docencia hasta 1998, fecha en la que deja la ense&ntilde;anza y retorna a Par&iacute;s. Sus principales influencias filos&oacute;ficas apuntan a los sofistas y a los epic&uacute;reos, as&iacute; como a Montaigne, Pascal, Spinoza, Hume y, sobre todo, Nietzsche. Entre sus obras m&aacute;s destacadas se cuentan La fuerza mayor, Lo real y su doble, El objeto singular, El principio de crueldad,&nbsp; L&oacute;gica de lo peor, El demonio de la tautolog&iacute;a, El r&eacute;gimen de las pasiones, Escritos sobre Schopenhauer, Ruta de noche. El cuenco de plata publicar&aacute; pr&oacute;ximamente La filosof&iacute;a tr&aacute;gica y El mundo y sus remedios.",
+        "imagen": "imagenes/autores/autor_68.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 69,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.630Z",
+        "updated_at": "2018-01-22T20:39:22.634Z",
+        "user": 1,
+        "nombre": " Jonathan",
+        "apellido": "Swift",
+        "texto": "Jonathan Swift (1667-1745) Doctor en Teolog&iacute;a y De&aacute;n de la catedral de Saint Patrick, fue uno de los m&aacute;ximos exponentes de la s&aacute;tira pol&iacute;tica de su tiempo. &Aacute;cido polemista y defensor de los intereses irlandeses frente a la opresi&oacute;n inglesa, fue adem&aacute;s un infatigable escritor. Err&oacute;neamente asociado a la literatura infantil por las versiones purgadas y moralizantes hechas de los Viajes de Gulliver, su obra cumbre, aqu&iacute; se presentan algunos de sus escritos m&aacute;s representativos, mordaces y de dif&iacute;cil acceso para el lector hispanohablante.&nbsp;",
+        "imagen": "imagenes/autores/autor_69.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 70,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.644Z",
+        "updated_at": "2018-01-22T20:39:22.648Z",
+        "user": 1,
+        "nombre": " Walter",
+        "apellido": "Benjamin",
+        "texto": "Walter Benjamin (Berl&iacute;n, 15 de julio de 1892 - Portbou, 27 de septiembre de 1940).Algunos t&iacute;tulos en espa&ntilde;ol: Ensayos escogidos, 1967; Sobre el programa de la filosof&iacute;a futura y otros ensayos, 1971; Iluminaciones, 3 vols., 1971-1975; Discursos interrumpidos, 1973; Reflexiones sobre ni&ntilde;os, juguetes, libros infantiles, j&oacute;venes y educaci&oacute;n, 1974; Haschisch, 1974; Infancia en Berl&iacute;n hacia 1900, 1982; Direcci&oacute;n &uacute;nica, 1987; Correspondencia 1933-1940 W. B./ G. Scholem, 1987; Diario de Mosc&uacute;, 1988; Berl&iacute;n dem&oacute;nico, 1988; El origen del drama barroco alem&aacute;n, 1991; La metaf&iacute;sica de la juventud, 1993; Escritos autobiogr&aacute;ficos, 1996; Dos ensayos sobre Goethe, 1996; Libro de los Pasajes, 2005.",
+        "imagen": "imagenes/autores/autor_70.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 71,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.655Z",
+        "updated_at": "2018-01-22T20:39:22.659Z",
+        "user": 1,
+        "nombre": " Witold",
+        "apellido": "Gombrowicz",
+        "texto": "Witold Gombrowicz (Maloszyce, Polonia, 1904 &ndash; Vence, Francia, 1969) es, junto con Joyce y Kafka, uno de los mayores escritores vanguardistas del siglo XX. Vivi&oacute; en Argentina entre los a&ntilde;os 1939 y 1963, donde produjo la mayor parte de su obra, iniciada en Polonia con Ferdydurke (1937), novela de culto que fue objeto de una c&eacute;lebre traducci&oacute;n grupal al espa&ntilde;ol. Durante el exilio argentino escribi&oacute; pr&aacute;cticamente el resto de su obra: El casamiento (teatro, 1948), Trans-Atl&aacute;ntico (novela, 1952), Pornograf&iacute;a (1960) y Cosmos, publicada luego de su regreso a Europa, en 1965. Tambi&eacute;n en Argentina escribi&oacute; la mayor parte de su monumental Diario (1953-1969), que es una obra literaria org&aacute;nica, considerada por muchos expertos como el mayor logro de un autor genial e inclasificable. En 2008, El cuenco de plata public&oacute; Gombrowicz en Argentina. 1939-1963, de Rita Gombrowicz, obra esencial para la comprensi&oacute;n del universo del autor.",
+        "imagen": "imagenes/autores/autor_71.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 72,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.665Z",
+        "updated_at": "2018-01-22T20:39:22.670Z",
+        "user": 1,
+        "nombre": " Franciscus",
+        "apellido": "Van den Enden",
+        "texto": "Franciscus Van den Enden naci&oacute; en Amberes en 1602. Estudi&oacute; filosof&iacute;a y filolog&iacute;a cl&aacute;sica y ejerci&oacute; la docencia en establecimientos educativos de B&eacute;lgica. En 1629 se acerca a la teolog&iacute;a en el Theologicum Jesuita de Lovaina, hasta que en 1633 es expulsado por motivos confusos.&nbsp; A partir de 1652 se dedica a la ense&ntilde;anza del lat&iacute;n, y durante este per&iacute;odo formar&aacute; bajo su tutela a Benedictus de Spinoza, quien se confiesa un claro deudor del pensamiento de Van den Enden, sobre todo en lo relativo a lo pol&iacute;tico y a sus consideraciones pante&iacute;stas. En 1665 se abre un per&iacute;odo signado por la turbulencia. Adem&aacute;s de dar a conocer las Proposiciones, escribe la c&eacute;lebre ep&iacute;stola a Johan De Witt, proponiendo la venta de un arma naval para uso del ej&eacute;rcito holand&eacute;s en la guerra contra Inglaterra. Su ingreso en el terreno de las disputas internacionales estaba decidido. El tono ateo de sus propuestas y las sospechas de sedici&oacute;n ayudar&aacute;n a que sea catalogado como influencia perniciosa para Amsterdam y parte rumbo a Par&iacute;s en 1671. Finalmente ser&aacute; apresado por las autoridades bajo el cargo de conspiraci&oacute;n contra Luis XIV, y ahorcado frente a la Bastilla el 27 de noviembre del mismo a&ntilde;o.",
+        "imagen": "imagenes/autores/tapa_999.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 73,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.676Z",
+        "updated_at": "2018-01-22T20:39:22.680Z",
+        "user": 1,
+        "nombre": " Leo",
+        "apellido": "Bersani",
+        "texto": "Leo Bersani es Profesor Em&eacute;rito en el Departamento de Literatura Francesa de la Universidad de Berkeley, California. Cuenta con una amplia y variada producci&oacute;n, que incluye, ente otros, los siguientes t&iacute;tulos: Marcel Proust: The Fictions of Life and of Art (1965); Balzac to Beckett (1970); Baudelaire y Freud (1979, Fondo de Cultura Econ&oacute;mica); The Death of St&eacute;phane Mallarm&eacute; (1981); Arts of Impoverishment: Beckett, Rothko and Resnais (con U. Dutoit, 1993); Homos (1995, Mananatial), Caravaggio (con U. Dutoit, 1999); Forming Couples: Godard's Contempt (con U. Dutoit, 2003); Forms of Being: Cinema, Aesthetics, Subjectivity (con U. Dutoit, 2004); Intimacies (con Adam Phillips, 2008); Is the Rectum a Grave? and Other Essays (2009).",
+        "imagen": "imagenes/autores/autor_73.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 74,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.686Z",
+        "updated_at": "2018-01-22T20:39:22.690Z",
+        "user": 1,
+        "nombre": " Jean",
+        "apellido": "Meslier",
+        "texto": "Jean Meslier naci&oacute;, seg&uacute;n la conjetura m&aacute;s probable, en el a&ntilde;o 1664, en Mazerny, una aldea de la Champa&ntilde;a francesa. Su padre fue tejedor. Un p&aacute;rroco de la comarca se hizo cargo de su educaci&oacute;n, y fue quien sugiri&oacute; a los padres la idea de consagrarlo a la carrera eclesi&aacute;stica, a lo que el muchacho no puso objeci&oacute;n. Meslier hizo sus estudios en el seminario de Ch&aacute;lons-sur-Marne, donde se aplic&oacute; con especial empe&ntilde;o a la filosof&iacute;a cartesiana. En 1692 se hizo cargo de la parroquia de Etr&eacute;pigny, en las Ardenas, donde tras haber ejercido durante a&ntilde;os su ministerio, muri&oacute; hacia 1729, seg&uacute;n algunas fuentes, y en 1733 seg&uacute;n otras. Al morir, fue encontrado entre sus pertenencias un manuscrito en tres copias de 366 p&aacute;ginas de su pu&ntilde;o y letra, bajo el t&iacute;tulo Mi Testamento, en el que proclamaba sus convicciones m&aacute;s profundas, exponiendo los graves errores de la religi&oacute;n y los males y abusos imperantes en la vida y en la sociedad de los hombres.",
+        "imagen": "imagenes/autores/autor_74.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 75,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.696Z",
+        "updated_at": "2018-01-22T20:39:22.700Z",
+        "user": 1,
+        "nombre": " Gayatri Ch.",
+        "apellido": "Spivak",
+        "texto": "Gayatri Chakravorty Spivak&nbsp;(Calcuta,&nbsp;24 de febrero&nbsp;de&nbsp;1942) es una pensadora&nbsp;india, experta en&nbsp;cr&iacute;tica literaria&nbsp;y en teor&iacute;a de la literatura, autora de un texto fundamental en la corriente&nbsp;postcolonialista &ldquo;&iquest;Puede hablar el subalterno?&rdquo;, as&iacute; como de una famosa traducci&oacute;n del libro &ldquo;De la Gramatolog&iacute;a&rdquo; del te&oacute;rico&nbsp;deconstructivista&nbsp;Jacques Derrida. Actualmente es profesora en la Universidad de Columbia y una asidua conferenciante en todo el mundo.",
+        "imagen": "imagenes/autores/NULL"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 76,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.707Z",
+        "updated_at": "2018-01-22T20:39:22.712Z",
+        "user": 1,
+        "nombre": " Alfred",
+        "apellido": "M\u00e9traux",
+        "texto": "(Lausana, 1902-Par&iacute;s, 1963) Antrop&oacute;logo franc&eacute;s. Se inici&oacute; con el trabajo de campo sobre&nbsp;La isla de Pascua(1951) y destac&oacute; en el &aacute;mbito de la antropolog&iacute;a religiosa (Religiones y magias indias de Am&eacute;rica del Sur, 1967).",
+        "imagen": "imagenes/autores/autor_76.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 77,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.721Z",
+        "updated_at": "2018-01-22T20:39:22.725Z",
+        "user": 1,
+        "nombre": " Patrick",
+        "apellido": "Modiano",
+        "texto": "Patrick Modiano, Boulogne-Billancourt, 1945. Es considerado uno de los grandes narradores franceses del presente. Su novela, Los bulevares perif&eacute;ricos (1971), obtuvo el Gran Premio de Novela de la Academia Francesa; y m&aacute;s tarde ganar&iacute;a el Premio Goncourt por La calle de las tiendas oscuras (1978). Escribi&oacute; el gui&oacute;n de Lacombe, Lucien (1974), pel&iacute;cula dirigida por Louis Malle que aborda la cuesti&oacute;n del colaboracionismo durante la ocupaci&oacute;n alemana en Francia, tema que reaparece con frecuencia en sus novelas. Su obra se caracteriza por una gran econom&iacute;a de recursos, y una narraci&oacute;n que oscila entre pasado y presente, movi&eacute;ndose entre la realidad casi documental y la ficci&oacute;n m&aacute;s elaborada.Otras obras: Ronda nocturna (1969), Villa triste (1975), Una juventud (1981), El rinc&oacute;n de los ni&ntilde;os (1989), Un cirque passe (1992). Dora Bruder (1999), Las desconocidas (2001), Joyita (2003), Un pedrigr&iacute; (2007), En el caf&eacute; de la juventud perdida (2008), El horizonte (2009).PREMIO NOBEL DE LITERATURA 2014",
+        "imagen": "imagenes/autores/autor_77.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 78,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.734Z",
+        "updated_at": "2018-01-22T20:39:22.738Z",
+        "user": 1,
+        "nombre": " Severo",
+        "apellido": "Sarduy",
+        "texto": "Severo Sarduy (Camag&uuml;ey, Cuba, 25 de febrero de 1937&nbsp;- Par&iacute;s, 8 de junio de 1993), fue un narrador, poeta, periodista, cr&iacute;tico de literatura y arte cubano. Su estilo est&aacute; emparentado con el de Lezama Lima y Cabrera Infante, aunque tambi&eacute;n tiene puntos de contacto con el grupo Tel Quel de Par&iacute;s.&nbsp;Estudi&oacute; el bachillerato en la Habana; en 1958. Con el triunfo de la revoluci&oacute;n colabor&oacute; en Diario libre y Lunes de revoluci&oacute;n, viaj&oacute; a Par&iacute;s en 1960 para realizar estudios de Historia del Arte y nunca regres&oacute; a su pa&iacute;s. Estuvo vinculado al c&iacute;rculo de pensadores y escritores que hicieron la revista Tel Quel y trabaj&oacute; como lector en Editions du Seuil, y como redactor en la Radiotelevisi&oacute;n francesa.\"",
+        "imagen": "imagenes/autores/autor_78.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 79,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.746Z",
+        "updated_at": "2018-01-22T20:39:22.751Z",
+        "user": 1,
+        "nombre": " Jos\u00e9",
+        "apellido": "Bianco",
+        "texto": "Jos&eacute; Bianco naci&oacute; y vivi&oacute; en Buenos Aires entre 1908 y 1986, a&ntilde;o de su muerte. Fue secretario de redacci&oacute;n de la revista Sur de 1938 a 1961, per&iacute;odo en que la publicaci&oacute;n fundada por Victoria Ocampo alcanz&oacute; trascendencia internacional. Adem&aacute;s fue un cr&iacute;tico literario de una erudici&oacute;n asombrosa, y un traductor que se convirti&oacute; en referente ineludible de esa a&ntilde;orada tradici&oacute;n argentina. Entre sus traducciones se cuentan las ya cl&aacute;sicas Otra vuelta de tuerca y La lecci&oacute;n del maestro, de Henry James (reeditadas ambas por El cuenco de plata); Rojo y negro, de Stendhal; Molloy y Malone muere, de Samuel Beckett; as&iacute; como obras de Ambrose Bierce, T. S. Eliot y&nbsp; Jean Genet. Su novela Las ratas se public&oacute; por primera vez en editorial Sur, en 1943, y las sucesivas reediciones dan prueba del renovado inter&eacute;s de los lectores. Las ratas fue adem&aacute;s llevada al cine en 1963, con direcci&oacute;n de Luis Saslavsky y la actuaci&oacute;n de Alfredo Alc&oacute;n. Sombras suele vestir se public&oacute; por primera vez en la revista Sur en 1941. Otras obras: La peque&ntilde;a Gyaros (cuentos, 1932); La p&eacute;rdida del reino (novela, 1972).",
+        "imagen": "imagenes/autores/autor_79.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 80,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.757Z",
+        "updated_at": "2018-01-22T20:39:22.761Z",
+        "user": 1,
+        "nombre": " Lydia y MAYER",
+        "apellido": "Marinelli / Mayer",
+        "texto": "Lydia Marinelli (1965-2008) estudi&oacute; historia, literatura y filosof&iacute;a en la Universidad de Viena. A partir de 1992 fue colaboradora cient&iacute;fica y luego curadora del Museo Sigmund Freud de Viena, y desde 2003 directora de la Fundaci&oacute;n Sigmund Freud. El tema de su tesis doctoral de 1999 fue a su vez la historia de las publicaciones en psicoan&aacute;lisis y, en particular, la historia de la Editorial Psicoanal&iacute;tica Internacional. Como historiadora del psicoan&aacute;lisis, fue colaboradora de la Biblioteca del Congreso en Washington (que aloja al archivo de Sigmund Freud) y becaria del Instituto Max Planck de Berl&iacute;n. Sus publicaciones (art&iacute;culos, libros y cat&aacute;logos) se centran en temas de historia y teor&iacute;a del psicoan&aacute;lisis, en particular la teor&iacute;a de la interpretaci&oacute;n de los sue&ntilde;os, y vida y obra de Sigmund Freud.&nbsp;Andreas Mayer, naci&oacute; en Viena en 1970. Es investigador del Instituto Max Planck de Berl&iacute;n. Fue profesor en la Universidad de Cambridge, en la Escuela de Altos Estudios de Par&iacute;s y en la Universidad de Chicago. Como historiador del pensamiento cient&iacute;fico, se ha ocupado de las relaciones entre arte y ciencia, y especialmente de los or&iacute;genes del pensamiento psicoanal&iacute;tico. Otros libros suyos son Mikroskopie der Psyche. Die Anf&auml;nge der Psychoanalyse im Hypnose-Labor (G&ouml;ttingen, Wallstein, 2002) y Kunstmaschinen. Spielr&auml;ume des Sehens zwischen Wissenschaft und &Auml;sthetik (co-editado con A. M&eacute;traux, Frankfurt/Main, Fischer, 2005).",
+        "imagen": "imagenes/autores/tapa_999.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 81,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.769Z",
+        "updated_at": "2018-01-22T20:39:22.773Z",
+        "user": 1,
+        "nombre": " Jan",
+        "apellido": "Muka&#345;ovsk\u00fd",
+        "texto": "Jan Muka&#345;ovsk&yacute; (11 de noviembre de 1891 - 8 de febrero de 1975) fue un cr&iacute;tico literario y te&oacute;rico checo. Fue profesor de la Universidad Carolina de Praga. Es reconocido por su asociaci&oacute;n con el estructuralismo temprano y con el c&iacute;rculo lingu&iacute;stico de Praga. Influidos por las ideas del formalismo ruso y por la noci&oacute;n de signo de Ferdinand Saussure, marc&oacute; una profunda senda en la teoria literaria estructuralista, comparable con la de Roman Jakobson.\"",
+        "imagen": "imagenes/autores/autor_81.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 82,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.781Z",
+        "updated_at": "2018-01-22T20:39:22.785Z",
+        "user": 1,
+        "nombre": " Herbert",
+        "apellido": "Marcuse",
+        "texto": "Herbert Marcuse, (Berl&iacute;n, 1898 - Starnberg, 1979) Fil&oacute;sofo y soci&oacute;logo alem&aacute;n. El pensamiento de Marcuse, fundamentado en elementos procedentes del marxismo y el freudismo, constituye una cr&iacute;tica de la sociedad industrial, cuyo car&aacute;cter represivo y alienante acaba por incorporar a la clase obrera conform&aacute;ndola y convirti&eacute;ndola a su vez en explotadora indirecta de las clases marginadas de los pa&iacute;ses pobres. Influy&oacute; en la formaci&oacute;n de la llamada \\nueva izquierda\\\" estadounidense y lo consagr&oacute; como el ide&oacute;logo de las revueltas estudiantiles de los a&ntilde;os sesenta.\"",
+        "imagen": "imagenes/autores/autor_82.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 83,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.793Z",
+        "updated_at": "2018-01-22T20:39:22.797Z",
+        "user": 1,
+        "nombre": " Virginia",
+        "apellido": "Woolf",
+        "texto": "Virginia Woolf (Londres,1882 - Sussex, 1941). Novelista, ensayista y editora, fue una de las escritoras m&aacute;s relevantes del siglo XX. Su ensayo Un cuarto propio (1929) expone las dificultades de las mujeres para consagrarse a la escritura en un mundo dominado por los hombres, y se transform&oacute; en un baluarte del feminismo. Milit&oacute; en el grupo de Bloomsbury, que se caracteriz&oacute; por un desprecio a la religi&oacute;n y a la moral victoriana, y propugn&oacute; especialmente la libertad de criterio y el individualismo esencial. Fue integrado, entre otros, por&nbsp; Bertrand Russell, Ludwig Wittgenstein, Roger Fry, J. M. Keynes, Arthur Waley, Lytton Strachey, E. M. Forster, Katherine Mansfield, Dora Carrington, Vanessa Bell y Duncan Grant. Principales obras: Novela: Fin de viaje (1915), Noche y d&iacute;a, 1919), El cuarto de Jacob (1922), La se&ntilde;ora Dalloway (1925), Al faro (1927), Orlando (1928), Las olas (1931), Flush (1933), Los a&ntilde;os (1937), Entre actos (1941); Biograf&iacute;a: Roger Fry&nbsp; (1940); Ensayo: The Common Reader (1925- 1932), Tres guineas (1938), La muerte de la polilla y otros escritos (1942); Escritura autobiogr&aacute;fica: The Diary of Virginia Woolf (cinco vol&uacute;menes) (1915 -1941).",
+        "imagen": "imagenes/autores/autor_83.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 84,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.806Z",
+        "updated_at": "2018-01-22T20:39:22.810Z",
+        "user": 1,
+        "nombre": " H. A.",
+        "apellido": "Murena",
+        "texto": "H. A. Murena (Buenos Aires, 1923-1975). Ensayista, narrador, poeta y traductor, fue colaborador habitual de la revista Sur, y dirigi&oacute; la Colecci&oacute;n de Estudios Alemanes,&nbsp; donde dio a conocer la obra de pensadores como J&uuml;rgen Habermas, Theodor Adorno, Herbert Marcuse y Max Horkheimer, entre otros. Fue el primer traductor al espa&ntilde;ol de la obra de Walter Benjamin. Principales obras: Poes&iacute;a: La vida nueva (1951), El c&iacute;rculo de los para&iacute;sos (1958), El esc&aacute;ndalo y el fuego (1959), Rel&aacute;mpago de la duraci&oacute;n (1962), El demonio de la armon&iacute;a (1964) y El &aacute;guila que desaparece (1975); Novelas: La fatalidad de los cuerpos (1955), Las leyes de la noche (1958), Los herederos de la promesa (1965), Epital&aacute;mica (1969), Polipuerc&oacute;n (1970), Ca&iacute;na muere (1972) y Folisof&iacute;a (p&oacute;stuma, 1976); Ensayos: Homo at&oacute;micus (1962), Ensayos sobre subversi&oacute;n (1962), El pecado original de Am&eacute;rica (1965), La met&aacute;fora y lo sagrado (1973).",
+        "imagen": "imagenes/autores/autor_84.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 85,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.817Z",
+        "updated_at": "2018-01-22T20:39:22.821Z",
+        "user": 1,
+        "nombre": " Marie",
+        "apellido": "Darrieussecq",
+        "texto": "Marie Darrieussecq (Bayona, Pirineos Atl&aacute;nticos, 1969). Estudi&oacute; en la &Eacute;cole Normale Sup&eacute;rieure y se licenci&oacute; en Letras. Su primera novela, Truismes (1996), traducida al espa&ntilde;ol como Marranadas (Anagrama) y Chanchadas (Alfaguara), tuvo un &eacute;xito inmediato. En Francia se vendieron m&aacute;s de 300.000 ejemplares y fue traducida a m&aacute;s de 30 idiomas. El director Jean-Luc Godard adquiri&oacute; los derechos para llevarla al cine. Otras obras: L'autofiction, un genre pas s&eacute;rieux (1996, ensayo sobre Georges Perec y Michel Leiris); Naissance des fant&ocirc;mes (El nacimiento de los fantasmas,1999); Le Mal de mer (Respirando bajo el agua, 2001); Le B&eacute;b&eacute; (El beb&eacute;, 2004), Tom est mort (Tom ha muerto, 2008); Tristes Pontiques (traducciones de Ovidio, 2008); Cl&egrave;ves (2011).\"",
+        "imagen": "imagenes/autores/autor_85.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 86,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.827Z",
+        "updated_at": "2018-01-22T20:39:22.831Z",
+        "user": 1,
+        "nombre": " Jos\u00e9",
+        "apellido": "ATTAL",
+        "texto": "Jos&eacute; Attal ejerce el psicoan&aacute;lisis en Par&iacute;s. Fue miembro de la &Eacute;cole Freudienne de Par&iacute;s, y miembro de la &Eacute;cole Lacanienne de Psychanalyse desde su fundaci&oacute;n en 1985. Es autor de numerosos art&iacute;culos, escritos especialmente para la revista Littoral y para la revista L'uneb&eacute;vue, de la que es uno de sus cofundadores.&nbsp;",
+        "imagen": "imagenes/autores/sin_foto.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 87,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.837Z",
+        "updated_at": "2018-01-22T20:39:22.841Z",
+        "user": 1,
+        "nombre": " Kuki",
+        "apellido": "SHUZO",
+        "texto": "Kuki Sh&ucirc;z&ocirc; (1888-1941), fue un destacado te&oacute;rico y fil&oacute;sofo japon&eacute;s. Se gradu&oacute; en filosof&iacute;a en la Universidad de Tokio, donde recibi&oacute; ense&ntilde;anza del neo-kantiano Raphael von Kr&ouml;ber, quien lo inici&oacute; en la tradici&oacute;n europea y en los cl&aacute;sicos griegos. En 1921 viaj&oacute; a Europa, donde permaneci&oacute; ocho a&ntilde;os. Estudi&oacute; epistemolog&iacute;a y est&eacute;tica con Heinrich Rickert y Eugen Herrigel. Luego se traslad&oacute; a Par&iacute;s para seguir los cursos de Bergson en la Sorbona. En 1926 se mud&oacute; a Friburgo y estudi&oacute; fenomenolog&iacute;a con Husserl y Oskar Becker. Asist&iacute;o a las clases de Heidegger, de quien se consider&oacute; amigo y posteriormente disc&iacute;pulo. Durante una nueva estad&iacute;a en Par&iacute;s conoci&oacute; a Andr&eacute; Gide, Alexandre Koyr&eacute; y Jean-Paul Sartre, a quien pondr&iacute;a en contacto con las ideas de Heidegger. Complet&oacute; su larga etapa europea con un nuevo per&iacute;odo en Friburgo a la sombra de su maestro.",
+        "imagen": "imagenes/autores/autor_87.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 88,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.849Z",
+        "updated_at": "2018-01-22T20:39:22.853Z",
+        "user": 1,
+        "nombre": "ERASMO",
+        "apellido": "Erasmo",
+        "texto": "Desiderio Erasmo naci&oacute; en Rotterdam hacia 1467; muri&oacute; en Basilea en 1536. Comenz&oacute; su educaci&oacute;n con los Hermanos de la Vida Com&uacute;n en Deventer y entr&oacute; a la Orden de los Can&oacute;nigos Agustinos en 1487. Residi&oacute; en distintos lugares de Europa: Par&iacute;s en 1495, Oxford en 1499, Lovaina entre 1502 y 1504, Italia entre 1506 y 1509, Inglaterra nuevamente entre 1509 y 1514, Lovaina entre 1517 y 1521, Basilea y Friburgo entre 1529 y 1536. Su erudici&oacute;n y agudeza se hicieron c&eacute;lebres, siendo la figura m&aacute;s destacada de la Res publica literaria durante el siglo XVI. Escribi&oacute; obras did&aacute;cticas, como el Manual del soldado cristiano (publicado en 1503), y sat&iacute;ricas, como el Elogio de la locura (1511). Abog&oacute; por la reforma pac&iacute;fica de la Iglesia y defendi&oacute; una philosophia Christi en que la erudici&oacute;n sirviera de apoyo a la piedad. En tal sentido, edit&oacute; el Nuevo Testamento en griego con traducci&oacute;n latina, al igual que obras de autores paganos como Plutarco o S&eacute;neca. La pol&eacute;mica con Lutero &ndash;cuyo principal documento es Conversaci&oacute;n o discusi&oacute;n sobre el libre albedr&iacute;o&ndash; le ocup&oacute; m&aacute;s tiempo del que habr&iacute;a querido y abri&oacute; interrogantes acerca de su concepci&oacute;n de la fe; ese &ldquo;enigma Erasmo&rdquo; todav&iacute;a suscita controversias en los &aacute;mbitos filos&oacute;ficos y teol&oacute;gicos.",
+        "imagen": "imagenes/autores/autor_88.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 89,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.859Z",
+        "updated_at": "2018-01-22T20:39:22.863Z",
+        "user": 1,
+        "nombre": "TIN Louis-Georges",
+        "apellido": "Tin",
+        "texto": "Louis-Georges Tin&nbsp;estudi&oacute; en la Escuela Normal Superior. Es profesor titular de literatura en la universidad de Orl&eacute;ans y especialista en historia de la sexualidad. Entre sus obras publicadas figuran la&nbsp;Anthologie de la po&eacute;sie francaise du XVI si&egrave;cle&nbsp;(Gallimard, 2005) y el&nbsp;Dictionnaire de l&acute;homophobie(PUF, 2003). Es el fundador de la Jornada mundial de lucha contra la homofobia y co-fundador del Consejo representativo de las agrupaciones negras (Cran). Su actividad ha sido reconocida en distintas partes del mundo a trav&eacute;s de varios premios que obtuvo por su&nbsp; defensa de los derechos humanos.",
+        "imagen": "imagenes/autores/NULL"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 90,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.873Z",
+        "updated_at": "2018-01-22T20:39:22.877Z",
+        "user": 1,
+        "nombre": " B\u00e9la",
+        "apellido": "Bal\u00e1zs",
+        "texto": "B&eacute;la Bal&aacute;zs (Szeged, 1884 - Budapest, 1949). Te&oacute;rico, director y guionista de cine, dramaturgo, novelista, poeta y cr&iacute;tico, se gradu&oacute; en Filolog&iacute;a h&uacute;ngara y alemana y en Filosof&iacute;a en Budapest. Particip&oacute; en la revoluci&oacute;n h&uacute;ngara de 1919, cuyo fracaso lo oblig&oacute; a emigrar, primero a Viena y Alemania y posteriormente a la Uni&oacute;n Sovi&eacute;tica. En Viena se convirti&oacute; en un prol&iacute;fico cr&iacute;tico cinematogr&aacute;fico. Su primer libro sobre cine,&nbsp;Der Sichtbare Mensch&nbsp;(El hombre visible, 1924), signific&oacute; un verdadero acontecimiento y contribuy&oacute; a fundar la teor&iacute;a del &ldquo;cine como lenguaje&rdquo;.&nbsp;Entre sus obras se destacan los libretos para&nbsp;El castillo de Barbazul&nbsp;y&nbsp;El pr&iacute;ncipe de madera, de B&eacute;la Bart&oacute;k, as&iacute; como novelas, libros de poes&iacute;a, ensayos y guiones, entre los que se cuentan la adaptaci&oacute;n de&nbsp;La &oacute;pera de tres centavos&nbsp;de Brecht, dirigida por G. W. Pabst en 1931, el de&nbsp;La luz azul, de Leni Riefensthal (1932), y el de&nbsp;En alg&uacute;n lugar de Europa&nbsp;de G&eacute;sa Radv&aacute;nyis (1947), que se convirti&oacute; en un hito del cine h&uacute;ngaro.Otros libros de teor&iacute;a del cine:&nbsp;El esp&iacute;ritu del cine&nbsp;(1930),&nbsp;El arte del cine(1945),&nbsp;El cine. Evoluci&oacute;n y esencia de un arte nuevo&nbsp;(1949). Ensayos:Est&eacute;tica de la muerte&nbsp;(1908),&nbsp;Di&aacute;logo sobre un di&aacute;logo&nbsp;(1913). Novelas y relatos:&nbsp;El manto de los sue&ntilde;os&nbsp;(1922),&nbsp;El aut&eacute;ntico azul del cielo&nbsp;(1925),Gente imposible&nbsp;(1929),&nbsp;Mozart&nbsp;(1938),&nbsp;Heinrich empieza la lucha&nbsp;(1939),&nbsp;La juventud de un so&ntilde;ador&nbsp;(autobiograf&iacute;a), 1946). Poemas:&nbsp;Sobre el barco de Trist&aacute;n&nbsp;(1916),&nbsp;La urna negra&nbsp;(1919),&nbsp;Mi camino&nbsp;(1945). Teatro:&nbsp;Juventud mortal&nbsp;(1920),&nbsp;Hombres en las barricadas&nbsp;(1929),&nbsp;Amor celestial y terrenal(1940). Otros guiones:&nbsp;Kaiser Karl&nbsp;(Otto L&ouml;wenstein 1921),&nbsp;El desconocido de Rusia&nbsp;(Otto L&ouml;wenstein, 1922),&nbsp;Aventuras de un billete de diez marcos(Berthold Viertel, 1926),&nbsp;La se&ntilde;ora no quiere ni&ntilde;os&nbsp;(Alexander Korda, 1926). Pel&iacute;culas:&nbsp;Sphynx&nbsp;(1918),&nbsp;Azurexpress, (1938).",
+        "imagen": "imagenes/autores/autor_90.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 91,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.886Z",
+        "updated_at": "2018-01-22T20:39:22.890Z",
+        "user": 1,
+        "nombre": " Sara",
+        "apellido": "Gallardo",
+        "texto": "Sara Gallardo (Buenos Aires, 1931-1988). Hija del historiador Guillermo Gallardo y nieta del cient&iacute;fico &Aacute;ngel Gallardo, la amplia biblioteca familiar le permiti&oacute; acceder tempranamente a la literatura. Estuvo casada dos veces, con Luis Pico Estrada y posteriormente con H. A. Murena, con los cuales tuvo cuatro hijos. Desde muy joven se inicia en el nomadismo: se desplaza de Buenos Aires a Europa (1949), Am&eacute;rica Latina (1960), Medio Oriente (1965), Norte de Argentina (1968), Catalu&ntilde;a y Provenza (1971). Tras la muerte de Murena se a&iacute;sla con sus hijos en Cruz Grande y en El Para&iacute;so (la casa que le ofrece Manuel Mujica Lainez en La Cumbre, C&oacute;rdoba). All&iacute; encuentra, hojeando Eisejuaz, la frase que hab&iacute;a olvidado: &ldquo;Un animal solitario termina devor&aacute;ndose a s&iacute; mismo&rdquo;. Vuelve entonces a partir, y siempre con sus hijos, se instala en Barcelona (1977), Suiza (1980) y Roma (1982).&nbsp;Enero, su primera novela, apareci&oacute; en 1958, y le siguieronPantalones azules&nbsp;(1963) y&nbsp;Los galgos, los galgos&nbsp;(1968), con la que gan&oacute; el Premio Municipal. Fue tambi&eacute;n colaboradora de las revistas&nbsp;Primera Plana,Panorama&nbsp;y&nbsp;Confirmado, entre otras, y del diario&nbsp;La Naci&oacute;n.&nbsp;Eisejuaz&nbsp;se public&oacute; por primera vez en 1971. Otras obras:&nbsp;El pa&iacute;s del humo&nbsp;(cuentos, 1977),&nbsp;La rosa en el viento&nbsp;(novela, 1979) y&nbsp;P&aacute;ginas de Sara Gallardo&nbsp;(1987).",
+        "imagen": "imagenes/autores/autor_91.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 92,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.898Z",
+        "updated_at": "2018-01-22T20:39:22.903Z",
+        "user": 1,
+        "nombre": " Fran\u00e7ois",
+        "apellido": "Jullien",
+        "texto": "Fran&ccedil;ois Jullien (Francia, 1951). Estudi&oacute; en la l&rsquo;&Eacute;cole Normale Sup&eacute;rieure y posteriormente en las universidades de Shangai y Pek&iacute;n. Fue responsable de la Antena Francesa de Sinolog&iacute;a en Hong Kong y becario de la Maison franco-japonaise de Tokio. Doctor en Estudios de Extremo Oriente (1978) y en Letras (1983), fue presidente de la Asociaci&oacute;n Francesa de Estudios Chinos y del Coll&egrave;ge International de Philosophie. Actualmente es profesor en la Universidad Par&iacute;s 7 y director del Centre Marcel-Granet y del Instituto del Pensamiento Contempor&aacute;neo. Obras publicadas en espa&ntilde;ol:&nbsp; Fundar la moral (1997); Elogio de lo ins&iacute;pido: a partir de la est&eacute;tica y del pensamiento chino (1998); Tao te king: libro del curso y de la virtud (1998); Tratado de la eficacia (1999); La propensi&oacute;n de las cosas, para una historia de la eficacia en China (2000); Un sabio no tiene ideas o el otro de la filosof&iacute;a (2001); De la esencia o del desnudo (2004); La China da que pensar (2005); Del &ldquo;tiempo&rdquo;: elementos de una filosof&iacute;a de vivir (2005); Nutrir la vida (2007); La gran imagen no tiene forma (2008); La sombra en el cuadrado (2009); La urdimbre y la trama (2009); Las transformaciones silenciosas (2010); De lo universal, de lo uniforme, de lo com&uacute;n y del di&aacute;logo entre las culturas (2010).",
+        "imagen": "imagenes/autores/autor_92.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 93,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.911Z",
+        "updated_at": "2018-01-22T20:39:22.915Z",
+        "user": 1,
+        "nombre": " Bar\u00f3n de",
+        "apellido": "Holbach",
+        "texto": "Paul Henry Thiry, bar&oacute;n d&rsquo;Holbach naci&oacute; en 1723 en la ciudad alemana de Edesheim. Siendo un ni&ntilde;o, y habiendo muerto su madre, se traslad&oacute; a Par&iacute;s para ser adoptado por un t&iacute;o materno llamado Franz Adam Holbach. De &eacute;ste hered&oacute; tanto el t&iacute;tulo de bar&oacute;n como una considerable fortuna. Su ingreso en el mundo de las letras parisino se produjo alrededor de 1750, cuando conoci&oacute; al fil&oacute;sofo Denis Diderot, quien por entonces estaba preparando el segundo volumen de la&nbsp;Encyclop&eacute;die. D&rsquo;Holbach ayud&oacute; a Diderot con dinero para continuar esta empresa y con la composici&oacute;n de m&aacute;s de cuatrocientos art&iacute;culos sobre materias que van desde la qu&iacute;mica y la mineralog&iacute;a hasta la metaf&iacute;sica y la filosof&iacute;a pol&iacute;tica. Con el fil&oacute;sofo coincidieron adem&aacute;s en muchos aspectos, particularmente en la convicci&oacute;n de que la religi&oacute;n cristiana era un obst&aacute;culo para el progreso humano que deb&iacute;a ser removido. Muri&oacute; en Par&iacute;s seis meses antes de la Revoluci&oacute;n Francesa, el 21 de enero de 1789.",
+        "imagen": "imagenes/autores/autor_93.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 94,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.922Z",
+        "updated_at": "2018-01-22T20:39:22.926Z",
+        "user": 1,
+        "nombre": " Ernesto",
+        "apellido": "Gonz\u00e1lez Bermejo",
+        "texto": "Ernesto Gonz&aacute;lez Bermejo. Escritor y periodista cultural uruguayo, entre sus libros se cuentan Cosas de escritores (1971), Las manos en el fuego (1985), Nacidos para perder (1992). Entrevist&oacute; para diversos medios culturales, entre otros, a Juan Rulfo, Georgette Vallejo, Mario Vargas Llosa, Gabriel Garc&iacute;a M&aacute;rquez y Augusto Roa Bastos.",
+        "imagen": "imagenes/autores/sin_foto.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 95,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.934Z",
+        "updated_at": "2018-01-22T20:39:22.938Z",
+        "user": 1,
+        "nombre": " Rubem",
+        "apellido": "Fonseca",
+        "texto": "Rubem Fonseca (Minas Gerais, 1925) Escritor, periodista y guionista de cine, estudi&oacute; Derecho Penal y se desempe&ntilde;&oacute; como comisario en el Distrito de San Crist&oacute;bal, R&iacute;o de Janeiro. Muchos de los hechos vividos en aquella &eacute;poca fueron plasmados en sus obras. Es autor de los libros de cuentos Los prisioneros (1963); El collar de perro (1965); Luc&iacute;a Mc Cartney (1967); Feliz a&ntilde;o nuevo (1976); El cobrador (1979); Peque&ntilde;as criaturas (2002); Axilas y otras historias indecorosas (2011); y de las novelas El caso Morel (1973), que convocar&iacute;a los elogios de la cr&iacute;tica y ser&iacute;a confiscada por la polic&iacute;a; El gran arte (1983), que le dar&iacute;a pleno reconocimiento mundial luego de ser llevada al cine en 1991; Bufo &amp; Spallanzani (1986); Vastas emociones y pensamientos imperfectos (1988), donde rinde homenaje al cuentista ruso Isaac Babel; Agosto (1990); El enfermo Moli&egrave;re (2000); y El seminarista (2010) entre otras. En 2003 le fueron concedidos los premios Juan Rulfo y Cam&otilde;es.",
+        "imagen": "imagenes/autores/autor_95.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 96,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.944Z",
+        "updated_at": "2018-01-22T20:39:22.949Z",
+        "user": 1,
+        "nombre": " Fran\u00e7ois",
+        "apellido": "Dachet",
+        "texto": "Francois Dachet es psicoanalista. Ha traducido y prologado las obras de Max Graf, El taller interior de un m&uacute;sico, el caso Nietzsche-Wagner, y de Herbert Graf, Memorias de un hombre invisible. Ha publicado en la revista L'Uneb&eacute;vue diversos art&iacute;culos que abordan la relaci&oacute;n entre psicoan&aacute;lisis, sonido, m&uacute;sica, lenguaje y escritura.",
+        "imagen": "imagenes/autores/autor_96.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 97,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.956Z",
+        "updated_at": "2018-01-22T20:39:22.960Z",
+        "user": 1,
+        "nombre": " Arno",
+        "apellido": "Schmidt",
+        "texto": "Arno Schmidt (1914-1979). Naci&oacute; en Hamburgo, en el seno de una familia humilde. Estudi&oacute; matem&aacute;ticas y astronom&iacute;a en Breslau, pero se vio obligado a trabajar como contable en Greiffenberg. Silesia. Enrolado en 1940, prest&oacute; servicio en Alsacia y Noruega, y fue hecho prisionero durante la &uacute;ltima semana de la guerra. A partir de 1947 trabaj&oacute; exclusivamente como traductor y escritor. Se lo considera uno de los escritores m&aacute;s radicales del siglo XX, en la tradici&oacute;n de Rabelais, Swift y Joyce. Recibi&oacute; los Premios Fontane (1963) y Goethe (1973). Principales libros: Leviat&aacute;n (1949), Espejos negros (1951), El brezal de Brand (1951), Momentos de la vida de un fauno (1953), El coraz&oacute;n de piedra (1956), La rep&uacute;blica de los sabios (1957), Vacas de medio luto (1964), El sue&ntilde;o de la papeleta (1970), La escuela de los ate&iacute;stas (1972), Tarde con orla dorada (1975).",
+        "imagen": "imagenes/autores/autor_97.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 98,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.968Z",
+        "updated_at": "2018-01-22T20:39:22.972Z",
+        "user": 1,
+        "nombre": " Silvio",
+        "apellido": "Mattoni",
+        "texto": "Silvio Mattoni naci&oacute; en C&oacute;rdoba en 1969. Algunos de sus numerosos ensayos se reunieron en Kor&eacute; (2000), El cuenco de plata (2003), El presente (2008) y Bataille. Una introducci&oacute;n (2011). Da clases de Est&eacute;tica en la Universidad Nacional de C&oacute;rdoba y es investigador del CONICET. Public&oacute; m&aacute;s de una docena de libros de poemas, entre los m&aacute;s recientes: Poemas sentimentales (2005), Excursiones (2006), El descuido (2007), La divisi&oacute;n del d&iacute;a. Poemas 1992-2000 (2008), La chica del volc&aacute;n (2010), La canci&oacute;n de los h&eacute;roes (2012) y Avenida de Mayo (2012). En 1992 gan&oacute; el concurso de poes&iacute;a Enrique Pezzoni. En el a&ntilde;o 2004 obtuvo la beca Guggenheim. Gan&oacute; el Primer Premio de Ensayo del Fondo Nacional de las Artes en 2007 y 2011. Tradujo libros de Catulo, Cesare Pavese, Yves Bonnefoy, Louis-Ren&eacute; des F&ocirc;rets, Marguerite Duras, Georges Bataille, Simone Weil, Henri Michaux, Francis Ponge, Robert Marteau, Paul Val&eacute;ry, Cl&eacute;ment Rosset, Pascal Quignard y Copi, entre otros.",
+        "imagen": "imagenes/autores/autor_98.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 99,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.979Z",
+        "updated_at": "2018-01-22T20:39:22.984Z",
+        "user": 1,
+        "nombre": " Werner",
+        "apellido": "Herzog",
+        "texto": "Werner Herzog, naci&oacute; en M&uacute;nich, pero pas&oacute; toda su infancia en un pueblo de las monta&ntilde;as de Baviera. Hacia los 17 a&ntilde;os decidi&oacute; dedicarse al cine. Inici&oacute; estudios de Historia, Literatura y Teatro en M&uacute;nich. Hacia 1960 obtuvo la beca Fulbright para el Seminario de cine de la Universidad de Duquesne, en Pittsburgh (Estados Unidos). A pesar de participar en seminarios universitarios de cine, nunca estudi&oacute; en ninguna escuela ni tampoco trabaj&oacute; como asistente de ning&uacute;n director; su formaci&oacute;n fue completamente autodidacta. En 1962, a los veinte a&ntilde;os, fund&oacute; su productora de cine, Herzogfilmproduktionen. Tras esta primera etapa de formaci&oacute;n en el cortometraje realiz&oacute; su primer largometraje, Lebenszeichen (Se&ntilde;ales de vida), subvencionado por el Instituto de Cine alem&aacute;n, que buscaba promocionar a nuevos cineastas. La pel&iacute;cula gan&oacute; el Premio de Cine Alem&aacute;n (Deutscher Filmpreis). A partir de aqu&iacute; Herzog inici&oacute; una carrera singular, que ha combinado la filmaci&oacute;n de largometrajes, documentales, direcci&oacute;n de &oacute;pera, actuaci&oacute;n y redacci&oacute;n de guiones. Werner Herzog sigue en activo en la actualidad.",
+        "imagen": "imagenes/autores/autor_99.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 100,
+    "fields": {
+        "created_at": "2018-01-22T20:39:22.992Z",
+        "updated_at": "2018-01-22T20:39:22.996Z",
+        "user": 1,
+        "nombre": " Jacques",
+        "apellido": "Ranci\u00e8re",
+        "texto": "Jacques Ranci&egrave;re, naci&oacute; en Argelia en 1940. Est&aacute; considerado uno de los pensadores m&aacute;s influyentes del campo intelectual contempor&aacute;neo. Profesor de la Universidad de Par&iacute;s XII, ha publicado libros dedicados a la literatura, la est&eacute;tica, el cine y la pol&iacute;tica. Disc&iacute;pulo (y cr&iacute;tico) de Louis Althusser, ha desarrollado un influyente trabajo cr&iacute;tico en la tradici&oacute;n de la izquierda radical. Principales obras: La f&aacute;bula cinematogr&aacute;fica. Reflexiones sobre la ficci&oacute;n en el cine, El odio a la democracia, El maestro ignorante. Cinco lecciones para la emancipaci&oacute;n intelectual. La palabra muda. Ensayo sobre las contradicciones de la literatura, La noche de los proletarios, El espectador emancipado, Las distancias del cine.",
+        "imagen": "imagenes/autores/autor_100.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 101,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.003Z",
+        "updated_at": "2018-01-22T20:39:23.008Z",
+        "user": 1,
+        "nombre": " Jorge",
+        "apellido": "Ba\u00f1os Orellana",
+        "texto": "Es m&eacute;dico psiquiatra y psicoanalista, miembro de la &Eacute;cole Lacanienne de Psychanalyse, y autor de El idioma de los lacanianos (1995. Trad. De l'herm&eacute;tisme de Lacan, 1999) y El escritorio de Lacan (1999. Trad. L'&eacute;critoire de Lacan, 2002).Dirige desde 2004 el grupo de investigaci&oacute;n argentino-chileno Lecturas Cronol&oacute;gicas de Lacan, cuyos resultados viene dando a conocer en diversos art&iacute;culos y seminarios en Latinoam&eacute;rica.La novela de Lacan. De neuropsiquiatra a psicoanalista tuvo un permisivo y alentador campo de pruebas entre 2006 y 2011: el de una veintena de entregas breves en las revistas de psicoan&aacute;lisis Imago-Agenda (Buenos Aires) y Me cay&oacute; el veinte (M&eacute;xico D.F.), a prop&oacute;sito de un episodio de la madurez de Lacan, al que le cabr&iacute;a el t&iacute;tulo Dora Maar se analiza con Jacques Lacan.Un segundo volumen, El firmamento de 1936, se encuentra en preparaci&oacute;n.",
+        "imagen": "imagenes/autores/autor_101.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 102,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.016Z",
+        "updated_at": "2018-01-22T20:39:23.020Z",
+        "user": 1,
+        "nombre": " Lotte",
+        "apellido": "Eisner",
+        "texto": "Berl&iacute;n, 1896 - Par&iacute;s, 1983. Hija de un comerciante jud&iacute;o, estudi&oacute; en Munich y en Berl&iacute;n, y obtuvo un doctorado en arte y arqueolog&iacute;a. A partir de 1927, se dedic&oacute; a la cr&iacute;tica teatral y posteriormente a la cr&iacute;tica de cine en la revista Film-Kurier. En 1933 parti&oacute; de Alemania para escapar de la persecuci&oacute;n nazi, refugi&aacute;ndose en Francia. En 1937 ingres&oacute; a la Cinemateca Francesa, que acababa de fundar su amigo Henri Langlois con Georges Franj&uacute;. Durante la Segunda Guerra Mundial se refugi&oacute; en Lot, pero fue finalmente apresada y confinada en el campo de Gurs (Pirineos Atl&aacute;nticos). Luego de la Liberaci&oacute;n, se hizo cargo del archivo de la Cinemateca Francesa, cargo que ocup&oacute; hasta 1975. Simult&aacute;neamente escribi&oacute; cr&iacute;tica para distintas publicaciones francesas y alemanas: La Revue du cin&eacute;ma, Cahiers du Cin&eacute;ma, Filmkritic, Filmfaust&hellip; Public&oacute; libros fundamentales sobre el cine alem&aacute;n y los directores que admiraba: La pantalla diab&oacute;lica, F.W. Murnau y Fritz Lang.",
+        "imagen": "imagenes/autores/autor_102.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 103,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.027Z",
+        "updated_at": "2018-01-22T20:39:23.031Z",
+        "user": 1,
+        "nombre": " Nathaniel",
+        "apellido": "Hawthorne",
+        "texto": "(Salem, 1804 -Plymouth, 1864) Su bisabuelo fue uno de los primeros colonos en establecerse en Massachusetts. En 1839 ingres&oacute; como empleado de la Aduana del puerto de Boston, y hasta la publicaci&oacute;n de su primer libro escribi&oacute; en total anonimato en la casa familiar (&ldquo;Yo no viv&iacute;a &ndash;dir&iacute;a m&aacute;s tarde&ndash;, s&oacute;lo so&ntilde;aba que viv&iacute;a&rdquo;). En 1853 fue designado c&oacute;nsul norteamericano en Liverpool. Viaj&oacute; por Francia e Inglaterra, y regres&oacute; con su familia a Estados Unidos en 1860. Muchas de sus historias, de contenido netamente aleg&oacute;rico, recrean el ambiente puritano de su lugar y &eacute;poca. Junto con Edgar Allan Poe y Herman Melville (quien le dedicara el Moby Dick), integra la gran tr&iacute;ada de fundadores de la literatura norteamericana. Adem&aacute;s de sus memorables relatos (Twice-Told-Tales, 1837), es autor de las novelas La letra escarlata (1850), La casa de los siete tejados (1851) y El fauno de m&aacute;rmol (1860).",
+        "imagen": "imagenes/autores/autor_103.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 104,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.038Z",
+        "updated_at": "2018-01-22T20:39:23.043Z",
+        "user": 1,
+        "nombre": " Antonin",
+        "apellido": "Artaud",
+        "texto": "Marsella, Francia, 1896 - Par&iacute;s, 1948. En 1924 entra en contacto con Andr&eacute; Breton, quien acaba de hacer p&uacute;blico el Primer Manifiesto del surrealismo, y asume el cargo de director de la &ldquo;Oficina de investigaciones surrealistas&rdquo;. Junto con Roger Vitrac, funda en 1926 el Teatro Alfred Jarry, y sienta las bases de lo que ser&aacute; el &ldquo;Teatro de la crueldad&rdquo;.&nbsp; En 1936 viaja a M&eacute;xico y convive con los tarahumara para encontrar la antigua cultura solar y experimentar con el peyote. Regresa a Europa en 1937 y pasa nueve a&ntilde;os en manicomios, sometido a tratamientos de electroshock. Sus amigos logran liberarlo. Muere de c&aacute;ncer en el asilo de Ivry-sur-Seine. Principales obras: El ombligo de los limbos (1925), El pesanervios (1925), El arte y la muerte (1929), Heliog&aacute;balo, o el anarquista coronado (1934), Un viaje al pa&iacute;s de los tarahumara (1937), El teatro y su doble (1938), Cartas de Rodez (1946), Van Gogh, el suicidado por la sociedad (1947), Artaud, el Momo (1947), Aqu&iacute; yace, precedido de La cultura india (1948).",
+        "imagen": "imagenes/autores/autor_104.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 105,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.051Z",
+        "updated_at": "2018-01-22T20:39:23.055Z",
+        "user": 1,
+        "nombre": " Claude",
+        "apellido": "L\u00e9vi-Strauss",
+        "texto": "(Bruselas, 1909 &ndash; Par&iacute;s,2009). Estudi&oacute; derecho y filosof&iacute;a en La Sorbona. Es una las grandes figuras de la antropolog&iacute;a del siglo XX.&nbsp; Introdujo el enfoque estructuralista en las ciencias sociales en libros tan rigurosos como Las estructuras elementales del parentesco (1949) o El pensamiento salvaje (1962), y fue el fundador de la &ldquo;antropolog&iacute;a estructural&rdquo;, basada en la ling&uuml;&iacute;stica de Saussure y las investigaciones del formalismo ruso. Entre sus maestros dentro del campo de los estudios etnogr&aacute;ficos, podemos citar a Georges Dumezil y Marcel Mauss.Vivi&oacute; en Brasil desde 1935 a 1939, y all&iacute; llev&oacute; a cabo su primer trabajo etnogr&aacute;fico, dirigiendo exploraciones peri&oacute;dicas en el Mato Grosso y la selva tropical amaz&oacute;nica. El testimonio de esa experiencia fue volcado en su libro Tristes tr&oacute;picos. Fue movilizado durante la Segunda Guerra Mundial, y tras el armisticio se traslad&oacute; a Estados Unidos. En Nueva York conoci&oacute; al ling&uuml;ista ruso Roman Jakobson, cuya obra fue fundamental para la evoluci&oacute;n de sus ideas. Regres&oacute; a Francia en 1948, y trabaj&oacute; en el Museo del Hombre y en la &Eacute;cole Pratique des Hautes &Eacute;tudes.Otras obras: Antropolog&iacute;a Estructural (1958), Mitol&oacute;gicas (1964-1971), La mirada distante (1983), Mirar, escuchar, leer (1993).",
+        "imagen": "imagenes/autores/autor_105.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 106,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.064Z",
+        "updated_at": "2018-01-22T20:39:23.068Z",
+        "user": 1,
+        "nombre": " Theodor y HORKHEIMER",
+        "apellido": "Adorno",
+        "texto": "Theodor Adorno (Frankfurt, Alemania, 1903 &ndash; Vi&egrave;ge, Suiza, 1969). Uno de los m&aacute;ximos representantes de la &ldquo;Escuela de Francfort&rdquo; y de la &ldquo;teor&iacute;a cr&iacute;tica&rdquo; de inspiraci&oacute;n marxista, desarroll&oacute; interpretaciones fundamentales en el campo de la teor&iacute;a cultural, la comunicaci&oacute;n, la sociolog&iacute;a y la musicolog&iacute;a. Durante el nazismo se vio obligado a exiliarse, primero en Oxford y posteriormente en Nueva York. En 1941 se traslada a California, para continuar el trabajo en colaboraci&oacute;n con Max Horkheimer, cuyo resultado fundamental fue la Dial&eacute;ctica de la Ilustraci&oacute;n (1944-47). En 1949 regresa a Alemania y asume el cargo de director del Instituto para la Investigaci&oacute;n Social, que reconstruy&oacute; con Horkheimer. Su filosof&iacute;a continu&oacute; el an&aacute;lisis del racionalismo como instrumento a la vez de libertad y de dominio, y&nbsp; la cr&iacute;tica de la sociedad capitalista como restricci&oacute;n de las formas de pensamiento y acci&oacute;n. En este per&iacute;odo trabajar&aacute; en la obra que ver&aacute; la luz en 1966: Dial&eacute;ctica negativa.Otras obras: Filosof&iacute;a de la nueva m&uacute;sica, Teor&iacute;a est&eacute;tica, Kierkegaard, Minima Moralia, Escritos musicales, Cr&iacute;tica de la cultura y sociedad.&nbsp;Max Horkheimer (Stuttgart,1895 &ndash; N&uuml;remberg,1973). Fil&oacute;sofo y soci&oacute;logo alem&aacute;n, conocido por su trabajo en teor&iacute;a cr&iacute;tica&nbsp; y como miembro de la Escuela de Frankfurt. En 1933, a causa del nazismo, se vio obligado a exiliarse en Suiza, y posteriormente en Estados Unidos. En colaboraci&oacute;n con Theodore Adorno, escribi&oacute; la Dial&eacute;ctica de la Ilustraci&oacute;n (1944-47). En 1949 regres&oacute; a Alemania, donde fue nombrado rector de la Universidad de Frankfurt.Otras obras: Cr&iacute;tica de la raz&oacute;n instrumental, Sociedad, raz&oacute;n y libertad, Sobre el concepto del hombre y otros ensayos, Teor&iacute;a tradicional y teor&iacute;a cr&iacute;tica.",
+        "imagen": "imagenes/autores/autor_106.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 107,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.076Z",
+        "updated_at": "2018-01-22T20:39:23.080Z",
+        "user": 1,
+        "nombre": " Christa",
+        "apellido": "Wolf",
+        "texto": "Christa Wolf (Landsberg an der Warthe, Polonia, 1929 - Berl&iacute;n, Alemania, 2011). Su extensa obra narrativa y ensay&iacute;stica fue traducida a las principales lenguas y galardonada con importantes premios como el Georg B&uuml;chner (1980), el Schiller Memorial (1983), el Premio Nacional de Viena para la literatura europea (1985) y el Deutscher B&uuml;cherpreis (2002) por su trayectoria como escritora.Principales obras: Noticias sobre Christa T. (1968), Muestra de infancia (1976), Lo que queda (1979), Casandra (1983), Accidente (1987), Pieza de verano (1989), Medea (1996, de pr&oacute;xima publicaci&oacute;n en El cuenco de plata).",
+        "imagen": "imagenes/autores/autor_107.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 108,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.088Z",
+        "updated_at": "2018-01-22T20:39:23.092Z",
+        "user": 1,
+        "nombre": " Ambrose",
+        "apellido": "Bierce",
+        "texto": "(Ohio, Estados Unidos, 1842 - Chihuahua, M&eacute;xico, 1913?). D&eacute;cimo de trece hijos, se cri&oacute; en un ambiente puritano plagado de represiones y prejuicios. Su vida fue sin duda rica en aventuras de todo tipo (desde amor&iacute;os en la adolescencia con una mujer de setenta a&ntilde;os, hasta su desaparici&oacute;n en M&eacute;xico, donde se hab&iacute;a unido al ej&eacute;rcito de Pancho Villa). En 1861 se alist&oacute; como soldado durante la Guerra de Secesi&oacute;n, y fue gravemente herido en la batalla de Kennesaw Mountain en 1864. En el verano de 1866 particip&oacute; con el general Hazan en una expedici&oacute;n por los territorios indios, siendo destinado a Fort Laramie. Luego de obtener la baja, trabaj&oacute; como periodista en San Francisco, como colaborador en The Argonaut, The Overland Monthly y director de New Letters. Por esa &eacute;poca conoci&oacute; a Mark Twain. Desde 1872 a 1875 vivi&oacute; en Londres, donde escribi&oacute; sus primeras narraciones breves, compiladas posteriormente en tres tomos. De regreso a San Francisco, se convirti&oacute; en &aacute;rbitro de los c&iacute;rculos pol&iacute;ticos y literarios. Hizo gala de su humor macabro en El monje y la hija del verdugo (1892). En 1913 cruz&oacute; a M&eacute;xico por El Paso, y en Ciudad Ju&aacute;rez se uni&oacute; al ej&eacute;rcito de Pancho Villa como observador, llegando hasta Chihuahua, donde su rastro se desvanece. Sus obras esenciales son Cuentos de soldados y civiles (1891), publicado en ediciones posteriores como En medio de la vida, y El diccionario del diablo (1911).",
+        "imagen": "imagenes/autores/autor_108.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 109,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.100Z",
+        "updated_at": "2018-01-22T20:39:23.104Z",
+        "user": 1,
+        "nombre": " S. William",
+        "apellido": "Burroughs",
+        "texto": "William S. Burroughs (St. Louis, Estados Unidos, 1914 - Kansas City, 1997). Una de las figuras centrales de la literatura y la contracultura del Siglo XX, su obra se caracteriza por la experimentaci&oacute;n y la renovaci&oacute;n de las formas narrativas. Principales obras: Junkie (1953); Queer (1953, publicada en 1986); Cartas del Yag&eacute; (1953, publicada en 1963); Almuerzo desnudo (1959); La m&aacute;quina blanda (1961); El ticket que explot&oacute; (1962); Expreso Nova (1963); Los muchachos salvajes (1971); &iexcl;Exterminador! (1973); The Red Night Trilogy, integrada por Ciudades de la noche roja (1981), El lugar de los caminos muertos (1984) y Tierras del Occidente (1988); The Burroughs File (1984); The Adding Machine (1985, ensayos); My Education: A book of dreams (1996); The Cat Inside (2002).",
+        "imagen": "imagenes/autores/autor_109.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 110,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.112Z",
+        "updated_at": "2018-01-22T20:39:23.117Z",
+        "user": 1,
+        "nombre": " Emmanuel",
+        "apellido": "Burdeau",
+        "texto": "Emmanuel Burdeau es cr&iacute;tico de cine, nacido el 25 de abril 1974 en Rennes. Residente en Villa Medici entre 2002-2003, fue editor de Cahiers du cinema desde 2004 hasta abril de 2009. Es director de las ediciones de la colecci&oacute;n de cine Capricci. Es el programador desde 2010 del Festival Internacional de Cine de La Roche-sur-Yon.",
+        "imagen": "imagenes/autores/autor_110.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 111,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.124Z",
+        "updated_at": "2018-01-22T20:39:23.129Z",
+        "user": 1,
+        "nombre": " Susana",
+        "apellido": "Muzio S\u00e1enz-Pe\u00f1a",
+        "texto": "Estas l&iacute;neas est&aacute;n escritas para ser le&iacute;das en el futuro, puesto que la edad actual de la escritora es de 91 a&ntilde;os (nacida en 1922, en Buenos Aires) y usted, lector, las leer&aacute; cuando tenga 92. Buena parte de estos a&ntilde;os han sido de escribir como fantasma o &ldquo;negro&rdquo;, produciendo desde libros sobre anorexia hasta traducciones de manuales del ingl&eacute;s, siguiendo con la vera historia de Patoruz&uacute; (Releyendo Patoruz&uacute;, Espasa Calpe, 1995), habiendo mantenido 12 seud&oacute;nimos (ninguno femenino) en la p&aacute;gina 6 del diario El Mundo durante la Segunda Guerra Mundial, como si fuese doce personas distintas expertas en geopol&iacute;tica, al punto de interesar al general Pertin&eacute;, como posible conferencista en la Escuela Superior de Guerra, mientras la susodicha deambulaba muerta de sue&ntilde;o, esperando las transmisiones en onda corta que la manten&iacute;an informada de c&oacute;mo sobreviv&iacute;a la resistencia francesa, la holandesa y la noruega, aguantando las transmisiones llorosas de los japoneses en un ingl&eacute;s agudo mientras pon&iacute;an &ldquo;Lily Marlene&rdquo; e ignorando&nbsp; que el locutor que hablaba contra los aliados era su venerado Ezra Pound. No obstante, insist&iacute;a en ser nadadora (espaldista) del Belgrano Athletic Club, recibirse de Maestra Normal en el Lenguas Vivas, y salir de joda con sus amigos los D&aacute;valos, Mamy Aubone, los Fern&aacute;ndez Moreno, Cecilia Ingenieros, Jorge Luis Borges, Cantamesa, Marta Peluffo, Peralta Ramos, Arturo Sa&eacute;z, con su pipa humeante, a quien besaba en p&uacute;blico, y una cantidad de buenas personas que se reun&iacute;an en &ldquo;El Moderno&rdquo;. Mi nombre es Susana Muzio S&aacute;enz-Pe&ntilde;a. Mi madre era irlandesa, Fenian para m&aacute;s datos. Me llaman Mutante.&nbsp;",
+        "imagen": "imagenes/autores/autor_111.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 112,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.137Z",
+        "updated_at": "2018-01-22T20:39:23.142Z",
+        "user": 1,
+        "nombre": " Hilda",
+        "apellido": "Hilst",
+        "texto": "Hilda Hilst (San Pablo, Brasil, 1939 - 2004). Poeta, narradora, &ldquo;porn&oacute;grafa&rdquo; y autora de culto. Concluidos sus estudios secundarios, curs&oacute; la carrera de Derecho, profesi&oacute;n que abandon&oacute; &ldquo;por razones de incompatibilidad&rdquo;. En 1950 public&oacute; su primer libro de poemas, Press&aacute;gio. A los 30 a&ntilde;os, con cinco libros de poes&iacute;a publicados, viaj&oacute; a Nueva York y Par&iacute;s, y a su regreso estableci&oacute; residencia en la ciudad de San Pablo. A comienzos de la d&eacute;cada de 1960 conoci&oacute; al escultor Dante Casarini, quien ser&iacute;a su esposo y compa&ntilde;ero de ruta. En 1965 se mud&oacute; con &eacute;l a la Fazenda S&atilde;o Jos&eacute;, en Campinas, propiedad de su madre, donde inici&oacute; la construcci&oacute;n de la Casa do Sol, solar donde residi&oacute; hasta su muerte. All&iacute; ley&oacute; vorazmente y escribi&oacute; con igual fervor el corpus central de su obra de ficci&oacute;n. La obscena Se&ntilde;ora D (1982), los tres t&iacute;tulos de su trilog&iacute;a pornogr&aacute;fica o er&oacute;tica &ndash;O caderno rosa de Lori Lamby (1990), Contos d&acute;esc&aacute;rnio / Textos grotescos (1990) y Cartas de un seductor (1992)&ndash; y R&uacute;tilo nada (1993), con el que obtuvo al a&ntilde;o siguiente el prestigioso Premio Jabuti. Tambi&eacute;n produjo all&iacute; sus libros de poes&iacute;a m&aacute;s importantes: Poemas malditos, gozosos e devotos (1984), Alco&oacute;licas (1990), Buf&oacute;licas (1992) y Do desejo (1992).",
+        "imagen": "imagenes/autores/autor_112.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 113,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.149Z",
+        "updated_at": "2018-01-22T20:39:23.154Z",
+        "user": 1,
+        "nombre": " Rodolfo",
+        "apellido": "Walsh",
+        "texto": "Rodolfo Walsh naci&oacute; en 1927. Desde los 17 a&ntilde;os, y hasta fines de 1950 trabaj&oacute; en Hachette. Corrector de pruebas, traductor, editor de antolog&iacute;as (Diez cuentos policiales argentinos, 1953), autor premiado de esa casa (Variaciones en rojo, 1953, Premio Municipal de Literatura): nada de lo que ten&iacute;a que ver con la producci&oacute;n material del libro le hab&iacute;a sido ajeno.La distancia entre la &ldquo;literatura fant&aacute;stica&rdquo; de Borges, Silvina Ocampo y Bioy Casares y el &ldquo;cuento extra&ntilde;o&rdquo; de Walsh es muy grande aunque no sea sistem&aacute;tica. Al poner el conjunto bajo el amable t&iacute;tulo de lo extra&ntilde;o permite imaginar una serie donde los fantasmas van necesariamente a convivir con im&aacute;genes del mundo y de la vida imprevistas en la consideraci&oacute;n can&oacute;nica del g&eacute;nero. En ese sentido, podr&iacute;a decirse que &ldquo;un fusilado que vive&rdquo; ser&aacute; el tipo de fantasma o de historia siniestra que Walsh comenzar&aacute; a urdir en el momento mismo en que entrega a la imprenta esta antolog&iacute;a.* * *1956 no es s&oacute;lo el a&ntilde;o de publicaci&oacute;n de esta antolog&iacute;a: es el encuentro de Walsh con su destino literario y pol&iacute;tico. &ldquo;Hay un fusilado que vive&rdquo;, le dicen. &ldquo;Yo quer&iacute;a ganar el Pulitzer&rdquo;, recordar&iacute;a &eacute;l a&ntilde;os m&aacute;s tarde, refiri&eacute;ndose a Operaci&oacute;n masacre, un libro que comienza siendo una serie de notas publicadas en Revoluci&oacute;n nacional entre enero y marzo de ese a&ntilde;o: el embri&oacute;n de un libro monstruoso (&eacute;se es su m&eacute;rito mayor) de tema siniestro que se va modificando edici&oacute;n tras edici&oacute;n.* * *La literatura fant&aacute;stica (o maravillosa, o el fantasy: dejemos de lado las clasificaciones rigurosas) permite, como el ajedrez, un cierto olvido de las propias condiciones de existencia, la suspensi&oacute;n de la agobiante realidad (esa realidad todav&iacute;a no es la de Valle, ni la del peronismo, ni la de la revoluci&oacute;n, es decir: a&uacute;n no se deja leer como una causa).&nbsp;* * *Walsh vuelve, tal vez por &uacute;ltima vez, a refugiarse en esos mundos extra&ntilde;os que ha estado leyendo en los &uacute;ltimos dos a&ntilde;os, para terminar de perge&ntilde;ar su antolog&iacute;a, que ya no se llamar&aacute; del cuento fant&aacute;stico (como hab&iacute;a sido anunciada en 1955), sino del cuento extra&ntilde;o, retomando una etiqueta bastante frecuente en las recopilaciones anglosajonas de literatura de g&eacute;nero: The Queer Side of Things.",
+        "imagen": "imagenes/autores/autor_113.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 114,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.162Z",
+        "updated_at": "2018-01-22T20:39:23.166Z",
+        "user": 1,
+        "nombre": " Peter",
+        "apellido": "Handke",
+        "texto": "Peter Handke naci&oacute; en Griffen, Austria, en 1942. Se destac&oacute; inicialmente con piezas experimentales como Kaspar y El pupilo quiere ser tutor &nbsp;y se consagr&oacute; r&aacute;pidamente como el escritor en lengua alemana m&aacute;s respetado de su generaci&oacute;n. Su obra incluye novelas, traducciones, piezas teatrales, relatos autobiogr&aacute;ficos y ensayos. Colabor&oacute; con el cineasta Wim Wenders en el gui&oacute;n de Las alas del deseo. Gan&oacute; el premio Georg B&uuml;chner en 1973.Principales obras: Los avispones (1966), El miedo del arquero al momento del penal (1970), Carta breve para un largo adi&oacute;s (1971), La mujer zurda (1978), Historia de un l&aacute;piz (1982), El chino del dolor (1983), La repetici&oacute;n (1986), La tarde de un escritor (1987), Ensayo sobre el cansancio (1989), Ensayo sobre el jukebox (1990), El a&ntilde;o que pas&eacute; en la bah&iacute;a de nadie (1999), En una noche oscura sal&iacute; de mi casa sosegada (2000), Don Juan (2006), Desgracia impeorable (2010), Ayer, de camino (2011), La noche del Morava (2013).",
+        "imagen": "imagenes/autores/autor_114.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 115,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.180Z",
+        "updated_at": "2018-01-22T20:39:23.185Z",
+        "user": 1,
+        "nombre": " Robert",
+        "apellido": "Bresson",
+        "texto": "Bresson reh&uacute;ye la &ldquo;representaci&oacute;n&rdquo;; es decir, entender el cinemat&oacute;grafo como reproducci&oacute;n de la realidad. Por el contrario, el cinemat&oacute;grafo consiste en fundar una nueva realidad, constituida por la &ldquo;verdad&rdquo; propia de la obra art&iacute;stica. Ser&iacute;an necesarias muchas p&aacute;ginas para explicar la po&eacute;tica bressoniana. Sin embargo, puede decirse que Bresson se conf&iacute;a a la m&aacute;quina, de la que alaba su &ldquo;indiferencia escrupulosa&rdquo;. En la m&aacute;quina comienza la especificidad cinematogr&aacute;fica, que contin&uacute;a con el montaje. Una sola imagen es nada sin la existencia de otras, antes o despu&eacute;s: la imagen, carente de belleza, pierde su individualidad y constituye parte de un devenir. La materialidad no es solamente visual: el sonido es tambi&eacute;n un elemento fundamental en la ecuaci&oacute;n del montaje. En sus filmes la continuidad es escasa, las elipsis frecuentes, las escenas est&aacute;n d&eacute;bilmente unidas a trav&eacute;s del montaje. Los personajes no son psicologizados, no hay suspenso. No pocas veces, la acci&oacute;n ocurre fuera de campo, y el contexto social, pol&iacute;tico o hist&oacute;rico es apenas desarrollado. Al azar Baltazar&nbsp;es el filme m&aacute;s bressoniano: una historia &ldquo;desnarrativizada&rdquo;, plena de ambig&uuml;edades y de elipsis, y &ndash;el colmo&ndash; el protagonista es un asno, por supuesto sin psicolog&iacute;a, testigo mudo de la crueldad, la injusticia y el sufrimiento. Parad&oacute;jicamente, la peculiar forma de contar provoca la emergencia de nuevos sentidos y sensaciones.",
+        "imagen": "imagenes/autores/autor_115.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 116,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.194Z",
+        "updated_at": "2018-01-22T20:39:23.198Z",
+        "user": 1,
+        "nombre": " Hugo",
+        "apellido": "Padeletti",
+        "texto": "Hugo Padeletti (Argentina, 1928) es poeta y artista pl&aacute;stico. En 1989 public&oacute; Poemas 1960-1980, libro por el que recibi&oacute; el premio Boris Vian, y en 2007 su obra reunida, El andariego. Poemas 1944-1980.Otros libros suyos son Parlamentos del viento (1990), Apuntamientos en el Ashram (1991), La atenci&oacute;n (1999), tres vol&uacute;menes que compilan su obra anterior y buena parte de su obra gr&aacute;fica, y Canci&oacute;n de viejo (2003), Premio de Poes&iacute;a del Fondo Nacional de las Artes. En 2004 obtuvo el Premio Konex de platino y en 2005 la Beca Guggenheim.",
+        "imagen": "imagenes/autores/autor_116.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 117,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.206Z",
+        "updated_at": "2018-01-22T20:39:23.210Z",
+        "user": 1,
+        "nombre": " Jos\u00e9 Mar\u00eda",
+        "apellido": "G\u00f3mez",
+        "texto": "Jos&eacute; Mar&iacute;a G&oacute;mez naci&oacute; en Andino (Santa Fe), Argentina. Es regisseur egresado del Instituto Superior de Arte del Teatro Col&oacute;n, fue profesor en el Conservatorio Superior de M&uacute;sica &ldquo;Manuel de Falla&rdquo;, y ha sido director de cultura de la Facultad de Psicolog&iacute;a de la Universidad de Buenos Aires. En el a&ntilde;o 2007 recibi&oacute; el Primer Premio de Novela del Fondo Nacional de las Artes por su novela Los putos. Primera parte: El comisario. En el a&ntilde;o 2011 le fue otorgada la Primera Menci&oacute;n por su novela El cine de los s&aacute;bados, en similar concurso del Fondo Nacional de las Artes. Los marianitos, una novela policial obtuvo una menci&oacute;n especial en el concurso &ldquo;Premio Internacional de Novela Letra Sur&rdquo;. En el a&ntilde;o 2012 su novela La an&aacute;basis fue finalista del Premio Clar&iacute;n de Novela.josemariagomez.com.ar",
+        "imagen": "imagenes/autores/autor_117.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 118,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.219Z",
+        "updated_at": "2018-01-22T20:39:23.223Z",
+        "user": 1,
+        "nombre": " Fran\u00e7ois",
+        "apellido": "Truffaut",
+        "texto": "Fran&ccedil;ois Truffaut (Par&iacute;s, 1932-1984), fue uno de los iniciadores de la nouvelle vague. Su primer y consagratorio largometraje fue Los 400 golpes (1959), al que le siguieron, entre otros, Disparen sobre el pianista (1960), Jules et Jim (1962), Fahrenheit 451 (1966), Besos robados (1968, que inicia la saga de Antoine Doinel), El ni&ntilde;o salvaje (1969), La noche americana (1973), La historia de Adele H. (1975), El &uacute;ltimo metro (1980), La mujer de al lado (1981).",
+        "imagen": "imagenes/autores/autor_118.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 119,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.228Z",
+        "updated_at": "2018-01-22T20:39:23.232Z",
+        "user": 1,
+        "nombre": " James",
+        "apellido": "Joyce",
+        "texto": "James Augustine Aloysius Joyce&nbsp;(Dubl&iacute;n,&nbsp;2 de febrero&nbsp;de&nbsp;1882&nbsp;&ndash;&nbsp;Z&uacute;rich,&nbsp;13 de enero&nbsp;de&nbsp;1941) fue un escritor&nbsp;irland&eacute;s, reconocido mundialmente como uno de los m&aacute;s importantes e influyentes del&nbsp;siglo XX.&nbsp;Aclamado por su obra maestra,&nbsp;Ulises&nbsp;(1922), por su controvertida novela posterior,&nbsp;Finnegans Wake&nbsp;(1939) y su muy valorada serie de historias breves titulada&nbsp;Dublineses&nbsp;(1914), as&iacute; como su novela semi autobiogr&aacute;fica&nbsp;Retrato del artista adolescente&nbsp;(1916). Joyce es representante destacado de la corriente literaria de&nbsp;vanguardia&nbsp;denominada&nbsp;modernismo anglosaj&oacute;n, junto a autores como&nbsp;T. S. Eliot,&nbsp;Virginia Woolf,&nbsp;Ezra Pound&nbsp;o&nbsp;Wallace Stevens.",
+        "imagen": "imagenes/autores/autor_119.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 120,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.239Z",
+        "updated_at": "2018-01-22T20:39:23.243Z",
+        "user": 1,
+        "nombre": " Giorgio",
+        "apellido": "Manganelli",
+        "texto": "Giorgio Manganelli (Mil&aacute;n, 1922 - Roma, 1990). Estudi&oacute; letras en la Universidad de Pav&iacute;a. Dio clases en la Universidad de Roma hasta 1971. Adem&aacute;s de sus deslumbrantes escritos narrativos y period&iacute;sticos, fue lector de Mondadori, Einaudi, Adelphi, Garzanti y Feltrinelli. Fue un creador particularmente influyente en la cultura italiana del siglo XX. A petici&oacute;n de &Iacute;talo Calvino tradujo a Edgar Allan Poe, quien se convirti&oacute; en un referente de su propia literatura. Hilarotragoedia (1964) es resultado de su experiencia con la enfermedad y la locura. Centuria. Cien peque&ntilde;as novelas r&iacute;o obtuvo el premio Vareggio en 1979. Otras obras: La literatura como mentira (ensayo, 1964), A los dioses ulteriores (narrativa, 1972, incluye el Discurso sobre la dificultad de comunicarse con los muertos), A y B (narrativa, 1975), La ci&eacute;naga definitiva (narrativa, p&oacute;stumo, 2002), Encomio del tirano. Escrito con la &uacute;nica finalidad de hacer dinero (narrativa, p&oacute;stumo, 2003).",
+        "imagen": "imagenes/autores/autor_120.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 121,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.250Z",
+        "updated_at": "2018-01-22T20:39:23.254Z",
+        "user": 1,
+        "nombre": " Jos\u00e9 Pedro",
+        "apellido": "D\u00edaz",
+        "texto": "&nbsp;Jos&eacute; Pedro D&iacute;az (Montevideo, 1921-2006). Novelista y ensayista, de su vasta obra se destaca haber estado a cargo del rescate, edici&oacute;n y publicaci&oacute;n de la obra in&eacute;dita de Felisberto Hern&aacute;ndez, que result&oacute; en la edici&oacute;n anotada de sus Obras Completas publicadas por Arca de Montevideo.&nbsp;Principales obras: Ensayo: Gustavo Adolfo Becquer: vida y poes&iacute;a (1953), El espect&aacute;culo imaginario. Felisberto Hern&aacute;ndez. Juan Carlos Onetti (1986), Novela y sociedad (1992). Novela: Los fuegos de San Telmo (1964), Partes de naufragios (1969).",
+        "imagen": "imagenes/autores/autor_121.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 122,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.261Z",
+        "updated_at": "2018-01-22T20:39:23.265Z",
+        "user": 1,
+        "nombre": " Fernando",
+        "apellido": "Pessoa",
+        "texto": "Fernando Pessoa&nbsp;(Lisboa, 1888-1935),&nbsp;poeta, ensayista, narrador y traductor, sus primeros a&ntilde;os transcurrieron en Ciudad del Cabo, donde su padrastro estaba a cargo del consulado de Portugal en Sud&aacute;frica. A los diecisiete a&ntilde;os se traslad&oacute; a Lisboa, donde estudi&oacute; Letras y altern&oacute; el trabajo de oficinista con su vocaci&oacute;n por la literatura. Aunque en vida s&oacute;lo public&oacute; un volumen &ndash;Mensagem&nbsp;(1933)&ndash;, la aparici&oacute;n p&oacute;stuma de sus in&eacute;ditos le ha valido un reconocimiento universal. La compleja personalidad del poeta se expresa a trav&eacute;s de la invenci&oacute;n de numerosos heter&oacute;nimos, dotados cada uno de ellos de rasgos diferenciados y una biograf&iacute;a propia; entre otros: Alberto&nbsp;Caeiro, poeta buc&oacute;lico esencialmente pagano; Ricardo Reis, &ldquo;latinista por formaci&oacute;n y&nbsp;semihelenista&nbsp;por devoci&oacute;n&rdquo;; &Aacute;lvaro de Campos, poeta del &ldquo;sensacionismo&rdquo;, interesado por la t&eacute;cnica, las vanguardias europeas y la renovaci&oacute;n del lenguaje po&eacute;tico;&nbsp;&nbsp;Bernardo&nbsp;Soares, a quien le atribuye el memorable Diario del desasosiego;&nbsp;y&nbsp;&nbsp;Antonio Mora, \\\"disc&iacute;pulo y admirador de la obra de Alberto&nbsp;Caeiro\\\", sus&nbsp;textos fundamentales son sobre la&nbsp;refundaci&oacute;n del paganismo.&nbsp;&nbsp;\"",
+        "imagen": "imagenes/autores/autor_122.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 123,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.273Z",
+        "updated_at": "2018-01-22T20:39:23.277Z",
+        "user": 1,
+        "nombre": " Gaston",
+        "apellido": "Bachelard",
+        "texto": "(Bar-sur-Aube, 1884 - Par&iacute;s, 1962). Fil&oacute;sofo, epistem&oacute;logo, poeta, f&iacute;sico, profesor y cr&iacute;tico literario es en cierto sentido un autor inclasificable. Se interes&oacute; por la historia de la ciencia moderna o contempor&aacute;nea, y al mismo tiempo por la imaginaci&oacute;n literaria, a la que dedic&oacute; una atenci&oacute;n paralela. Se doctor&oacute; en la Sorbona en 1927. Entre 1930 y 1940 fue profesor de filosof&iacute;a, en la Facultad de Letras de Dijon, y posteriormente, entre 1940 y 1954 fue profesor de historia y filosof&iacute;a de las ciencias en la Sorbona, como sucesor de Abel Rey. En la parte critico-literaria&nbsp;de su obra, Bachelard se consagrar&aacute; a profundizar sobre el problema de la imaginaci&oacute;n po&eacute;tica. Sus estudios sobre psicolog&iacute;a de los elementos &ndash;el agua, el aire, la tierra&ndash; en relaci&oacute;n con la literatura son ya cl&aacute;sicos: Psicoan&aacute;lisis del fuego (1938), El agua y los sue&ntilde;os (1942), El aire y los sue&ntilde;os (1943),&nbsp;La tierra y la enso&ntilde;aci&oacute;n de la voluntad (1948) La po&eacute;tica del espacio (1957), y La po&eacute;tica de la enso&ntilde;aci&oacute;n (1960).&nbsp;La influencia de Bachelard ha sido evidente en pensadores posteriores que han abordado la misma tem&aacute;tica. Tambi&eacute;n fue le&iacute;do por Barthes o Starobinski, y figuras como Georges Canguilhem y Michel Foucault han reconocido su importancia en el terreno epistemol&oacute;gico. Otras obras:&nbsp;La formaci&oacute;n del esp&iacute;ritu cient&iacute;fico (1938), El materialismo racional (1953),&nbsp;La intuici&oacute;n del instante (1973),&nbsp;La filosof&iacute;a del &ldquo;no&rdquo;: ensayo de una filosof&iacute;a del nuevo esp&iacute;ritu cient&iacute;fico (2003).",
+        "imagen": "imagenes/autores/autor_123.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 124,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.285Z",
+        "updated_at": "2018-01-22T20:39:23.289Z",
+        "user": 1,
+        "nombre": " Marqu\u00e9s de",
+        "apellido": "Sade",
+        "texto": "(Par&iacute;s, 1740-Charenton, 1814) naci&oacute; en el seno de una familia arist&oacute;crata. En 1768 se convirti&oacute; ya en leyenda por sus escandalosas y truculentas fiestas en el tristemente c&eacute;lebre castillo de Arcueil. Le toc&oacute; en suerte vivir una &eacute;poca de cambios radicales en la Francia de la Revoluci&oacute;n y del Terror, aunque pas&oacute; la mayor parte de su existencia recluido en c&aacute;rceles y manicomios. Todas sus obras est&aacute;n impregnadas de una filosof&iacute;a libertina que propugna la libertad absoluta, al margen de cualquier religi&oacute;n, ley o moral. Algunas de sus obras:&nbsp;La filosof&iacute;a en el tocador,&nbsp;Las 120 jornadas de Sodoma,&nbsp;Justine o&nbsp;Los infortunios de la virtud&nbsp;y&nbsp;Juliette o Las prosperidades del vicio.",
+        "imagen": "imagenes/autores/autor_124.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 125,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.296Z",
+        "updated_at": "2018-01-22T20:39:23.300Z",
+        "user": 1,
+        "nombre": " Frederika Amalia",
+        "apellido": "Finkelstein",
+        "texto": "hija de una familia argentina, naci&oacute; y vive en Par&iacute;s, donde estudia filosof&iacute;a. Con solo veintitr&eacute;s a&ntilde;os escribi&oacute; El olvido, su primera novela.",
+        "imagen": "imagenes/autores/autor_125.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 126,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.308Z",
+        "updated_at": "2018-01-22T20:39:23.313Z",
+        "user": 1,
+        "nombre": " Vladimir",
+        "apellido": "Jank\u00e9l\u00e9vitch",
+        "texto": "(Bourges, 1903-Par&iacute;s, 1985), hijo de una familia de intelectuales jud&iacute;os emigrados de Rusia, su padre fue uno de los primeros traductores de Freud al franc&eacute;s. Termin&oacute; sus estudios en 1922 y en 1932 se doctora en Letras. En 1939, es movilizado al frente y herido. Al abandonar el hospital, entra en la clandestinidad, participando en la Resistencia. Tras ocupar desde 1947 su c&aacute;tedra en Lille, pasa a ser profesor en la Sorbona en 1951. Gran amante y estudioso de la m&uacute;sica, ha escrito tambi&eacute;n varios ensayos sobre el tema. La mayor parte de su extensa obra filos&oacute;fica gira en torno a los problemas que conforman la experiencia de la vida cotidiana. Algunas de sus obras son: La iron&iacute;a (1936), La austeridad y la vida moral (1956), Lo no s&eacute; qu&eacute; y lo casi nada (1957), Lo puro y lo impuro (1960), La aventura, el aburrimiento, lo serio (1963), La muerte (1966), El perd&oacute;n (1967) y Lo irreversible y la nostalgia (1974).",
+        "imagen": "imagenes/autores/autor_126.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 127,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.320Z",
+        "updated_at": "2018-01-22T20:39:23.325Z",
+        "user": 1,
+        "nombre": " Hannah",
+        "apellido": "Arendt",
+        "texto": "(Hannover, 1906 - New York, 1975). Disc&iacute;pula de Heidegger y Husserl, protegida de Karl Jaspers. Huy&oacute; de Alemania en 1933 a causa de la persecuci&oacute;n nazi, tras la ocupaci&oacute;n alemana de Francia, se estableci&oacute; en Nueva York desde 1941. Dividi&oacute; su actividad intelectual entre la filosof&iacute;a y la teor&iacute;a pol&iacute;tica, llegando a adquirir un s&oacute;lido prestigio tanto en Europa como en Am&eacute;rica. En 1951 public&oacute; Los or&iacute;genes del totalitarismo, quiz&aacute; su obra m&aacute;s famosa, al que siguieron textos fundamentales para el pensamiento contempor&aacute;neo como Sobre la revoluci&oacute;n (1963), Eichmann en Jerusal&eacute;n. Un estudio sobre la banalidad del mal (1963), Hombres en tiempos de oscuridad (1968), La condici&oacute;n humana (1969), La vida del esp&iacute;ritu (1971) y Crisis de la Rep&uacute;blica (1972), entre otros. Profesora en las universidades de Berkeley, Princeton, Columbia y Chicago; colaboradora de diversas publicaciones peri&oacute;dicas como Review of politics, Jewish Social Studies, Partisan Review, New Yorker, entre otras. Pas&oacute; sus &uacute;ltimos a&ntilde;os ejerciendo la ense&ntilde;anza en la New School for Social Research.&nbsp;",
+        "imagen": "imagenes/autores/autor_127.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 128,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.333Z",
+        "updated_at": "2018-01-22T20:39:23.337Z",
+        "user": 1,
+        "nombre": " Jean",
+        "apellido": "Cocteau",
+        "texto": "Jean Cocteau (Par&iacute;s 1889&ndash;Fontainebleau, 1963) Poeta, novelista, dramaturgo, dise&ntilde;ador, autor de libretos y director de cine franc&eacute;s, cuya versatilidad, falta de convencionalismo y enorme producci&oacute;n le proporcionaron fama internacional. Estuvo asociado con el movimiento surrealista y su obra ejerci&oacute; gran influencia en la de otros muchos escritores. Su primer libro de poemas, La l&aacute;mpara de Aladino, apareci&oacute; en 1909 y r&aacute;pidamente le situ&oacute; como un escritor importante. Su obras m&aacute;s destacadas son Orfeo (1927) y La m&aacute;quina infernal (1934), la novela Los ni&ntilde;os terribles (1929) y su primera pel&iacute;cula, La sangre de un poeta (1930). Las pel&iacute;culas de Cocteau, en su mayor&iacute;a escritas y dirigidas por &eacute;l, fueron especialmente importantes en la introducci&oacute;n del surrealismo en el cine franc&eacute;s. Varias de ellas, especialmente La bella y la bestia (1945), Orfeo (1950) y Los ni&ntilde;os terribles (1929), han llegado a ser consideradas cl&aacute;sicas del cine moderno. A pesar de sus &eacute;xitos en pr&aacute;cticamente todos los campos art&iacute;sticos, Cocteau insisti&oacute; en que era ante todo un poeta y que todas sus obras eran poes&iacute;a.",
+        "imagen": "imagenes/autores/autor_128.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 129,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.344Z",
+        "updated_at": "2018-01-22T20:39:23.348Z",
+        "user": 1,
+        "nombre": " Griselda",
+        "apellido": "Gambaro",
+        "texto": "Griselda Gambaro (Buenos Aires, 1928). Es narradora y dramaturga. Entre sus novelas se destacan Una felicidad con menos pena (1967), Nada que ver con otra historia (1972), Ganarse la muerte (1976), Dios no nos quiere contentos (1979), Lo impenetrable (1984), Despu&eacute;s del d&iacute;a de fiesta (1994) El mar que nos trajo (2001) y Promesas y desvar&iacute;os (2004). Entre sus libros de cuentos: Lo mejor que se tiene (1998) y Los animales salvajes (2006). Una edici&oacute;n de su Teatro &ndash;que re&uacute;ne la mayor parte de su producci&oacute;n&ndash; se public&oacute; en 2011 en cuatro vol&uacute;menes. Algunas de sus obras son El campo, Ant&iacute;gona furiosa, Penas sin importancia y La se&ntilde;ora Macbeth. Ha recibido numerosas distinciones, como las otorgadas por el Estado de Puebla y Guadalajara, la UNESCO, el Fondo Nacional de las Artes, Argentores, la Fundaci&oacute;n&nbsp; Di Tella, la Academia Argentina de Letras, la Fundaci&oacute;n Konex y la Beca Guggenheim.",
+        "imagen": "imagenes/autores/autor_129.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 130,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.356Z",
+        "updated_at": "2018-01-22T20:39:23.361Z",
+        "user": 1,
+        "nombre": " J.",
+        "apellido": "Hoberman",
+        "texto": "James Lewis Hoberman (1948), tambi&eacute;n conocido como J. Hoberman, es un prestigioso cr&iacute;tico de cine norteamericano. Comenz&oacute; en The Village Voice durante la d&eacute;cada de 1970, se convirti&oacute; en un escritor a tiempo completo en 1983, y fue su principal cr&iacute;tico de cine desde 1988 a 2012. Tambi&eacute;n es el autor de varios libros incluyendo una colaboraci&oacute;n con el tambi&eacute;n cr&iacute;tico de cine Jonathan Rosenbaum, titulado Midnight Movies, publicado en 1983.Desde 1990, Hoberman ha ense&ntilde;ado historia del cine en Cooper Union, adem&aacute;s, de dar numerosas conferencias en la Universidad de Harvard y de Nueva York.En 2008, en el Festival Internacional de Cine de San Francisco, Hoberman fue galardonado con el prestigioso premio Mel Novikoff: un premio anual &ldquo;otorgado a una persona o instituci&oacute;n cuyo trabajo ha mejorado el conocimiento y la apreciaci&oacute;n del cine mundial del p&uacute;blico cin&eacute;filo.&rdquo;Despu&eacute;s de su permanencia en el Village Voice, Hoberman ha publicado art&iacute;culos en otros medios, incluyendo The Guardian y The New York Review of Books.",
+        "imagen": "imagenes/autores/autor_130.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 131,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.368Z",
+        "updated_at": "2018-01-22T20:39:23.372Z",
+        "user": 1,
+        "nombre": " Jean-Louis",
+        "apellido": "Comolli",
+        "texto": "Jean-Louis Comolli (1941) es un escritor, editor y director de cine franc&eacute;s. Fue redactor en jefe de Cahiers du cin&eacute;ma (1966-1978), per&iacute;odo en el cual escribi&oacute; sus dos ensayos m&aacute;s influyentes &ldquo;M&aacute;quinas de lo visible&rdquo; (1971) y &ldquo;T&eacute;cnica e ideolog&iacute;a: la c&aacute;mara, perspectiva, profundidad de campo&rdquo; (1971-2). Este trabajo fue de gran relevancia en la discusi&oacute;n sobre la teor&iacute;a del aparato: un intento de volver a pensar el cine como un sitio para la producci&oacute;n y mantenimiento de la ideolog&iacute;a dominante.Despu&eacute;s de su permanencia en Cahiers du cin&eacute;ma, Comolli continu&oacute; su trabajo como director y desde entonces ha publicado numerosos trabajos sobre la teor&iacute;a del cine, el documental, y el jazz. Actualmente es profesor de teor&iacute;a del cine en varias universidades de Par&iacute;s.",
+        "imagen": "imagenes/autores/autor_131.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 132,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.380Z",
+        "updated_at": "2018-01-22T20:39:23.385Z",
+        "user": 1,
+        "nombre": " Peter",
+        "apellido": "Szondi",
+        "texto": "(Budapest, 1929 - Berl&iacute;n, 1971) Ya desde su tesis de doctorado, Teor&iacute;a del drama moderno (1880-1950), publicada en 1956, sus textos tuvieron una importante recepci&oacute;n en el mundo intelectual y cultural. Partiendo de la reflexi&oacute;n est&eacute;tica de Schelling y Hegel, del joven Luk&aacute;cs, de Adorno y, especialmente, de Walter Benjamin, Szondi desarroll&oacute; un m&eacute;todo de an&aacute;lisis en el que los conceptos de &ldquo;dial&eacute;ctica&rdquo; y de &ldquo;tr&aacute;gico&rdquo; ocupan un lugar esencial. A partir de 1959, entabl&oacute; amistad con Paul Celan y Jean Bollack. En 1965 fund&oacute; el Instituto de Literatura Comparada en la Universidad Libre de Berl&iacute;n, desde el cual pronto intent&oacute; reivindicar la fuerza cr&iacute;tica de la filolog&iacute;a con el objetivo de renovar la instituci&oacute;n acad&eacute;mica.Obras publicadas en espa&ntilde;ol: Estudios sobre H&ouml;lderlin, Po&eacute;tica y filosof&iacute;a de la historia, Teor&iacute;a del drama moderno, Estudios sobre Celan y Tentativa sobre lo tr&aacute;gico.",
+        "imagen": "imagenes/autores/autor_132.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 133,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.393Z",
+        "updated_at": "2018-01-22T20:39:23.398Z",
+        "user": 1,
+        "nombre": " R. G.",
+        "apellido": "Collingwood",
+        "texto": "(Lancashire, 1889&nbsp;-&nbsp;Cumbria, 1943) fue un fil&oacute;sofo e historiador brit&aacute;nico. Tuvo influencia de parte de los&nbsp;idealistas&nbsp;italianos como&nbsp;Benedetto Croce,&nbsp;Giovanni Gentile&nbsp;y&nbsp;Guido de Ruggiero, este &uacute;ltimo como amigo &iacute;ntimo. Otras importantes influencias fueron las de&nbsp;Hegel,&nbsp;Kant,&nbsp;Giambattista Vico,&nbsp;F. H. Bradley&nbsp;y&nbsp;J. A. Smith. Tambi&eacute;n&nbsp;John Ruskin, del que hab&iacute;a sido alumno su padre. Collingwood es principalmente conocido por su libro&nbsp;Idea de la historia, obra p&oacute;stuma, compuesta por varias fuentes reunidas poco despu&eacute;s de su muerte por su disc&iacute;pulo T. M. Knox. La obra se convirti&oacute; en la principal inspiraci&oacute;n para la filosof&iacute;a de la historia en el mundo anglosaj&oacute;n. Adem&aacute;s de fil&oacute;sofo de la historia, Collingwood era tambi&eacute;n un historiador en la pr&aacute;ctica, as&iacute; como arque&oacute;logo. En su &eacute;poca fue considerado una autoridad en la&nbsp;Britania romana.\"",
+        "imagen": "imagenes/autores/autor_133.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 134,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.405Z",
+        "updated_at": "2018-01-22T20:39:23.409Z",
+        "user": 1,
+        "nombre": " Gy\u00f6rgy",
+        "apellido": "Luk\u00e1cs",
+        "texto": "(Budapest, 1885&nbsp;- 1971) fue un&nbsp;fil&oacute;sofo&nbsp;marxista y&nbsp;cr&iacute;tico literario&nbsp;h&uacute;ngaro. Desde su adolescencia mostr&oacute; un gran inter&eacute;s por la literatura y una notable capacidad para la cr&iacute;tica. Alterna sus estudios de Filosof&iacute;a en Budapest, donde se doctora en Filosof&iacute;a en 1909, con la redacci&oacute;n de su estudio Evoluci&oacute;n hist&oacute;rica del teatro moderno. Ley&oacute;&nbsp;El Capital&nbsp;de&nbsp;Marx, a&nbsp;Max Weber&nbsp;y se impregn&oacute; de la filosof&iacute;a de&nbsp;G. Simmel&nbsp;durante su &eacute;poca de bachiller. En 1910 edita su libro&nbsp;El alma y las formas, traducci&oacute;n de los art&iacute;culos que hab&iacute;a reunido el mismo a&ntilde;o para una edici&oacute;n en h&uacute;ngaro, pronto abandonar&iacute;a las opiniones expresadas en esta obra. Presta sus servicios como profesor en la &ldquo;Escuela Libre de las Ciencias del Esp&iacute;ritu&rdquo; o tambi&eacute;n conocida como&nbsp;&ldquo;Escuela Libre de Humanidades&rdquo;, aqu&iacute; conoce al futuro soci&oacute;logo&nbsp;Karl Mannheim&nbsp;y al cr&iacute;tico de arte&nbsp;Arnold Hauser.&nbsp;En esta &eacute;poca abandona el neokantismo y se acerca m&aacute;s a una teor&iacute;a que permita la historizaci&oacute;n de las categor&iacute;as est&eacute;ticas, como demuestra en&nbsp;Teor&iacute;a de la Novela, escrita en el invierno de 1914-1915, y publicada en 1916. En 1933, Luk&aacute;cs emigra a la Uni&oacute;n Sovi&eacute;tica, es aqu&iacute; donde se elabora su proyecto de &ldquo;gran realismo&rdquo; opuesta al &ldquo;realismo socialista&rdquo;. Se convertir&aacute; en colaborador del&nbsp;Instituto Filos&oacute;fico de la Academia de Ciencias de Mosc&uacute;, tambi&eacute;n llamada Instituto Marx-Engels. Es encarcelado por los sovi&eacute;ticos junto con Nagy poco despu&eacute;s y regresar&aacute; a Budapest en abril de 1957 para investigar de forma aut&oacute;noma, puesto que, hab&iacute;a sido expulsado del partido. Es galardonado con el&nbsp;premio Goethe&nbsp;de la ciudad de&nbsp;Frankfurt&nbsp;en 1970. Muere el 4 de junio de 1971, a los ochenta y seis a&ntilde;os de edad.",
+        "imagen": "imagenes/autores/autor_134.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 135,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.416Z",
+        "updated_at": "2018-01-22T20:39:23.421Z",
+        "user": 1,
+        "nombre": " Gustave",
+        "apellido": "Flaubert",
+        "texto": "(Rouen, 1821 - Croisset, 1880). Hijo de un c&eacute;lebre cirujano, tuvo cinco hermanos. Inici&oacute; en Par&iacute;s estudios de Derecho, que nunca termin&oacute; al parecer por razones de salud. Frecuent&oacute; el mundo literario de la &eacute;poca y emprendi&oacute;, desde 1847, toda suerte de viajes por Francia y en los pa&iacute;ses de oriente en los que fue gestando su oficio de escritor. Cuando decidi&oacute; regresar, se encerr&oacute; definitivamente en el peque&ntilde;o pueblo de Croisset y all&iacute; escribi&oacute; toda su obra. En 1856 apareci&oacute; Madame Bovary, por entregas en la Revue de Paris, como era costumbre en la &eacute;poca. Un a&ntilde;o despu&eacute;s, la publicaci&oacute;n del libro lo enfrent&oacute; a un proceso judicial en el que se lo acusaba de inmoralidad, finalmente fue absuelto.De sus obras se destacan las novelas Salamb&oacute; (1862), La educaci&oacute;n sentimental (1869), La tentaci&oacute;n de San Antonio (1874); narraciones cortas reunidas en Tres cuentos (1877) y dos trabajos p&oacute;stumos Bouvard y P&eacute;cuchet (1881) y Diccionario de lugares comunes (1913).",
+        "imagen": "imagenes/autores/autor_135.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 136,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.427Z",
+        "updated_at": "2018-01-22T20:39:23.431Z",
+        "user": 1,
+        "nombre": " Siegfried",
+        "apellido": "Kracauer",
+        "texto": "(Fr&aacute;ncfort, 1889-Nueva York, 1969). Trabaj&oacute; como arquitecto entre 1915 y 1918, a&ntilde;o en que abandon&oacute; la profesi&oacute;n para dedicarse a la escritura. Sus primeros trabajos estuvieron relacionados con el periodismo (1922-1933), como jefe de las p&aacute;ginas culturales del Frankfurter Zeitung. Tras el incendio del Reichstag en febrero de 1933 Kracauer y su esposa Lili Ehrenreich abandonaron Alemania en direcci&oacute;n a Par&iacute;s. En 1941 se trasladaron a Estados Unidos. All&iacute; Kracauer fue director de investigaciones aplicadas en ciencias sociales de la Universidad de Columbia. Entre sus obras destacan El ornamento de la masa (1927) y De Caligari a Hitler: una historia psicol&oacute;gica del cine alem&aacute;n (1947).&nbsp;\"",
+        "imagen": "imagenes/autores/autor_136.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 137,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.438Z",
+        "updated_at": "2018-01-22T20:39:23.443Z",
+        "user": 1,
+        "nombre": " Henri",
+        "apellido": "Langlois",
+        "texto": "(Smyrne, Turqu&iacute;a 13 de noviembre de 1914 - Par&iacute;s, Francia 13 de enero de 1977) se destac&oacute; en la conservaci&oacute;n y restauraci&oacute;n de filmes y fue uno de los fundadores de la Cinemateca Francesa. Pionero de la preservaci&oacute;n de pel&iacute;culas, Langlois fue una figura influyente en la historia del cine. Sus proyecciones en Par&iacute;s en la d&eacute;cada de 1950 se acreditan a menudo con el suministro de las ideas que llevaron al desarrollo de la teor&iacute;a del autor.&nbsp; A trav&eacute;s de una estrecha colaboraci&oacute;n con su antiguo jefe archivista de la Cinemateca, Lotte Eisner, trabaj&oacute; para preservar pel&iacute;culas y la historia del cine en la posguerra. En 1974, Langlois recibi&oacute; un premio honorario de la Academia por &ldquo;su dedicaci&oacute;n al arte cinematogr&aacute;fico, sus enormes contribuciones en la preservaci&oacute;n de su pasado y la inquebrantable fe en su futuro&rdquo;.",
+        "imagen": "imagenes/autores/autor_137.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 138,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.450Z",
+        "updated_at": "2018-01-22T20:39:23.454Z",
+        "user": 1,
+        "nombre": " Edgar",
+        "apellido": "Wind",
+        "texto": "(Berl&iacute;n, 1900-1971) historiador de arte alem&aacute;n exiliado, que se especializ&oacute; en iconolog&iacute;a del Renacimiento. Se form&oacute; en matem&aacute;ticas y filosof&iacute;a en el Instituto de Charlottenburg, y luego en las Universidades de Berl&iacute;n, Freiburg y Viena. Concluy&oacute; su licenciatura en Hamburgo, donde fue el primer disc&iacute;pulo de Erwin Panofsky. Fue docente en la Universidad de North Carolina entre 1925 y 1927, pero regres&oacute; a Hamburgo como investigador ayudante. All&iacute; conoci&oacute; a Aby Warburg, y fue uno de los que ayudaron a trasladar la Biblioteca Warburg. En 1955 Wind regres&oacute; a Inglaterra, y fue el primer profesor de historia del arte en la Universidad de Oxford, posici&oacute;n que mantuvo hasta su retiro en 1967. Otras obras del autor: Los misterios paganos del Renacimiento y La elocuencia de los s&iacute;mbolos: estudios sobre arte humanista.",
+        "imagen": "imagenes/autores/autor_138.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 139,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.462Z",
+        "updated_at": "2018-01-22T20:39:23.466Z",
+        "user": 1,
+        "nombre": " Thomas",
+        "apellido": "Bernhard",
+        "texto": "Thomas Bernhard naci&oacute; en Heerlen (Holanda) en 1931 y muri&oacute; en Gmunden (Austria), en 1989 &ndash;como consecuencia de una larga enfermedad que sufr&iacute;a desde joven&ndash;, poco despu&eacute;s de provocar un gran esc&aacute;ndalo en su pa&iacute;s, luego del estreno, en noviembre de 1988, de la pieza teatral Heldenplatz.Extremadamente l&uacute;cida y cr&iacute;tica con la historia de Austria, toda la obra de Bernhard estuvo marcada por la pol&eacute;mica. La fuerza y la calidad de sus escritos lo han convertido en uno de los m&aacute;s grandes autores del siglo XX.En su poes&iacute;a, teatro y novelas Bernhard analiza sin piedad la condici&oacute;n humana a trav&eacute;s de temas como la muerte, la enfermedad, la destrucci&oacute;n, la locura y la desolaci&oacute;n que asedian al ser humano. Se mostr&oacute; muy cr&iacute;tico de la sociedad contempor&aacute;nea, sobre todo en las obras autobiogr&aacute;ficas El origen (1975), El s&oacute;tano (1976), El aliento (1978), El fr&iacute;o (1981) y Un ni&ntilde;o (1982).Algunas de sus novelas m&aacute;s destacadas son Helada (1964), Trastorno (1967), Correcci&oacute;n (1975), Hormig&oacute;n (1982), El malogrado (1983), Tala (1984) y Extinci&oacute;n (1986). De su producci&oacute;n teatral podemos mencionar Una fiesta para Boris (1970), El ignorante y el demente (1972), La partida de caza (1974), Immanuel Kant (1978), Las apariencias enga&ntilde;an (1983) y El teatrero (1984).",
+        "imagen": "imagenes/autores/autor_139.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 140,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.472Z",
+        "updated_at": "2018-01-22T20:39:23.476Z",
+        "user": 1,
+        "nombre": " Alfred",
+        "apellido": "Hitchcock",
+        "texto": "Naci&oacute; el 13 de agosto de 1899 en el seno de una familia cat&oacute;lica de&nbsp;Leytonstone,&nbsp;Inglaterra.Curs&oacute; estudios en el Colegio de San Ignacio y en la Escuela de Ingenier&iacute;a y Navegaci&oacute;n de Londres (mec&aacute;nica,&nbsp;electricidad,&nbsp;ac&uacute;stica&nbsp;y&nbsp;navegaci&oacute;n). M&aacute;s tarde fue estudiante de&nbsp;arte&nbsp;en la Universidad de Londres. Se estrena como&nbsp;ayudante de direcci&oacute;n&nbsp;en 1922 y tuvo la oportunidad de dirigir el final de una pel&iacute;cula inconclusa.Por entonces conoce a la que se iba a convertir en su esposa,&nbsp;Alma Reville, una mujer de talento y experiencia en el mundo del cine que pronto se revel&oacute; como una de las m&aacute;s importantes colaboradoras. Fruto del matrimonio nacer&iacute;a&nbsp;Patricia Hitchcock, que actu&oacute; en algunas de las pel&iacute;culas m&aacute;s c&eacute;lebres de su padre: \\Psicosis\\\" y \\\"Extra&ntilde;os al tren\\\".En \\\"El enemigo de las rubias\\\" 1926, y sobre todo \\\"La muchacha de Londres\\\" 1929, pone el sello Hitchcockh, esa manera propia, descubridora de nuevas posibilidades cinematogr&aacute;ficas. Su primer gran &eacute;xito internacional le llega en 1934 con la primera versi&oacute;n de \\\"El Hombre que sab&iacute;a demasiado\\\" (The man who knew too much).Se convirti&oacute; en uno de los cineastas m&aacute;s importantes de todos los tiempos, poseedor del secreto de los ritmos de la emoci&oacute;n y la sensibilidad humana, llevo con arte a la gran pantalla la intriga, el misterio o el suspense en filmes como \\\"Psicosis\\\", \\\"Los P&aacute;jaros\\\", \\\"Un crimen perfecto\\\", \\\"La ventana indiscreta\\\", \\\"V&eacute;rtigo\\\", \\\"Asesinato\\\", \\\"El hombre que sab&iacute;a demasiado\\\" o \\\"Sabotaje\\\", pel&iacute;culas que ya han pasado a la historia y que se convirtieron en cl&aacute;sicos del cine.Alfred Hitchcock falleci&oacute; en&nbsp;Bel Air, Los &Aacute;ngeles, el 29 de abril de 1980, estaba trabajando con los preparativos de una &uacute;ltima pel&iacute;cula de t&iacute;tulo \\\"The Short Night\\\".&nbsp;\"",
+        "imagen": "imagenes/autores/autor_140.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 141,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.485Z",
+        "updated_at": "2018-01-22T20:39:23.489Z",
+        "user": 1,
+        "nombre": " Terry",
+        "apellido": "Eagleton",
+        "texto": "(Salford, Gran Breta&ntilde;a, 1943) te&oacute;rico, cr&iacute;tico literario e intelectual p&uacute;blico. Naci&oacute; en el seno de una familia obrera de inmigrantes irlandeses, estudi&oacute; en el Trinity College de Cambridge, con Raymond Williams &ndash;de quien fue disc&iacute;pulo&ndash;, y milit&oacute; en la izquierda cat&oacute;lica.Eagleton ha ense&ntilde;ado Literatura inglesa en la Universidad de Oxford, tras una larga trayectoria como docente. Es en la actualidad profesor de la Universidad de Lancaster. Entre sus libros m&aacute;s destacados est&aacute;n Una introducci&oacute;n a la teor&iacute;a literaria (1988), Ideolog&iacute;a. Una introducci&oacute;n (1997), La funci&oacute;n de la cr&iacute;tica (1998), Walter Benjamin o hacia una est&eacute;tica revolucionaria (1998), Las ilusiones del posmodernismo (1997), La idea de cultura (2001), Despu&eacute;s de la teor&iacute;a (2003), La novela inglesa: una introducci&oacute;n (2008), La est&eacute;tica como ideolog&iacute;a (2006) y Por qu&eacute; Marx ten&iacute;a raz&oacute;n (2011).",
+        "imagen": "imagenes/autores/autor_141.jpg"
+    }
+},
+{
+    "model": "home.autor",
+    "pk": 142,
+    "fields": {
+        "created_at": "2018-01-22T20:39:23.497Z",
+        "updated_at": "2018-01-22T20:39:23.501Z",
+        "user": 1,
+        "nombre": " Michel",
+        "apellido": "Onfray",
+        "texto": "(Argentan, 1959) es un&nbsp;fil&oacute;sofo franc&eacute;s que ha escrito m&aacute;s de cincuenta libros en los que formula un proyecto &eacute;tico hedonista inclinado siempre por un pensamiento marginal, dejado de lado por el orden establecido. Fue fundador de la Universidad Popular de Caen y de la Universidad del gusto en su ciudad natal, donde brinda seminarios anuales, gratuitos y libres, en los que entrecruza hedonismo, anarquismo y est&eacute;tica, temas fundamentales de sus libros, muchos de ellos de gran &eacute;xito y traducidos a numerosas lenguas, como Antimanual de filosof&iacute;a, Tratado de ateolog&iacute;a, Freud. El crep&uacute;sculo de un &iacute;dolo, y su gran Contrahistoria de la filosof&iacute;a, en nueve vol&uacute;menes. Otras obras recientes son Cosmos, la ontolog&iacute;a materialista (2015) y Pensar el Islam (2016).",
+        "imagen": "imagenes/autores/autor_142.jpg"
+    }
+}
+]
