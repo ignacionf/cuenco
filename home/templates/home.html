@@ -7,126 +7,47 @@
   <div class="item"><a href="{% static "images/slider/slider_2.jpg" %}" class="image-popup"><img src="{% static "images/slider/slider_2.jpg" %}" alt="slider 2"></a></div>
 </div>
 
+
 	<div id="fh5co-featured-work-section">
 		<div class="container-fluid">
 			<div class="heading-section text-center">
 				<h2>Novedades</h2>
 			</div>
-			<div class="owl-carousel owl-carousel2" style='margin: auto; width: 80%;'>
+			<div class="owl-carousel novedades" style='margin: auto; width: 80%;'>
+{% for n in novedades %}
 				<div class="item">
 					<!-- <a href="#" class="image-popup"> -->
-					<img src="images/novedades/novedad_1.jpg" alt="image">
+					<img src="{{ n.imagen.url }}" alt="image">
 					<a href="#" class="pop-up-overlay text-center">
 						<div class="desc">
-							<h3>Michel Onfray</h3>
-							<span>Las radicalidadades existenciales </span>
+							<h4>{{ n.titulo }}</h4>
+							<span>{{ n.autor}}</span>
 						</div>
 					</a>
 				</div>
+{% endfor %}
+			</div>
+		</div>
+	</div><!-- end fh5co-featured-work-section -->
 
+	<div id="fh5co-featured-work-section">
+		<div class="container-fluid">
+			<div class="heading-section text-center">
+				<h2>Recomendados</h2>
+			</div>
+			<div class="owl-carousel recomendados" style='margin: auto; width: 80%;'>
+{% for n in recomendados %}
 				<div class="item">
 					<!-- <a href="#" class="image-popup"> -->
-					<img src="images/novedades/novedad_2.jpg" alt="image">
+					<img src="{{ n.imagen.url }}" alt="image">
 					<a href="#" class="pop-up-overlay text-center">
 						<div class="desc">
-							<h3>Francis Ponge</h3>
-							<span>De parte de las cosas – Proemios – Doce pequeños escritos</span>
+							<h4>{{ n.titulo }}</h4>
+							<span>{{ n.autor}}</span>
 						</div>
 					</a>
 				</div>
-
-				<div class="item">
-					<!-- <a href="#" class="image-popup"> -->
-					<img src="images/novedades/novedad_3.jpg" alt="image">
-					<a href="#" class="pop-up-overlay text-center">
-						<div class="desc">
-							<h3>Georges Perec</h3>
-							<span>El atentado de Sarajevo</span>
-						</div>
-					</a>
-				</div>
-				<div class="item">
-					<!-- <a href="#" class="image-popup"> -->
-					<img src="images/novedades/novedades_4.jpg" alt="image">
-					<a href="#" class="pop-up-overlay text-center">
-						<div class="desc">
-							<h3>Georges Perec</h3>
-							<span>El atentado de Sarajevo</span>
-						</div>
-					</a>
-				</div>
-				<div class="item">
-					<!-- <a href="#" class="image-popup"> -->
-					<img src="images/novedades/novedades_5.jpg" alt="image">
-					<a href="#" class="pop-up-overlay text-center">
-						<div class="desc">
-							<h3>Georges Perec</h3>
-							<span>El atentado de Sarajevo</span>
-						</div>
-					</a>
-				</div>
-				<div class="item">
-					<!-- <a href="#" class="image-popup"> -->
-					<img src="images/novedades/novedades_6.jpg" alt="image">
-					<a href="#" class="pop-up-overlay text-center">
-						<div class="desc">
-							<h3>Georges Perec</h3>
-							<span>El atentado de Sarajevo</span>
-						</div>
-					</a>
-				</div>
-				<div class="item">
-					<!-- <a href="#" class="image-popup"> -->
-					<img src="images/novedades/novedades_7.jpg" alt="image">
-					<a href="#" class="pop-up-overlay text-center">
-						<div class="desc">
-							<h3>Georges Perec</h3>
-							<span>El atentado de Sarajevo</span>
-						</div>
-					</a>
-				</div>
-				<div class="item">
-					<!-- <a href="#" class="image-popup"> -->
-					<img src="images/novedades/novedades_8.jpg" alt="image">
-					<a href="#" class="pop-up-overlay text-center">
-						<div class="desc">
-							<h3>Georges Perec</h3>
-							<span>El atentado de Sarajevo</span>
-						</div>
-					</a>
-				</div>
-				<div class="item">
-					<!-- <a href="#" class="image-popup"> -->
-					<img src="images/novedades/novedades_9.jpg" alt="image">
-					<a href="#" class="pop-up-overlay text-center">
-						<div class="desc">
-							<h3>Georges Perec</h3>
-							<span>El atentado de Sarajevo</span>
-						</div>
-					</a>
-				</div>
-				<div class="item">
-					<!-- <a href="#" class="image-popup"> -->
-					<img src="images/novedades/novedades_10.jpg" alt="image">
-					<a href="#" class="pop-up-overlay text-center">
-						<div class="desc">
-							<h3>Georges Perec</h3>
-							<span>El atentado de Sarajevo</span>
-						</div>
-					</a>
-				</div>
-				<div class="item">
-					<!-- <a href="#" class="image-popup"> -->
-					<img src="images/novedades/novedades_11.jpg" alt="image">
-					<a href="#" class="pop-up-overlay text-center">
-						<div class="desc">
-							<h3>Georges Perec</h3>
-							<span>El atentado de Sarajevo</span>
-						</div>
-					</a>
-				</div>
-
-
+{% endfor %}
 			</div>
 		</div>
 	</div><!-- end fh5co-featured-work-section -->
@@ -160,4 +81,34 @@ Autor de: Cerdos & Peces, El señor de los venenos, Big Bad City, En busca del a
 			</div>
 		</div>
 	</div><!-- end: fh5co-blog-section -->
+{% endblock %}
+{% block "js" %}
+<script>
+$('.novedades').owlCarousel({
+    autoplay: true,
+    items: 5,
+    loop:true,
+    margin:10,
+    nav:true,
+    dots: true,
+    navText: [
+        "<i class='icon-chevron-left owl-direction'></i>",
+        "<i class='icon-chevron-right owl-direction'></i>"
+    ]
+})
+$('.recomendados').owlCarousel({
+    autoplay: true,
+    items: 5,
+    loop:true,
+    margin:10,
+    nav:true,
+    dots: true,
+    navText: [
+        "<i class='icon-chevron-left owl-direction'></i>",
+        "<i class='icon-chevron-right owl-direction'></i>"
+    ]
+})
+
+
+</script>
 {% endblock %}

@@ -51,6 +51,7 @@ class Libro(Model):
 
     traductor = models.CharField("Traductor", max_length=500, blank=True, null=True)
     subtitulo = models.CharField("Sub Titulo", max_length=500, blank=True, null=True)
+    recomendado = models.BooleanField("Recomendado", default=False)
 
     class Meta:
         verbose_name_plural = "Libros"

@@ -388,7 +388,7 @@ header #fh5co-main-nav > ul li:first-child {
 }
 .item .pop-up-overlay .desc {
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 0;
   bottom: 0;
   right: 0;
