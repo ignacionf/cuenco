@@ -13,17 +13,15 @@
 			<div class="heading-section text-center">
 				<h2>Novedades</h2>
 			</div>
-			<div class="owl-carousel novedades" style='margin: auto; width: 80%;'>
+			<div class="owl-carousel novedades">
 {% for n in novedades %}
 				<div class="item">
 					<!-- <a href="#" class="image-popup"> -->
 					<img src="{{ n.imagen.url }}" alt="image">
-					<a href="#" class="pop-up-overlay text-center">
-						<div class="desc">
-							<h4>{{ n.titulo }}</h4>
-							<span>{{ n.autor}}</span>
-						</div>
-					</a>
+                    <div class="desc">
+                        <b style="color: #F05736">{{ n.autor }}</b>
+                        <p>{{ n.titulo }}</p>
+                    </div>
 				</div>
 {% endfor %}
 			</div>
@@ -35,17 +33,16 @@
 			<div class="heading-section text-center">
 				<h2>Recomendados</h2>
 			</div>
-			<div class="owl-carousel recomendados" style='margin: auto; width: 80%;'>
+			<div class="owl-carousel recomendados">
 {% for n in recomendados %}
 				<div class="item">
 					<!-- <a href="#" class="image-popup"> -->
 					<img src="{{ n.imagen.url }}" alt="image">
-					<a href="#" class="pop-up-overlay text-center">
-						<div class="desc">
-							<h4>{{ n.titulo }}</h4>
-							<span>{{ n.autor}}</span>
-						</div>
-					</a>
+
+                    <div class="desc">
+                        <b style="color: #F05736">{{ n.autor }}</b>
+                        <p>{{ n.titulo }}</p>
+                    </div>
 				</div>
 {% endfor %}
 			</div>
@@ -88,7 +85,7 @@ $('.novedades').owlCarousel({
     autoplay: true,
     items: 5,
     loop:true,
-    margin:10,
+    margin:50,
     nav:true,
     dots: true,
     navText: [
