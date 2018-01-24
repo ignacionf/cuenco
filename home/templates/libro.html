@@ -1,0 +1,54 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block "content" %}
+
+<!--
+<div class="heading-section text-center"><h2>Libro</h2></div>
+-->
+
+<div class='col-md-12'>&nbsp;</div>
+<div class="col-md-10 col-md-offset-1">
+{% if object.imagen %}
+    <div class='col-md-4' style='padding-top: 20px;'>
+        <div><img src='{{ object.imagen.url }}' style='width: 100%;' /></div>
+    </div> <!-- col-md-4-->
+{% endif %}
+
+    <div class='col-md-8'>
+        <div><h2>{{ object.autor|title }}</h2></div>
+        <div><h3>{{ object.titulo|title }}</h3></div>
+        {% if object.prologo %}
+        <div><h4><small>Prologo de </small>{{ object.traductor }}</h4></div>
+        {% endif %}
+        {% if object.traductor %}
+        <div><h4><small>Traducción: </small>{{ object.traductor }}</h4></div>
+        {% endif %}
+
+        <div class='text-justify' style='background: #E6F0E6; padding: 40px; font-size: .7em;'>
+            {% autoescape off %}
+            {{ object.texto}}
+            {% endautoescape %}
+        </div>
+    </div> <!-- col-md-8-->
+</div> <!-- row -->
+<div class='col-md-12'>&nbsp;</div>
+
+
+{% endblock %}
+
+
+{% block "style" %}
+<style>
+h1, h2, h3, h4 {
+    color: rgba(0,0,0,.8);
+    margin: 10px 0 10px 0;
+}
+</style>
+{% endblock %}
+
+{% block "js" %}
+<script>
+//$("# nombre  > a").addClass("active");
+</script>
+{% endblock %}

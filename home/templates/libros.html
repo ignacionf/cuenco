@@ -1,0 +1,80 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block "content" %}
+
+<div class="heading-section text-center"><h2>{{ nombre }}</h2></div>
+
+<div class="row">
+<div class='col-md-12'>
+{% for i in libros %}
+<a href="{% url "libro" i.id %}">
+    <div class='col-md-6' style='margin-bottom: 30px;'>
+        {% if i.imagen %}
+        <div class='col-md-5 text-center'>
+            <img src='{{ i.imagen.url }}' style='width: 80%;' />
+            <div style='font-size: .8em;'>{{ i.autor }}</div>
+        </div>
+        <div class='col-md-7' style='padding: 0;'>
+            <div style='font-size: 1em;'>{{ i.titulo}}</div>
+            <div style='font-size: .8em; color: rgba(0,0,0,0.7); margin-top: 40px;'>{{ i.coleccion }}</div>
+            <div style='font-size: .6em; color: rgba(0,0,0,0.5);'>ISBN: {{ i.isbn}}</div>
+        </div>
+        {% endif %}
+    </div>
+</a>
+{% endfor %}
+</div> <!-- row -->
+</div> <!-- row -->
+{% if is_paginated %}
+<div class='col-md-12 text-center'>
+ <ul class="paginado">
+ <!-- <ul class="pagination pagination-sm"> -->
+    {% if page_obj.has_previous %}
+      <li><a href="?page={{ page_obj.previous_page_number }}">&laquo;</a></li>
+    {% else %}
+      <li class="disabled"><span>&laquo;</span></li>
+    {% endif %}
+    {% for i in paginator.page_range %}
+      {% if page_obj.number == i %}
+        <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+      {% else %}
+        <li><a href="?page={{ i }}">{{ i }}</a></li>
+      {% endif %}
+    {% endfor %}
+    {% if page_obj.has_next %}
+      <li><a href="?page={{ page_obj.next_page_number }}">&raquo;</a></li>
+    {% else %}
+      <li class="disabled"><span>&raquo;</span></li>
+    {% endif %}
+  </ul>
+</div>
+{% endif %}
+<div class='col-md-12'>&nbsp;</div>
+
+
+{% endblock %}
+
+
+{% block "style" %}
+<style>
+  ul.paginado {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+    }
+  ul.paginado li {
+    display: inline;
+  }
+.autor-link:hover{
+    opacity: 0.3;
+}
+</style>
+{% endblock %}
+
+{% block "js" %}
+<script>
+$("#{{ nombre }} > a").addClass("active");
+</script>
+{% endblock %}

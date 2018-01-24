@@ -26,7 +26,8 @@ a {
 }
 a:hover {
   text-decoration: none;
-  color: rgba(240,87,54,0.5);
+  color: rgb(240,87,54);
+  opacity: 0.7;
 }
 a:focus, a:active {
   outline: none;

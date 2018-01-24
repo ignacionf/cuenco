@@ -54,3 +54,40 @@ class NotaView(DetailView):
         context['notas'] = notas[0:5]
         return context
 
+class LibrosDestacadosView(ListView):
+    template_name = "libros.html"
+    model = Libro
+    queryset = Libro.objects.filter(recomendado=True)
+    context_object_name = 'libros'
+    paginate_by =10 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['nombre'] = "destacados"
+        return context
+
+
+class LibrosView(ListView):
+    template_name = "libros.html"
+    model = Libro
+    queryset = Libro.objects.all()
+    context_object_name = 'libros'
+    paginate_by =10 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['nombre'] = "novedades"
+        return context
+
+
+
+class LibroView(DetailView):
+    template_name = "libro.html"
+    model = Libro
+    queryset = Libro.objects.all()
+
+#    def get_context_data(self, **kwargs):
+#        context = super().get_context_data(**kwargs)
+#        autor = Q(libro__autor=context['object'])
+#        context['notas'] = Nota.objects.filter(publicado=True).filter(autor)
+#        return context
+#
+

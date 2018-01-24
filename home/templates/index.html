@@ -60,10 +60,10 @@
 			<nav id="fh5co-main-nav" role="navigation">
 				<ul>
 					<li id="home"><a href="{% url "home" %}">Inicio</a></li>
-					<li id=""><a href="#">Novedades</a></li>
+					<li id="novedades"><a href="{% url "libros" %}">Novedades</a></li>
 					<li id=""><a href="#">Colecciones</a></li>
 				    <li><img src="{% static 'images/logo_b_300.png' %}" style='width: 200px;' /></li>
-					<li id=""><a href="#">Recomendados</a></li>
+					<li id="destacados"><a href="{% url "libros_destacados" %}">Destacados</a></li>
 					<li id="autores"><a href="{% url "autores" %}">Autores</a></li>
 					<li id="prensa"><a href="{% url "prensa" %}">Prensa</a></li>
 				</ul>

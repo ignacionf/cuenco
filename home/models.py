@@ -47,6 +47,16 @@ class Coleccion(Model):
     def __str__(self):
         return self.nombre
 
+FORMATOS = (
+    ("15,5x23", "155mm*230mm"),
+    ("14x21", "140mm*210mm"),
+    ("13x21", "130mm*210mm"),
+    ("12x21", "120mm*210mm"),
+    ("11,8x18", "118mm*180mm"),
+    )
+
+EDICIONES = ((x, "%s°" %x) for x in range(1,51)) 
+
 class Libro(Model):
     autor = models.ForeignKey(Autor, on_delete=models.CASCADE)
     coleccion = models.ForeignKey(Coleccion, on_delete=models.CASCADE)
@@ -55,9 +65,14 @@ class Libro(Model):
     texto = models.TextField("Texto")
     imagen = VersatileImageField('Foto', upload_to="libro/", blank=True, null=True)
 
+    prologo = models.CharField("Prologo de... ", max_length=500, blank=True, null=True)
     traductor = models.CharField("Traductor", max_length=500, blank=True, null=True)
     subtitulo = models.CharField("Sub Titulo", max_length=500, blank=True, null=True)
     recomendado = models.BooleanField("Recomendado", default=False)
+
+    paginas = models.PositiveIntegerField("Páginas", blank=True, null=True)
+    formato = models.CharField("Formato", max_length=20, choices=FORMATOS, blank=True, null=True)
+    edicion = models.PositiveSmallIntegerField("Edición", choices=EDICIONES, blank=True, null=True)
 
     class Meta:
         verbose_name_plural = "Libros"
