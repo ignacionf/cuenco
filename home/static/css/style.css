@@ -20,6 +20,7 @@ body {
 
 a {
   color: #000D9E;
+  color: #f05736;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -63,6 +64,8 @@ h1, h2, h3, h4, h5, h6 {
 ::selection {
   color: #fcfcfc;
   background: #f56f8d;
+  color: #f5f5e6;
+  background: #f05736;
 }
 
 .btn {
@@ -92,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .heading-section {
-  margin-bottom: 5em;
+  margin-bottom: 3em;
 }
 .heading-section h2 {
   position: relative;
@@ -115,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 header, #fh5co-intro-section, #fh5co-services-section, #fh5co-featured-work-section,
 #fh5co-common-section, #fh5co-blog-section, #footer, #fh5co-contact-section,
 #fh5co-work-section {
-  padding-bottom: 5em;
+  padding-bottom: 2em;
 }
 
 header {
@@ -175,6 +178,7 @@ header #fh5co-main-nav > ul li a.active:before {
   top: -5px;
   right: -7px;
   background: #000D9E;
+  background: #f05736;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
@@ -200,7 +204,7 @@ header #fh5co-main-nav > ul li:first-child {
 }
 
 .owl-carousel {
-  margin-bottom: 5em;
+  margin-bottom: 2em;
 }
 
 /* Owl Override Style */
@@ -324,9 +328,13 @@ header #fh5co-main-nav > ul li:first-child {
 }
 .owl-theme .owl-controls .owl-nav [class*="owl-"] i {
   font-size: 30px;
+  color: white;
+  opacity: 0.3;
 }
 .owl-theme .owl-controls .owl-nav [class*="owl-"] i:hover, .owl-theme .owl-controls .owl-nav [class*="owl-"] i:focus {
   background: none !important;
+  color: white;
+  opacity: 0.8;
 }
 .owl-theme .owl-controls .owl-nav [class*="owl-"]:hover, .owl-theme .owl-controls .owl-nav [class*="owl-"]:focus {
   background: none !important;

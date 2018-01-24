@@ -8,6 +8,8 @@ from isbn_field import ISBNField
 import datetime
 import uuid
 
+from django.utils.safestring import mark_safe
+
 class Model(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, editable=False)
     updated_at = models.DateTimeField(auto_now=True, editable=False)
@@ -29,6 +31,10 @@ class Autor(Model):
 
     def __str__(self):
         return "%s %s" % (self.nombre, self.apellido)
+
+    def imagen_html(self, size='90x90'):
+        return mark_safe("<img src='%s' alt='%s' />" % (self.imagen.crop[size].url, self))
+    imagen_html.short_description = "Thumbnail"
 
 
 class Coleccion(Model):
@@ -59,6 +65,14 @@ class Libro(Model):
     def __str__(self):
         return "%s, %s" % (self.titulo, self.autor)
 
+    def imagen_html_sized(self, size='90x120'):
+        return mark_safe("<img src='%s' alt='%s' />" % (self.imagen.thumbnail[size].url, self))
+    imagen_html_sized.short_description = "Thumbnail"
+
+    def imagen_html(self):
+        return mark_safe("<img src='%s' alt='%s' />" % (self.imagen.url, self))
+    imagen_html.short_description = "Muestra de la imagen"
+
 class Slider(Model):
     titulo = models.CharField("Titulo", max_length=500)
     imagen = VersatileImageField('Slider', upload_to="slider/", blank=True, null=True)
@@ -69,3 +83,11 @@ class Slider(Model):
 
     def __str__(self):
         return self.titulo
+
+    def imagen_html_sized(self, size='300x40'):
+        return mark_safe("<img src='%s' alt='%s' />" % (self.imagen.thumbnail[size].url, self))
+    imagen_html_sized.short_description = "Thumbnail"
+
+    def imagen_html(self):
+        return mark_safe("<img src='%s' alt='%s' />" % (self.imagen.url, self))
+    imagen_html.short_description = "Muestra de la imagen"

@@ -5,9 +5,10 @@ from .models import *
 @admin.register(Autor)
 class AutorAdmin(admin.ModelAdmin):
     date_hierarchy = 'created_at'
-    search_display = ("nombre", "apellido")
+    search_fields = ("nombre", "apellido")
     list_filter = ("user",)
-    list_display = ("id","nombre", "apellido", "imagen", "created_at", "user")
+    list_display = ("__str__","imagen_html", "created_at", "user")
+    readonly_fields = ['imagen_html']
 
     def save_model(self, request, obj, form, change):
         obj.user = request.user
@@ -24,9 +25,10 @@ class ColeccionAdmin(admin.ModelAdmin):
 @admin.register(Libro)
 class LibroAdmin(admin.ModelAdmin):
     date_hierarchy = 'created_at'
-    search_display = ("nombre", "titulo", "isbn")
+    search_fields = ("nombre", "titulo", "isbn", "autor__nombre", "autor__apellido")
     list_filter = ("recomendado",  "coleccion", "user","autor",)
-    list_display = ("titulo", "autor", "coleccion", "subtitulo", "isbn", "recomendado", "created_at", "user")
+    list_display = ("titulo", "imagen_html_sized", "autor", "coleccion", "isbn", "recomendado", "created_at")
+    readonly_fields = ['imagen_html']
     def save_model(self, request, obj, form, change):
         obj.user = request.user
         obj.save()
@@ -34,9 +36,10 @@ class LibroAdmin(admin.ModelAdmin):
 @admin.register(Slider)
 class SliderAdmin(admin.ModelAdmin):
     date_hierarchy = 'created_at'
-    search_display = ("titulo",)
+    search_fields = ("titulo",)
     list_filter = ("activo",  "user",)
-    list_display = ("titulo", "activo", "created_at", "user")
+    list_display = ("titulo", "imagen_html_sized", "activo", "created_at", "user")
+    readonly_fields = ['imagen_html']
     def save_model(self, request, obj, form, change):
         obj.user = request.user
         obj.save()

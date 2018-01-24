@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block "content" %}
-<div class="owl-carousel owl-carousel1 owl-carousel-fullwidth animate-box" data-animate-effect="fadeIn">
+<div id='slider' class="owl-carousel owl-theme" data-animate-effect="fadeIn" style='margin-top: 4em; margin-bottom: 3em;'>
 {% for s in slider %}
   <div class="item"><img src="{{ s.imagen.url }}" alt="{{ s.titulo|title }}"></div>
 {% endfor %}
@@ -14,7 +14,7 @@
 			<div class="heading-section text-center">
 				<h2>Novedades</h2>
 			</div>
-			<div class="owl-carousel novedades">
+			<div class="owl-carousel novedades" style='margin-bottom: .5em;'>
 {% for n in novedades %}
 				<div class="item">
 					<!-- <a href="#" class="image-popup"> -->
@@ -50,7 +50,7 @@
 		</div>
 	</div><!-- end fh5co-featured-work-section -->
 
-	<div id="fh5co-blog-section" style="margin-top: 100px;">
+	<div id="fh5co-blog-section">
 		<div class="container">
 			<div class="heading-section text-center">
 				<h2>Prensa</h2>
@@ -82,6 +82,7 @@ Autor de: Cerdos & Peces, El señor de los venenos, Big Bad City, En busca del a
 {% endblock %}
 {% block "js" %}
 <script>
+$("#home > a").addClass("active");
 $('.novedades').owlCarousel({
     autoplay: true,
     items: 5,
@@ -106,6 +107,23 @@ $('.recomendados').owlCarousel({
         "<i class='icon-chevron-right owl-direction'></i>"
     ]
 })
+var owl = $('#slider');
+owl.owlCarousel({
+    items: 1,
+    loop: true,
+    dots: true,
+    margin: 0,
+    responsiveClass: true,
+    nav: true,
+    dots: true,
+    autoplay: true,
+    smartSpeed: 500,
+    navText: [
+        "<i class='icon-chevron-left owl-direction'></i>",
+        "<i class='icon-chevron-right owl-direction'></i>"
+    ]
+});
+
 
 
 </script>
