@@ -1,0 +1,36 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block "content" %}
+<div class="row">
+    <div class='col-md-12' style='margin-top: 1em;'>
+        <div class="heading-section text-center"><h2>Prensa</h2> </div>
+    </div>
+    <div class='col-md-12'>
+        <div class="heading-section" style='margin: 0;'><h3 style='margin: 0;'>Artículos Destacados</h3> </div>
+    </div>
+    {% for i in destacados %}
+    <div class='col-md-6' style='padding: 20px;'>
+        <div style='background: #E6F0E6; padding: 10px;'>
+            <div style='color: #F05736'>{{ i.libro }}</div>
+            <p style='margin: 0;'>{{ i.medio}}{% if i.firma %}, {{ i.firma }}{% endif %}</p>
+            <div>{{ i.titulo }}</div>
+        </div>
+    </div>
+    {% endfor %}
+</div> <!-- row -->
+
+
+
+{% endblock %}
+
+{% block "style" %}
+<style>
+</style>
+{% endblock %}
+
+{% block "js" %}
+<script>
+$("#prensa > a").addClass("active");
+</script>
+{% endblock %}

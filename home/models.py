@@ -103,6 +103,7 @@ class Nota(Model):
     medio = models.CharField("Medio", max_length=500, null=True, blank=True)
     subtitulo = models.TextField("Sub Título", null=True, blank=True)
 
+    destacado = models.BooleanField("Destacado", default=False)
     publicado = models.BooleanField("Publicado", default=True)
 
     class Meta:

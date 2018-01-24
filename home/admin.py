@@ -48,8 +48,8 @@ class SliderAdmin(admin.ModelAdmin):
 class NotaAdmin(admin.ModelAdmin):
     date_hierarchy = 'created_at'
     search_fields = ("titulo","subtitulo", "libro", "texto")
-    list_filter = ("publicado",  "user",)
-    list_display = ("titulo", "medio", "publicado", "created_at", "user")
+    list_filter = ("publicado", "destacado", "user",)
+    list_display = ("titulo", "medio", "destacado", "publicado", "created_at", "user")
     def save_model(self, request, obj, form, change):
         obj.user = request.user
         obj.save()

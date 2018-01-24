@@ -9,13 +9,14 @@
         {% endif %}
     </div> <!-- col-md-2 -->
     <div class='col-md-10' style='text-align: justify;'>
-        <h2 style='margin: 30px 0 30px 0;'>{{ object|title }}</h2>
-        <br />
+        <div class="heading-section"> <h2>{{ object|title }}</h2> </div>
         {{ object.texto|safe }}
 
     </div> <!-- col-md-8 -->
-</div> <!-- row -->
-<br />
+    <div class='col-md-10 col-md-offset-2' style='margin-top: 2em;'>
+        <div class="heading-section"> <h2>Libros del Autor</h2> </div>
+    </div>
+    <div class='col-md-12'>
         <div class="owl-carousel libros">
         {% for libro in object.libro_set.all %}
             <div class="item">
@@ -25,9 +26,15 @@
                         <p>{{ libro.titulo }}</p>
                     </div>
             </div> <!-- item -->
-
+        
         {% endfor %}
-        </div> <!-- owl-carousel2 -->
+        </div> <!-- owl-carousel -->
+    </div>
+
+    <div class='col-md-10 col-md-offset-2' style='margin-top: 2em;'>
+        <div class="heading-section"> <h2>Notas sobre el Autor</h2> </div>
+    </div>
+</div> <!-- row -->
 
 
 
