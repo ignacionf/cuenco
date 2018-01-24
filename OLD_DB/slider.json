@@ -1,0 +1,50 @@
+[
+{
+    "model": "home.slider",
+    "pk": 1,
+    "fields": {
+        "created_at": "2018-01-24T13:52:29.253Z",
+        "updated_at": "2018-01-24T13:52:29.254Z",
+        "user": 1,
+        "titulo": "Joyce - Poes\u00eda",
+        "imagen": "slider/flyerjoyce.jpg",
+        "activo": true
+    }
+},
+{
+    "model": "home.slider",
+    "pk": 2,
+    "fields": {
+        "created_at": "2018-01-24T13:53:12.954Z",
+        "updated_at": "2018-01-24T13:53:12.954Z",
+        "user": 1,
+        "titulo": "Sobre Nietzche",
+        "imagen": "slider/Friedrich-Nietzscheslider.jpg",
+        "activo": true
+    }
+},
+{
+    "model": "home.slider",
+    "pk": 3,
+    "fields": {
+        "created_at": "2018-01-24T13:53:41.843Z",
+        "updated_at": "2018-01-24T13:53:41.843Z",
+        "user": 1,
+        "titulo": "Vida Secreta Pascal",
+        "imagen": "slider/sliderQuignard.jpg",
+        "activo": true
+    }
+},
+{
+    "model": "home.slider",
+    "pk": 4,
+    "fields": {
+        "created_at": "2018-01-24T13:54:07.308Z",
+        "updated_at": "2018-01-24T13:54:07.308Z",
+        "user": 1,
+        "titulo": "el film noir",
+        "imagen": "slider/lefilmnoirslider_1.jpg",
+        "activo": true
+    }
+}
+]
