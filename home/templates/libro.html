@@ -11,12 +11,13 @@
 <div class="col-md-10 col-md-offset-1">
 {% if object.imagen %}
     <div class='col-md-4' style='padding-top: 20px;'>
-        <div><img src='{{ object.imagen.url }}' style='width: 100%;' /></div>
+        <div><img src='{{ object.imagen.url }}' style='width: 100%;     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+' /></div>
     </div> <!-- col-md-4-->
 {% endif %}
 
     <div class='col-md-8'>
-        <div><h2>{{ object.autor|title }}</h2></div>
+        <div><h2><a href="{% url "autor" object.autor.id %}">{{ object.autor|title }}</a></h2></div>
         <div><h3>{{ object.titulo|title }}</h3></div>
         {% if object.prologo %}
         <div><h4><small>Prologo de </small>{{ object.traductor }}</h4></div>
