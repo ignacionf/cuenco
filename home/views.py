@@ -24,10 +24,13 @@ class AutorView(DetailView):
 class PrensaView(ListView):
     template_name = "prensa.html"
     model = Nota
+    context_object_name = 'notas'
+    paginate_by =20 
+    queryset = Nota.objects.filter(publicado=True).order_by("-created_at")
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['destacados'] = self.model.objects.filter(destacado=True).order_by("-created_at")[:10]
+        context['destacados'] = self.queryset.filter(destacado=True)[:10]
         return context
 
 class NotaView(DetailView):
