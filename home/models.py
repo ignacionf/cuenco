@@ -91,3 +91,22 @@ class Slider(Model):
     def imagen_html(self):
         return mark_safe("<img src='%s' alt='%s' />" % (self.imagen.url, self))
     imagen_html.short_description = "Muestra de la imagen"
+
+
+class Nota(Model):
+    titulo = models.CharField("Título", max_length=500)
+    texto = models.TextField("Texto")
+
+    libro = models.ForeignKey(Libro, on_delete=models.CASCADE, null=True, blank=True)
+    fuente = models.URLField("Fuente", null=True, blank=True)
+    firma = models.CharField("Firma", max_length=500, null=True, blank=True)
+    medio = models.CharField("Medio", max_length=500, null=True, blank=True)
+    subtitulo = models.CharField("Sub Título", max_length=500, null=True, blank=True)
+
+    publicado = models.BooleanField("Publicado", default=True)
+
+    class Meta:
+        verbose_name_plural = "Notas"
+
+    def __str__(self):
+        return self.titulo
