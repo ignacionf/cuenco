@@ -328,12 +328,12 @@ header #fh5co-main-nav > ul li:first-child {
 }
 .owl-theme .owl-controls .owl-nav [class*="owl-"] i {
   font-size: 30px;
-  color: white;
+  color: #f05736;
   opacity: 0.3;
 }
 .owl-theme .owl-controls .owl-nav [class*="owl-"] i:hover, .owl-theme .owl-controls .owl-nav [class*="owl-"] i:focus {
   background: none !important;
-  color: white;
+  color: #f05736;
   opacity: 0.8;
 }
 .owl-theme .owl-controls .owl-nav [class*="owl-"]:hover, .owl-theme .owl-controls .owl-nav [class*="owl-"]:focus {
