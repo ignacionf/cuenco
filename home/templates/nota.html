@@ -6,31 +6,28 @@
     <div class='col-md-12' style='margin-top: 1em;'>
         <div class="heading-section text-center"><h2>Prensa</h2> </div>
     </div>
-    <div class='col-md-12'>
-        <div class="heading-section" style='margin: 0;'><h3 style='margin: 0;'>Artículos Destacados</h3> </div>
+    <div class='col-md-10 col-md-offset-1'>
+        <div class="heading-section" style='margin: 0;'><h3 style='margin: 0; color: rgba(0,0,0,0.8);'>{{ object.libro|title }}</h3> </div>
+        <div class="heading-section" style='margin: 0;'><h2 style='margin: 0;'>{{ object.titulo|title }}</h2> </div>
+        <div class="heading-section" style='margin: 0;'><h4 style='margin: 0; color: rgba(0,0,0,0.5);'>
+                {{ object.medio|title }}{% if object.firma %} | {{ object.firma|title }}{% endif %}
+            {% if object.fuente %}<a class='pull-right' href="{{ object.fuente }}">Fuente</a>{% endif %}
+            </h4>
+         </div>
     </div>
-    {% for i in destacados %}
-    <div class='col-md-6' style='padding: 20px;'>
-        <div style='background: #E6F0E6; padding: 10px;'>
-            {% if i.libro %}
-            <div style='color: #F05736'>{{ i.libro|title }}</div>
-            {% endif %}
-            <p style='margin: 0;'>{{ i.medio|title }}{% if i.firma %}, {{ i.firma|title }}{% endif %}</p>
-            <div>{{ i.titulo|title }}</div>
-        </div>
-    </div>
-    {% endfor %}
-
     <div class='col-md-12'>&nbsp;</div>
-    <div class='col-md-12'>
-        <div class="heading-section" style='margin: 0;'><h3 style='margin: 0; color: #643241'>Otros Artículos</h3> </div>
+    <div class='col-md-10 col-md-offset-1 text-justify' style='background: #E6F0E6; padding: 40px;'>
+        {% autoescape off %}
+        {{ object.texto|linebreaks }}
+        {% endautoescape %}
     </div>
-    <div class='col-md-6' style='padding: 20px;'>
+    <div class='col-md-12'>&nbsp;</div>
+
+    <div class='col-md-10 col-md-offset-1'>
+        <div class="heading-section" style='margin: 0;'><h3 style='margin: 0; color: rgba(0,0,0,0.8);'>Artículos relacionados</h3> </div>
+    </div>
+    <div class='col-md-8 col-md-offset-1' style='padding: 20px;'>
     {% for i in notas %}
-    {% if forloop.counter == 11%}
-    </div>
-    <div class='col-md-6' style='padding: 20px;'>
-    {% endif %}
         <div style='background: #F5F5E6; padding: 10px;'>
             <a href="{% url "nota" i.id %}">
             <div style='margin: 0; color: rgba(240,87,54,1);'>{{ i.medio|title }}{% if i.firma %}, {{ i.firma|title }}{% endif %}</div>
@@ -39,20 +36,7 @@
         </div>
     {% endfor %}
     </div>
-    <div class='col-md-12'>&nbsp;</div>
-{% if is_paginated %}
-    <div class='col-md-6 text-center'>
-    {% if page_obj.has_previous %}
-      <a href="{% url "prensa" %}?page={{ page_obj.previous_page_number }}">Artículos nuevos</a>
-    {% endif %}
-    </div>
-    <div class='col-md-6 text-center'>
-    {% if page_obj.has_next %}
-      <a href="{% url "prensa" %}?page={{ page_obj.next_page_number }}">Artículos viejos</a></li>
-    {% endif %}
-    </div>
-{% endif %}
-    <div class='col-md-12'>&nbsp;</div>
+
 
 </div> <!-- row -->
 

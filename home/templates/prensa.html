@@ -12,11 +12,13 @@
     {% for i in destacados %}
     <div class='col-md-6' style='padding: 20px;'>
         <div style='background: #E6F0E6; padding: 10px;'>
+            <a href="{% url "nota" i.id %}">
             {% if i.libro %}
-            <div style='color: #F05736'>{{ i.libro|title }}</div>
+            <div style='color: rgba(240,87,54,1);'>{{ i.libro|title }}</div>
             {% endif %}
-            <p style='margin: 0;'>{{ i.medio|title }}{% if i.firma %}, {{ i.firma|title }}{% endif %}</p>
-            <div>{{ i.titulo|title }}</div>
+            <div style='color: rgba(0,0,0,0.8);'>{{ i.medio|title }}{% if i.firma %}, {{ i.firma|title }}{% endif %}</div>
+            <div style='color: rgba(0,0,0,0.6);'>{{ i.titulo|title }}</div>
+            </a>
         </div>
     </div>
     {% endfor %}

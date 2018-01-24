@@ -3,18 +3,24 @@
 
 {% block "content" %}
 <div class="row">
-    <div class='col-md-2'>
+    <div class='col-md-2 col-md-offset-1'>
         {% if object.imagen %}
         <img src="{{ object.imagen.crop.200x200 }}" style='width: 100%' class='img-circle' />
         {% endif %}
     </div> <!-- col-md-2 -->
-    <div class='col-md-10' style='text-align: justify;'>
+    <div class='col-md-8' style='text-align: justify;'>
         <div class="heading-section"> <h2>{{ object|title }}</h2> </div>
-        {{ object.texto|safe }}
+
+        <div class='text-justify' style='background: #E6F0E6; padding: 40px;'>
+        {% autoescape off %}
+        {{ object.texto|linebreaks }}
+        {% endautoescape %}
+        </div>
 
     </div> <!-- col-md-8 -->
+{% if object.libro_set.all %}
     <div class='col-md-10 col-md-offset-2' style='margin-top: 2em;'>
-        <div class="heading-section"> <h2>Libros del Autor</h2> </div>
+        <div class="heading-section" style='margin: 0;'><h3 style='margin: 0; color: rgba(0,0,0,0.8);'>Libros del Autor</h3> </div>
     </div>
     <div class='col-md-12'>
         <div class="owl-carousel libros">
@@ -30,10 +36,25 @@
         {% endfor %}
         </div> <!-- owl-carousel -->
     </div>
+{% endif %}
 
+{% if notas %}
     <div class='col-md-10 col-md-offset-2' style='margin-top: 2em;'>
-        <div class="heading-section"> <h2>Notas sobre el Autor</h2> </div>
+        <div class="heading-section" style='margin: 0;'><h3 style='margin: 0; color: rgba(0,0,0,0.8);'>Notas sobre el Autor</h3> </div>
     </div>
+    <div class='col-md-8 col-md-offset-2' style='padding: 20px;'>
+    {% for i in notas %}
+        <div style='background: #F5F5E6; padding: 10px;'>
+            <a href="{% url "nota" i.id %}">
+            <div style='margin: 0; color: rgba(240,87,54,1);'>{{ i.medio|title }}{% if i.firma %}, {{ i.firma|title }}{% endif %}</div>
+            <div style='color: rgba(0,0,0,0.7)'>{{ i.titulo|title }}</div>
+            </a>
+        </div>
+    {% endfor %}
+    </div>
+{% endif %}
+
+
 </div> <!-- row -->
 
 

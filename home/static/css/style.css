@@ -19,7 +19,6 @@ body {
 }
 
 a {
-  color: #000D9E;
   color: #f05736;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -27,7 +26,7 @@ a {
 }
 a:hover {
   text-decoration: none;
-  color: #000D9E;
+  color: rgba(240,87,54,0.5);
 }
 a:focus, a:active {
   outline: none;
