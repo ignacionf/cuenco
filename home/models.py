@@ -101,7 +101,7 @@ class Nota(Model):
     fuente = models.URLField("Fuente", null=True, blank=True)
     firma = models.CharField("Firma", max_length=500, null=True, blank=True)
     medio = models.CharField("Medio", max_length=500, null=True, blank=True)
-    subtitulo = models.CharField("Sub Título", max_length=500, null=True, blank=True)
+    subtitulo = models.TextField("Sub Título", null=True, blank=True)
 
     publicado = models.BooleanField("Publicado", default=True)
 
