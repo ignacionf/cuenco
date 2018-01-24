@@ -395,21 +395,13 @@ header #fh5co-main-nav > ul li:first-child {
   margin-top: -60px;
   padding: 30px;
 }
-.item .pop-up-overlay .desc h3 {
-  color: rgba(255, 255, 255, 0.9);
-  color: rgba(61, 50, 50, 0.9);
-  margin-bottom: 10px;
+.item > .desc > b {
+    color: #F05736;
 }
-.item .pop-up-overlay .desc span {
-  display: block;
-  color: rgba(255, 255, 255, 0.6);
-  color: rgba(61, 50, 50, 0.9);
-}
-.item .pop-up-overlay:hover, .item .pop-up-overlay:focus {
-  text-decoration: none;
-}
-.item:hover .pop-up-overlay, .item:focus .pop-up-overlay {
-  opacity: 1;
+
+.item > .desc > p {
+    color: #643241;
+    font-size: .9em;
 }
 
 .services-num {

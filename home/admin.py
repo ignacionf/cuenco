@@ -30,3 +30,13 @@ class LibroAdmin(admin.ModelAdmin):
     def save_model(self, request, obj, form, change):
         obj.user = request.user
         obj.save()
+
+@admin.register(Slider)
+class SliderAdmin(admin.ModelAdmin):
+    date_hierarchy = 'created_at'
+    search_display = ("titulo",)
+    list_filter = ("activo",  "user",)
+    list_display = ("titulo", "activo", "created_at", "user")
+    def save_model(self, request, obj, form, change):
+        obj.user = request.user
+        obj.save()

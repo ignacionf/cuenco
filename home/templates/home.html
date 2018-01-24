@@ -3,8 +3,9 @@
 
 {% block "content" %}
 <div class="owl-carousel owl-carousel1 owl-carousel-fullwidth animate-box" data-animate-effect="fadeIn">
-  <div class="item"><a href="{% static "images/slider/slider_1.jpg" %}" class="image-popup"><img src="{% static "images/slider/slider_1.jpg" %}" alt="slider 1"></a></div>
-  <div class="item"><a href="{% static "images/slider/slider_2.jpg" %}" class="image-popup"><img src="{% static "images/slider/slider_2.jpg" %}" alt="slider 2"></a></div>
+{% for s in slider %}
+  <div class="item"><img src="{{ s.imagen.url }}" alt="{{ s.titulo|title }}"></div>
+{% endfor %}
 </div>
 
 
@@ -19,7 +20,7 @@
 					<!-- <a href="#" class="image-popup"> -->
 					<img src="{{ n.imagen.url }}" alt="image">
                     <div class="desc">
-                        <b style="color: #F05736">{{ n.autor }}</b>
+                        <b>{{ n.autor }}</b>
                         <p>{{ n.titulo }}</p>
                     </div>
 				</div>
@@ -40,7 +41,7 @@
 					<img src="{{ n.imagen.url }}" alt="image">
 
                     <div class="desc">
-                        <b style="color: #F05736">{{ n.autor }}</b>
+                        <b>{{ n.autor }}</b>
                         <p>{{ n.titulo }}</p>
                     </div>
 				</div>

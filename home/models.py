@@ -28,7 +28,7 @@ class Autor(Model):
         ordering = ['apellido', 'nombre', 'created_at']
 
     def __str__(self):
-        return "%s, %s" % (self.apellido, self.nombre)
+        return "%s %s" % (self.nombre, self.apellido)
 
 
 class Coleccion(Model):
@@ -47,7 +47,7 @@ class Libro(Model):
     titulo = models.CharField("Titulo", max_length=500)
     isbn = ISBNField("ISBN")
     texto = models.TextField("Texto")
-    imagen = VersatileImageField('Foto', upload_to="autor/", blank=True, null=True)
+    imagen = VersatileImageField('Foto', upload_to="libro/", blank=True, null=True)
 
     traductor = models.CharField("Traductor", max_length=500, blank=True, null=True)
     subtitulo = models.CharField("Sub Titulo", max_length=500, blank=True, null=True)
@@ -58,3 +58,14 @@ class Libro(Model):
 
     def __str__(self):
         return "%s, %s" % (self.titulo, self.autor)
+
+class Slider(Model):
+    titulo = models.CharField("Titulo", max_length=500)
+    imagen = VersatileImageField('Slider', upload_to="slider/", blank=True, null=True)
+    activo = models.BooleanField("Activo", default=False)
+
+    class Meta:
+        verbose_name_plural = "Sliders"
+
+    def __str__(self):
+        return self.titulo

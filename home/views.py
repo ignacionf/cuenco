@@ -10,6 +10,7 @@ class HomeView(TemplateView):
         context = super().get_context_data(**kwargs)
         context['novedades'] = Libro.objects.all().order_by("-created_at")[:10]
         context['recomendados'] = Libro.objects.filter(recomendado=True).order_by("titulo")
+        context['slider'] = Slider.objects.filter(activo=True).order_by("-created_at")
         return context
 
 class AutoresView(ListView):
