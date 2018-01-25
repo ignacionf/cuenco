@@ -14,6 +14,10 @@ class HomeView(TemplateView):
         context['notas'] = Nota.objects.filter(publicado=True).order_by("-created_at")[0:10]
         return context
 
+class ColeccionesView(ListView):
+    template_name = "colecciones.html"
+    model = Coleccion
+
 class AutoresView(ListView):
     template_name = "autores.html"
     model = Autor

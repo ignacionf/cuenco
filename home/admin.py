@@ -16,6 +16,7 @@ class AutorAdmin(admin.ModelAdmin):
 
 @admin.register(Coleccion)
 class ColeccionAdmin(admin.ModelAdmin):
+    prepopulated_fields = {"slug": ("nombre",)}
     date_hierarchy = 'created_at'
     list_display = ("nombre", "created_at", "user")
     def save_model(self, request, obj, form, change):

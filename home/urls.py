@@ -11,4 +11,6 @@ urlpatterns = [
     path('destacados/', LibrosDestacadosView.as_view(), name='libros_destacados'),
     path('libros/', LibrosView.as_view(), name='libros'),
     path('libro/<int:pk>', LibroView.as_view(), name='libro'),
+
+    path('colecciones/', ColeccionesView.as_view(), name='colecciones'),
 ]

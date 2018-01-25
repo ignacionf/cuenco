@@ -1,0 +1,34 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block "content" %}
+
+<div class="heading-section text-center"><h2>Colecciones</h2></div>
+
+<div style='width: 100%; height: 400px; text-align: center;'>En construcción</div>
+
+{% endblock %}
+
+
+{% block "style" %}
+<style>
+  ul.paginado {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+    }
+  ul.paginado li {
+    display: inline;
+  }
+.autor-link:hover{
+    opacity: 0.3;
+}
+</style>
+{% endblock %}
+
+{% block "js" %}
+<script>
+$("#colecciones > a").addClass("active");
+</script>
+{% endblock %}

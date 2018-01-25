@@ -48,6 +48,23 @@
 	<![endif]-->
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
 
+    <style>
+        #colecciones ul.dropdown-menu {
+            opacity: 0.8;
+            width: 220px;
+        }
+        #colecciones ul.dropdown-menu > li {
+            width: 100%;
+            margin-left: 15px;
+        }
+        #colecciones ul.dropdown-menu > li > a:hover {
+            background: transparent;
+        }
+        #colecciones ul.dropdown-menu > li > a {
+            padding: 3px; 
+        }
+    </style>
+
 	</head>
 	<body>
 	<header>
@@ -59,9 +76,17 @@
 -->
 			<nav id="fh5co-main-nav" role="navigation">
 				<ul>
+                    <li>&nbsp;</li>
 					<li id="home"><a href="{% url "home" %}">Inicio</a></li>
 					<li id="novedades"><a href="{% url "libros" %}">Novedades</a></li>
-					<li id=""><a href="#">Colecciones</a></li>
+					<li id="colecciones" class='dropdown'>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Colecciones
+                        <ul class="dropdown-menu">
+                        {% for c in colecciones %}
+                          <li><a href="{% url "colecciones" %}">{{ c.nombre }}</a></li>
+                        {% endfor %}
+                        </ul>
+                    </li>
 				    <li><img src="{% static 'images/logo_b_300.png' %}" style='width: 200px; box-shadow: none;' /></li>
 					<li id="destacados"><a href="{% url "libros_destacados" %}">Destacados</a></li>
 					<li id="autores"><a href="{% url "autores" %}">Autores</a></li>
