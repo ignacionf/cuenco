@@ -855,9 +855,11 @@ header #fh5co-main-nav > ul li:first-child {
   border: 1px solid rgba(0, 0, 0, 0.8);
 }
 
+/*
 input[type="text"] {
   height: 50px;
 }
+*/
 
 .form-group {
   margin-bottom: 30px;
