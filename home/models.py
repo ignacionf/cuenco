@@ -33,7 +33,9 @@ class Autor(Model):
         return "%s %s" % (self.nombre, self.apellido)
 
     def imagen_html(self, size='90x90'):
-        return mark_safe("<img src='%s' alt='%s' />" % (self.imagen.crop[size].url, self))
+        if self.imagen:
+            return mark_safe("<img src='%s' alt='%s' />" % (self.imagen.crop[size].url, self))
+        return ""
     imagen_html.short_description = "Thumbnail"
 
 
@@ -94,11 +96,15 @@ class Libro(Model):
             return i
 
     def imagen_html_sized(self, size='90x120'):
-        return mark_safe("<img src='%s' alt='%s' />" % (self.imagen.thumbnail[size].url, self))
+        if self.imagen:
+            return mark_safe("<img src='%s' alt='%s' />" % (self.imagen.thumbnail[size].url, self))
+        return ""
     imagen_html_sized.short_description = "Thumbnail"
 
     def imagen_html(self):
-        return mark_safe("<img src='%s' alt='%s' />" % (self.imagen.url, self))
+        if self.imagen:
+            return mark_safe("<img src='%s' alt='%s' />" % (self.imagen.url, self))
+        return ""
     imagen_html.short_description = "Muestra de la imagen"
 
 class Slider(Model):
@@ -113,11 +119,15 @@ class Slider(Model):
         return self.titulo
 
     def imagen_html_sized(self, size='300x40'):
-        return mark_safe("<img src='%s' alt='%s' />" % (self.imagen.thumbnail[size].url, self))
+        if self.imagen:
+            return mark_safe("<img src='%s' alt='%s' />" % (self.imagen.thumbnail[size].url, self))
+        return ""
     imagen_html_sized.short_description = "Thumbnail"
 
     def imagen_html(self):
-        return mark_safe("<img src='%s' alt='%s' />" % (self.imagen.url, self))
+        if self.imagen:
+            return mark_safe("<img src='%s' alt='%s' />" % (self.imagen.url, self))
+        return ""
     imagen_html.short_description = "Muestra de la imagen"
 
 
