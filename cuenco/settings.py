@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 	'isbn_field',
     'versatileimagefield',
     'home',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [

@@ -73,12 +73,19 @@ class Libro(Model):
     paginas = models.PositiveIntegerField("Páginas", blank=True, null=True)
     formato = models.CharField("Formato", max_length=20, choices=FORMATOS, blank=True, null=True)
     edicion = models.PositiveSmallIntegerField("Edición", choices=EDICIONES, blank=True, null=True)
+    carrito = models.URLField("URL Carrito de compras", null=True, blank=True)
+    pdf = models.FileField("PDF", upload_to='uploads/pdf/', null=True, blank=True)
 
     class Meta:
         verbose_name_plural = "Libros"
 
     def __str__(self):
         return "%s, %s" % (self.titulo, self.autor)
+
+    @property
+    def fISBN(self):
+        i = self.isbn
+        return "%s-%s-%s-%s-%s" %(i[0:3], i[3],i[4:6],i[6:12],i[12])
 
     def imagen_html_sized(self, size='90x120'):
         return mark_safe("<img src='%s' alt='%s' />" % (self.imagen.thumbnail[size].url, self))
