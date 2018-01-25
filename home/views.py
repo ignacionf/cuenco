@@ -22,17 +22,24 @@ class ColeccionesView(ListView):
     context_object_name = 'libros'
 
     def get_queryset(self):
-        self.coleccion = Coleccion.objects.get(slug=self.kwargs['slug'])
-        return self.model.objects.filter(coleccion=self.coleccion).order_by("-created_at")
+        try:
+            self.coleccion = Coleccion.objects.get(slug=self.kwargs['slug'])
+            return self.model.objects.filter(coleccion=self.coleccion).order_by("-created_at")
+        except KeyError:
+            self.template_name="colecciones.html"
+            return Coleccion.objects.all()
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['coleccion']=self.coleccion
-        autores_ids=sorted(list(self.get_queryset().values("autor").annotate(cantidad=Count('autor')).order_by("autor")),
-                 key=lambda k: k['cantidad'], reverse=True)[0:6]
-
-        context['autores']=[Autor.objects.get(pk=x['autor']) for x in autores_ids]
-        context['autores_len']=len(context['autores'])
+        try:
+            context['coleccion']=self.coleccion
+            autores_ids=sorted(list(self.get_queryset().values("autor").annotate(cantidad=Count('autor')).order_by("autor")),
+                     key=lambda k: k['cantidad'], reverse=True)[0:6]
+    
+            context['autores']=[Autor.objects.get(pk=x['autor']) for x in autores_ids]
+            context['autores_len']=len(context['autores'])
+        except AttributeError: 
+            pass
         return context
 
 class AutoresView(ListView):

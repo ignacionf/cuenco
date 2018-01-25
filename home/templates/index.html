@@ -50,11 +50,11 @@
 
     <style>
         #colecciones ul.dropdown-menu {
-            opacity: 0.8;
-            width: 220px;
+            opacity: 0.9;
+            width: 440px;
         }
         #colecciones ul.dropdown-menu > li {
-            width: 100%;
+            width: 40%;
             margin-left: 15px;
         }
         #colecciones ul.dropdown-menu > li > a:hover {
@@ -85,6 +85,9 @@
                         {% for c in colecciones %}
                           <li><a href="{% url "colecciones" c.slug %}">{{ c.nombre }}</a></li>
                         {% endfor %}
+                          <li role="separator" class="divider" style='width: 100%;'></li>
+                          <li><a href="{% url "colecciones" %}">Ver todas las colecciones</a></li>
+
                         </ul>
                     </li>
 				    <li><img src="{% static 'images/logo_b_300.png' %}" style='width: 200px; box-shadow: none;' /></li>

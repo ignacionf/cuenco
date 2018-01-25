@@ -12,6 +12,6 @@ urlpatterns = [
     path('libros/', LibrosView.as_view(), name='libros'),
     path('libro/<int:pk>', LibroView.as_view(), name='libro'),
 
-#    path('colecciones/', ColeccionesView.as_view(), name='colecciones'),
+    path('colecciones/', ColeccionesView.as_view(), name='colecciones'),
     path('colecciones/<str:slug>/', ColeccionesView.as_view(), name='colecciones'),
 ]
