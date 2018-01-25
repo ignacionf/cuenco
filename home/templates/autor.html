@@ -26,11 +26,13 @@
         <div class="owl-carousel libros">
         {% for libro in object.libro_set.all %}
             <div class="item">
+                <a href="{% url "libro" libro.id %}">
                 <img src="{{ libro.imagen.url}}" alt="image">
                     <div class="desc">
                         <b>{{ libro.autor }}</b>
                         <p>{{ libro.titulo }}</p>
                     </div>
+                </a>
             </div> <!-- item -->
         
         {% endfor %}

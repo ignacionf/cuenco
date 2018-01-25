@@ -17,12 +17,13 @@
 			<div class="owl-carousel novedades" style='margin-bottom: .5em;'>
 {% for n in novedades %}
 				<div class="item">
-					<!-- <a href="#" class="image-popup"> -->
+                    <a href="{% url "libro" n.id %}">
 					<img src="{{ n.imagen.url }}" alt="image">
                     <div class="desc">
                         <b>{{ n.autor }}</b>
                         <p>{{ n.titulo }}</p>
                     </div>
+                    </a>
 				</div>
 {% endfor %}
 			</div>
@@ -38,12 +39,13 @@
 {% for n in recomendados %}
 				<div class="item">
 					<!-- <a href="#" class="image-popup"> -->
+                    <a href="{% url "libro" n.id %}">
 					<img src="{{ n.imagen.url }}" alt="image">
-
                     <div class="desc">
                         <b>{{ n.autor }}</b>
                         <p>{{ n.titulo }}</p>
                     </div>
+                    </a>
 				</div>
 {% endfor %}
 			</div>

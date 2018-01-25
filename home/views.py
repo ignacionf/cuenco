@@ -88,5 +88,6 @@ class LibroView(DetailView):
         context = super().get_context_data(**kwargs)
         autor = Q(autor=context['object'].autor)
         coleccion = Q(coleccion=context['object'].coleccion)
-        context['recomendados'] = Libro.objects.filter(autor | coleccion)[0:10]
+        context['recomendados'] = Libro.objects.filter(autor | coleccion).exclude(id=context['object'].id)
+        context['recomendados'] = context['recomendados'][0:10]
         return context

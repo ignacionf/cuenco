@@ -85,7 +85,13 @@ class Libro(Model):
     @property
     def fISBN(self):
         i = self.isbn
-        return "%s-%s-%s-%s-%s" %(i[0:3], i[3],i[4:6],i[6:12],i[12])
+        try:
+            if len(i) > 10:
+                return "%s-%s-%s-%s-%s" %(i[0:3], i[3],i[4:6],i[6:12],i[12])
+            else:
+                return "%s-%s-%s-%s" %(i[0], i[1:3],i[3:9],i[9])
+        except IndexError:
+            return i
 
     def imagen_html_sized(self, size='90x120'):
         return mark_safe("<img src='%s' alt='%s' />" % (self.imagen.thumbnail[size].url, self))
