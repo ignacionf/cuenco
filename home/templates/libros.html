@@ -41,55 +41,55 @@
 {% endif %}
 
 <div class="row">
-<div class='col-md-12'>
-{% for i in libros %}
-<a href="{% url "libro" i.id %}">
-    <div class='col-md-6' style='margin-bottom: 30px; height: 222px;'>
-        {% if i.imagen %}
-        <div class='col-md-5 text-center'>
-            <img src='{{ i.imagen.url }}' style='width: 80%;' />
-        </div>
-        <div class='col-md-7' style='padding: 0;'>
-            {% if not coleccion %}<div style='font-size: 1.1em;'><strong>{{ i.created_at|date:"F Y"}}</strong></div>{% endif %}
-            <div style='font-size: 1em; height: 120px; max-height: 140px;'>
-                <div style='font-size: 1em;'>{{ i.titulo}}</div>
-                <div style='font-size: .8em; color: rgba(0,0,0,0.7);'>{{ i.autor}}</div>
+    <div class='col-md-12'>
+    {% for i in libros %}
+    <a href="{% url "libro" i.id %}">
+        <div class='col-md-6' style='margin-bottom: 30px; height: 222px;'>
+            {% if i.imagen %}
+            <div class='col-md-5 text-center'>
+                <img src='{{ i.imagen.url }}' style='width: 80%;' />
             </div>
-            <div style='font-size: .8em; color: rgba(0,0,0,0.7);'>{{ i.coleccion }}</div>
-            <div style='font-size: .6em; color: rgba(0,0,0,0.5);'>ISBN: {{ i.fISBN}}</div>
+            <div class='col-md-7' style='padding: 0;'>
+                {% if not coleccion %}<div style='font-size: 1.1em;'><strong>{{ i.created_at|date:"F Y"}}</strong></div>{% endif %}
+                <div style='font-size: 1em; height: 120px; max-height: 140px;'>
+                    <div style='font-size: 1em;'>{{ i.titulo}}</div>
+                    <div style='font-size: .8em; color: rgba(0,0,0,0.7);'>{{ i.autor}}</div>
+                </div>
+                <div style='font-size: .8em; color: rgba(0,0,0,0.7);'>{{ i.coleccion }}</div>
+                <div style='font-size: .6em; color: rgba(0,0,0,0.5);'>ISBN: {{ i.fISBN}}</div>
+            </div>
+            {% endif %}
         </div>
-        {% endif %}
-    </div>
-</a>
-{% endfor %}
-</div> <!-- row -->
-</div> <!-- row -->
-{% if is_paginated %}
-<div class='col-md-12 text-center'>
- <ul class="paginado">
- <!-- <ul class="pagination pagination-sm"> -->
-    {% if page_obj.has_previous %}
-      <li><a href="?page={{ page_obj.previous_page_number }}">&laquo;</a></li>
-    {% else %}
-      <li class="disabled"><span>&laquo;</span></li>
-    {% endif %}
-    {% for i in paginator.page_range %}
-      {% if page_obj.number == i %}
-        <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
-      {% else %}
-        <li><a href="?page={{ i }}">{{ i }}</a></li>
-      {% endif %}
+    </a>
     {% endfor %}
-    {% if page_obj.has_next %}
-      <li><a href="?page={{ page_obj.next_page_number }}">&raquo;</a></li>
-    {% else %}
-      <li class="disabled"><span>&raquo;</span></li>
+    </div> <!-- col-md-12 -->
+    {% if is_paginated %}
+    <div class='col-md-12 text-center'>
+     <ul class="paginado">
+     <!-- <ul class="pagination pagination-sm"> -->
+        {% if page_obj.has_previous %}
+          <li><a href="?page={{ page_obj.previous_page_number }}">&laquo;</a></li>
+        {% else %}
+          <li class="disabled"><span>&laquo;</span></li>
+        {% endif %}
+        {% for i in paginator.page_range %}
+          {% if page_obj.number == i %}
+            <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+          {% else %}
+            <li><a href="?page={{ i }}">{{ i }}</a></li>
+          {% endif %}
+        {% endfor %}
+        {% if page_obj.has_next %}
+          <li><a href="?page={{ page_obj.next_page_number }}">&raquo;</a></li>
+        {% else %}
+          <li class="disabled"><span>&raquo;</span></li>
+        {% endif %}
+      </ul>
+    </div>
     {% endif %}
-  </ul>
-</div>
-{% endif %}
-<div class='col-md-12'>&nbsp;</div>
+    <div class='col-md-12'>&nbsp;</div>
 
+</div> <!-- row -->
 
 {% endblock %}
 
