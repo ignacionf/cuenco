@@ -2,5 +2,5 @@ from .models import Coleccion
 
 def colecciones(request):
     return {
-        'colecciones': Coleccion.objects.all().order_by("nombre")
+        'colecciones': Coleccion.objects.filter(activa=True).order_by("nombre")
     }

@@ -18,7 +18,7 @@
 {% for n in novedades %}
 				<div class="item">
                     <a href="{% url "libro" n.id %}">
-					    <div style='height: 260px;'><img src="{{ n.imagen.url }}" alt="{{ n }}"></div>
+					    <div style='height: 270px;'><img src="{{ n.imagen.url }}" alt="{{ n }}"></div>
                         <div class="desc">
                             <b>{{ n.autor }}</b>
                             <p>{{ n.titulo }}</p>
@@ -40,7 +40,7 @@
 				<div class="item">
 					<!-- <a href="#" class="image-popup"> -->
                     <a href="{% url "libro" n.id %}">
-					    <div style='height: 260px;'><img src="{{ n.imagen.url }}" alt="{{ n }}"></div>
+					    <div style='height: 270px;'><img src="{{ n.imagen.url }}" alt="{{ n }}"></div>
                         <div class="desc">
                             <b>{{ n.autor }}</b>
                             <p>{{ n.titulo }}</p>

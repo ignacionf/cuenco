@@ -43,6 +43,7 @@ class Coleccion(Model):
     nombre = models.CharField("Nombre", max_length=255)
     texto = models.TextField("Texto", blank=True, null=True)
     slug = models.SlugField("Slug (uso en la web)", max_length=255, blank=True, null=True)
+    activa = models.BooleanField("Activa", default=True)
 
     class Meta:
         verbose_name = "Colección"
