@@ -83,7 +83,7 @@
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Colecciones
                         <ul class="dropdown-menu">
                         {% for c in colecciones %}
-                          <li><a href="{% url "colecciones" %}">{{ c.nombre }}</a></li>
+                          <li><a href="{% url "colecciones" c.slug %}">{{ c.nombre }}</a></li>
                         {% endfor %}
                         </ul>
                     </li>

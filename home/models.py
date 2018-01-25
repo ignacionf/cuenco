@@ -17,7 +17,7 @@ class Model(models.Model):
 
     class Meta:
         abstract = True
-        ordering = ['created_at',]
+        ordering = ['-created_at',]
 
 class Autor(Model):
     nombre = models.CharField("Nombre", max_length=255)

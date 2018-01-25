@@ -14,7 +14,7 @@
         <div><img src='{{ object.imagen.url }}' style='width: 100%;' /></div>
 
         <div style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
-            <div><strong>Colección: </strong>{{ object.coleccion }}</div>
+            <div><strong>Colección: </strong><a href="{% url "colecciones" object.coleccion.slug %}">{{ object.coleccion }}</a></div>
             <div><strong>ISBN: </strong>{{ object.fISBN }}</div>
 
             {% if object.edicion %}<div><strong>Edición: </strong>{{ object.get_edicion_display }}</div>{% endif %}

@@ -3,7 +3,29 @@
 
 {% block "content" %}
 
+{% if coleccion %}
+<div class="heading-section text-center"><h2>{{ coleccion.nombre|title }}</h2></div>
+{% if coleccion.texto %}
+<div style='margin: 20px 0 30px 0; padding: 10px 40px;; background: #E6F0E6;'>
+{{ coleccion.texto|linebreaks|safe }}
+</div>
+{% endif %}
+<div class="heading-section text-center"><h3>Autores destacados</h3></div>
+<div class="row">
+{% for autor in autores %}
+    <div class='col-md-2 {{ autor.apellido.0 }}' style='height: 315px; text-align: center;'>
+        <a href="{% url "autor" autor.id %}" class='autor-link'>
+        {% if autor.imagen %}<img src="{{ autor.imagen.crop.200x200 }}" class='img-circle' style='width: 100%; max-height: 200px;' />{% endif %}
+
+        <p>{{ autor.apellido|title }}, {{ autor.nombre|title }}</p>
+        </a>
+    </div> <!-- col-md-3-->
+{% endfor %}
+</div> <!-- row -->
+
+{% else %}
 <div class="heading-section text-center"><h2>{{ nombre }}</h2></div>
+{% endif %}
 
 <div class="row">
 <div class='col-md-12'>
@@ -15,7 +37,7 @@
             <img src='{{ i.imagen.url }}' style='width: 80%;' />
         </div>
         <div class='col-md-7' style='padding: 0;'>
-            <div style='font-size: 1.1em;'><strong>{{ i.created_at|date:"F Y"}}</strong></div>
+            {% if not coleccion %}<div style='font-size: 1.1em;'><strong>{{ i.created_at|date:"F Y"}}</strong></div>{% endif %}
             <div style='font-size: 1em; height: 120px; max-height: 140px;'>
                 <div style='font-size: 1em;'>{{ i.titulo}}</div>
                 <div style='font-size: .8em; color: rgba(0,0,0,0.7);'>{{ i.autor}}</div>
@@ -78,6 +100,10 @@
 
 {% block "js" %}
 <script>
+{% if coleccion %}
+$("#colecciones > a").addClass("active");
+{% else %}
 $("#{{ nombre }} > a").addClass("active");
+{% endif %}
 </script>
 {% endblock %}

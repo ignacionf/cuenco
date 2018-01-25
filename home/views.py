@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.views.generic import TemplateView
 from django.views.generic import ListView, DetailView
 from .models import *
+from django.db.models import Count
 
 class HomeView(TemplateView):
     template_name = "home.html"
@@ -15,8 +16,23 @@ class HomeView(TemplateView):
         return context
 
 class ColeccionesView(ListView):
-    template_name = "colecciones.html"
-    model = Coleccion
+    template_name = "libros.html"
+    model = Libro
+    paginate_by =10 
+    context_object_name = 'libros'
+
+    def get_queryset(self):
+        self.coleccion = Coleccion.objects.get(slug=self.kwargs['slug'])
+        return self.model.objects.filter(coleccion=self.coleccion).order_by("-created_at")
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['coleccion']=self.coleccion
+        autores_ids=sorted(list(self.get_queryset().values("autor").annotate(cantidad=Count('autor')).order_by("autor")),
+                 key=lambda k: k['cantidad'], reverse=True)[0:6]
+
+        context['autores']=[Autor.objects.get(pk=x['autor']) for x in autores_ids]
+        return context
 
 class AutoresView(ListView):
     template_name = "autores.html"
