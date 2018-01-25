@@ -9,7 +9,7 @@
 <div class='col-md-12'>
 {% for i in libros %}
 <a href="{% url "libro" i.id %}">
-    <div class='col-md-6' style='margin-bottom: 30px;'>
+    <div class='col-md-6' style='margin-bottom: 30px; height: 222px;'>
         {% if i.imagen %}
         <div class='col-md-5 text-center'>
             <img src='{{ i.imagen.url }}' style='width: 80%;' />
