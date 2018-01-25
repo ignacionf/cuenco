@@ -49,6 +49,7 @@ class Coleccion(Model):
     class Meta:
         verbose_name = "Colección"
         verbose_name_plural = "Colecciones"
+        ordering = ['orden',"activa"]
 
     def __str__(self):
         return self.nombre
