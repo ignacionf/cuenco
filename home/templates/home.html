@@ -18,11 +18,11 @@
 {% for n in novedades %}
 				<div class="item">
                     <a href="{% url "libro" n.id %}">
-					<img src="{{ n.imagen.url }}" alt="image">
-                    <div class="desc">
-                        <b>{{ n.autor }}</b>
-                        <p>{{ n.titulo }}</p>
-                    </div>
+					    <div style='height: 260px;'><img src="{{ n.imagen.url }}" alt="{{ n }}"></div>
+                        <div class="desc">
+                            <b>{{ n.autor }}</b>
+                            <p>{{ n.titulo }}</p>
+                        </div>
                     </a>
 				</div>
 {% endfor %}
@@ -40,11 +40,11 @@
 				<div class="item">
 					<!-- <a href="#" class="image-popup"> -->
                     <a href="{% url "libro" n.id %}">
-					<img src="{{ n.imagen.url }}" alt="image">
-                    <div class="desc">
-                        <b>{{ n.autor }}</b>
-                        <p>{{ n.titulo }}</p>
-                    </div>
+					    <div style='height: 260px;'><img src="{{ n.imagen.url }}" alt="{{ n }}"></div>
+                        <div class="desc">
+                            <b>{{ n.autor }}</b>
+                            <p>{{ n.titulo }}</p>
+                        </div>
                     </a>
 				</div>
 {% endfor %}

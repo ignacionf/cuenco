@@ -73,7 +73,7 @@
         {% for libro in recomendados %}
             <div class="item">
                 <a href="{% url "libro" libro.id %}">
-                <img src="{{ libro.imagen.url}}" alt="image">
+					<div style='height: 260px;'><img src="{{ libro.imagen.url }}" alt="{{ libro }}"></div>
                     <div class="desc">
                         <b>{{ libro.autor }}</b>
                         <p>{{ libro.titulo }}</p>

@@ -20,14 +20,14 @@
     </div> <!-- col-md-8 -->
 {% if object.libro_set.all %}
     <div class='col-md-10 col-md-offset-2' style='margin-top: 2em;'>
-        <div class="heading-section" style='margin: 0;'><h3 style='margin: 0; color: rgba(0,0,0,0.8);'>Libros del Autor</h3> </div>
+        <div class="heading-section" style='margin: 0 0 30px 0;'><h3 style='margin: 0; color: rgba(0,0,0,0.8);'>Libros del Autor</h3> </div>
     </div>
     <div class='col-md-12'>
         <div class="owl-carousel libros">
         {% for libro in object.libro_set.all %}
             <div class="item">
                 <a href="{% url "libro" libro.id %}">
-                <img src="{{ libro.imagen.url}}" alt="image">
+					<div style='height: 260px;'><img src="{{ libro.imagen.url }}" alt="{{ libro }}"></div>
                     <div class="desc">
                         <b>{{ libro.autor }}</b>
                         <p>{{ libro.titulo }}</p>
