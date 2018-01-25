@@ -16,9 +16,11 @@
         </div>
         <div class='col-md-7' style='padding: 0;'>
             <div style='font-size: 1.1em;'><strong>{{ i.created_at|date:"F Y"}}</strong></div>
-            <div style='font-size: 1em;'>{{ i.titulo}}</div>
-            <div style='font-size: .8em; color: rgba(0,0,0,0.7);'>{{ i.autor}}</div>
-            <div style='font-size: .8em; color: rgba(0,0,0,0.7); margin-top: 40px;'>{{ i.coleccion }}</div>
+            <div style='font-size: 1em; height: 120px; max-height: 140px;'>
+                <div style='font-size: 1em;'>{{ i.titulo}}</div>
+                <div style='font-size: .8em; color: rgba(0,0,0,0.7);'>{{ i.autor}}</div>
+            </div>
+            <div style='font-size: .8em; color: rgba(0,0,0,0.7);'>{{ i.coleccion }}</div>
             <div style='font-size: .6em; color: rgba(0,0,0,0.5);'>ISBN: {{ i.fISBN}}</div>
         </div>
         {% endif %}
