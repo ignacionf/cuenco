@@ -11,6 +11,7 @@ class HomeView(TemplateView):
         context['novedades'] = Libro.objects.all().order_by("-created_at")[:10]
         context['recomendados'] = Libro.objects.filter(recomendado=True).order_by("titulo")
         context['slider'] = Slider.objects.filter(activo=True).order_by("-created_at")
+        context['notas'] = Nota.objects.filter(publicado=True).order_by("-created_at")[0:10]
         return context
 
 class AutoresView(ListView):
@@ -78,7 +79,6 @@ class LibrosView(ListView):
         return context
 
 
-
 class LibroView(DetailView):
     template_name = "libro.html"
     model = Libro
@@ -90,4 +90,9 @@ class LibroView(DetailView):
         coleccion = Q(coleccion=context['object'].coleccion)
         context['recomendados'] = Libro.objects.filter(autor | coleccion).exclude(id=context['object'].id)
         context['recomendados'] = context['recomendados'][0:10]
+
+        libros = Q(libro=context['object'])
+        autor = Q(libro__autor=context['object'].autor)
+        context['notas'] = Nota.objects.filter(libros | autor )[0:10]
+ 
         return context

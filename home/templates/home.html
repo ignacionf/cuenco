@@ -53,35 +53,53 @@
 	</div><!-- end fh5co-featured-work-section -->
 
 	<div id="fh5co-blog-section">
-		<div class="container">
-			<div class="heading-section text-center">
-				<h2>Prensa</h2>
-			</div>
-			<div class="row">
-				<div class="col-md-4 blog-section">
-					<span>08 <small>Enero 2018</small></span>
-					<h3><a href="#">La vida y obra de Enrique Symns</a></h3>
-					<p>Agustina Frontera repasa la vida y obra de Enrique Symns (si se pueden separar) para Revista Anfibia 
-Autor de: Cerdos & Peces, El señor de los venenos, Big Bad City, En busca del asesino, La banda de los chacales y La vida es un bar, todos publicados en El cuenco de plata.</p>
-					<a class="btn btn-primary" href="http://www.revistaanfibia.com/cronica/under-para-siempre/">Lee mas</a>
-				</div>
-				<div class="col-md-4 blog-section">
-					<span>12 <small>Enero 2018</small></span>
-					<h3><a href="#">Gombrowicz, el escritor completo</a></h3>
-					<p>Marcos Núñez reseña Diario del querido Witold. ¡El 2017 fue un año de grandes novedades en El cuenco de plata!</p>
-					<a class="btn btn-primary" href="#">Lee mas</a>
-				</div>
-				<div class="col-md-4 blog-section">
-					<span>15 <small>Enero 2018</small></span>
-					<h3><a href="#">El primer Perec
-</a></h3>
-					<p>Susana Cella reseña para Radar de Página/12, El atentado de Sarajevo, primera novela de Georges Perec y de las últimas novedades del 2017 en El cuenco de plata.  </p>
-					<a class="btn btn-primary" href="#">Lee mas</a>
-				</div>
-			</div>
-		</div>
+		<div class="container-fluid">
+			<div class="heading-section text-center"><h2>Prensa</h2></div>
+
+            <div class='row'>
+                <div class='col-md-6'>
+                    {% for nota in notas %}
+                    {% if forloop.counter == 6 %}
+        		</div> <!-- col-md-6 -->
+                <div class='col-md-6'>
+                    {% endif %}
+                    <div>
+                        <a href="{% url "nota" nota.id %}" class='nota'>
+                        <span>{{ nota.medio|title }}</span>
+                            {% if nota.firma %} | <span class='autor'>{{ nota.firma|title }}</span>{% endif %}<br />
+                        <strong>{{ nota.titulo }}</strong>
+                        </a>
+                    </div>
+                    {% endfor %}
+        		</div> <!-- col-md-6 -->
+            </div> <!-- row -->
+    	</div><!-- end: container-fluid -->
 	</div><!-- end: fh5co-blog-section -->
+
 {% endblock %}
+{% block "style" %}
+<style>
+h1, h2, h3, h4 {
+    color: rgba(0,0,0,.8);
+    margin: 10px 0 10px 0;
+}
+.nota {
+    color: rgba(0,0,0,.9);
+}
+.nota:hover {
+    color: rgba(0,0,0,.6);
+}
+.nota .autor {
+    color: rgba(0,0,0,.7);
+    font-size: 1em;
+}
+.nota strong {
+    font-size: 1em;
+}
+</style>
+{% endblock %}
+
+
 {% block "js" %}
 <script>
 $("#home > a").addClass("active");
