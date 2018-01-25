@@ -55,7 +55,7 @@ class NotaView(DetailView):
         return context
 
 class LibrosDestacadosView(ListView):
-    template_name = "libros.html"
+    template_name = "recomendados.html"
     model = Libro
     queryset = Libro.objects.filter(recomendado=True)
     context_object_name = 'libros'
@@ -69,7 +69,7 @@ class LibrosDestacadosView(ListView):
 class LibrosView(ListView):
     template_name = "libros.html"
     model = Libro
-    queryset = Libro.objects.all()
+    queryset = Libro.objects.all().order_by("-created_at")
     context_object_name = 'libros'
     paginate_by =10 
     def get_context_data(self, **kwargs):

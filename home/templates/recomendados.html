@@ -9,15 +9,14 @@
 <div class='col-md-12'>
 {% for i in libros %}
 <a href="{% url "libro" i.id %}">
-    <div class='col-md-6' style='margin-bottom: 30px; height: 222px;'>
+    <div class='col-md-6' style='margin-bottom: 30px;'>
         {% if i.imagen %}
         <div class='col-md-5 text-center'>
             <img src='{{ i.imagen.url }}' style='width: 80%;' />
+            <div style='font-size: .8em;'>{{ i.autor }}</div>
         </div>
         <div class='col-md-7' style='padding: 0;'>
-            <div style='font-size: 1.1em;'><strong>{{ i.created_at|date:"F Y"}}</strong></div>
             <div style='font-size: 1em;'>{{ i.titulo}}</div>
-            <div style='font-size: .8em; color: rgba(0,0,0,0.7);'>{{ i.autor}}</div>
             <div style='font-size: .8em; color: rgba(0,0,0,0.7); margin-top: 40px;'>{{ i.coleccion }}</div>
             <div style='font-size: .6em; color: rgba(0,0,0,0.5);'>ISBN: {{ i.fISBN}}</div>
         </div>
