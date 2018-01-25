@@ -52,6 +52,27 @@
         </div>
     </div> <!-- col-md-8-->
 </div> <!-- row -->
+{% if recomendados %}
+    <div class='col-md-10 col-md-offset-1' style='margin-top: 4em;'>
+        <div class="heading-section" style='margin: 0;'><h3 style='margin: 0; color: rgba(0,0,0,0.8);'>Libros Relacionados</h3> </div>
+    </div>
+    <div class='col-md-10 col-md-offset-1' style='margin-top: 2em;'>
+        <div class="owl-carousel libros">
+        {% for libro in recomendados %}
+            <div class="item">
+                <img src="{{ libro.imagen.url}}" alt="image">
+                    <div class="desc">
+                        <b>{{ libro.autor }}</b>
+                        <p>{{ libro.titulo }}</p>
+                    </div>
+            </div> <!-- item -->
+        
+        {% endfor %}
+        </div> <!-- owl-carousel -->
+    </div>
+{% endif %}
+
+
 <div class='col-md-12'>&nbsp;</div>
 
 
@@ -70,5 +91,19 @@ h1, h2, h3, h4 {
 {% block "js" %}
 <script>
 //$("# nombre  > a").addClass("active");
+$('.libros').owlCarousel({
+    autoplay: true,
+    items: 5,
+    loop:true,
+    center: true,
+    margin:50,
+    nav:true,
+    dots: false,
+    navText: [
+        "<i class='icon-chevron-left owl-direction'></i>",
+        "<i class='icon-chevron-right owl-direction'></i>"
+    ]
+})
+
 </script>
 {% endblock %}

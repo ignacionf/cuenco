@@ -220,7 +220,7 @@ header #fh5co-main-nav > ul li:first-child {
 .owl-carousel .owl-controls .owl-nav .owl-prev,
 .owl-carousel-posts .owl-controls .owl-nav .owl-next,
 .owl-carousel-posts .owl-controls .owl-nav .owl-prev {
-  top: 50%;
+  top: 30%;
   margin-top: -29px;
   z-index: 9999;
   position: absolute;
@@ -236,7 +236,7 @@ header #fh5co-main-nav > ul li:first-child {
 
 .owl-carousel .owl-controls .owl-nav .owl-next,
 .owl-carousel-posts .owl-controls .owl-nav .owl-next {
-  right: 40px;
+  right: -65px;
 }
 .owl-carousel .owl-controls .owl-nav .owl-next:hover,
 .owl-carousel-posts .owl-controls .owl-nav .owl-next:hover {
@@ -245,7 +245,7 @@ header #fh5co-main-nav > ul li:first-child {
 
 .owl-carousel .owl-controls .owl-nav .owl-prev,
 .owl-carousel-posts .owl-controls .owl-nav .owl-prev {
-  left: 40px;
+  left: -65px;
 }
 .owl-carousel .owl-controls .owl-nav .owl-prev:hover,
 .owl-carousel-posts .owl-controls .owl-nav .owl-prev:hover {
@@ -312,7 +312,7 @@ header #fh5co-main-nav > ul li:first-child {
 }
 
 .owl-carousel .owl-dots {
-  display: none !important;
+/*  display: none !important; */
 }
 @media screen and (max-width: 992px) {
   .owl-carousel .owl-dots {
@@ -345,7 +345,7 @@ header #fh5co-main-nav > ul li:first-child {
 
 .owl-theme .owl-dots {
   position: absolute;
-  bottom: 0;
+  bottom: -10;
   width: 100%;
   text-align: center;
 }
@@ -359,6 +359,7 @@ header #fh5co-main-nav > ul li:first-child {
   width: 10px;
   height: 10px;
   background: rgba(255, 255, 255, 0.3);
+  background: rgba(240,87,54, 0.3);
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
@@ -370,6 +371,7 @@ header #fh5co-main-nav > ul li:first-child {
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: #fff;
+  background: rgba(240,87,54, 0.9);
 }
 
 .item {

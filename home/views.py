@@ -84,10 +84,9 @@ class LibroView(DetailView):
     model = Libro
     queryset = Libro.objects.all()
 
-#    def get_context_data(self, **kwargs):
-#        context = super().get_context_data(**kwargs)
-#        autor = Q(libro__autor=context['object'])
-#        context['notas'] = Nota.objects.filter(publicado=True).filter(autor)
-#        return context
-#
-
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        autor = Q(autor=context['object'].autor)
+        coleccion = Q(coleccion=context['object'].coleccion)
+        context['recomendados'] = Libro.objects.filter(autor | coleccion)[0:10]
+        return context
