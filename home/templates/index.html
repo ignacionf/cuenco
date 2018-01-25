@@ -63,6 +63,37 @@
         #colecciones ul.dropdown-menu > li > a {
             padding: 3px; 
         }
+        .glyphicon.glyphicon-one-fine-dot:before {
+            content: "\25cf";
+            font-size: 1.5em;
+        }
+        #footer {
+            background: rgba(0,0,0,0.5);
+            padding-top: 20px;
+        }
+        #footer > ul {
+        }
+
+        #footer ul > li {
+            list-style: none;
+            display: inline-block;
+            padding: 3px 20px;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        #footer ul > li > a, #footer p {
+            color: rgba(255,255,255, 0.9);
+        }
+
+        #footer ul > li > a:hover {
+            color: #F05736;
+            font-weight: 500;
+        }
+        #footer .data > a {
+            color: rgba(255,255,255, 0.9);
+            font-size: 20px; 
+        }
     </style>
 
 	</head>
@@ -83,9 +114,9 @@
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Colecciones
                         <ul class="dropdown-menu">
                         {% for c in colecciones %}
-                          <li><a href="{% url "colecciones" c.slug %}">{{ c.nombre }}</a></li>
+                          <li><a href="{% url "colecciones" c.slug %}"><span>.</span> {{ c.nombre|title }}</a></li>
                         {% endfor %}
-                          <li role="separator" class="divider" style='width: 100%;'></li>
+                          <li role="separator" class="divider" style='width: 92%;'></li>
                           <li><a href="{% url "colecciones" %}">Ver todas las colecciones</a></li>
 
                         </ul>
@@ -107,14 +138,28 @@
 		<div id="footer" class="fh5co-border-line">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center">
-						<p>Copyright 2018</p>
+					<div class="col-md-10 col-md-offset-1 text-center">
+                        <ul>
+                            <li><a href="#">La editorial</a></li>
+                            <li><a href="#">Distribuidores</a></li>
+                            <li><a href="#">Librerías</a></li>
+                            <li><a href="#">Contacto</a></li>
+                            <li><a href="#">Compras en la web</a></li>
+                            <li><a href="#">Foreign Rights</a></li>
+                        </ul>
+						<p>El Cuenco de Plata S.R.L. || Buenos Aires || Argentina || Copyright {% now "Y" %}</p>
+                        <p class='data'>
+                            <a href="tel:+541143827001">+54 11 4382 7001</a>
+                            || <a href="mailto:ventas@elcuencodeplata.com.ar">ventas [at] elcuencodeplata.com.ar</a>
+                        </p>
+<!--
 						<p class="fh5co-social-icons">
 							<a href="http://www.twitter.com/cuencodeplata"><i class="icon-twitter-with-circle"></i></a>
 							<a href="https://www.facebook.com/cuencodeplata/"><i class="icon-facebook-with-circle"></i></a>
 							<a href="https://www.instagram.com/elcuencodeplata/"><i class="icon-instagram-with-circle"></i></a>
 							<a href="https://elcuencodeplata.mitiendanube.com/"><i class="icon-shopping-cart"></i></a>
 						</p>
+-->
 					</div>
 				</div>
 			</div>
