@@ -32,6 +32,7 @@ class ColeccionesView(ListView):
                  key=lambda k: k['cantidad'], reverse=True)[0:6]
 
         context['autores']=[Autor.objects.get(pk=x['autor']) for x in autores_ids]
+        context['autores_len']=len(context['autores'])
         return context
 
 class AutoresView(ListView):
