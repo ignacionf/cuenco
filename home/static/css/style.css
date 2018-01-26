@@ -126,6 +126,9 @@ header, #fh5co-intro-section, #fh5co-services-section, #fh5co-featured-work-sect
 
 header {
   padding-top: 3em;
+  background: rgba(0,0,0,0.7);
+  margin-bottom: 30px;
+  padding-bottom: 1.3em;
 }
 header .fh5co-navbar-brand {
   padding-bottom: 3em;
@@ -172,6 +175,7 @@ header #fh5co-main-nav > ul li a {
   color: #000;
   position: relative;
   font-weight: 400;
+  color: rgba(255,255,255,0.8);
 }
 header #fh5co-main-nav > ul li a.active:before {
   position: absolute;
@@ -180,7 +184,6 @@ header #fh5co-main-nav > ul li a.active:before {
   content: '';
   top: -5px;
   right: -7px;
-  background: #000D9E;
   background: #f05736;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -190,6 +193,7 @@ header #fh5co-main-nav > ul li a.active:before {
 header #fh5co-main-nav > ul li a:hover, header #fh5co-main-nav > ul li a:focus {
   text-decoration: none;
   color: #000;
+  color: #F05736;
 }
 header #fh5co-main-nav > ul li:first-child {
   margin-left: 0;

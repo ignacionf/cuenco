@@ -62,6 +62,7 @@
         }
         #colecciones ul.dropdown-menu > li > a {
             padding: 3px; 
+            color: rgba(0,0,0,0.8);
         }
         .glyphicon.glyphicon-one-fine-dot:before {
             content: "\25cf";
@@ -130,11 +131,11 @@
 
                         </ul>
                     </li>
-				    <li><img src="{% static 'images/logo_b_300.png' %}" style='width: 200px; box-shadow: none;' /></li>
+				    <li><img src="{% static 'images/logo.png' %}" style='width: 200px; box-shadow: none; opacity: 0.9;' /></li>
 					<li id="destacados"><a href="{% url "libros_destacados" %}">Destacados</a></li>
 					<li id="autores"><a href="{% url "autores" %}">Autores</a></li>
 					<li id="prensa"><a href="{% url "prensa" %}">Prensa</a></li>
-					<li><a href="https://elcuencodeplata.mitiendanube.com/"><i class="icon-shopping-cart" style="color: rgba(0,0,0,.5);"></i></a></li>
+					<li><a href="https://elcuencodeplata.mitiendanube.com/"><i class="icon-shopping-cart"></i></a></li>
 				</ul>
 			</nav>
 		</div>
