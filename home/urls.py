@@ -14,4 +14,7 @@ urlpatterns = [
 
     path('colecciones/', ColeccionesView.as_view(), name='colecciones'),
     path('colecciones/<str:slug>/', ColeccionesView.as_view(), name='colecciones'),
+
+    path('la_editorial/', TemplateView.as_view(template_name="editorial.html"), name='editorial'),
+
 ]

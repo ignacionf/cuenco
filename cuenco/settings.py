@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'versatileimagefield',
     'home',
     'django_extensions',
+    'tinymce',
 ]
 
 MIDDLEWARE = [
