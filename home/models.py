@@ -2,6 +2,7 @@ from django.db import models
 
 from django.contrib.auth.models import User
 from versatileimagefield.fields import VersatileImageField
+from tinymce import models as tinymce_models
 
 from isbn_field import ISBNField
 
@@ -22,7 +23,7 @@ class Model(models.Model):
 class Autor(Model):
     nombre = models.CharField("Nombre", max_length=255)
     apellido = models.CharField("Apellido", max_length=255)
-    texto = models.TextField("Texto")
+    texto = tinymce_models.HTMLField("Texto")
     imagen = VersatileImageField('Imagen', upload_to="imagenes/autor/", blank=True, null=True)
 
     class Meta:
@@ -41,7 +42,7 @@ class Autor(Model):
 
 class Coleccion(Model):
     nombre = models.CharField("Nombre", max_length=255)
-    texto = models.TextField("Texto", blank=True, null=True)
+    texto = tinymce_models.HTMLField("Texto", blank=True, null=True)
     slug = models.SlugField("Slug (uso en la web)", max_length=255, blank=True, null=True)
     activa = models.BooleanField("Activa", default=True)
     orden = models.PositiveSmallIntegerField("Orden", default=99)
@@ -69,7 +70,7 @@ class Libro(Model):
     coleccion = models.ForeignKey(Coleccion, on_delete=models.CASCADE)
     titulo = models.CharField("Titulo", max_length=500)
     isbn = ISBNField("ISBN")
-    texto = models.TextField("Texto")
+    texto = tinymce_models.HTMLField("Texto")
     imagen = VersatileImageField('Foto', upload_to="libro/", blank=True, null=True)
 
     prologo = models.CharField("Prologo de... ", max_length=500, blank=True, null=True)
@@ -138,13 +139,13 @@ class Slider(Model):
 
 class Nota(Model):
     titulo = models.CharField("Título", max_length=500)
-    texto = models.TextField("Texto")
+    texto = tinymce_models.HTMLField("Texto")
 
     libro = models.ForeignKey(Libro, on_delete=models.CASCADE, null=True, blank=True)
     fuente = models.URLField("Fuente", null=True, blank=True)
     firma = models.CharField("Firma", max_length=500, null=True, blank=True)
     medio = models.CharField("Medio", max_length=500, null=True, blank=True)
-    subtitulo = models.TextField("Sub Título", null=True, blank=True)
+    subtitulo= tinymce_models.HTMLField("Subtitulo", null=True, blank=True)
 
     destacado = models.BooleanField("Destacado", default=False)
     publicado = models.BooleanField("Publicado", default=True)
