@@ -128,7 +128,7 @@ header {
   padding-top: 3em;
   background: rgba(0,0,0,0.7);
   margin-bottom: 30px;
-  padding-bottom: 1.3em;
+  padding: 2em 0;
 }
 header .fh5co-navbar-brand {
   padding-bottom: 3em;
