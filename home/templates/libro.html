@@ -21,7 +21,7 @@
     
             {% if object.pdf %}
             <div style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
-                <a href="{{ object.pdf.url }}" download="Fragmento {{ object.titulo }}.pdf"><i class="glyphicon glyphicon-eye-open" aria-hidden="true"></i> Lea un fragmento</a>
+                <a href="{{ object.pdf.url }}"{%comment%} download="Fragmento {{ object.titulo }}.pdf"{%endcomment %}><i class="glyphicon glyphicon-eye-open" aria-hidden="true"></i> Lea un fragmento</a>
             </div>
             {% endif %}
             {% if object.carrito %}
@@ -33,12 +33,12 @@
     
         <div class='col-md-8'>
             <div><h2><a href="{% url "autor" object.autor.id %}">{{ object.autor|title }}</a></h2></div>
-            <div><h3>{{ object.titulo|title }}</h3></div>
+            <div><h3>{{ object.titulo|title }}{% if object.subtitulo %}<br /><small>{{ object.subtitulo|title }}</small>{% endif %}</h3></div>
             {% if object.prologo %}
             <div><h4><small>Prologo de </small>{{ object.traductor }}</h4></div>
             {% endif %}
             {% if object.traductor %}
-            <div><h4><small>Traducción: </small>{{ object.traductor }}</h4></div>
+            <div><h4><small>Traducción de </small>{{ object.traductor }}</h4></div>
             {% endif %}
     
             <div class='text-justify' style='margin-top: 40px; font-size: .9em;'>
