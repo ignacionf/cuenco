@@ -3,67 +3,63 @@
 
 {% block "content" %}
 
-<!--
-<div class="heading-section text-center"><h2>Libro</h2></div>
--->
-
-<div class='col-md-12'>&nbsp;</div>
-<div class="col-md-10 col-md-offset-1">
-{% if object.imagen %}
-    <div class='col-md-4' style='padding-top: 20px;'>
-        <div><img src='{{ object.imagen.url }}' style='width: 100%;' /></div>
-
-        <div style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
-            <div><strong>Colección: </strong><a href="{% url "colecciones" object.coleccion.slug %}">{{ object.coleccion }}</a></div>
-            <div><strong>ISBN: </strong>{{ object.fISBN }}</div>
-
-            {% if object.edicion %}<div><strong>Edición: </strong>{{ object.get_edicion_display }}</div>{% endif %}
-            {% if object.formato %}<div><strong>Formato: </strong>{{ object.formato}}</div>{% endif %}
-            {% if object.paginas %}<div><strong>Páginas: </strong>{{ object.paginas }}</div>{% endif %}
-        </div>
-
-        {% if object.pdf %}
-        <div style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
-            <a href="{{ object.pdf.url }}" download="Fragmento {{ object.titulo }}.pdf"><i class="glyphicon glyphicon-eye-open" aria-hidden="true"></i> Lea un fragmento</a>
-        </div>
-        {% endif %}
-        {% if object.carrito %}
-        <div style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
-            <a href="{{ object.carrito }}" target="_blank"><i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i> Ir a tienda</a>
-        </div>
-        {% endif %}
-    </div> <!-- col-md-4-->
-{% endif %}
-
-    <div class='col-md-8'>
-        <div><h2><a href="{% url "autor" object.autor.id %}">{{ object.autor|title }}</a></h2></div>
-        <div><h3>{{ object.titulo|title }}</h3></div>
-        {% if object.prologo %}
-        <div><h4><small>Prologo de </small>{{ object.traductor }}</h4></div>
-        {% endif %}
-        {% if object.traductor %}
-        <div><h4><small>Traducción: </small>{{ object.traductor }}</h4></div>
-        {% endif %}
-
-        <div class='text-justify' style='margin-top: 40px; font-size: .9em;'>
-            {% autoescape off %}
-            {{ object.texto}}
-            {% endautoescape %}
-        </div>
-
-        <div class="heading-section" style='margin: 40px 0 30px 0;'><h3 style='margin: 0; color: rgba(0,0,0,0.8);'>En los Medios</h3> </div>
-
-        {% for nota in notas %}
-        <div>
-            <a href="{% url "nota" nota.id %}" class='nota'>
-            <span>{{ nota.medio|title }}</span>
-                {% if nota.firma %} | <span class='autor'>{{ nota.firma|title }}</span>{% endif %}<br />
-            <strong>{{ nota.titulo }}</strong>
-            </a>
-        </div>
-        {% endfor %}
-    </div> <!-- col-md-8-->
-</div> <!-- row -->
+<div class='row'>
+    <div class="col-md-10 col-md-offset-1">
+        <div class='col-md-4' style='padding-top: 20px;'>
+    {% if object.imagen %}
+            <div><img src='{{ object.imagen.url }}' style='width: 100%;' /></div>
+    {% endif %}
+    
+            <div style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
+                <div><strong>Colección: </strong><a href="{% url "colecciones" object.coleccion.slug %}">{{ object.coleccion }}</a></div>
+                <div><strong>ISBN: </strong>{{ object.fISBN }}</div>
+    
+                {% if object.edicion %}<div><strong>Edición: </strong>{{ object.get_edicion_display }}</div>{% endif %}
+                {% if object.formato %}<div><strong>Formato: </strong>{{ object.formato}}</div>{% endif %}
+                {% if object.paginas %}<div><strong>Páginas: </strong>{{ object.paginas }}</div>{% endif %}
+            </div>
+    
+            {% if object.pdf %}
+            <div style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
+                <a href="{{ object.pdf.url }}" download="Fragmento {{ object.titulo }}.pdf"><i class="glyphicon glyphicon-eye-open" aria-hidden="true"></i> Lea un fragmento</a>
+            </div>
+            {% endif %}
+            {% if object.carrito %}
+            <div style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
+                <a href="{{ object.carrito }}" target="_blank"><i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i> Ir a tienda</a>
+            </div>
+            {% endif %}
+        </div> <!-- col-md-4-->
+    
+        <div class='col-md-8'>
+            <div><h2><a href="{% url "autor" object.autor.id %}">{{ object.autor|title }}</a></h2></div>
+            <div><h3>{{ object.titulo|title }}</h3></div>
+            {% if object.prologo %}
+            <div><h4><small>Prologo de </small>{{ object.traductor }}</h4></div>
+            {% endif %}
+            {% if object.traductor %}
+            <div><h4><small>Traducción: </small>{{ object.traductor }}</h4></div>
+            {% endif %}
+    
+            <div class='text-justify' style='margin-top: 40px; font-size: .9em;'>
+                {% autoescape off %}
+                {{ object.texto}}
+                {% endautoescape %}
+            </div>
+    
+            <div class="heading-section" style='margin: 40px 0 30px 0;'><h3 style='margin: 0; color: rgba(0,0,0,0.8);'>En los Medios</h3> </div>
+    
+            {% for nota in notas %}
+            <div>
+                <a href="{% url "nota" nota.id %}" class='nota'>
+                <span>{{ nota.medio|title }}</span>
+                    {% if nota.firma %} | <span class='autor'>{{ nota.firma|title }}</span>{% endif %}<br />
+                <strong>{{ nota.titulo }}</strong>
+                </a>
+            </div>
+            {% endfor %}
+        </div> <!-- col-md-8-->
+    </div> <!-- col-md-10 -->
 {% if recomendados %}
     <div class='col-md-10 col-md-offset-1' style='margin-top: 4em;'>
         <div class="heading-section" style='margin: 0;'><h3 style='margin: 0; color: rgba(0,0,0,0.8);'>Libros Relacionados</h3> </div>
@@ -89,6 +85,7 @@
 
 <div class='col-md-12'>&nbsp;</div>
 
+</div> <!-- row -->
 
 {% endblock %}
 
