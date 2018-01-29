@@ -54,12 +54,14 @@
             </div>
             <div class='col-md-7' style='padding: 0;'>
                 {% if not coleccion %}<div style='font-size: 1.1em;'><strong>{{ i.fecha|date:"F Y"}}</strong></div>{% endif %}
-                <div style='font-size: 1em; height: 100px; max-height: 140px;'>
+                <div style='font-size: 1em; height: 120px; max-height: 140px;'>
                     <div style='font-size: 1em;'>{{ i.titulo}}</div>
                     <div style='font-size: .8em; color: rgba(0,0,0,0.7);'>{{ i.autor}}</div>
                 </div>
                 {% for c in i.coleccion.all %}
+                {% if c.activa %}
                 <div style='font-size: .8em; color: rgba(0,0,0,0.7);'>{{ c}}</div>
+                {% endif %}
                 {% endfor %}
                 <div style='font-size: .6em; color: rgba(0,0,0,0.5);'>ISBN: {{ i.fISBN}}</div>
             </div>
