@@ -31,6 +31,7 @@ class LibroAdmin(admin.ModelAdmin):
     list_filter = ("recomendado",  "coleccion", "user","autor",)
     list_display = ("titulo", "imagen_html_sized", "autor", "coleccion", "isbn", "recomendado", "created_at")
     readonly_fields = ['imagen_html']
+    autocomplete_fields = ['autor']
     def save_model(self, request, obj, form, change):
         obj.user = request.user
         obj.save()
@@ -52,6 +53,7 @@ class NotaAdmin(admin.ModelAdmin):
     search_fields = ("titulo","subtitulo", "libro", "texto")
     list_filter = ("publicado", "destacado", "user",)
     list_display = ("titulo", "medio", "destacado", "publicado", "created_at", "user")
+    autocomplete_fields = ['libro']
     def save_model(self, request, obj, form, change):
         obj.user = request.user
         obj.save()

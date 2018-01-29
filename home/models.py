@@ -74,6 +74,7 @@ class Libro(Model):
     isbn = ISBNField("ISBN")
     texto = tinymce_models.HTMLField("Texto")
     imagen = VersatileImageField('Foto', upload_to="libro/", blank=True, null=True)
+    fecha = models.DateField("Fecha publicación", null=True, blank=True)
 
     prologo = models.CharField("Prologo de... ", max_length=500, blank=True, null=True)
     traductor = models.CharField("Traductor", max_length=500, blank=True, null=True)
@@ -160,6 +161,8 @@ class Nota(Model):
 
     destacado = models.BooleanField("Destacado", default=False)
     publicado = models.BooleanField("Publicado", default=True)
+
+    fecha = models.DateField("Fecha publicación", null=True, blank=True)
 
     class Meta:
         verbose_name_plural = "Notas"

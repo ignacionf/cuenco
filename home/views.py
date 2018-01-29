@@ -72,15 +72,19 @@ from django.db.models import Q
 class NotaView(DetailView):
     template_name = "nota.html"
     model = Nota
-    queryset = Nota.objects.filter(publicado=True).order_by("-created_at")
+    queryset = Nota.objects.filter(publicado=True).order_by("-fecha")
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        libros = Q(libro=context['object'].libro)
-        autor = Q(libro__autor=context['object'].libro.autor)
-        medio = Q(medio=context['object'].medio)
-        notas = self.queryset.filter(libros | autor | medio).exclude(pk=context['object'].id)
-        context['notas'] = notas[0:5]
+        #libros = Q(libro=context['object'].libro)
+        #autor = Q(libro__autor=context['object'].libro.autor)
+        #medio = Q(medio=context['object'].medio)
+        #notas = self.queryset.filter(libros | autor | medio).exclude(pk=context['object'].id)
+        if context['object']:
+            notas = self.queryset.filter(libro=context['object'].libro).exclude(pk=context['object'].id)
+            context['notas'] = notas[0:5]
+        else:
+            context['notas'] = []
         return context
 
 class LibrosDestacadosView(ListView):
@@ -98,7 +102,7 @@ class LibrosDestacadosView(ListView):
 class LibrosView(ListView):
     template_name = "libros.html"
     model = Libro
-    queryset = Libro.objects.all().order_by("-created_at")
+    queryset = Libro.objects.all().order_by("-fecha")
     context_object_name = 'libros'
     paginate_by =10 
     def get_context_data(self, **kwargs):
@@ -110,17 +114,15 @@ class LibrosView(ListView):
 class LibroView(DetailView):
     template_name = "libro.html"
     model = Libro
-    queryset = Libro.objects.all()
+    queryset = Libro.objects.all().order_by("-fecha")
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         autor = Q(autor=context['object'].autor)
         coleccion = Q(coleccion=context['object'].coleccion)
-        context['recomendados'] = Libro.objects.filter(autor | coleccion).exclude(id=context['object'].id)
+        context['recomendados'] = self.get_queryset().filter(autor | coleccion).exclude(id=context['object'].id)
         context['recomendados'] = context['recomendados'][0:10]
 
-        libros = Q(libro=context['object'])
-        autor = Q(libro__autor=context['object'].autor)
-        context['notas'] = Nota.objects.filter(libros | autor )[0:10]
+        context['notas'] = Nota.objects.filter(libro=context['object'])[0:10]
  
         return context
