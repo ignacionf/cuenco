@@ -69,7 +69,7 @@ EDICIONES = ((x, "%s°" %x) for x in range(1,51))
 
 class Libro(Model):
     autor = models.ForeignKey(Autor, on_delete=models.CASCADE)
-    coleccion = models.ForeignKey(Coleccion, on_delete=models.CASCADE)
+    coleccion = models.ManyToManyField(Coleccion)
     titulo = models.CharField("Titulo", max_length=500)
     isbn = ISBNField("ISBN")
     texto = tinymce_models.HTMLField("Texto")
