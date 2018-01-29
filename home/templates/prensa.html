@@ -14,10 +14,10 @@
         <div style='background: #E6F0E6; padding: 10px;'>
             <a href="{% url "nota" i.id %}">
             {% if i.libro %}
-            <div style='color: rgba(240,87,54,1);'>{{ i.libro|title }}</div>
+            <div style='color: rgba(240,87,54,1);'>{{ i.libro }}</div>
             {% endif %}
-            <div style='color: rgba(0,0,0,0.8);'>{{ i.medio|title }}{% if i.firma %}, {{ i.firma|title }}{% endif %}</div>
-            <div style='color: rgba(0,0,0,0.6);'>{{ i.titulo|title }}</div>
+            <div style='color: rgba(0,0,0,0.8);'>{{ i.medio }}{% if i.firma %}, {{ i.firma }}{% endif %}</div>
+            <div style='color: rgba(0,0,0,0.6);'>{{ i.titulo }}</div>
             </a>
         </div>
     </div>
@@ -35,8 +35,8 @@
     {% endif %}
         <div style='background: #F5F5E6; padding: 10px;'>
             <a href="{% url "nota" i.id %}">
-            <div style='margin: 0; color: rgba(240,87,54,1);'>{{ i.medio|title }}{% if i.firma %}, {{ i.firma|title }}{% endif %}</div>
-            <div style='color: rgba(0,0,0,0.7)'>{{ i.titulo|title }}</div>
+            <div style='margin: 0; color: rgba(240,87,54,1);'>{{ i.medio }}{% if i.firma %}, {{ i.firma }}{% endif %}</div>
+            <div style='color: rgba(0,0,0,0.7)'>{{ i.titulo }}</div>
             </a>
         </div>
     {% endfor %}

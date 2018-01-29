@@ -21,7 +21,7 @@ class Model(models.Model):
         ordering = ['-created_at',]
 
 class Autor(Model):
-    nombre = models.CharField("Nombre", max_length=255)
+    nombre = models.CharField("Nombre", max_length=255, blank=True, null=True)
     apellido = models.CharField("Apellido", max_length=255)
     texto = tinymce_models.HTMLField("Texto")
     imagen = VersatileImageField('Imagen', upload_to="imagenes/autor/", blank=True, null=True)
@@ -34,8 +34,10 @@ class Autor(Model):
         return "%s %s" % (self.nombre, self.apellido)
 
     def imagen_html(self, size='90x90'):
-        if self.imagen:
+        try:
             return mark_safe("<img src='%s' alt='%s' />" % (self.imagen.crop[size].url, self))
+        except:
+            pass
         return ""
     imagen_html.short_description = "Thumbnail"
 
@@ -102,14 +104,18 @@ class Libro(Model):
             return i
 
     def imagen_html_sized(self, size='90x120'):
-        if self.imagen:
+        try:
             return mark_safe("<img src='%s' alt='%s' />" % (self.imagen.thumbnail[size].url, self))
+        except:
+            pass
         return ""
     imagen_html_sized.short_description = "Thumbnail"
 
     def imagen_html(self):
-        if self.imagen:
+        try:
             return mark_safe("<img src='%s' alt='%s' />" % (self.imagen.url, self))
+        except:
+            pass
         return ""
     imagen_html.short_description = "Muestra de la imagen"
 
@@ -117,6 +123,7 @@ class Slider(Model):
     titulo = models.CharField("Titulo", max_length=500)
     imagen = VersatileImageField('Slider', upload_to="slider/", blank=True, null=True)
     activo = models.BooleanField("Activo", default=False)
+    destino = models.URLField("URL Destino", null=True, blank=True)
 
     class Meta:
         verbose_name_plural = "Sliders"
@@ -125,14 +132,18 @@ class Slider(Model):
         return self.titulo
 
     def imagen_html_sized(self, size='300x40'):
-        if self.imagen:
+        try:
             return mark_safe("<img src='%s' alt='%s' />" % (self.imagen.thumbnail[size].url, self))
+        except:
+            pass
         return ""
     imagen_html_sized.short_description = "Thumbnail"
 
     def imagen_html(self):
-        if self.imagen:
+        try:
             return mark_safe("<img src='%s' alt='%s' />" % (self.imagen.url, self))
+        except:
+            pass
         return ""
     imagen_html.short_description = "Muestra de la imagen"
 

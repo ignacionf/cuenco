@@ -7,10 +7,10 @@
         <div class="heading-section text-center"><h2>Prensa</h2> </div>
     </div>
     <div class='col-md-10 col-md-offset-1'>
-        <div class="heading-section" style='margin: 0;'><h3 style='margin: 0; color: rgba(0,0,0,0.8);'>{{ object.libro|title }}</h3> </div>
-        <div class="heading-section" style='margin: 0;'><h2 style='margin: 0;'>{{ object.titulo|title }}</h2> </div>
+        <div class="heading-section" style='margin: 0;'><h3 style='margin: 0; color: rgba(0,0,0,0.8);'>{{ object.libro}}</h3> </div>
+        <div class="heading-section" style='margin: 0;'><h2 style='margin: 0;'>{{ object.titulo}}</h2> </div>
         <div class="heading-section" style='margin: 0;'><h4 style='margin: 0; color: rgba(0,0,0,0.5);'>
-                {{ object.medio|title }}{% if object.firma %} | {{ object.firma|title }}{% endif %}
+                {{ object.medio}}{% if object.firma %} | {{ object.firma}}{% endif %}
             {% if object.fuente %}<a class='pull-right' href="{{ object.fuente }}">Fuente</a>{% endif %}
             </h4>
          </div>
@@ -30,8 +30,8 @@
     {% for i in notas %}
         <div style='background: #F5F5E6; padding: 10px;'>
             <a href="{% url "nota" i.id %}">
-            <div style='margin: 0; color: rgba(240,87,54,1);'>{{ i.medio|title }}{% if i.firma %}, {{ i.firma|title }}{% endif %}</div>
-            <div style='color: rgba(0,0,0,0.7)'>{{ i.titulo|title }}</div>
+            <div style='margin: 0; color: rgba(240,87,54,1);'>{{ i.medio}}{% if i.firma %}, {{ i.firma}}{% endif %}</div>
+            <div style='color: rgba(0,0,0,0.7)'>{{ i.titulo}}</div>
             </a>
         </div>
     {% endfor %}

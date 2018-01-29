@@ -72,7 +72,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn {
-  text-transform: uppercase;
   letter-spacing: 2px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -104,7 +103,6 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   font-size: 22px;
   letter-spacing: 1px;
-  text-transform: uppercase;
   font-weight: 700;
 }
 .heading-section h2:before {
@@ -137,7 +135,6 @@ header .fh5co-navbar-brand .fh5co-logo {
   position: relative;
   font-size: 50px;
   color: #000;
-  text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
 }

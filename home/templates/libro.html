@@ -32,8 +32,8 @@
         </div> <!-- col-md-4-->
     
         <div class='col-md-8'>
-            <div><h2><a href="{% url "autor" object.autor.id %}">{{ object.autor|title }}</a></h2></div>
-            <div><h3>{{ object.titulo|title }}{% if object.subtitulo %}<br /><small>{{ object.subtitulo|title }}</small>{% endif %}</h3></div>
+            <div><h2><a href="{% url "autor" object.autor.id %}">{{ object.autor}}</a></h2></div>
+            <div><h3>{{ object.titulo}}{% if object.subtitulo %}<br /><small>{{ object.subtitulo}}</small>{% endif %}</h3></div>
             {% if object.prologo %}
             <div><h4><small>Prologo de </small>{{ object.traductor }}</h4></div>
             {% endif %}
@@ -52,8 +52,8 @@
             {% for nota in notas %}
             <div>
                 <a href="{% url "nota" nota.id %}" class='nota'>
-                <span>{{ nota.medio|title }}</span>
-                    {% if nota.firma %} | <span class='autor'>{{ nota.firma|title }}</span>{% endif %}<br />
+                <span>{{ nota.medio}}</span>
+                    {% if nota.firma %} | <span class='autor'>{{ nota.firma}}</span>{% endif %}<br />
                 <strong>{{ nota.titulo }}</strong>
                 </a>
             </div>

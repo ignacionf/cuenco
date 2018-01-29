@@ -124,7 +124,7 @@
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Colecciones
                         <ul class="dropdown-menu">
                         {% for c in colecciones %}
-                          <li><a href="{% url "colecciones" c.slug %}"><span>.</span> {{ c.nombre|title }}</a></li>
+                          <li><a href="{% url "colecciones" c.slug %}"><span>.</span> {{ c.nombre }}</a></li>
                         {% endfor %}
                           <li role="separator" class="divider" style='width: 92%;'></li>
                           <li><a href="{% url "colecciones" %}">Ver todas las colecciones</a></li>
