@@ -10,7 +10,7 @@
     <div class='col-md-6 coleccion'>
         <div class='maincoleccion {% if coleccion.orden < 10 %}principal{%endif %}'>
             <div><a href='{% url "colecciones"  coleccion.slug %}'><h1>{{ coleccion }}</h1></a></div>
-            <div>
+            <div class='resumen'>
                 {% autoescape off %}
                 {{ coleccion.texto }}
                 {% endautoescape %}
@@ -49,6 +49,10 @@ div.coleccion div.maincoleccion{
     background: #F5F5E6;
     padding: 5px 15px;
     height: 400px;
+}
+div.coleccion div.resumen {
+    height: 130px;
+    max-height: 130px;
 }
 div.coleccion div.principal{
     background: #E6F0E6;
