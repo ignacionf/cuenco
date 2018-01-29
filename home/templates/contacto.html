@@ -1,0 +1,44 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block "content" %}
+<div style='padding: 20px; margin-bottom: 50px;'>
+    <form method="post">
+        {% csrf_token %}
+      <div class="form-group">
+        <label for="InputEmail1">Dirección de Email <span>{{ form.errors.email }}</span></label>
+        <input type="email" class="form-control" name='email' id="InputEmail1" placeholder="Email" value="{% if form.email.value %}{{ form.email.value }}{% endif %}">
+      </div>
+      <div class="form-group">
+        <label for="InputNombre1">Nombre y Apellido <span>{{ form.errors.nombre }}</span></label>
+        <input type="text" class="form-control" name='nombre' id="InputNombre1" placeholder="Nombre y Apellido" value="{% if form.nombre.value %}{{ form.nombre.value }}{% endif %}">
+      </div>
+      <div class="form-group">
+        <label for="InputMensaje1">Mensaje <span>{{ form.errors.texto }}</span></label>
+        <textarea name='texto' class='form-control' rows=8>{% if form.texto.value %}{{ form.texto.value }}{% endif %}</textarea>
+      </div>
+    
+      <button type="submit" class="btn btn-default pull-right">Enviar</button>
+    </form>
+</div>
+{% endblock %}
+{% block "style" %}
+<style>
+.errorlist {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: inline;
+}
+.errorlist li {
+    display: inline;
+    color: red;
+}
+</style>
+{% endblock %}
+
+
+{% block "js" %}
+<script>
+</script>
+{% endblock %}

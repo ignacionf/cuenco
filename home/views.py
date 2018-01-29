@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
 from django.views.generic import ListView, DetailView
+from django.views.generic.edit import CreateView
 from .models import *
 from django.db.models import Count
 
@@ -127,3 +128,11 @@ class LibroView(DetailView):
         context['xcolecciones']=context['object'].coleccion.all()
  
         return context
+
+class ContactoView(CreateView):
+    model = Contacto
+    fields = ['nombre', 'email', 'texto']
+    template_name = "contacto.html"
+
+    def get_success_url(self):
+        return "/contacto/ok/"

@@ -57,3 +57,10 @@ class NotaAdmin(admin.ModelAdmin):
     def save_model(self, request, obj, form, change):
         obj.user = request.user
         obj.save()
+
+@admin.register(Contacto)
+class ContactoAdmin(admin.ModelAdmin):
+    date_hierarchy = 'created_at'
+    search_fields = ("nombre","email", "texto")
+    list_filter = ("revisado", "contactado",)
+    list_display = ("nombre", "email", "revisado", "contactado", "created_at" )

@@ -169,3 +169,18 @@ class Nota(Model):
 
     def __str__(self):
         return self.titulo
+
+class Contacto(models.Model):
+    created_at = models.DateTimeField(auto_now_add=True, editable=False)
+    updated_at = models.DateTimeField(auto_now=True, editable=False)
+    nombre = models.CharField("Nombre y Apellido", max_length=500)
+    texto = tinymce_models.HTMLField("Texto")
+
+    email = models.EmailField("Email")
+
+    revisado = models.BooleanField("Revisado", default=False)
+    contactado = models.BooleanField("Contactado", default=False)
+    fecha = models.DateField("Fecha Contacto", null=True, blank=True)
+
+    def __str__(self):
+        return self.email

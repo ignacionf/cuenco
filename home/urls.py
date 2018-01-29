@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 from .views import *
 
 urlpatterns = [
@@ -16,5 +16,7 @@ urlpatterns = [
     path('colecciones/<str:slug>/', ColeccionesView.as_view(), name='colecciones'),
 
     path('la_editorial/', TemplateView.as_view(template_name="editorial.html"), name='editorial'),
+    path('contacto/', ContactoView.as_view(), name='contacto'),
+    path('contacto/ok/', TemplateView.as_view(template_name="contacto.ok.html"), name='contacto_ok'),
 
 ]
