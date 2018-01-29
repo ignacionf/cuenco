@@ -49,11 +49,11 @@
             {% if i.imagen %}
                 <img src='{{ i.imagen.url }}' style='width: 80%;' />
             {% else %}
-                <img src='http://via.placeholder.com/160x232?text=i.titulo' style='width: 80%;' />
+                <img src='http://via.placeholder.com/160x232?text={{ i.titulo }}' style='width: 80%;' />
             {% endif %}
             </div>
             <div class='col-md-7' style='padding: 0;'>
-                {% if not coleccion %}<div style='font-size: 1.1em;'><strong>{{ i.created_at|date:"F Y"}}</strong></div>{% endif %}
+                {% if not coleccion %}<div style='font-size: 1.1em;'><strong>{{ i.fecha|date:"F Y"}}</strong></div>{% endif %}
                 <div style='font-size: 1em; height: 120px; max-height: 140px;'>
                     <div style='font-size: 1em;'>{{ i.titulo}}</div>
                     <div style='font-size: .8em; color: rgba(0,0,0,0.7);'>{{ i.autor}}</div>
