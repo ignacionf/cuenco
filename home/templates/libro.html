@@ -13,7 +13,7 @@
             <div style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
 {% for x in xcolecciones %}
 {% if x.activa %}
-                <div><strong>Colección: </strong><a href="{% url "colecciones" x.slug %}">{{ x}} {{x.activa }}</a></div>
+                <div><strong>Colección: </strong><a href="{% url "colecciones" x.slug %}">{{ x}}</a></div>
 {% endif %}
 {%endfor %}
                 <div><strong>ISBN: </strong>{{ object.fISBN }}</div>
