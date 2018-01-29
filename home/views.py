@@ -19,16 +19,20 @@ class HomeView(TemplateView):
 class ColeccionesView(ListView):
     template_name = "libros.html"
     model = Libro
-    paginate_by =10 
+    paginate_by =10
     context_object_name = 'libros'
 
     def get_queryset(self):
         try:
             self.coleccion = Coleccion.objects.get(slug=self.kwargs['slug'])
-            return self.model.objects.filter(coleccion=self.coleccion).order_by("-created_at")
+            return self.model.objects.select_related().filter(coleccion=self.coleccion).order_by("-created_at")
         except KeyError:
             self.template_name="colecciones.html"
-            return Coleccion.objects.all()
+        except Coleccion.DoesNotExist:
+            self.template_name="colecciones.html"
+    
+        self.paginate_by=999
+        return Coleccion.objects.select_related().filter(activa=True).order_by("orden")
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
