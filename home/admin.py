@@ -27,7 +27,7 @@ class ColeccionAdmin(admin.ModelAdmin):
 @admin.register(Libro)
 class LibroAdmin(admin.ModelAdmin):
     date_hierarchy = 'created_at'
-    search_fields = ("nombre", "titulo", "isbn", "autor__nombre", "autor__apellido")
+    search_fields = ("titulo", "isbn", "autor__nombre", "autor__apellido")
     list_filter = ("recomendado",  "coleccion", "user","autor",)
     list_display = ("titulo", "imagen_html_sized", "autor", "coleccion", "isbn", "recomendado", "created_at")
     readonly_fields = ['imagen_html']
