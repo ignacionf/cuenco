@@ -9,12 +9,13 @@
     {% for coleccion in object_list %}
     <div class='col-md-6 coleccion'>
         <div class='maincoleccion {% if coleccion.orden < 10 %}principal{%endif %}'>
-            <div><a href='{% url "colecciones"  coleccion.slug %}'><h1>{{ coleccion }}</h1></a></div>
+            <a href='{% url "colecciones"  coleccion.slug %}'><h1>{{ coleccion }}</h1></a>
+{% if coleccion.orden < 10 %}
             <div class='resumen'>
                 {% autoescape off %}
                 {{ coleccion.texto }}
                 {% endautoescape %}
-            </div>
+            </div> <!-- resumen -->
             <div class="owl-carousel">
             {% for n in coleccion.get_10_libros %}
                 <div>
@@ -25,11 +26,11 @@
                         <div><img src="http://via.placeholder.com/160x232?text={{ n.titulo }}" alt="{{ n }}"></div>
 {% endif %}
                     </a>
-
                 </div>
             {% endfor %}
-            </div>
-        </div>
+            </div> <!-- owl-carousel -->
+{% endif %}
+        </div> <!-- maincoleccion -->
     </div> <!-- col-md-6 -->
     {% endfor %}
     <div class='col-md-12'>&nbsp;</div>
@@ -70,19 +71,24 @@
 div.coleccion {
     padding: 5px;
 }
-div.coleccion h2 {
+div.coleccion div.principal h1 {
+    margin: 0 0 30px 0;
+}
+div.coleccion div.maincoleccion h1 {
+    margin: 0 0 5px 0;
 }
 div.coleccion div.maincoleccion{
     background: #F5F5E6;
     padding: 5px 15px;
-    height: 400px;
 }
-div.coleccion div.resumen {
+div.coleccion > div.principal > div.resumen {
     height: 130px;
     max-height: 130px;
 }
 div.coleccion div.principal{
+    padding: 10px 15px;
     background: #E6F0E6;
+    height: 380px;
 }
   ul.paginado {
     display: inline-block;

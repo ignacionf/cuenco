@@ -31,7 +31,7 @@ class ColeccionesView(ListView):
         except Coleccion.DoesNotExist:
             self.template_name="colecciones.html"
     
-        self.paginate_by=8
+        self.paginate_by=9999
         return Coleccion.objects.select_related().filter(activa=True)
 
     def get_context_data(self, **kwargs):
