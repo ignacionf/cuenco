@@ -15,6 +15,13 @@
             </h4>
          </div>
     </div>
+    {% if object.subtitulo %}
+    <div class='col-md-10 col-md-offset-1 text-justify' >
+        {% autoescape off %}
+        {{ object.subtitulo|linebreaks }}
+        {% endautoescape %}
+    </div>
+    {% endif %}
     <div class='col-md-12'>&nbsp;</div>
     <div class='col-md-10 col-md-offset-1 text-justify' style='background: #E6F0E6; padding: 40px;'>
         {% autoescape off %}
