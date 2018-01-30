@@ -25,14 +25,14 @@ class ColeccionesView(ListView):
     def get_queryset(self):
         try:
             self.coleccion = Coleccion.objects.get(slug=self.kwargs['slug'])
-            return self.model.objects.select_related().filter(coleccion=self.coleccion).order_by("-created_at")
+            return self.model.objects.select_related().filter(coleccion=self.coleccion)
         except KeyError:
             self.template_name="colecciones.html"
         except Coleccion.DoesNotExist:
             self.template_name="colecciones.html"
     
         self.paginate_by=8
-        return Coleccion.objects.select_related().filter(activa=True).order_by("orden")
+        return Coleccion.objects.select_related().filter(activa=True)
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -66,7 +66,7 @@ class PrensaView(ListView):
     model = Nota
     context_object_name = 'notas'
     paginate_by =20 
-    queryset = Nota.objects.filter(publicado=True).order_by("-created_at")
+    queryset = Nota.objects.filter(publicado=True)
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -77,7 +77,7 @@ from django.db.models import Q
 class NotaView(DetailView):
     template_name = "nota.html"
     model = Nota
-    queryset = Nota.objects.filter(publicado=True).order_by("-fecha")
+    queryset = Nota.objects.filter(publicado=True)
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -107,7 +107,7 @@ class LibrosDestacadosView(ListView):
 class LibrosView(ListView):
     template_name = "libros.html"
     model = Libro
-    queryset = Libro.objects.all().order_by("-fecha")
+    queryset = Libro.objects.all()
     context_object_name = 'libros'
     paginate_by =10 
     def get_context_data(self, **kwargs):
@@ -119,7 +119,7 @@ class LibrosView(ListView):
 class LibroView(DetailView):
     template_name = "libro.html"
     model = Libro
-    queryset = Libro.objects.all().order_by("-fecha")
+    queryset = Libro.objects.all()
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

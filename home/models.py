@@ -89,6 +89,7 @@ class Libro(Model):
 
     class Meta:
         verbose_name_plural = "Libros"
+        ordering = ['-fecha','-id',]
 
     def __str__(self):
         return "%s, %s" % (self.titulo, self.autor)
@@ -166,6 +167,7 @@ class Nota(Model):
 
     class Meta:
         verbose_name_plural = "Notas"
+        ordering = ['-fecha','-created_at',]
 
     def __str__(self):
         return self.titulo
