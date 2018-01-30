@@ -1,6 +1,8 @@
 from django.contrib import admin
 
 from .models import *
+from .actions import export_as_csv_action
+
 
 
 @admin.register(Autor)
@@ -10,6 +12,7 @@ class AutorAdmin(admin.ModelAdmin):
     list_filter = ("user",)
     list_display = ("__str__","imagen_html", "created_at", "user")
     readonly_fields = ['imagen_html']
+    actions = [export_as_csv_action("CSV Export", fields=["id", "nombre", "apellido", ])]
 
     def save_model(self, request, obj, form, change):
         obj.user = request.user
@@ -20,6 +23,7 @@ class ColeccionAdmin(admin.ModelAdmin):
     prepopulated_fields = {"slug": ("nombre",)}
     date_hierarchy = 'created_at'
     list_display = ("nombre", "slug", "activa", "orden", "created_at", "user")
+    actions = [export_as_csv_action("CSV Export", fields=["id", "nombre", "slug", "activa", "orden" ])]
     def save_model(self, request, obj, form, change):
         obj.user = request.user
         obj.save()
@@ -32,6 +36,10 @@ class LibroAdmin(admin.ModelAdmin):
     list_display = ("titulo", "imagen_html_sized", "autor", "isbn", "recomendado", "fecha")
     readonly_fields = ['imagen_html']
     autocomplete_fields = ['autor']
+    actions = [export_as_csv_action("CSV Export", fields=["id", "titulo", "prologo",
+                "traductor", "subtitulo", "paginas", "formato", "edicion", "carrito",
+                "autor", "isbn", "recomendado", "fecha"])]
+
     def save_model(self, request, obj, form, change):
         obj.user = request.user
         obj.save()
