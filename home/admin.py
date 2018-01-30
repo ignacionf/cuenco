@@ -29,7 +29,7 @@ class LibroAdmin(admin.ModelAdmin):
     date_hierarchy = 'created_at'
     search_fields = ("titulo", "isbn", "autor__nombre", "autor__apellido")
     list_filter = ("recomendado",  "coleccion", "user","autor",)
-    list_display = ("titulo", "imagen_html_sized", "autor", "isbn", "recomendado", "created_at")
+    list_display = ("titulo", "imagen_html_sized", "autor", "isbn", "recomendado", "fecha")
     readonly_fields = ['imagen_html']
     autocomplete_fields = ['autor']
     def save_model(self, request, obj, form, change):
@@ -52,7 +52,7 @@ class NotaAdmin(admin.ModelAdmin):
     date_hierarchy = 'created_at'
     search_fields = ("titulo","subtitulo", "libro", "texto")
     list_filter = ("publicado", "destacado", "user",)
-    list_display = ("titulo", "medio", "destacado", "publicado", "created_at", "user")
+    list_display = ("titulo", "medio", "destacado", "publicado", "fecha", "user")
     autocomplete_fields = ['libro']
     def save_model(self, request, obj, form, change):
         obj.user = request.user
