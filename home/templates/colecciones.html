@@ -16,7 +16,7 @@
                 {% endautoescape %}
             </div>
             <div class="owl-carousel">
-            {% for n in coleccion.libro_set.all %}
+            {% for n in coleccion.get_10_libros %}
                 <div>
                     <a href="{% url "libro" n.id %}">
 {% if n.imagen %}

@@ -57,6 +57,10 @@ class Coleccion(Model):
     def __str__(self):
         return self.nombre
 
+    def get_10_libros(self):
+        return self.libro_set.all()[0:10]
+
+
 FORMATOS = (
     ("15,5x23", "155mm*230mm"),
     ("14x21", "140mm*210mm"),
