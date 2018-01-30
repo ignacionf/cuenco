@@ -31,7 +31,9 @@ class Autor(Model):
         ordering = ['apellido', 'nombre', 'created_at']
 
     def __str__(self):
-        return "%s %s" % (self.nombre, self.apellido)
+        if self.nombre:
+            return "%s %s" % (self.nombre, self.apellido)
+        return self.apellido
 
     def imagen_html(self, size='90x90'):
         try:
