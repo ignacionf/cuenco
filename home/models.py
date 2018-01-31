@@ -74,7 +74,8 @@ FORMATOS = (
 EDICIONES = ((x, "%s°" %x) for x in range(1,51)) 
 
 class Libro(Model):
-    autor = models.ForeignKey(Autor, on_delete=models.CASCADE)
+    #autor = models.ForeignKey(Autor, on_delete=models.CASCADE)
+    autores = models.ManyToManyField(Autor, related_name="autores_de_libros")
     coleccion = models.ManyToManyField(Coleccion)
     titulo = models.CharField("Titulo", max_length=500)
     isbn = ISBNField("ISBN")
@@ -97,8 +98,11 @@ class Libro(Model):
         verbose_name_plural = "Libros"
         ordering = ['-fecha','-id',]
 
+    def get_autores(self):
+        return " ".join([str(a) for a in self.autores.all()])
+
     def __str__(self):
-        return "%s, %s" % (self.titulo, self.autor)
+        return self.titulo
 
     @property
     def fISBN(self):

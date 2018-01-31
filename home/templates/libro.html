@@ -35,7 +35,9 @@
         </div> <!-- col-md-4-->
     
         <div class='col-md-8'>
-            <div><h2><a href="{% url "autor" object.autor.id %}">{{ object.autor}}</a></h2></div>
+            {% for autor in object.autores.all %}
+            <div><h2><a href="{% url "autor" autor.id %}">{{ autor}}</a></h2></div>
+            {% endfor %}
             <div><h3>{{ object.titulo}}{% if object.subtitulo %}<br /><small>{{ object.subtitulo}}</small>{% endif %}</h3></div>
             {% if object.prologo %}
             <div><h4><small>Prologo de </small>{{ object.prologo }}</h4></div>
@@ -74,7 +76,7 @@
                 <a href="{% url "libro" libro.id %}">
 					<div style='height: 270px;'><img src="{{ libro.imagen.url }}" alt="{{ libro }}"></div>
                     <div class="desc">
-                        <b>{{ libro.autor }}</b>
+                        <b>{{ libro.get_autores }}</b>
                         <p>{{ libro.titulo }}</p>
                     </div>
                 </a>

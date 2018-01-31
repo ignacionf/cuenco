@@ -31,14 +31,17 @@ class ColeccionAdmin(admin.ModelAdmin):
 @admin.register(Libro)
 class LibroAdmin(admin.ModelAdmin):
     date_hierarchy = 'created_at'
-    search_fields = ("titulo", "isbn", "autor__nombre", "autor__apellido")
-    list_filter = ("recomendado",  "coleccion", "user","autor",)
-    list_display = ("titulo", "imagen_html_sized", "autor", "isbn", "recomendado", "fecha")
+    search_fields = ("titulo", "isbn")#, "autor__nombre", "autor__apellido")
+    list_filter = ("recomendado",  "coleccion", "user",)
+    list_display = ("titulo", "imagen_html_sized", "get_autores", "isbn", "recomendado", "fecha")
     readonly_fields = ['imagen_html']
-    autocomplete_fields = ['autor']
+#    autocomplete_fields = ['autores']
     actions = [export_as_csv_action("CSV Export", fields=["id", "titulo", "prologo",
                 "traductor", "subtitulo", "paginas", "formato", "edicion", "carrito",
-                "autor", "isbn", "recomendado", "fecha"])]
+                "autores", "isbn", "recomendado", "fecha"])]
+
+    def get_autores(self, obj):
+        return " ".join([str(a) for a in obj.autores.all()])
 
     def save_model(self, request, obj, form, change):
         obj.user = request.user
