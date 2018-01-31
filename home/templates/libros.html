@@ -59,9 +59,7 @@
                     <div style='font-size: .8em; color: rgba(0,0,0,0.7);'>{{ i.autor}}</div>
                 </div>
                 {% for c in i.coleccion.all %}
-                {% if c.activa %}
                 <div style='font-size: .8em; color: rgba(0,0,0,0.7);'>{{ c}}</div>
-                {% endif %}
                 {% endfor %}
                 <div style='font-size: .6em; color: rgba(0,0,0,0.5);'>ISBN: {{ i.fISBN}}</div>
             </div>
