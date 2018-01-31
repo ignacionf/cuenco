@@ -13,7 +13,8 @@ class HomeView(TemplateView):
         context['novedades'] = Libro.objects.all().order_by("-created_at")[:10]
         context['recomendados'] = Libro.objects.filter(recomendado=True).order_by("titulo")
         context['slider'] = Slider.objects.filter(activo=True).order_by("-created_at")
-        context['notas'] = Nota.objects.filter(publicado=True).order_by("-created_at")[0:10]
+        context['articulos'] = Nota.objects.filter(publicado=True, libro__isnull=False).order_by("-created_at")[0:5]
+        context['noticias'] = Nota.objects.filter(publicado=True, libro__isnull=True).order_by("-created_at")[0:5]
         return context
 
 class ColeccionesView(ListView):
@@ -65,12 +66,13 @@ class PrensaView(ListView):
     template_name = "prensa.html"
     model = Nota
     context_object_name = 'notas'
-    paginate_by =20 
-    queryset = Nota.objects.filter(publicado=True)
+    paginate_by =10 
+    queryset = Nota.objects.select_related().filter(publicado=True, libro__isnull=False)
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['destacados'] = self.queryset.filter(destacado=True)[:10]
+        context['destacados'] = self.model.objects.filter(publicado=True, destacado=True)[:10]
+        context['noticias'] = self.model.objects.select_related().filter(publicado=True, libro__isnull=True)
         return context
 
 from django.db.models import Q

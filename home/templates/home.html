@@ -72,15 +72,16 @@
 
 	<div id="fh5co-blog-section">
 		<div class="container-fluid">
-			<div class="heading-section text-center"><h2>Prensa</h2></div>
 
             <div class='row'>
                 <div class='col-md-6'>
-                    {% for nota in notas %}
-                    {% if forloop.counter == 6 %}
+			        <div><h3>Artículos <small style='margin-left: 30px;'><a href='{% url "prensa" %}'>Ver mas</a></small></h3></div>
         		</div> <!-- col-md-6 -->
                 <div class='col-md-6'>
-                    {% endif %}
+			        <div><h3>Noticias/Eventos <small style='margin-left: 30px;'><a href='{% url "prensa" %}'>Ver mas</a></small></h3></div>
+        		</div> <!-- col-md-6 -->
+                <div class='col-md-6'>
+                    {% for nota in articulos %}
                     <div>
                         <a href="{% url "nota" nota.id %}" class='nota'>
                         <span>{{ nota.medio}}</span>
@@ -90,6 +91,18 @@
                     </div>
                     {% endfor %}
         		</div> <!-- col-md-6 -->
+                <div class='col-md-6'>
+                    {% for nota in noticias %}
+                    <div>
+                        <a href="{% url "nota" nota.id %}" class='nota'>
+                        <span>{{ nota.medio}}</span>
+                            {% if nota.firma %} | <span class='autor'>{{ nota.firma}}</span>{% endif %}<br />
+                        <strong>{{ nota.titulo }}</strong>
+                        </a>
+                    </div>
+                    {% endfor %}
+        		</div> <!-- col-md-6 -->
+ 
             </div> <!-- row -->
     	</div><!-- end: container-fluid -->
 	</div><!-- end: fh5co-blog-section -->

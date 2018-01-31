@@ -16,7 +16,9 @@
             {% if i.libro %}
             <div style='color: rgba(240,87,54,1);'>{{ i.libro }}</div>
             {% endif %}
-            <div style='color: rgba(0,0,0,0.8);'>{{ i.medio }}{% if i.firma %}, {{ i.firma }}{% endif %}</div>
+            <div style='color: rgba(0,0,0,0.8);'>
+                {{ i.medio }}{% if i.firma %}, {{ i.firma }}{% endif %}
+            </div>
             <div style='color: rgba(0,0,0,0.6);'>{{ i.titulo }}</div>
             </a>
         </div>
@@ -24,23 +26,37 @@
     {% endfor %}
 
     <div class='col-md-12'>&nbsp;</div>
-    <div class='col-md-12'>
-        <div class="heading-section" style='margin: 0;'><h3 style='margin: 0; color: #643241'>Otros Artículos</h3> </div>
+    <div class='col-md-6'>
+        <div><h3 style='margin: 0; color: #643241'>Otros Artículos</h3> </div>
+    </div>
+    <div class='col-md-6'>
+        <div><h3 style='margin: 0; color: #643241'>Noticias/Eventos</h3> </div>
     </div>
     <div class='col-md-6' style='padding: 20px;'>
     {% for i in notas %}
-    {% if forloop.counter == 11%}
-    </div>
-    <div class='col-md-6' style='padding: 20px;'>
-    {% endif %}
         <div style='background: #F5F5E6; padding: 10px;'>
             <a href="{% url "nota" i.id %}">
-            <div style='margin: 0; color: rgba(240,87,54,1);'>{{ i.medio }}{% if i.firma %}, {{ i.firma }}{% endif %}</div>
+            <div style='margin: 0; color: rgba(240,87,54,1);'>
+                {{ i.medio }}{% if i.firma %}, {{ i.firma }}{% endif %}
+            </div>
             <div style='color: rgba(0,0,0,0.7)'>{{ i.titulo }}</div>
             </a>
         </div>
     {% endfor %}
     </div>
+    <div class='col-md-6' style='padding: 20px;'>
+    {% for i in noticias %}
+        <div style='background: #F5F5E6; padding: 10px;'>
+            <a href="{% url "nota" i.id %}">
+            <div style='margin: 0; color: rgba(240,87,54,1);'>
+                {{ i.medio }}{% if i.firma %}, {{ i.firma }}{% endif %}
+            </div>
+            <div style='color: rgba(0,0,0,0.7)'>{{ i.titulo }}</div>
+            </a>
+        </div>
+    {% endfor %}
+    </div>
+ 
     <div class='col-md-12'>&nbsp;</div>
 {% if is_paginated %}
     <div class='col-md-6 text-center'>
