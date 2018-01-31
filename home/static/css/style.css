@@ -13,8 +13,8 @@
 * ======================================================= */
 body {
   font-family: 'Cormorant Garamond', serif;
-  line-height: 1.8;
-  font-size: 20px;
+  line-height: 1.4;
+  font-size: 18px;
   font-weight: 300;
 }
 img {
@@ -36,8 +36,8 @@ a:focus, a:active {
 }
 
 p, span {
-  margin-bottom: 1.5em;
-  font-size: 20px;
+  margin-bottom: .5em;
+  font-size: 18px;
   color: #727272;
   font-weight: 300;
 }
