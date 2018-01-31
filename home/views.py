@@ -58,7 +58,7 @@ class AutorView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        autor = Q(libro__autor=context['object'])
+        autor = Q(libro__autores=context['object'])
         context['notas'] = Nota.objects.filter(publicado=True).filter(autor)
         return context
 
