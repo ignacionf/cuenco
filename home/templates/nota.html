@@ -23,7 +23,7 @@
     </div>
     {% endif %}
     <div class='col-md-12'>&nbsp;</div>
-    <div class='col-md-10 col-md-offset-1 text-justify' style='background: #E6F0E6; padding: 40px;'>
+    <div class='col-md-10 col-md-offset-1 text-justify html' style='background: #E6F0E6; padding: 40px;'>
         {% autoescape off %}
         {{ object.texto}}
         {% endautoescape %}
@@ -55,6 +55,9 @@
 
 {% block "style" %}
 <style>
+.html p {
+    margin: 3px;
+}
 </style>
 {% endblock %}
 

@@ -141,7 +141,8 @@ TINYMCE_DEFAULT_CONFIG = {
     'cleanup_on_startup': True,
     'custom_undo_redo_levels': 10,
     'width': '100%',
-    'height': 300
+    'height': 300,
+    'force_root_block': 'div'
 }
 TINYMCE_SPELLCHECKER = True
 TINYMCE_COMPRESSOR = True

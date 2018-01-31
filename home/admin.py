@@ -58,6 +58,7 @@ class SliderAdmin(admin.ModelAdmin):
         obj.user = request.user
         obj.save()
 
+import re
 @admin.register(Nota)
 class NotaAdmin(admin.ModelAdmin):
     date_hierarchy = 'created_at'
@@ -66,6 +67,13 @@ class NotaAdmin(admin.ModelAdmin):
     list_display = ("titulo", "medio", "destacado", "publicado", "fecha", "user")
     autocomplete_fields = ['libro']
     def save_model(self, request, obj, form, change):
+        flags = re.IGNORECASE | re.MULTILINE
+        obj.texto = re.sub(r'<div\s*([^>]+)>', '<p>', obj.texto, flags=flags)
+        obj.texto = re.sub(r'</div>', '</p>', obj.texto, flags=flags)
+
+        obj.subtitulo = re.sub(r'<div\s*([^>]+)>', '<p>', obj.subtitulo, flags=flags)
+        obj.subtitulo = re.sub(r'</div>', '</p>', obj.subtitulo, flags=flags)
+
         obj.user = request.user
         obj.save()
 
