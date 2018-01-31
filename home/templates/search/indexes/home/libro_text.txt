@@ -1,0 +1,8 @@
+{{ object }}
+{{ object.texto }}
+{{ object.prologo }}
+{{ object.get_autores }}
+{{ object.isbn}}
+{{ object.fISBN}}
+{{ object.get_colecciones }}
+{{ object.traductor }}

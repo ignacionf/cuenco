@@ -101,6 +101,9 @@ class Libro(Model):
     def get_autores(self):
         return " ".join([str(a) for a in self.autores.all()])
 
+    def get_colecciones(self):
+        return " ".join([str(a) for a in self.coleccion.all()])
+
     def __str__(self):
         return self.titulo
 

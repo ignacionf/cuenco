@@ -1,0 +1,36 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block "content" %}
+    <div class="heading-section text-center"><h2>Buscador</h2></div>
+
+    <div class='row'>
+        <div class='col-md-8 col-md-offset-2'>
+            <input type="text" class="form-control" placeholder="Buscar..." name="q">
+        </div> <!-- col-md-6 col-md-offset-1 -->
+
+        <div class='col-md-10  col-md-offset-1' style='padding: 2em 0;'>
+        {% if query %}
+            <h3>Resultados</h3>
+
+            {% for result in page.object_list %}
+                <p> {{ result.model_name }}
+                    <a href="{{ result.object.get_absolute_url }}">{{ result.object}}</a>
+                </p>
+            {% empty %}
+                <p>No se encontró nada.</p>
+            {% endfor %}
+
+            {% if page.has_previous or page.has_next %}
+                <div>
+                    {% if page.has_previous %}<a href="?q={{ query }}&amp;page={{ page.previous_page_number }}">{% endif %}&laquo; Previous{% if page.has_previous %}</a>{% endif %}
+                    |
+                    {% if page.has_next %}<a href="?q={{ query }}&amp;page={{ page.next_page_number }}">{% endif %}Next &raquo;{% if page.has_next %}</a>{% endif %}
+                </div>
+            {% endif %}
+        {% else %}
+            {# Show some example queries to run, maybe query syntax, something else? #}
+        {% endif %}
+
+    </div> <!-- row -->
+{% endblock %}

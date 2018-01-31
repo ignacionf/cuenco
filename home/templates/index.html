@@ -64,6 +64,16 @@
             padding: 3px; 
             color: rgba(0,0,0,0.8);
         }
+ 
+        #search ul.dropdown-menu {
+            opacity: 0.9;
+            width: 440px;
+            padding: 20px;
+        }
+        #search ul.dropdown-menu > li {
+            width: 100%;
+        }
+
         .glyphicon.glyphicon-one-fine-dot:before {
             content: "\25cf";
             font-size: 1.5em;
@@ -135,8 +145,16 @@
 					<li id="destacados"><a href="{% url "libros_destacados" %}">Destacados</a></li>
 					<li id="autores"><a href="{% url "autores" %}">Autores</a></li>
 					<li id="prensa"><a href="{% url "prensa" %}">Prensa</a></li>
+					<li id='search' class='dropdown'>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="glyphicon glyphicon-search"></i></a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li>
+                                <input type="text" class="form-control" placeholder="Buscar..." style='width: 100%;' >
+                            </li>
+                        </ul>
+                    </li>
+	
 					<li>
-                        {% comment %}<a href="m/"><i class="icon-shopping-cart"></i></a>{% endcomment %}
                         <a href="https://elcuencodeplata.mitiendanube.com/"><i class="icon-shopping-cart"></i></a>
                     </li>
 				</ul>
@@ -186,7 +204,19 @@
 
 	<!-- Main JS (Do not remove) -->
 	<script src="{% static "js/main.js" %}"></script>
-
+    <script>
+        $('#search  input').bind("enterKey",function(e){
+            var value = $(this).val();
+            if ( value.length > 0 )
+                window.location = '/search/?q='+value;
+        });
+        $('#search  input').keyup(function(e){
+            if(e.keyCode == 13)
+            {
+                $(this).trigger("enterKey");
+            }
+        });
+    </script>
 {% block "js" %}{% endblock %}
 	</body>
 </html>

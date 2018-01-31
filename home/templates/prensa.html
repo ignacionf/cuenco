@@ -32,6 +32,10 @@
     <div class='col-md-12'>
         <div><h3 style='margin: 0; color: #643241'>Otros Artículos</h3> </div>
     </div>
+{% elif destacados and  page_obj.has_previous == True%}
+    <div class='col-md-12'>
+        <div class="heading-section" style='margin: 0;'><h3 style='margin: 0;'>Artículos Destacados</h3> </div>
+    </div>
 {% else %}
     <div class='col-md-12'>
         <div class="heading-section" style='margin: 0;'><h3 style='margin: 0;'>Noticias</h3> </div>
