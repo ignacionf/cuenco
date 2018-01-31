@@ -66,7 +66,7 @@ class PrensaView(ListView):
     template_name = "prensa.html"
     model = Nota
     context_object_name = 'notas'
-    paginate_by =10 
+    paginate_by =20 
     queryset = Nota.objects.select_related().filter(publicado=True, libro__isnull=False)
 
     def get_context_data(self, **kwargs):

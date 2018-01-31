@@ -135,7 +135,10 @@
 					<li id="destacados"><a href="{% url "libros_destacados" %}">Destacados</a></li>
 					<li id="autores"><a href="{% url "autores" %}">Autores</a></li>
 					<li id="prensa"><a href="{% url "prensa" %}">Prensa</a></li>
-					<li><a href="https://elcuencodeplata.mitiendanube.com/"><i class="icon-shopping-cart"></i></a></li>
+					<li>
+                        {% comment %}<a href="m/"><i class="icon-shopping-cart"></i></a>{% endcomment %}
+                        <a href="https://elcuencodeplata.mitiendanube.com/"><i class="icon-shopping-cart"></i></a>
+                    </li>
 				</ul>
 			</nav>
 		</div>
