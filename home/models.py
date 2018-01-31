@@ -105,7 +105,7 @@ class Libro(Model):
         i = self.isbn
         try:
             if len(i) > 10:
-                return "%s-%s-%s-%s-%s" %(i[0:3], i[3],i[4:6],i[6:12],i[12])
+                return "%s-%s-%s-%s-%s-%s" %(i[0:3], i[3],i[4:6],i[6:10], i[10:12],i[12])
             else:
                 return "%s-%s-%s-%s" %(i[0], i[1:3],i[3:9],i[9])
         except IndexError:
