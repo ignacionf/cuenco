@@ -5,8 +5,8 @@
     <div class="heading-section text-center"><h2>Buscador</h2></div>
 
     <div class='row'>
-        <div class='col-md-8 col-md-offset-2'>
-            <input type="text" class="form-control" placeholder="Buscar..." name="q">
+        <div class='col-md-8 col-md-offset-2' id='search'>
+            <input type="text" class="form-control" placeholder="Buscar..." name="q" value="{% if query %}{{ query }}{% endif %}">
         </div> <!-- col-md-6 col-md-offset-1 -->
 
         <div class='col-md-10  col-md-offset-1' style='padding: 2em 0;'>
