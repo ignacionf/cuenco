@@ -35,7 +35,7 @@ class LibroAdmin(admin.ModelAdmin):
     list_filter = ("recomendado",  "coleccion", "user",)
     list_display = ("titulo", "imagen_html_sized", "get_autores", "isbn", "recomendado", "fecha")
     readonly_fields = ['imagen_html']
-#    autocomplete_fields = ['autores']
+    autocomplete_fields = ['autores']
     actions = [export_as_csv_action("CSV Export", fields=["id", "titulo", "prologo",
                 "traductor", "subtitulo", "paginas", "formato", "edicion", "carrito",
                 "autores", "isbn", "recomendado", "fecha"])]
