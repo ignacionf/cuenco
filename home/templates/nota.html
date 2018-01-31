@@ -3,11 +3,15 @@
 
 {% block "content" %}
 <div class="row">
+{% comment %}
     <div class='col-md-12' style='margin-top: 1em;'>
         <div class="heading-section text-center"><h2>Prensa</h2> </div>
     </div>
+{% endcomment %}
     <div class='col-md-10 col-md-offset-1'>
+    {% if object.libro %}
         <div class="heading-section" style='margin: 0;'><h3 style='margin: 0; color: rgba(0,0,0,0.8);'>{{ object.libro}}</h3> </div>
+    {% endif %}
         <div class="heading-section" style='margin: 0;'><h2 style='margin: 0;'>{{ object.titulo}}</h2> </div>
         <div class="heading-section" style='margin: 0;'><h4 style='margin: 0; color: rgba(0,0,0,0.5);'>
                 {{ object.medio}}{% if object.firma %} | {{ object.firma}}{% endif %}
