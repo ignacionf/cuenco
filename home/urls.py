@@ -6,6 +6,7 @@ urlpatterns = [
     path('autores/', AutoresView.as_view(), name='autores'),
     path('autor/<int:pk>', AutorView.as_view(), name='autor'),
     path('prensa/', PrensaView.as_view(), name='prensa'),
+    path('noticias/', NoticiasView.as_view(), name='noticias'),
     path('prensa/<int:pk>', NotaView.as_view(), name='nota'),
 
     path('destacados/', LibrosDestacadosView.as_view(), name='libros_destacados'),

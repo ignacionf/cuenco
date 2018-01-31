@@ -72,8 +72,15 @@ class PrensaView(ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['destacados'] = self.model.objects.filter(publicado=True, destacado=True)[:10]
-        context['noticias'] = self.model.objects.select_related().filter(publicado=True, libro__isnull=True)
+        #context['noticias'] = self.model.objects.select_related().filter(publicado=True, libro__isnull=True)
         return context
+
+class NoticiasView(ListView):
+    template_name = "prensa.html"
+    model = Nota
+    context_object_name = 'notas'
+    paginate_by =10 
+    queryset = Nota.objects.select_related().filter(publicado=True, libro__isnull=True)
 
 from django.db.models import Q
 class NotaView(DetailView):

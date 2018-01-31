@@ -3,9 +3,13 @@
 
 {% block "content" %}
 <div class="row">
+{% comment %}
     <div class='col-md-12' style='margin-top: 1em;'>
         <div class="heading-section text-center"><h2>Prensa</h2> </div>
     </div>
+{% endcomment %}
+
+{% if destacados %}
     <div class='col-md-12'>
         <div class="heading-section" style='margin: 0;'><h3 style='margin: 0;'>Artículos Destacados</h3> </div>
     </div>
@@ -26,26 +30,21 @@
     {% endfor %}
 
     <div class='col-md-12'>&nbsp;</div>
-    <div class='col-md-6'>
+    <div class='col-md-12'>
         <div><h3 style='margin: 0; color: #643241'>Otros Artículos</h3> </div>
     </div>
-    <div class='col-md-6'>
-        <div><h3 style='margin: 0; color: #643241'>Noticias/Eventos</h3> </div>
+{% else %}
+    <div class='col-md-12'>
+        <div class="heading-section" style='margin: 0;'><h3 style='margin: 0;'>Noticias</h3> </div>
     </div>
+{% endif %}
+
     <div class='col-md-6' style='padding: 20px;'>
     {% for i in notas %}
-        <div style='background: #F5F5E6; padding: 10px;'>
-            <a href="{% url "nota" i.id %}">
-            <div style='margin: 0; color: rgba(240,87,54,1);'>
-                {{ i.medio }}{% if i.firma %}, {{ i.firma }}{% endif %}
-            </div>
-            <div style='color: rgba(0,0,0,0.7)'>{{ i.titulo }}</div>
-            </a>
-        </div>
-    {% endfor %}
+    {% if forloop.counter == 6 %}
     </div>
     <div class='col-md-6' style='padding: 20px;'>
-    {% for i in noticias %}
+    {% endif %}
         <div style='background: #F5F5E6; padding: 10px;'>
             <a href="{% url "nota" i.id %}">
             <div style='margin: 0; color: rgba(240,87,54,1);'>
@@ -61,12 +60,12 @@
 {% if is_paginated %}
     <div class='col-md-6 text-center'>
     {% if page_obj.has_previous %}
-      <a href="{% url "prensa" %}?page={{ page_obj.previous_page_number }}">Artículos nuevos</a>
+      <a href="?page={{ page_obj.previous_page_number }}">Artículos nuevos</a>
     {% endif %}
     </div>
     <div class='col-md-6 text-center'>
     {% if page_obj.has_next %}
-      <a href="{% url "prensa" %}?page={{ page_obj.next_page_number }}">Artículos Pasados</a></li>
+      <a href="?page={{ page_obj.next_page_number }}">Artículos Pasados</a></li>
     {% endif %}
     </div>
 {% endif %}
@@ -85,6 +84,8 @@
 
 {% block "js" %}
 <script>
+{% if destacados %}
 $("#prensa > a").addClass("active");
+{% endif %}
 </script>
 {% endblock %}
