@@ -18,7 +18,8 @@ body {
   font-weight: 300;
 }
 img {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: -8px 4px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: -8px 4px 15px 0 rgba(0, 0, 0, 0.2);
 }
 a {
   color: #f05736;

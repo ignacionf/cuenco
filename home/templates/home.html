@@ -9,7 +9,7 @@
 {% if s.destino %}
     <a href="{{ s.destino }}" name="{{ s.titulo }}">
 {% endif %}
-    <img src="{{ s.imagen.url }}" alt="{{ s.titulo}}">
+    <img src="{{ s.imagen.url }}" alt="{{ s.titulo}}" style='box-shadow: 0 0 0 transparent;'>
 {% if s.destino %}
     </a>
 {% endif %}
@@ -34,7 +34,7 @@
 					    <div style='height: 270px;'><img src="http://via.placeholder.com/160x232?text={{ n.titulo }}" alt="{{ n }}"></div>
 {% endif %}
                         <div class="desc">
-                            <b>{{ n.get_autores }}</b>
+                            {{ n.get_autores }}
                             <p>{{ n.titulo }}</p>
                         </div>
                     </a>
@@ -60,7 +60,7 @@
 					    <div style='height: 270px;'><img src="http://via.placeholder.com/160x232?text={{ n.titulo }}" alt="{{ n }}"></div>
 {% endif %}
                         <div class="desc">
-                            <b>{{ n.get_autores }}</b>
+                            {{ n.get_autores }}
                             <p>{{ n.titulo }}</p>
                         </div>
                     </a>

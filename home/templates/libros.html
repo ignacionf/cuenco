@@ -53,17 +53,17 @@
             {% endif %}
             </div>
             <div class='col-md-7' style='padding: 0;'>
-                {% if not coleccion %}<div style='font-size: 1.1em;'><strong>{{ i.fecha|date:"F Y"}}</strong></div>{% endif %}
+                {% if not coleccion %}<div style='font-size: 1.1em;'>{{ i.fecha|date:"F Y"}}</div>{% endif %}
                 <div style='font-size: 1em; height: 120px; max-height: 140px;'>
-                    <div style='font-size: 1em;'>{{ i.titulo}}</div>
+                    <div style='font-size: 1.2em;'>{{ i.titulo}}</div>
                     {% for autor in i.autores.all %}
-                    <div style='font-size: .8em; color: rgba(0,0,0,0.7);'>{{ autor }}</div>
+                    <div style='font-size: .9em; color: rgba(0,0,0,0.7);'>{{ autor }}</div>
                     {% endfor %}
                 </div>
                 {% for c in i.coleccion.all %}
-                <div style='font-size: .8em; color: rgba(0,0,0,0.7);'>{{ c}}</div>
+                <div style='font-size: .9em; color: rgba(0,0,0,0.7);'>{{ c}}</div>
                 {% endfor %}
-                <div style='font-size: .6em; color: rgba(0,0,0,0.5);'>ISBN: {{ i.fISBN}}</div>
+                <div style='font-size: .8em; color: rgba(0,0,0,0.5);'>ISBN: {{ i.fISBN}}</div>
             </div>
         </div>
     </a>
