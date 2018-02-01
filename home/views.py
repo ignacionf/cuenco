@@ -157,7 +157,7 @@ class ContactoView(CreateView):
 
     def form_valid(self, form):
         recaptcha_response = self.request.POST.get('g-recaptcha-response', 0)
-        tipo = self.request.POST.get('tipo', None)
+        tipo = int(self.request.POST.get('tipo', None))
         data = {
             'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
             'response': recaptcha_response

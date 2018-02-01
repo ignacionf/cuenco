@@ -10,7 +10,15 @@
 {% endcomment %}
     <div class='col-md-10 col-md-offset-1'>
     {% if object.libro %}
-        <div class="heading-section" style='margin: 0;'><h3 style='margin: 0; color: rgba(0,0,0,0.8);'>{{ object.libro}}</h3> </div>
+        <div class="heading-section" style='margin: 0;'>
+            <h3 style='margin: 0; color: rgba(0,0,0,0.8);'>{{ object.libro}}
+            <small class='pull-right'>{{ object.fecha|date:"d M Y" }}</small></h3>
+        </div>
+    {% else %}
+        <div class="heading-section" style='margin: 0;'>
+            <h3 style='margin: 0; color: rgba(0,0,0,0.8);'>
+            <small class='pull-right'>{{ object.fecha|date:"d M Y" }}</small></h3>
+        </div>
     {% endif %}
         <div class="heading-section" style='margin: 0;'><h2 style='margin: 0;'>{{ object.titulo}}</h2> </div>
         <div class="heading-section" style='margin: 0;'><h4 style='margin: 0; color: rgba(0,0,0,0.5);'>
