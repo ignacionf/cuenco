@@ -5,9 +5,9 @@ urlpatterns = [
     path('', HomeView.as_view(), name='home'),
     path('autores/', AutoresView.as_view(), name='autores'),
     path('autor/<int:pk>', AutorView.as_view(), name='autor'),
-    path('prensa/', PrensaView.as_view(), name='prensa'),
+    path('en_los_medios/', PrensaView.as_view(), name='prensa'),
     path('noticias/', NoticiasView.as_view(), name='noticias'),
-    path('prensa/<int:pk>', NotaView.as_view(), name='nota'),
+    path('en_los_medios/<int:pk>', NotaView.as_view(), name='nota'),
 
     path('recomendados/', LibrosDestacadosView.as_view(), name='libros_destacados'),
     path('libros/', LibrosView.as_view(), name='libros'),

@@ -75,7 +75,7 @@
 
             <div class='row'>
                 <div class='col-md-6'>
-			        <div><h3>Prensa <small style='margin-left: 30px;'><a href='{% url "prensa" %}'>Ver más</a></small></h3></div>
+			        <div><h3>En los medios <small style='margin-left: 30px;'><a href='{% url "prensa" %}'>Ver más</a></small></h3></div>
                     {% for nota in articulos %}
                     <div style='margin-top: .8em;'>
                         <a href="{% url "nota" nota.id %}" class='nota'>
