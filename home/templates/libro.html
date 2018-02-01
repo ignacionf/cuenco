@@ -12,7 +12,9 @@
     
             <div style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
 {% for x in xcolecciones %}
+    {% if x.id != 13 %}
                 <div><strong>Colección: </strong><a href="{% url "colecciones" x.slug %}">{{ x}}</a></div>
+    {% endif %}
 {%endfor %}
                 <div><strong>Publicado: </strong>{{ object.fecha|date:"F Y"}}</div>
                 <div><strong>ISBN: </strong>{{ object.fISBN }}</div>
