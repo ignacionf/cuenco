@@ -9,11 +9,11 @@
         {% endif %}
     </div> <!-- col-md-2 -->
     <div class='col-md-8' style='text-align: justify;'>
-        <div class="heading-section"> <h2>{{ object }}</h2> </div>
+        <div class="heading-section" style='margin-top: 1em;'><h1>{{ object }}</h1> </div>
 
-        <div class='text-justify' style='background: #E6F0E6; padding: 40px;'>
+        <div class='text-justify' style='; padding: 15px 40px;'>
         {% autoescape off %}
-        {{ object.texto|linebreaks }}
+        {{ object.texto }}
         {% endautoescape %}
         </div>
 
@@ -65,6 +65,12 @@
 
 {% block "style" %}
 <style>
+    .heading-section {
+        margin-top: 1em;
+    }
+    .heading-section h2 {
+        font-size: 1em;
+    }
 </style>
 {% endblock %}
 
