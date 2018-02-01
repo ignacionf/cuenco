@@ -3,11 +3,6 @@
 
 {% block "content" %}
 <div class="row">
-{% comment %}
-    <div class='col-md-12' style='margin-top: 1em;'>
-        <div class="heading-section text-center"><h2>Prensa</h2> </div>
-    </div>
-{% endcomment %}
 {% if destacados and  page_obj.has_previous == False %}
     <div class='col-md-12'>
         <div class="heading-section" style='margin: 0;'><h3 style='margin: 0;'>Artículos destacados</h3> </div>
@@ -17,12 +12,12 @@
         <div style='background: #E6F0E6; padding: 10px;'>
             <a href="{% url "nota" i.id %}">
             {% if i.libro %}
-            <div style='color: rgba(240,87,54,1);'>{{ i.libro }}</div>
+            <div style='color: rgba(240,87,54,1); font-size: .8em;'>{{ i.libro }}</div>
             {% endif %}
-            <div style='color: rgba(0,0,0,0.8);'>
+            <div style='color: rgba(0,0,0,0.8); font-size: .9em;'>
                 {{ i.medio }}{% if i.firma %} | {{ i.firma }}{% endif %}
             </div>
-            <div style='color: rgba(0,0,0,0.6);'>{{ i.titulo }}</div>
+            <div style='color: rgba(0,0,0,0.6); font-size: 1.1em;'>{{ i.titulo }}</div>
             </a>
         </div>
     </div>
@@ -42,38 +37,35 @@
     </div>
 {% endif %}
 
+</div> <!-- row -->
+
+<div class="row">
     <div class='col-md-6' style='padding: 20px;' id='prensa_1'>
+        <div style='background: #F5F5E6; height: 100%;'>
     {% for i in notas %}
     {% if forloop.counter == 11 %}
-    </div>
+        </div>
+    </div> <!-- col-md-6 -->
     <div class='col-md-6' style='padding: 20px;' id='prensa_2'>
+        <div style='background: #F5F5E6; height: 100%;'>
     {% endif %}
-        <div style='background: #F5F5E6; padding: 10px;'>
+        <div style='; padding: 10px;'>
             <a href="{% url "nota" i.id %}">
-            <div style='margin: 0; color: rgba(240,87,54,1);'>
+            <div style='margin: 0; color: rgba(240,87,54,1); font-size: .9em;'>
                 {{ i.medio }}{% if i.firma %}, {{ i.firma }}{% endif %}
             </div>
-            <div style='color: rgba(0,0,0,0.7)'>{{ i.titulo }}</div>
+            <div style='color: rgba(0,0,0,0.7); font-size: 1.1em;'>{{ i.titulo }}</div>
             </a>
         </div>
     {% endfor %}
-    </div>
+        </div>
+    </div> <!-- col-md-6 -->
+
+</div> <!-- row -->
+
+<div class="row">
  
     <div class='col-md-12'>&nbsp;</div>
-{% comment %}
-{% if is_paginated %}
-    <div class='col-md-6 text-center'>
-    {% if page_obj.has_previous %}
-      <a href="?page={{ page_obj.previous_page_number }}">Artículos nuevos</a>
-    {% endif %}
-    </div>
-    <div class='col-md-6 text-center'>
-    {% if page_obj.has_next %}
-      <a href="?page={{ page_obj.next_page_number }}">Artículos Pasados</a></li>
-    {% endif %}
-    </div>
-{% endif %}
-{% endcomment %}
     {% if is_paginated %}
     <div class='col-md-12 text-center'>
      <ul class="paginado">
@@ -130,8 +122,12 @@ $("#prensa > a").addClass("active");
 setTimeout(function(){
     var h1=$("#prensa_1").outerHeight(true);
     var h2=$("#prensa_1").outerHeight(true);
-    console.log("h1: "+h1);
-    console.log("h2: "+h2);
+    if ( h1 == h2 ){
+        console.log(h1);
+        $("#prensa_1").css("height",h1+"px");
+        $("#prensa_2").css("height",h1+"px");
+    }
+        
     }, 500);
 {% endif %}
 </script>
