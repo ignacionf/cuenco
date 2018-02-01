@@ -4,6 +4,12 @@ from django.views.generic import ListView, DetailView
 from django.views.generic.edit import CreateView
 from .models import *
 from django.db.models import Count
+import requests
+from django.contrib import messages
+from django.conf import settings
+from django.forms.utils import ErrorList
+from django import forms
+from django.core.mail import send_mail
 
 class HomeView(TemplateView):
     template_name = "home.html"
@@ -147,7 +153,39 @@ class LibroView(DetailView):
 class ContactoView(CreateView):
     model = Contacto
     fields = ['nombre', 'email', 'texto']
-    template_name = "contacto.html"
+#    template_name = "contacto.html"
+
+    def form_valid(self, form):
+        recaptcha_response = self.request.POST.get('g-recaptcha-response', 0)
+        tipo = self.request.POST.get('tipo', None)
+        data = {
+            'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+            'response': recaptcha_response
+        }
+        r = requests.post('https://www.google.com/recaptcha/api/siteverify', data=data)
+        result = r.json()
+
+        if tipo == 1:
+            email = "info@elcuencodeplata.com"
+        elif tipo == 2:
+            email = "ventas@elcuencodeplata.com"
+        elif tipo == 3:
+            email = "elizabeth@elcuencodeplata.com"
+        else:
+            form._errors["recaptcha"] = ErrorList([ 'Error de Tipo' ])
+            return self.form_invalid(form)
+
+        send_mail("Contacto desde la Web de %s" %
+            "Email: %s\n\nTexto:\n%s" % (form.cleaned_data['email'],form.cleaned_data['texto'],),
+            'web@elcuencodeplata.com',
+            [email],
+            fail_silently=True)
+
+        if result['success']:
+            return super().form_valid(form)
+
+        form._errors["recaptcha"] = ErrorList([ 'Debe completar reCAPTCHA ' ])
+        return self.form_invalid(form)
 
     def get_success_url(self):
         return "/contacto/ok/"

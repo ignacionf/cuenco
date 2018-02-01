@@ -153,3 +153,4 @@ HAYSTACK_CONNECTIONS = {
         'ENGINE': 'haystack.backends.simple_backend.SimpleEngine',
     },
 }
+GOOGLE_RECAPTCHA_SECRET_KEY = '6LcyvkMUAAAAAM3Uw5XZm5HH88-RMjA5k25P4iLb'

@@ -17,7 +17,10 @@ urlpatterns = [
     path('colecciones/<str:slug>/', ColeccionesView.as_view(), name='colecciones'),
 
     path('la_editorial/', TemplateView.as_view(template_name="editorial.html"), name='editorial'),
-    path('contacto/', ContactoView.as_view(), name='contacto'),
+    path('distribuidores/', TemplateView.as_view(template_name="editorial.html"), name='distribuidores'),
+    path('contacto/', ContactoView.as_view(template_name='contacto.html'), name='contacto'),
+    path('contacto/ventas/', ContactoView.as_view(template_name='contacto.ventas.html'), name='contacto.ventas'),
+    path('contacto/derechos/', ContactoView.as_view(template_name='contacto.derechos.html'), name='contacto.derechos'),
     path('contacto/ok/', TemplateView.as_view(template_name="contacto.ok.html"), name='contacto_ok'),
 
 ]

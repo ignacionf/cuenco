@@ -4,7 +4,7 @@
 {% block "content" %}
 <div class='row'>
     <div class='col-md-12 text-center titulo'>
-            <h3>Si desea comunicarse con la editorial escriba aquí</h3>
+            <h3>iSi desea comunicarse con el Departamento de derechos, permisos y publicaciones escriba aquí</h3>
     </div> <!-- col-md-12 -->
 
     {% if form.errors.recaptcha %}
@@ -16,7 +16,7 @@
         <div style='padding: 20px; margin-bottom: 50px;'>
             <form method="post">
                 {% csrf_token %}
-              <input type='hidden' name='tipo' value='1' />
+              <input type='hidden' name='tipo' value='3' />
               <div class="form-group">
                 <label for="InputEmail1">Dirección de Email <span>{{ form.errors.email }}</span></label>
                 <input type="email" class="form-control" name='email' id="InputEmail1" placeholder="Email" value="{% if form.email.value %}{{ form.email.value }}{% endif %}">

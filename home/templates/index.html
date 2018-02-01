@@ -172,11 +172,11 @@
 					<div class="col-md-10 col-md-offset-1 text-center">
                         <ul>
                             <li><a href="{% url "editorial" %}">La editorial</a></li>
-                            <li><a href="#">Distribuidores</a></li>
+                            <li><a href="{% url "distribuidores" %}">Distribuidores</a></li>
                             <li><a href="#">Librerías</a></li>
                             <li><a href="{% url "contacto" %}">Contacto</a></li>
-                            <li><a href="#">Compras en la web</a></li>
-                            <li><a href="#">Foreign Rights</a></li>
+                            <li><a href="{% url "contacto.ventas" %}">Ventas</a></li>
+                            <li><a href="{% url "contacto.derechos" %}">Derechos</a></li>
                         </ul>
 						<div class='copyright'>El Cuenco de Plata S.R.L. || Buenos Aires || Argentina || Copyright {% now "Y" %}</div>
                         <div class='data'>
