@@ -178,7 +178,7 @@ class ContactoView(CreateView):
         send_mail("Contacto desde la Web de %s" %
             "Email: %s\n\nTexto:\n%s" % (form.cleaned_data['email'],form.cleaned_data['texto'],),
             'web@elcuencodeplata.com',
-            [email],
+            [email,],
             fail_silently=True)
 
         if result['success']:
