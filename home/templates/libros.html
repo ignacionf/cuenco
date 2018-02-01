@@ -56,7 +56,9 @@
                 {% if not coleccion %}<div style='font-size: 1.1em;'><strong>{{ i.fecha|date:"F Y"}}</strong></div>{% endif %}
                 <div style='font-size: 1em; height: 120px; max-height: 140px;'>
                     <div style='font-size: 1em;'>{{ i.titulo}}</div>
-                    <div style='font-size: .8em; color: rgba(0,0,0,0.7);'>{{ i.autor}}</div>
+                    {% for autor in i.autores.all %}
+                    <div style='font-size: .8em; color: rgba(0,0,0,0.7);'>{{ autor }}</div>
+                    {% endfor %}
                 </div>
                 {% for c in i.coleccion.all %}
                 <div style='font-size: .8em; color: rgba(0,0,0,0.7);'>{{ c}}</div>
