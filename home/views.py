@@ -112,7 +112,7 @@ class LibrosDestacadosView(ListView):
     model = Libro
     queryset = Libro.objects.filter(recomendado=True)
     context_object_name = 'libros'
-    paginate_by =10 
+    paginate_by = 8
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['nombre'] = "destacados"

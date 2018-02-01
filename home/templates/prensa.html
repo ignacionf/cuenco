@@ -10,7 +10,7 @@
 {% endcomment %}
 {% if destacados and  page_obj.has_previous == False %}
     <div class='col-md-12'>
-        <div class="heading-section" style='margin: 0;'><h3 style='margin: 0;'>Artículos Destacados</h3> </div>
+        <div class="heading-section" style='margin: 0;'><h3 style='margin: 0;'>Artículos destacados</h3> </div>
     </div>
     {% for i in destacados %}
     <div class='col-md-6' style='padding: 20px;'>
@@ -20,7 +20,7 @@
             <div style='color: rgba(240,87,54,1);'>{{ i.libro }}</div>
             {% endif %}
             <div style='color: rgba(0,0,0,0.8);'>
-                {{ i.medio }}{% if i.firma %}, {{ i.firma }}{% endif %}
+                {{ i.medio }}{% if i.firma %} | {{ i.firma }}{% endif %}
             </div>
             <div style='color: rgba(0,0,0,0.6);'>{{ i.titulo }}</div>
             </a>
@@ -34,7 +34,7 @@
     </div>
 {% elif destacados and  page_obj.has_previous == True%}
     <div class='col-md-12'>
-        <div class="heading-section" style='margin: 0;'><h3 style='margin: 0;'>Artículos Destacados</h3> </div>
+        <div class="heading-section" style='margin: 0;'><h3 style='margin: 0;'>Artículos</h3> </div>
     </div>
 {% else %}
     <div class='col-md-12'>
@@ -42,11 +42,11 @@
     </div>
 {% endif %}
 
-    <div class='col-md-6' style='padding: 20px;'>
+    <div class='col-md-6' style='padding: 20px;' id='prensa_1'>
     {% for i in notas %}
     {% if forloop.counter == 11 %}
     </div>
-    <div class='col-md-6' style='padding: 20px;'>
+    <div class='col-md-6' style='padding: 20px;' id='prensa_2'>
     {% endif %}
         <div style='background: #F5F5E6; padding: 10px;'>
             <a href="{% url "nota" i.id %}">
@@ -127,6 +127,12 @@
 <script>
 {% if destacados %}
 $("#prensa > a").addClass("active");
+setTimeout(function(){
+    var h1=$("#prensa_1").outerHeight(true);
+    var h2=$("#prensa_1").outerHeight(true);
+    console.log("h1: "+h1);
+    console.log("h2: "+h2);
+    }, 500);
 {% endif %}
 </script>
 {% endblock %}
