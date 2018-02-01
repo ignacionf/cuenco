@@ -44,7 +44,7 @@
     <div class='col-md-12'>
     {% for i in libros %}
     <a href="{% url "libro" i.id %}">
-        <div class='col-md-6' style='margin-bottom: 30px; height: 222px;'>
+        <div class='col-md-6' style='margin-bottom: 30px; height: 235px;'>
             <div class='col-md-5 text-center'>
             {% if i.imagen %}
                 <img src='{{ i.imagen.url }}' style='width: 80%;' />
@@ -57,7 +57,7 @@
                 <div style='font-size: 1em; height: 120px; max-height: 140px;'>
                     <div style='font-size: 1.2em;'>{{ i.titulo}}</div>
                     {% for autor in i.autores.all %}
-                    <div style='font-size: .9em; color: rgba(0,0,0,0.7);'>{{ autor }}</div>
+                    <div style='font-size: 1em; color: rgba(0,0,0,0.7);'>{{ autor }}</div>
                     {% endfor %}
                 </div>
                 {% for c in i.coleccion.all %}

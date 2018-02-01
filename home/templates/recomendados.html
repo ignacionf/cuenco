@@ -15,16 +15,16 @@
             <img src='{{ i.imagen.url }}' style='width: 80%;' />
         </div>
         <div class='col-md-7' style='padding: 0;'>
-            <div style='font-size: 1em; height: 140px; max-height: 160px;'>
+            <div style='font-size: 1em; height: 220px;;'>
                 <div style='font-size: 1.2em;'>{{ i.titulo}}</div>
                 {% for autor in i.autores.all %}
-                <div style='font-size: .9em; color: rgba(0,0,0,0.7);'>{{ autor }}</div>
+                <div style='font-size: 1em; color: rgba(0,0,0,0.8);'>{{ autor }}</div>
                 {% endfor %}
+            {% if i.descripcion %}
+                <div style='font-size: .9em; color: rgba(0,0,0,0.7); margin-top: 1em;;'>{{ i.descripcion }}</div>
+            {% endif %}
             </div>
-            {% for c in i.coleccion.all %}
-            <div style='font-size: .9em; color: rgba(0,0,0,0.7);'>{{ c}}</div>
-            {% endfor %}
-            <div style='font-size: .8em; color: rgba(0,0,0,0.5);'>ISBN: {{ i.fISBN}}</div>
+{% comment %}            <div style='font-size: .8em; color: rgba(0,0,0,0.5);'>ISBN: {{ i.fISBN}}</div>{% endcomment %}
  
         </div>
         {% endif %}

@@ -74,7 +74,6 @@ FORMATOS = (
 EDICIONES = ((x, "%s°" %x) for x in range(1,51)) 
 
 class Libro(Model):
-    #autor = models.ForeignKey(Autor, on_delete=models.CASCADE)
     autores = models.ManyToManyField(Autor, related_name="autores_de_libros")
     coleccion = models.ManyToManyField(Coleccion)
     titulo = models.CharField("Titulo", max_length=500)
@@ -83,6 +82,7 @@ class Libro(Model):
     imagen = VersatileImageField('Foto', upload_to="libro/", blank=True, null=True)
     fecha = models.DateField("Fecha publicación", null=True, blank=True)
 
+    descripcion = models.CharField("Descripción (250 chars)", max_length=250, blank=True, null=True)
     prologo = models.CharField("Prologo de... ", max_length=500, blank=True, null=True)
     traductor = models.CharField("Traductor", max_length=500, blank=True, null=True)
     subtitulo = models.CharField("Sub Titulo", max_length=500, blank=True, null=True)
