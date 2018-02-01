@@ -175,7 +175,7 @@ class ContactoView(CreateView):
             form._errors["recaptcha"] = ErrorList([ 'Error de Tipo' ])
             return self.form_invalid(form)
 
-        send_mail("Contacto desde la Web de %s" %
+        send_mail("Contacto desde la Web de %s" % form.cleaned_data['nombre'],
             "Email: %s\n\nTexto:\n%s" % (form.cleaned_data['email'],form.cleaned_data['texto'],),
             'web@elcuencodeplata.com',
             [email,],
