@@ -38,7 +38,7 @@
             {% for autor in object.autores.all %}
             <div><h2><a href="{% url "autor" autor.id %}">{{ autor}}</a></h2></div>
             {% endfor %}
-            <div><h3>{{ object.titulo}}{% if object.subtitulo %}<br /><small>{{ object.subtitulo}}</small>{% endif %}</h3></div>
+            <div><h2>{{ object.titulo}}{% if object.subtitulo %}<br /><small>{{ object.subtitulo}}</small>{% endif %}</h2></div>
             {% if object.prologo %}
             <div><h4><small>Prologo de </small>{{ object.prologo }}</h4></div>
             {% endif %}
