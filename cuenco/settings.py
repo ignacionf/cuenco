@@ -154,3 +154,8 @@ HAYSTACK_CONNECTIONS = {
     },
 }
 GOOGLE_RECAPTCHA_SECRET_KEY = '6LcyvkMUAAAAAM3Uw5XZm5HH88-RMjA5k25P4iLb'
+EMAIL_HOST="relay.dnsexit.com"
+EMAIL_PORT="2525"
+EMAIL_HOST_USER="ignacionf"
+EMAIL_HOST_PASSWORD="Caca.001"
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
