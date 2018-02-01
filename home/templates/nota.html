@@ -3,39 +3,34 @@
 
 {% block "content" %}
 <div class="row">
-{% comment %}
-    <div class='col-md-12' style='margin-top: 1em;'>
-        <div class="heading-section text-center"><h2>Prensa</h2> </div>
-    </div>
-{% endcomment %}
     <div class='col-md-10 col-md-offset-1'>
     {% if object.libro %}
-        <div class="heading-section" style='margin: 0;'>
-            <h3 style='margin: 0; color: rgba(0,0,0,0.8);'>{{ object.libro}}
-            <small class='pull-right'>{{ object.fecha|date:"d M Y" }}</small></h3>
+        <div class="heading-section" style='margin: 8px 0;'>
+            <h4 style='margin: 0; color: rgba(0,0,0,0.8);'>{{ object.libro}}
+            <small class='pull-right'>{{ object.fecha|date:"d M Y" }}</small></h4>
         </div>
     {% else %}
-        <div class="heading-section" style='margin: 0;'>
+        <div class="heading-section" style='margin: 8px 0;'>
             <h3 style='margin: 0; color: rgba(0,0,0,0.8);'>
             <small class='pull-right'>{{ object.fecha|date:"d M Y" }}</small></h3>
         </div>
     {% endif %}
-        <div class="heading-section" style='margin: 0;'><h2 style='margin: 0;'>{{ object.titulo}}</h2> </div>
-        <div class="heading-section" style='margin: 0;'><h4 style='margin: 0; color: rgba(0,0,0,0.5);'>
+        <div class="heading-section" style='margin: 8px 0;'><font style='margin: 0; font-size: 1.5em;'>{{ object.titulo}}</font> </div>
+        <div class="heading-section" style='margin: 5px 0;'><h4 style='margin: 0; color: rgba(0,0,0,0.5);'>
                 {{ object.medio}}{% if object.firma %} | {{ object.firma}}{% endif %}
             {% if object.fuente %}<a class='pull-right' href="{{ object.fuente }}">Fuente</a>{% endif %}
             </h4>
          </div>
     </div>
     {% if object.subtitulo %}
-    <div class='col-md-10 col-md-offset-1 text-justify' >
+    <div class='col-md-10 col-md-offset-1 text-justify' id='subtitulo'>
         {% autoescape off %}
-        {{ object.subtitulo|linebreaks }}
+        {{ object.subtitulo}}
         {% endautoescape %}
     </div>
     {% endif %}
     <div class='col-md-12'>&nbsp;</div>
-    <div class='col-md-10 col-md-offset-1 text-justify html' style='background: #E6F0E6; padding: 40px;'>
+    <div class='col-md-10 col-md-offset-1 text-justify html'>
         {% autoescape off %}
         {{ object.texto}}
         {% endautoescape %}
@@ -67,8 +62,18 @@
 
 {% block "style" %}
 <style>
+#subtitulo {
+    background: #E6F0E6;
+    margin-top: 1em;
+    padding: 1em 1.5em;
+}
+#subtitulo p {
+    font-size: 1.1em;
+    color: rgba(0,0,0,0.8);
+}
 .html p {
     margin: .5em;
+    color: rgba(0,0,0,0.7);
 }
 </style>
 {% endblock %}
