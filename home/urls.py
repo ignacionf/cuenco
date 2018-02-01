@@ -9,7 +9,7 @@ urlpatterns = [
     path('noticias/', NoticiasView.as_view(), name='noticias'),
     path('prensa/<int:pk>', NotaView.as_view(), name='nota'),
 
-    path('destacados/', LibrosDestacadosView.as_view(), name='libros_destacados'),
+    path('recomendados/', LibrosDestacadosView.as_view(), name='libros_destacados'),
     path('libros/', LibrosView.as_view(), name='libros'),
     path('libro/<int:pk>', LibroView.as_view(), name='libro'),
 
