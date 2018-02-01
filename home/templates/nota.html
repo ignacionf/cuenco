@@ -15,7 +15,7 @@
             <small class='pull-right'>{{ object.fecha|date:"d M Y" }}</small></h3>
         </div>
     {% endif %}
-        <div class="heading-section" style='margin: 8px 0;'><font style='margin: 0; font-size: 1.5em;'>{{ object.titulo}}</font> </div>
+        <div class="heading-section" style='margin: 8px 0;'><font style='color: #F05736; margin: 0; font-size: 1.5em;'>{{ object.titulo}}</font> </div>
         <div class="heading-section" style='margin: 5px 0;'><h4 style='margin: 0; color: rgba(0,0,0,0.5);'>
                 {{ object.medio}}{% if object.firma %} | {{ object.firma}}{% endif %}
             {% if object.fuente %}<a class='pull-right' href="{{ object.fuente }}">Fuente</a>{% endif %}
