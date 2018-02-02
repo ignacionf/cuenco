@@ -10,7 +10,6 @@ def keywords(request):
 
     keywords = cache.get("el_cuenco_keywords")
     if not keywords:
-        print("-----------------------------------------")
         keywords = ", ".join([str(x) for x in Autor.objects.all().order_by("apellido")])
         keywords = keywords + ", ".join([str(x) for x in Libro.objects.all().order_by("titulo")])
         cache.set("el_cuenco_keywords", keywords, 6000)
