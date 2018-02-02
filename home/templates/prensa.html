@@ -1,6 +1,7 @@
 {% extends "index.html" %}
 {% load static %}
 
+{% block title %} | En los medios{% endblock %}
 {% block "content" %}
 <div class="row">
 {% if destacados and  page_obj.has_previous == False %}

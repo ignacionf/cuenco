@@ -1,6 +1,7 @@
 {% extends "index.html" %}
 {% load static %}
 
+{% block title %} | {% if coleccion %}Colección {{ coleccion.nombre}}{% else %}{{ nombre|title }}{%endif %}{% endblock %}
 {% block "content" %}
 
 {% if coleccion %}
