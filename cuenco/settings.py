@@ -69,6 +69,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'home.context_processors.colecciones',
+                'home.context_processors.keywords',
             ],
         },
     },
@@ -159,3 +160,10 @@ EMAIL_PORT="2525"
 EMAIL_HOST_USER="ignacionf"
 EMAIL_HOST_PASSWORD="Caca.001"
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+        'LOCATION': '127.0.0.1:11211',
+    }
+}
