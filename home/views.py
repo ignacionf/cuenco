@@ -19,8 +19,8 @@ class HomeView(TemplateView):
         context['novedades'] = Libro.objects.all().order_by("-created_at")[:10]
         context['recomendados'] = Libro.objects.filter(recomendado=True).order_by("titulo")
         context['slider'] = Slider.objects.filter(activo=True).order_by("-created_at")
-        context['articulos'] = Nota.objects.filter(publicado=True, libro__isnull=False).order_by("-created_at")[0:5]
-        context['noticias'] = Nota.objects.filter(publicado=True, libro__isnull=True).order_by("-created_at")[0:5]
+        context['articulos'] = Nota.objects.filter(publicado=True, libro__isnull=False).order_by("-fecha")[0:5]
+        context['noticias'] = Nota.objects.filter(publicado=True, libro__isnull=True).order_by("-fecha")[0:5]
         return context
 
 class ColeccionesView(ListView):
