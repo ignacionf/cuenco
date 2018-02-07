@@ -93,7 +93,7 @@
                         <a href="{% url "nota" nota.id %}" class='nota'>
                         <span>{{ nota.medio}}</span>
                             {% if nota.firma %} | <span class='autor'>{{ nota.firma}}</span>{% endif %}<br />
-                        <strong>{{ nota.titulo }}</strong>
+                        {{ nota.titulo }}
                         </a>
                     </div>
                     {% endfor %}
