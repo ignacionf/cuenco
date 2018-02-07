@@ -165,13 +165,23 @@ $('.novedades').owlCarousel({
         "<i class='icon-chevron-left owl-direction'></i>",
         "<i class='icon-chevron-right owl-direction'></i>"
     ],
-    responsiveClass: true,
-    responsive: {
-        768: {
-            items: 2,
-            nav: false
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
         }
     }
+
 })
 $('.recomendados').owlCarousel({
     dots: false,
@@ -184,11 +194,20 @@ $('.recomendados').owlCarousel({
         "<i class='icon-chevron-left owl-direction'></i>",
         "<i class='icon-chevron-right owl-direction'></i>"
     ],
-    responsiveClass: true,
-    responsive: {
-        768: {
-            items: 2,
-            nav: false
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
         }
     }
 
