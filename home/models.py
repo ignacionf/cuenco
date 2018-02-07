@@ -39,6 +39,10 @@ class Autor(Model):
     def get_absolute_url(self):
         return "https://www.elcuencodeplata.com.ar%s" % reverse("autor", args=[self.id])
 
+    @property
+    def libros(self):
+        return self.autores_de_libros.filter(fecha__lte=datetime.date.today())
+
     def imagen_html(self, size='90x90'):
         try:
             return mark_safe("<img src='%s' alt='%s' />" % (self.imagen.crop[size].url, self))
