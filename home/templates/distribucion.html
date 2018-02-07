@@ -1,0 +1,56 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block title %} | Distribuidores{% endblock %}
+{% block "content" %}
+
+<div class="heading-section text-center"><h2>Distribuidores</h2></div>
+
+<div class="row">
+{% for i in object_list %}
+    <div class='col-md-4 col-md-offset-1 distribucion'>
+        <div class='pais'>{{ i.pais }}</div>
+        <div class='nombre'>{{ i.nombre}}</div>
+        {% if i.aclaracion %}
+        <div class='aclaracion'>{{ i.aclaracion}}</div>
+        {% endif %}
+        <div class='direccion'>{{ i.direccion}}</div>
+        <div class='telefono'><a href='tel:{{ i.telefono}}'>{{i.telefono}}</a></div>
+        <div class='email'><a href='mailto:{{ i.email}}'>{{i.get_email_display}}</a></div>
+        <div class='web'><a href="{{ i.web}}">Página web</a></div>
+    </div> <!-- col-md-6-->
+{% endfor %}
+</div> <!-- row -->
+
+{% endblock %}
+
+
+{% block "style" %}
+<style>
+.distribucion {
+    height: 250px;
+}
+.pais, .aclaracion {
+    color: rgba(0,0,0,0.3);
+}
+.nombre {
+    color: rgba(0,0,0,0.8);
+    padding: 10px 0;
+    font-size: 1.2em;
+}
+.telefono a,
+    .email a,
+    .web a {
+    color: rgba(0,0,0,0.6);
+}
+.telefono a:hover {
+    color: rgba(0,0,0,0.9);
+}
+</style>
+{% endblock %}
+
+{% block "js" %}
+<script>
+$("#autores > a").addClass("active");
+</script>
+{% endblock %}

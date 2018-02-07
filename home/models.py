@@ -200,3 +200,30 @@ class Contacto(models.Model):
 
     def __str__(self):
         return self.email
+
+class Distribucion(Model):
+    nombre = models.CharField("Nombre", max_length=200)
+
+    pais = models.CharField("País", max_length=50, null=True, blank=True)
+    direccion = models.CharField("Dirección", max_length=500, null=True, blank=True)
+    telefono = models.CharField("Teléfono", max_length=100, null=True, blank=True)
+    web = models.CharField("Página web", max_length=200, null=True, blank=True)
+    email = models.EmailField("E-Mail", null=True, blank=True)
+
+    aclaracion = models.CharField("Aclaración", max_length=200, null=True, blank=True)
+
+    publicado = models.BooleanField("Publicado", default=True)
+    orden = models.PositiveSmallIntegerField("Orden", default=99)
+
+    class Meta:
+        verbose_name_plural = "Distribuciones"
+        verbose_name = "Distribución"
+        ordering = ['orden','nombre', '-created_at',]
+
+    def get_email_display(self):
+        return self.email.replace("@"," [at] ")
+
+    def __str__(self):
+        return self.nombre
+
+

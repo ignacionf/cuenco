@@ -13,11 +13,12 @@ urlpatterns = [
     path('libros/', LibrosView.as_view(), name='libros'),
     path('libro/<int:pk>', LibroView.as_view(), name='libro'),
 
+    path('distribucion/', DistribucionesView.as_view(), name='distribucion'),
+
     path('colecciones/', ColeccionesView.as_view(), name='colecciones'),
     path('colecciones/<str:slug>/', ColeccionesView.as_view(), name='colecciones'),
 
     path('la_editorial/', TemplateView.as_view(template_name="editorial.html"), name='editorial'),
-    path('distribuidores/', TemplateView.as_view(template_name="editorial.html"), name='distribuidores'),
     path('librerias/', TemplateView.as_view(template_name="librerias.html"), name='librerias'),
     path('contacto/', ContactoView.as_view(template_name='contacto.html'), name='contacto'),
     path('contacto/ventas/', ContactoView.as_view(template_name='contacto.ventas.html'), name='contacto.ventas'),

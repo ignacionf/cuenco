@@ -83,3 +83,15 @@ class ContactoAdmin(admin.ModelAdmin):
     search_fields = ("nombre","email", "texto")
     list_filter = ("revisado", "contactado",)
     list_display = ("nombre", "email", "revisado", "contactado", "created_at" )
+
+@admin.register(Distribucion)
+class DistribucionAdmin(admin.ModelAdmin):
+    date_hierarchy = 'created_at'
+    search_fields = ("nombre","pais")
+    list_filter = ("publicado",)
+    list_display = ("nombre", "email", "direccion", "telefono", "pais" )
+    def save_model(self, request, obj, form, change):
+        obj.user = request.user
+        obj.save()
+
+

@@ -23,6 +23,11 @@ class HomeView(TemplateView):
         context['noticias'] = Nota.objects.filter(publicado=True, libro__isnull=True).order_by("-fecha")[0:5]
         return context
 
+class DistribucionesView(ListView):
+    template_name = "distribucion.html"
+    model = Distribucion
+
+
 class ColeccionesView(ListView):
     template_name = "libros.html"
     model = Libro
