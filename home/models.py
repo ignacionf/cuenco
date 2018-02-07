@@ -50,6 +50,7 @@ class Coleccion(Model):
     slug = models.SlugField("Slug (uso en la web)", max_length=255, blank=True, null=True)
     activa = models.BooleanField("Activa", default=True)
     orden = models.PositiveSmallIntegerField("Orden", default=99)
+    imagen = VersatileImageField('Imagen', upload_to="imagenes/coleccion/", blank=True, null=True)
 
     class Meta:
         verbose_name = "Colección"
