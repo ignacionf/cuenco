@@ -7,11 +7,14 @@
 {% if coleccion %}
     <div class="heading-section"><h1>{{ coleccion.nombre}}</h1></div>
     {% if coleccion.texto %}
-    <div style='margin: 20px 0 30px 0; padding: 10px 40px;; background: #E6F0E6; text-align: justify'>
+
+    <div style='width: 200px; margin: auto;  margin-top: 20px; border-bottom: 1px solid rgba(0,0,0,0.2);'></div>
+    <div style='text-align: justify; width: 500px; margin: 20px auto;'>
     {% autoescape off %}
     {{ coleccion.texto}}
     {% endautoescape %}
     </div>
+    <div style='width: 200px; margin: auto; border-top: 1px solid rgba(0,0,0,0.2); margin-bottom: 30px;'></div>
     {% endif %}
     <div class="heading-section text-center"><h3>Autores destacados</h3></div>
     <div class="row">
