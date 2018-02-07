@@ -42,8 +42,10 @@
     {% endfor %}
     </div> <!-- row -->
     
+{% elif nombre == "preparacion" %}
+    <div class="heading-section text-center"><h2>En preparación</h2></div>
 {% else %}
-    <div class="heading-section text-center"><h2>{{ nombre|title }}</h2></div>
+    <div class="heading-section text-center"><h2>{{ nombre|title }} <a href="{% url "preparacion" %}" class='pull-right'>En preparación</a></h2></div>
 {% endif %}
 
 <div class="row">
@@ -69,7 +71,9 @@
                 {% for c in i.coleccion.all %}
                 <div style='font-size: .9em; color: rgba(0,0,0,0.7);'>{{ c}}</div>
                 {% endfor %}
+                {% if i.isbn %}
                 <div style='font-size: .8em; color: rgba(0,0,0,0.5);'>ISBN: {{ i.fISBN}}</div>
+                {% endif %}
             </div>
         </div>
     </a>
@@ -108,6 +112,11 @@
 
 {% block "style" %}
 <style>
+
+  .heading-section a {
+        font-size: .6em;
+        padding-top: 10px;
+    }
   ul.paginado {
     display: inline-block;
     padding-left: 0;

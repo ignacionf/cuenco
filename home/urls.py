@@ -11,6 +11,7 @@ urlpatterns = [
 
     path('recomendados/', LibrosDestacadosView.as_view(), name='libros_destacados'),
     path('libros/', LibrosView.as_view(), name='libros'),
+    path('libros/en_preparacion/', LibrosPreparacionView.as_view(), name='preparacion'),
     path('libro/<int:pk>', LibroView.as_view(), name='libro'),
 
     path('distribucion/', DistribucionesView.as_view(), name='distribucion'),

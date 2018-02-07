@@ -4,7 +4,7 @@ Django==2.0.1
 django-contact-form==1.4.2
 django-extensions==1.9.9
 django-haystack==2.6.1
-django-isbn-field==0.5
+git+https://github.com/ignacionf/django-isbn-field.git
 django-tinymce==2.7.0
 django-versatileimagefield==1.8.1
 idna==2.6

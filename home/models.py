@@ -82,7 +82,7 @@ class Libro(Model):
     autores = models.ManyToManyField(Autor, related_name="autores_de_libros")
     coleccion = models.ManyToManyField(Coleccion)
     titulo = models.CharField("Titulo", max_length=500)
-    isbn = ISBNField("ISBN")
+    isbn = ISBNField("ISBN", blank=True, null=True)
     texto = tinymce_models.HTMLField("Texto")
     imagen = VersatileImageField('Foto', upload_to="libro/", blank=True, null=True)
     fecha = models.DateField("Fecha publicación", null=True, blank=True)
@@ -123,7 +123,7 @@ class Libro(Model):
                 return "%s-%s-%s-%s-%s" %(i[0:3], i[3:6],i[6:10], i[10:12],i[12])
             else:
                 return "%s-%s-%s-%s" %(i[0], i[1:3],i[3:9],i[9])
-        except IndexError:
+        except (IndexError, TypeError):
             return i
 
     def imagen_html_sized(self, size='90x120'):

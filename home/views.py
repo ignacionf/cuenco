@@ -10,13 +10,14 @@ from django.conf import settings
 from django.forms.utils import ErrorList
 from django import forms
 from django.core.mail import send_mail
+from datetime import date
 
 class HomeView(TemplateView):
     template_name = "home.html"
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['novedades'] = Libro.objects.all().order_by("-created_at")[:10]
+        context['novedades'] = Libro.objects.filter(fecha__lte=date.today()).order_by("-fecha")[:10]
         context['recomendados'] = Libro.objects.filter(recomendado=True).order_by("titulo")
         context['slider'] = Slider.objects.filter(activo=True).order_by("-created_at")
         context['articulos'] = Nota.objects.filter(publicado=True, libro__isnull=False).order_by("-fecha")[0:5]
@@ -37,7 +38,7 @@ class ColeccionesView(ListView):
     def get_queryset(self):
         try:
             self.coleccion = Coleccion.objects.get(slug=self.kwargs['slug'])
-            return self.model.objects.select_related().filter(coleccion=self.coleccion)
+            return self.model.objects.select_related().filter(coleccion=self.coleccion, fecha__lte=date.today())
         except KeyError:
             self.template_name="colecciones.html"
         except Coleccion.DoesNotExist:
@@ -123,11 +124,23 @@ class LibrosDestacadosView(ListView):
         context['nombre'] = "destacados"
         return context
 
+class LibrosPreparacionView(ListView):
+    template_name = "libros.html"
+    model = Libro
+    queryset = Libro.objects.filter(fecha__gte=date.today())
+    context_object_name = 'libros'
+    paginate_by =10 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['nombre'] = "preparacion"
+        return context
+
+
 
 class LibrosView(ListView):
     template_name = "libros.html"
     model = Libro
-    queryset = Libro.objects.all()
+    queryset = Libro.objects.filter(fecha__lte=date.today())
     context_object_name = 'libros'
     paginate_by =10 
     def get_context_data(self, **kwargs):
