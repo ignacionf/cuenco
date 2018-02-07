@@ -5,13 +5,19 @@
 {% block "content" %}
 
 <div class='row'>
-    <div class="col-md-10 col-md-offset-1">
-        <div class='col-md-4' style='padding-top: 20px;'>
+    <div class="col-lg-10 col-lg-offset-1">
+        <div class='col-lg-4' style='padding-top: 20px;'>
     {% if object.imagen %}
-            <div><img src='{{ object.imagen.url }}' style='width: 100%;' /></div>
+            <div class='col-lg-12'><img src='{{ object.imagen.url }}' style='width: 100%;' /></div>
     {% endif %}
+            <div class='col-lg-12 social'>
+                <a href="javascript:window.print()"><i class='icon-printer2'></i></a>
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ object.get_absolute_url|escape }}&src=sdkpreparse"><i class="icon-facebook2"></i></a>
+                <a href="https://twitter.com/intent/tweet?hashtags=elcuencodeplata&original_referer={{ object.get_absolute_url|escape }}&ref_src=twsrc%5Etfw&related=twitterapi%2Ctwitter&text={{ object.titulo }}&tw_p=tweetbutton&url={{ object.get_absolute_url|escape }}&via=cuencodeplata" target="_blank"><i class="icon-twitter2"></i></a>
+            </div>
+
     
-            <div style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
+            <div class='col-lg-12'  style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
 {% for x in xcolecciones %}
     {% if x.id != 13 %}
                 <div><strong>Colección: </strong><a href="{% url "colecciones" x.slug %}">{{ x}}</a></div>
@@ -26,18 +32,18 @@
             </div>
     
             {% if object.pdf %}
-            <div style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
+            <div class='col-lg-12'  style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
                 <a href="{{ object.pdf.url }}"{%comment%} download="Fragmento {{ object.titulo }}.pdf"{%endcomment %}><i class="glyphicon glyphicon-eye-open" aria-hidden="true"></i> Lea un fragmento</a>
             </div>
             {% endif %}
             {% if object.carrito %}
-            <div style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
+            <div class='col-lg-12'  style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
                 <a href="{{ object.carrito }}" target="_blank"><i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i> Ir a tienda</a>
             </div>
             {% endif %}
-        </div> <!-- col-md-4-->
+        </div> <!-- col-lg-4-->
     
-        <div class='col-md-8'>
+        <div class='col-lg-8'>
             {% for autor in object.autores.all %}
             <div><h2><a href="{% url "autor" autor.id %}">{{ autor}}</a></h2></div>
             {% endfor %}
@@ -66,13 +72,13 @@
                 </a>
             </div>
             {% endfor %}
-        </div> <!-- col-md-8-->
-    </div> <!-- col-md-10 -->
+        </div> <!-- col-lg-8-->
+    </div> <!-- col-lg-10 -->
 {% if recomendados %}
-    <div class='col-md-10 col-md-offset-1' style='margin-top: 4em;'>
+    <div class='col-lg-10 col-lg-offset-1' style='margin-top: 4em;'>
         <div class="heading-section" style='margin: 0;'><h3 style='margin: 0; color: rgba(0,0,0,0.8);'>Libros del autor/a</h3> </div>
     </div>
-    <div class='col-md-10 col-md-offset-1' style='margin-top: 2em;'>
+    <div class='col-lg-10 col-lg-offset-1' style='margin-top: 2em;'>
         <div class="owl-carousel libros">
         {% for libro in recomendados %}
             <div class="item">
@@ -91,7 +97,7 @@
 {% endif %}
 
 
-<div class='col-md-12'>&nbsp;</div>
+<div class='col-lg-12'>&nbsp;</div>
 
 </div> <!-- row -->
 
@@ -100,6 +106,15 @@
 
 {% block "style" %}
 <style>
+.social {
+    margin-top: 20px;text-align: center;
+}
+.social a {
+    color: rgba(0,0,0,0.3);
+}
+.social a:hover {
+    color: rgba(0,0,0,0.7);
+}
 h1, h2, h3, h4 {
     color: rgba(0,0,0,.8);
     margin: 10px 0 10px 0;
@@ -121,6 +136,18 @@ h1, h2, h3, h4 {
 {% endblock %}
 
 {% block "js" %}
+{% comment %}
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+{% endcomment %}
+
 <script>
 //$("# nombre  > a").addClass("active");
 $('.libros').owlCarousel({

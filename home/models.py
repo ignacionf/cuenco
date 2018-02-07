@@ -3,6 +3,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from versatileimagefield.fields import VersatileImageField
 from tinymce import models as tinymce_models
+from django.urls import reverse 
 
 from isbn_field import ISBNField
 
@@ -98,6 +99,9 @@ class Libro(Model):
     class Meta:
         verbose_name_plural = "Libros"
         ordering = ['-fecha','-id',]
+
+    def get_absolute_url(self):
+        return "https://www.elcuencodeplata.com.ar%s" % reverse("libro", args=[self.id])
 
     def get_autores(self):
         return " ".join([str(a) for a in self.autores.all()])
