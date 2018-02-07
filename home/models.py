@@ -193,6 +193,9 @@ class Nota(Model):
     def __str__(self):
         return self.titulo
 
+    def get_absolute_url(self):
+        return "https://www.elcuencodeplata.com.ar%s" % reverse("nota", args=[self.id])
+
 class Contacto(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, editable=False)
     updated_at = models.DateTimeField(auto_now=True, editable=False)

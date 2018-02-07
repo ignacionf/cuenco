@@ -19,6 +19,12 @@
         <div class="heading-section" style='margin: 8px 0;'><font style='color: #F05736; margin: 0; font-size: 1.5em;'>{{ object.titulo}}</font> </div>
         <div class="heading-section" style='margin: 5px 0;'><h4 style='margin: 0; color: rgba(0,0,0,0.5);'>
                 {{ object.medio}}{% if object.firma %} | {{ object.firma}}{% endif %}
+             <div class='pull-right social'>
+                <a href="javascript:window.print()"><i class='icon-printer2'></i></a>
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ object.get_absolute_url|escape }}&src=sdkpreparse"><i class="icon-facebook2"></i></a>
+                <a href="https://twitter.com/intent/tweet?hashtags=elcuencodeplata&original_referer={{ object.get_absolute_url|escape }}&ref_src=twsrc%5Etfw&related=twitterapi%2Ctwitter&text={{ object }}&tw_p=tweetbutton&url={{ object.get_absolute_url|escape }}&via=cuencodeplata" target="_blank"><i class="icon-twitter2"></i></a>
+            </div>
+ 
             {% if object.fuente %}<a class='pull-right' href="{{ object.fuente }}">Fuente</a>{% endif %}
             </h4>
          </div>
@@ -76,6 +82,19 @@
     margin: .5em;
     color: rgba(0,0,0,0.7);
 }
+.social {
+    padding-top: 5px;
+    padding-left: 20px;
+    font-size: .7em;
+}
+.social a {
+    color: rgba(0,0,0,0.3);
+}
+.social a:hover {
+    color: rgba(0,0,0,0.7);
+}
+
+
 </style>
 {% endblock %}
 
