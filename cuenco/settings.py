@@ -167,3 +167,9 @@ CACHES = {
         'LOCATION': '127.0.0.1:11211',
     }
 }
+
+# configuraciones por fuera de git
+try:
+    from cuenco.local_settings import *
+except:
+    pass
