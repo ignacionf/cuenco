@@ -3,19 +3,28 @@
 
 {% block title %} | {{ object }}{% endblock %}
 {% block "content" %}
+
 <div class="row">
     <div class='col-md-2 col-md-offset-1'>
         {% if object.imagen %}
         <img src="{{ object.imagen.crop.200x200 }}" style='width: 100%' class='img-circle' />
         {% endif %}
+ 
     </div> <!-- col-md-2 -->
     <div class='col-md-8' style='text-align: justify;'>
-        <div class="heading-section" style='margin-top: 1em;'><h1>{{ object }}</h1> </div>
+       <div class="heading-section" style='margin-top: 1em;'><h1>{{ object }}
+           </h1> </div>
 
         <div class='text-justify' style='; padding: 5px;'>
         {% autoescape off %}
         {{ object.texto }}
         {% endautoescape %}
+             <div class='pull-right social'>
+                <a href="javascript:window.print()"><i class='icon-printer2'></i></a>
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ object.get_absolute_url|escape }}&src=sdkpreparse"><i class="icon-facebook2"></i></a>
+                <a href="https://twitter.com/intent/tweet?hashtags=elcuencodeplata&original_referer={{ object.get_absolute_url|escape }}&ref_src=twsrc%5Etfw&related=twitterapi%2Ctwitter&text={{ object }}&tw_p=tweetbutton&url={{ object.get_absolute_url|escape }}&via=cuencodeplata" target="_blank"><i class="icon-twitter2"></i></a>
+            </div>
+ 
         </div>
 
     </div> <!-- col-md-8 -->
@@ -72,6 +81,17 @@
     .heading-section h2 {
         font-size: 1em;
     }
+.social {
+    padding-top: 15px;
+    font-size: 1em;
+}
+.social a {
+    color: rgba(0,0,0,0.3);
+}
+.social a:hover {
+    color: rgba(0,0,0,0.7);
+}
+
 </style>
 {% endblock %}
 
