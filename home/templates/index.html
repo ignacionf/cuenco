@@ -108,7 +108,43 @@
 	</head>
 	<body>
 	<header>
-		<div class="container text-center">
+
+<nav class="navbar navbar-default navbar-fixed-top respheader">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">el cuenco de plata</a>
+        </div>
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+					<li id="novedades"><a href="{% url "libros" %}">Novedades</a></li>
+					<li id="autores"><a href="{% url "autores" %}">Autores</a></li>
+					<li id="colecciones" class='dropdown'>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Colecciones
+                        <ul class="dropdown-menu">
+                        {% for c in colecciones %}
+                          <li><a href="{% url "colecciones" c.slug %}"><span>.</span> {{ c.nombre }}</a></li>
+                        {% endfor %}
+                          <li role="separator" class="divider" style='width: 92%;'></li>
+                          <li style="width: 78%; font-size: 1em; text-align: right;"><a href="{% url "colecciones" %}">Ver todas las colecciones</a></li>
+
+                        </ul>
+                    </li>
+					<li id="destacados"><a href="{% url "libros_destacados" %}">Recomendados</a></li>
+					<li id="prensa"><a href="{% url "prensa" %}">En los medios</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+		<div class="container text-center mainheader">
 <!--
 			<div class="fh5co-navbar-brand">
 				<a class="fh5co-logo" href="index.html"><img src='images/logo_b_300.png' /></a>

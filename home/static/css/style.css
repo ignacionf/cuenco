@@ -163,7 +163,16 @@ header #fh5co-main-nav > ul li {
   margin-left: 30px;
   font-size: 18px;
 }
+.respheader {
+  display: none;
+}
 @media screen and (max-width: 768px) {
+  .respheader {
+    display: block;
+  }
+  .mainheader {
+    display: none;
+    }
   header #fh5co-main-nav > ul li {
     display: block;
     margin-left: 0;
