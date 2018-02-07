@@ -17,19 +17,11 @@
                 {{ coleccion.texto }}
                 {% endautoescape %}
             </div> <!-- resumen -->
-            <div class="owl-carousel">
-            {% for n in coleccion.get_10_libros %}
-                <div>
-                    <a href="{% url "libro" n.id %}">
-{% if n.imagen %}
-                        <div><img src="{{ n.imagen.thumbnail.120x200}}" alt="{{ n }}"></div>
-{% else %}
-                        <div><img src="http://via.placeholder.com/160x232?text={{ n.titulo }}" alt="{{ n }}"></div>
-{% endif %}
-                    </a>
-                </div>
-            {% endfor %}
-            </div> <!-- owl-carousel -->
+            {% if coleccion.imagen %}
+            <div class="imagen_coleccion">
+                <img src='coleccion.imagen.thumbnail.500x160' />
+            </div> <!-- imagen_coleccion -->
+            {% endif %}
 {% endif %}
         </div> <!-- maincoleccion -->
     </div> <!-- col-md-6 -->
@@ -107,19 +99,5 @@ div.coleccion div.principal{
 {% block "js" %}
 <script>
 $("#colecciones > a").addClass("active");
-$('.owl-carousel').owlCarousel({
-    dots: true,
-    autoplay: true,
-    items: 5,
-    loop:true,
-    margin:5,
-    responsiveClass:true,
-    nav:false,
-    navText: [
-        "<i class='icon-chevron-left owl-direction'></i>",
-        "<i class='icon-chevron-right owl-direction'></i>"
-    ]
-})
-
 </script>
 {% endblock %}
