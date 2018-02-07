@@ -166,7 +166,15 @@ header #fh5co-main-nav > ul li {
 .respheader {
   display: none;
 }
+#main {
+    width: 1024px;
+    margin: auto;
+}
 @media screen and (max-width: 768px) {
+
+#main {
+    width: 100%;
+}
   .respheader {
     display: block;
   }
