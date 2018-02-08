@@ -120,6 +120,18 @@
         .navbar-default #colecciones ul.dropdown-menu > li > a {
             color: white;
         }
+        .menu-footer {
+            text-align: center;
+        }
+        @media screen and (max-width: 768px) {
+            .menu-footer {
+                text-align: left;
+            }
+            #footer ul li {
+                width: 130px;
+            }
+        }
+
     </style>
 
 	</head>
@@ -212,12 +224,11 @@
     <div id='main'>
 {% block "content" %}{% endblock %}
     </div>
-{% cache 6000 footer %}
 	<footer>
 		<div id="footer" class="fh5co-border-line">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-10 col-md-offset-1 text-center">
+					<div class="col-md-10 col-md-offset-1 menu-footer">
                         <ul>
                             <li><a href="{% url "editorial" %}">La editorial</a></li>
                             <li><a href="{% url "distribucion" %}">Distribuidores</a></li>
@@ -236,7 +247,6 @@
 			</div>
 		</div>
 	</footer>
-{% endcache %}
 
 	<!-- jQuery -->
 	<script src="{% static "js/jquery.min.js" %}"></script>
