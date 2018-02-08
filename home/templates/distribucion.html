@@ -6,7 +6,7 @@
 
 <div class="heading-section text-center"><h2>Distribuidores</h2></div>
 
-<div class="row">
+<div class="row rowmain">
 {% for i in object_list %}
     <div class='col-md-4 col-md-offset-1 distribucion'>
         <div class='pais'>{{ i.pais }}</div>
@@ -27,6 +27,12 @@
 
 {% block "style" %}
 <style>
+
+@media screen and (max-width: 768px) {
+    .rowmain {
+        padding: 0 40px;
+    }
+}
 .distribucion {
     height: 250px;
 }

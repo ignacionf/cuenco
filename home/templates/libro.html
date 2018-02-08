@@ -8,8 +8,8 @@
     <div class="col-lg-10 col-lg-offset-1 col-xs-12">
         <div class='col-lg-4 col-xs-12' style='padding-top: 20px;'>
     {% if object.imagen %}
-            <div class='col-lg-12 col-xs-5'>
-                <img src='{{ object.imagen.url }}' style='width: 100%;' />
+            <div class='col-lg-12 col-xs-12 col-imagen'>
+                <img src='{{ object.imagen.url }}' />
                 <div class='col-lg-12 social col-xs-12'>
                     <a href="javascript:window.print()"><i class='icon-printer2'></i></a>
                     <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ object.get_absolute_url|escape }}&src=sdkpreparse"><i class="icon-facebook2"></i></a>
@@ -25,7 +25,7 @@
     {% endif %}
 
     
-            <div class='col-lg-12 col-xs-7 col-info'>
+            <div class='col-lg-12 col-xs-7 col-info col-resp'>
 {% for x in xcolecciones %}
     {% if x.id != 13 %}
                 <div><strong>Colección: </strong><a href="{% url "colecciones" x.slug %}">{{ x}}</a></div>
@@ -40,13 +40,13 @@
             </div>
     
             {% if object.pdf %}
-            <div class='col-lg-12 col-xs-12'></div>
-            <div class='col-lg-12 col-xs-6'  style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
+            <div class='col-lg-12 col-xs-12 col-resp'></div>
+            <div class='col-lg-12 col-xs-6 col-resp'  style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
                 <a href="{{ object.pdf.url }}"{%comment%} download="Fragmento {{ object.titulo }}.pdf"{%endcomment %}><i class="glyphicon glyphicon-eye-open" aria-hidden="true"></i> Lea un fragmento</a>
             </div>
             {% endif %}
             {% if object.carrito %}
-            <div class='col-lg-12 col-xs-6'  style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
+            <div class='col-lg-12 col-xs-6 col-resp'  style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
                 <a href="{{ object.carrito }}" target="_blank"><i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i> Ir a tienda</a>
             </div>
             {% endif %}
@@ -108,12 +108,37 @@
         </div> <!-- owl-carousel -->
     </div>
 {% endif %}
-
-
 <div class='col-lg-12 col-xs-12'>&nbsp;</div>
 
 </div> <!-- row -->
 
+
+<div class='row rowmain lala'>
+            <div class='col-xs-12 col-info'>
+{% for x in xcolecciones %}
+    {% if x.id != 13 %}
+                <div><strong>Colección: </strong><a href="{% url "colecciones" x.slug %}">{{ x}}</a></div>
+    {% endif %}
+{%endfor %}
+                <div><strong>Publicado: </strong>{{ object.fecha|date:"F Y"}}</div>
+                <div><strong>ISBN: </strong>{{ object.fISBN }}</div>
+    
+                {% if object.edicion %}<div><strong>Edición: </strong>{{ object.get_edicion_display }}</div>{% endif %}
+                {% if object.formato %}<div><strong>Formato: </strong>{{ object.formato}}</div>{% endif %}
+                {% if object.paginas %}<div><strong>Páginas: </strong>{{ object.paginas }}</div>{% endif %}
+            </div>
+    
+            {% if object.pdf %}
+            <div class='col-lg-12 col-xs-12'  style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
+                <a href="{{ object.pdf.url }}"{%comment%} download="Fragmento {{ object.titulo }}.pdf"{%endcomment %}><i class="glyphicon glyphicon-eye-open" aria-hidden="true"></i> Lea un fragmento</a>
+            </div>
+            {% endif %}
+            {% if object.carrito %}
+            <div class='col-lg-12 col-xs-12'  style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
+                <a href="{{ object.carrito }}" target="_blank"><i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i> Ir a tienda</a>
+            </div>
+            {% endif %}
+</div>
 {% endblock %}
 
 
@@ -154,6 +179,11 @@ h1, h2, h3, h4 {
   margin-top: 40px;
   font-size: .9em;
 }
+
+.lala {
+        display: none;
+}
+
 @media (min-width: 1024px) {
     .col-info {
         margin-top: 30px;
@@ -162,8 +192,17 @@ h1, h2, h3, h4 {
     .owl-imagen {
         height: 270px;
     }
+
+    .col-imagen img {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 768px) {
+
+    .col-imagen img {
+        width: 50%;
+        margin-left: 25%;
+    }
     .owl-imagen {
         height: 160px;
     }
@@ -179,6 +218,13 @@ h1, h2, h3, h4 {
         padding: 0 20px;
     }
 
+    .col-resp {
+        display: none;
+    }
+
+    .lala {
+        display: block;
+    }
 }
 
 
