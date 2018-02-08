@@ -3,8 +3,8 @@
 
 {% block title %} | Artículo '{{ object.titulo }}'{% endblock %}
 {% block "content" %}
-<div class="row">
-    <div class='col-md-10 col-md-offset-1'>
+<div class="row rowmain">
+    <div class='col-lg-10 col-lg-offset-1'>
     {% if object.libro %}
         <div class="heading-section" style='margin: 8px 0;'>
             <h4 style='margin: 0; color: rgba(0,0,0,0.8);'>{{ object.libro}}
@@ -30,25 +30,25 @@
          </div>
     </div>
     {% if object.subtitulo %}
-    <div class='col-md-10 col-md-offset-1 text-justify' id='subtitulo'>
+    <div class='col-lg-10 col-lg-offset-1 text-justify' id='subtitulo'>
         {% autoescape off %}
         {{ object.subtitulo}}
         {% endautoescape %}
     </div>
     {% endif %}
-    <div class='col-md-12'>&nbsp;</div>
-    <div class='col-md-10 col-md-offset-1 text-justify html'>
+    <div class='col-lg-12'>&nbsp;</div>
+    <div class='col-lg-10 col-lg-offset-1 text-justify html'>
         {% autoescape off %}
         {{ object.texto}}
         {% endautoescape %}
     </div>
-    <div class='col-md-12'>&nbsp;</div>
+    <div class='col-lg-12'>&nbsp;</div>
 
 {% if notas %}
-    <div class='col-md-10 col-md-offset-1'>
+    <div class='col-lg-10 col-lg-offset-1'>
         <div class="heading-section" style='margin: 0;'><h3 style='margin: 0; color: rgba(0,0,0,0.8);'>Artículos relacionados</h3> </div>
     </div>
-    <div class='col-md-8 col-md-offset-1' style='padding: 20px;'>
+    <div class='col-lg-8 col-lg-offset-1' style='padding: 20px;'>
     {% for i in notas %}
         <div style='background: #F5F5E6; padding: 10px;'>
             <a href="{% url "nota" i.id %}">
@@ -94,6 +94,11 @@
     color: rgba(0,0,0,0.7);
 }
 
+@media screen and (max-width: 768px) {
+    .rowmain {
+        padding: 0 40px;
+    }
+}
 
 </style>
 {% endblock %}
