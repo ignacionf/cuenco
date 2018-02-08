@@ -127,7 +127,7 @@ class LibrosDestacadosView(ListView):
 class LibrosPreparacionView(ListView):
     template_name = "libros.html"
     model = Libro
-    queryset = Libro.objects.filter(fecha__gte=date.today()).order_by("-fecha")
+    queryset = Libro.objects.filter(fecha__gte=date.today()).order_by("fecha")
     context_object_name = 'libros'
     paginate_by =10 
     def get_context_data(self, **kwargs):
