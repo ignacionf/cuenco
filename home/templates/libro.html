@@ -40,12 +40,13 @@
             </div>
     
             {% if object.pdf %}
-            <div class='col-lg-12 col-xs-7'  style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
+            <div class='col-lg-12 col-xs-12'></div>
+            <div class='col-lg-12 col-xs-6'  style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
                 <a href="{{ object.pdf.url }}"{%comment%} download="Fragmento {{ object.titulo }}.pdf"{%endcomment %}><i class="glyphicon glyphicon-eye-open" aria-hidden="true"></i> Lea un fragmento</a>
             </div>
             {% endif %}
             {% if object.carrito %}
-            <div class='col-lg-12 col-xs-7 col-xs-offset-5'  style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
+            <div class='col-lg-12 col-xs-6'  style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
                 <a href="{{ object.carrito }}" target="_blank"><i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i> Ir a tienda</a>
             </div>
             {% endif %}
@@ -63,7 +64,7 @@
             <div style='margin-top: 1em;'><h4><small>Traducción de </small>{{ object.traductor }}</h4></div>
             {% endif %}
     
-            <div class='text-justify' style='margin-top: 40px; font-size: .9em;'>
+            <div class='text-justify texto'>
                 {% autoescape off %}
                 {{ object.texto}}
                 {% endautoescape %}
@@ -85,10 +86,10 @@
         </div> <!-- col-lg-8-->
     </div> <!-- col-lg-10 -->
 {% if recomendados %}
-    <div class='col-lg-10 col-lg-offset-1 col-xs-12' style='margin-top: 4em;'>
-        <div class="heading-section" style='margin: 0;'><h3 style='margin: 0; color: rgba(0,0,0,0.8);'>Libros del autor/a</h3> </div>
+    <div class='col-lg-10 col-lg-offset-1 col-xs-12 padding40' style='margin-top: 4em;'>
+        <div class="heading-section" style='margin: 40px 0 30px 0;'><h3 style='margin: 0; color: rgba(0,0,0,0.8);'>Libros del autor/a</h3> </div>
     </div>
-    <div class='col-lg-10 col-lg-offset-1 col-xs-12' style='margin-top: 2em;'>
+    <div class='col-lg-10 col-lg-offset-1 col-xs-12 padding40' style='margin-top: 2em;'>
         <div class="owl-carousel libros">
         {% for libro in recomendados %}
             <div class="item">
@@ -149,6 +150,10 @@ h1, h2, h3, h4 {
     background: #E6F0E6;
     font-size: .9em;
 }
+.texto {
+  margin-top: 40px;
+  font-size: .9em;
+}
 @media (min-width: 1024px) {
     .col-info {
         margin-top: 30px;
@@ -159,7 +164,6 @@ h1, h2, h3, h4 {
     }
 }
 @media screen and (max-width: 768px) {
-
     .owl-imagen {
         height: 160px;
     }
@@ -167,6 +171,13 @@ h1, h2, h3, h4 {
         margin-top: 0;
         padding: 20px;
     }
+    .padding40 {
+        padding: 0 40px;
+    }
+    .texto {
+        padding: 0 20px;
+    }
+
 }
 
 
