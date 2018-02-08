@@ -191,6 +191,9 @@ header #fh5co-main-nav > ul li {
     margin-left: 0;
     margin-bottom: 15px;
   }
+  header {
+    background-color: transparent;
+  }
 }
 header #fh5co-main-nav > ul li a {
   padding-bottom: 5px;
