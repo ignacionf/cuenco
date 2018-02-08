@@ -9,7 +9,7 @@
     {% if coleccion.texto %}
 
     <div style='width: 200px; margin: auto;  margin-top: 20px; border-bottom: 1px solid rgba(0,0,0,0.2);'></div>
-    <div style='width: 500px; margin: 20px auto; text-indent: 2em;'>
+    <div style='width: 500px; margin: 20px auto;'>
     {% autoescape off %}
     {{ coleccion.texto}}
     {% endautoescape %}
@@ -17,9 +17,9 @@
     <div style='width: 200px; margin: auto; border-top: 1px solid rgba(0,0,0,0.2); margin-bottom: 30px;'></div>
     {% endif %}
     <div class="heading-section text-center"><h3>Autores destacados</h3></div>
-    <div class="row">
+    <div class="row row-autores">
     {% for autor in autores %}
-        <div class='col-lg-2 {{ autor.apellido.0 }}
+        <div class='col-lg-2 col-xs-4 col-autores {{ autor.apellido.0 }}
             {% if forloop.first %}
                 {% if autores_len > 5 %}
                 {% elif autores_len > 4 %}
@@ -32,7 +32,7 @@
                     col-lg-offset-5
                 {% endif %}
             {% endif %}
-            ' style='height: 315px; text-align: center;'>
+            ' style='text-align: center;'>
             <a href="{% url "autor" autor.id %}" class='autor-link'>
             {% if autor.imagen %}<img src="{{ autor.imagen.crop.200x200 }}" class='img-circle' style='width: 100%; max-height: 200px;' />{% endif %}
     
@@ -138,8 +138,14 @@
     .col-libro img {
         width: 80%;
     }
+    .col-autores {
+        height: 315px;
+    }
 }
 @media screen and (max-width: 768px) {
+    .row-autores {
+        margin-bottom: 50px;
+    }
     .col-libro {
         margin-bottom: 250px;
     }

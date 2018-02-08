@@ -5,13 +5,13 @@
 {% block "content" %}
 
 <div class="row">
-    <div class='col-lg-2 col-lg-offset-1 col-sm-2'>
+    <div class='col-lg-2 col-lg-offset-1 col-xs-6'>
         {% if object.imagen %}
         <img src="{{ object.imagen.crop.160x160 }}" class='img-circle' />
         {% endif %}
  
     </div> <!-- col-lg-2 -->
-    <div class='col-lg-8' style='text-align: justify;'>
+    <div class='col-lg-8 col-xs-12' style='text-align: justify;'>
        <div class="heading-section" style='margin-top: 1em;'><h1>{{ object }}
            </h1> </div>
 
@@ -29,15 +29,15 @@
 
     </div> <!-- col-lg-8 -->
 {% if object.libros %}
-    <div class='col-lg-10 col-lg-offset-2' style='margin-top: 2em;'>
+    <div class='col-lg-10 col-lg-offset-2 col-xs-12' style='margin-top: 2em;'>
         <div class="heading-section" style='margin: 0 0 30px 0;'><h3 style='margin: 0; color: rgba(0,0,0,0.8);'>Libros del autor/a</h3> </div>
     </div>
-    <div class='col-lg-12'>
+    <div class='col-lg-12 col-xs-12'>
         <div class="owl-carousel libros">
         {% for libro in object.libros %}
             <div class="item">
                 <a href="{% url "libro" libro.id %}">
-					<div style='height: 270px;'><img src="{{ libro.imagen.url }}" alt="{{ libro }}"></div>
+					<div class='owl-imagen'><img src="{{ libro.imagen.url }}" alt="{{ libro }}"></div>
                     <div class="desc">
                         <b>{{ libro.autor }}</b>
                         <p>{{ libro.titulo }}</p>
@@ -51,10 +51,10 @@
 {% endif %}
 
 {% if notas %}
-    <div class='col-lg-10 col-lg-offset-2' style='margin-top: 2em;'>
+    <div class='col-lg-10 col-lg-offset-2 col-xs-12' style='margin-top: 2em;'>
         <div class="heading-section" style='margin: 0;'><h3 style='margin: 0; color: rgba(0,0,0,0.8);'>Notas sobre el Autor</h3> </div>
     </div>
-    <div class='col-lg-8 col-lg-offset-2' style='padding: 20px;'>
+    <div class='col-lg-8 col-lg-offset-2 col-xs-12' style='padding: 20px;'>
     {% for i in notas %}
         <div style='background: #F5F5E6; padding: 10px;'>
             <a href="{% url "nota" i.id %}">
@@ -75,6 +75,18 @@
 
 {% block "style" %}
 <style>
+
+@media (min-width: 1024px) {
+    .owl-imagen {
+        height: 270px;
+    }
+}
+@media screen and (max-width: 768px) {
+
+    .owl-imagen {
+        height: 180px;
+    }
+}
     .heading-section {
         margin-top: 1em;
     }
@@ -109,7 +121,25 @@ $('.libros').owlCarousel({
     navText: [
         "<i class='icon-chevron-left owl-direction'></i>",
         "<i class='icon-chevron-right owl-direction'></i>"
-    ]
+    ],
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:3,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+
+
 })
 </script>
 {% endblock %}

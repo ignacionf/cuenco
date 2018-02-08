@@ -29,9 +29,9 @@
 				<div class="item">
                     <a href="{% url "libro" n.id %}">
 {% if n.imagen %}
-					    <div style='height: 270px;'><img src="{{ n.imagen.url }}" alt="{{ n }}"></div>
+					    <div class='owl-imagen'><img src="{{ n.imagen.url }}" alt="{{ n }}"></div>
 {% else %}
-					    <div style='height: 270px;'><img src="http://via.placeholder.com/160x232?text={{ n.titulo }}" alt="{{ n }}"></div>
+					    <div class='owl-imagen'><img src="http://via.placeholder.com/160x232?text={{ n.titulo }}" alt="{{ n }}"></div>
 {% endif %}
                         <div class="desc">
                             {{ n.get_autores }}
@@ -55,9 +55,9 @@
 					<!-- <a href="#" class="image-popup"> -->
                     <a href="{% url "libro" n.id %}">
 {% if n.imagen %}
-					    <div style='height: 270px;'><img src="{{ n.imagen.url }}" alt="{{ n }}"></div>
+					    <div class='owl-imagen'><img src="{{ n.imagen.url }}" alt="{{ n }}"></div>
 {% else %}
-					    <div style='height: 270px;'><img src="http://via.placeholder.com/160x232?text={{ n.titulo }}" alt="{{ n }}"></div>
+					    <div class='owl-imagen'><img src="http://via.placeholder.com/160x232?text={{ n.titulo }}" alt="{{ n }}"></div>
 {% endif %}
                         <div class="desc">
                             {{ n.get_autores }}
@@ -113,7 +113,7 @@
                     </span>
                 </div><!-- /input-group -->
             </div>
-            <div class='col-md-4 text-right'>
+            <div class='col-md-4 social-icons'>
                 <p class="fh5co-social-icons" style='font-size: 40px;'>
                     <a href="http://www.twitter.com/cuencodeplata"><i class="icon-twitter-with-circle"></i></a>
                     <a href="https://www.facebook.com/cuencodeplata/"><i class="icon-facebook-with-circle"></i></a>
@@ -147,6 +147,28 @@ h1, h2, h3, h4 {
 .heading-section {
     margin-bottom: 1.5em;
 }
+@media (min-width: 1024px) {
+    
+    .owl-imagen {
+        height: 270px;
+    }
+
+    .social-icons {
+        text-align: right;
+    }
+}
+@media screen and (max-width: 768px) {
+
+    .owl-imagen {
+        height: 165px;
+    }
+    .social-icons {
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+
 </style>
 {% endblock %}
 
@@ -168,7 +190,7 @@ $('.novedades').owlCarousel({
     responsiveClass:true,
     responsive:{
         0:{
-            items:1,
+            items:3,
             nav:true
         },
         600:{
@@ -197,7 +219,7 @@ $('.recomendados').owlCarousel({
     responsiveClass:true,
     responsive:{
         0:{
-            items:1,
+            items:3,
             nav:true
         },
         600:{

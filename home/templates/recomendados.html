@@ -8,15 +8,15 @@
 <div class="heading-section text-center"><h2>Recomendados</h2></div>
 
 <div class="row">
-<div class='col-md-12'>
+<div class='col-lg-12'>
 {% for i in libros %}
 <a href="{% url "libro" i.id %}">
-    <div class='col-md-6' style='margin-bottom: 30px; height: 222px;'>
+    <div class='col-lg-6' style='margin-bottom: 30px; height: 222px;'>
         {% if i.imagen %}
-        <div class='col-md-5 text-center'>
+        <div class='col-lg-5 col-xs-5 text-center'>
             <img src='{{ i.imagen.url }}' style='width: 80%;' />
         </div>
-        <div class='col-md-7' style='padding: 0;'>
+        <div class='col-lg-7 col-xs-7' style='padding: 0;'>
             <div style='font-size: 1em; height: 220px;;'>
                 <div style='font-size: 1.2em;'>{{ i.titulo}}</div>
                 {% for autor in i.autores.all %}
@@ -36,7 +36,7 @@
 </div> <!-- row -->
 </div> <!-- row -->
 {% if is_paginated %}
-<div class='col-md-12 text-center'>
+<div class='col-lg-12 text-center'>
  <ul class="paginado">
  <!-- <ul class="pagination pagination-sm"> -->
     {% if page_obj.has_previous %}
@@ -59,7 +59,7 @@
   </ul>
 </div>
 {% endif %}
-<div class='col-md-12'>&nbsp;</div>
+<div class='col-lg-12'>&nbsp;</div>
 
 
 {% endblock %}
