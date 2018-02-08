@@ -4,12 +4,13 @@
 {% block title %} | {% if coleccion %}Colección {{ coleccion.nombre}}{% else %}{{ nombre|title }}{%endif %}{% endblock %}
 {% block "content" %}
 
+<div class='rowmain'>
 {% if coleccion %}
     <div class="heading-section"><h1>{{ coleccion.nombre}}</h1></div>
     {% if coleccion.texto %}
 
     <div style='width: 200px; margin: auto;  margin-top: 20px; border-bottom: 1px solid rgba(0,0,0,0.2);'></div>
-    <div style='width: 500px; margin: 20px auto;'>
+    <div class="texto">
     {% autoescape off %}
     {{ coleccion.texto}}
     {% endautoescape %}
@@ -106,6 +107,7 @@
     <div class='col-lg-12'>&nbsp;</div>
 
 </div> <!-- row -->
+</div> <!-- rowmain -->
 
 {% endblock %}
 
@@ -129,6 +131,11 @@
 .autor-link:hover{
     opacity: 0.3;
 }
+
+.texto {
+    width: 500px;
+    margin: 20px auto;
+}
 @media (min-width: 1024px) {
     
     .col-libro {
@@ -143,6 +150,12 @@
     }
 }
 @media screen and (max-width: 768px) {
+    .texto {
+        width: 90%;
+    }
+    .rowmain {
+        padding: 0 20px;
+    }
     .row-autores {
         margin-bottom: 50px;
     }
