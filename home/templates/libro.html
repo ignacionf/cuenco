@@ -5,19 +5,27 @@
 {% block "content" %}
 
 <div class='row'>
-    <div class="col-lg-10 col-lg-offset-1">
-        <div class='col-lg-4' style='padding-top: 20px;'>
+    <div class="col-lg-10 col-lg-offset-1 col-xs-12">
+        <div class='col-lg-4 col-xs-12' style='padding-top: 20px;'>
     {% if object.imagen %}
-            <div class='col-lg-12'><img src='{{ object.imagen.url }}' style='width: 100%;' /></div>
-    {% endif %}
-            <div class='col-lg-12 social'>
+            <div class='col-lg-12 col-xs-5'>
+                <img src='{{ object.imagen.url }}' style='width: 100%;' />
+                <div class='col-lg-12 social col-xs-12'>
+                    <a href="javascript:window.print()"><i class='icon-printer2'></i></a>
+                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ object.get_absolute_url|escape }}&src=sdkpreparse"><i class="icon-facebook2"></i></a>
+                    <a href="https://twitter.com/intent/tweet?hashtags=elcuencodeplata&original_referer={{ object.get_absolute_url|escape }}&ref_src=twsrc%5Etfw&related=twitterapi%2Ctwitter&text={{ object.titulo }}&tw_p=tweetbutton&url={{ object.get_absolute_url|escape }}&via=cuencodeplata" target="_blank"><i class="icon-twitter2"></i></a>
+                </div>
+            </div>
+    {% else %}
+            <div class='col-lg-12 social col-xs-1'>
                 <a href="javascript:window.print()"><i class='icon-printer2'></i></a>
                 <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ object.get_absolute_url|escape }}&src=sdkpreparse"><i class="icon-facebook2"></i></a>
                 <a href="https://twitter.com/intent/tweet?hashtags=elcuencodeplata&original_referer={{ object.get_absolute_url|escape }}&ref_src=twsrc%5Etfw&related=twitterapi%2Ctwitter&text={{ object.titulo }}&tw_p=tweetbutton&url={{ object.get_absolute_url|escape }}&via=cuencodeplata" target="_blank"><i class="icon-twitter2"></i></a>
             </div>
+    {% endif %}
 
     
-            <div class='col-lg-12'  style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
+            <div class='col-lg-12 col-xs-7 col-info'>
 {% for x in xcolecciones %}
     {% if x.id != 13 %}
                 <div><strong>Colección: </strong><a href="{% url "colecciones" x.slug %}">{{ x}}</a></div>
@@ -43,7 +51,7 @@
             {% endif %}
         </div> <!-- col-lg-4-->
     
-        <div class='col-lg-8'>
+        <div class='col-lg-8 col-xs-12'>
             {% for autor in object.autores.all %}
             <div><h2><a href="{% url "autor" autor.id %}">{{ autor}}</a></h2></div>
             {% endfor %}
@@ -61,6 +69,7 @@
                 {% endautoescape %}
             </div>
     
+{% if notas %}
             <div class="heading-section" style='margin: 40px 0 30px 0;'><h3 style='margin: 0; color: rgba(0,0,0,0.8);'>En los medios</h3> </div>
     
             {% for nota in notas %}
@@ -72,18 +81,21 @@
                 </a>
             </div>
             {% endfor %}
+{% endif %}
         </div> <!-- col-lg-8-->
     </div> <!-- col-lg-10 -->
 {% if recomendados %}
-    <div class='col-lg-10 col-lg-offset-1' style='margin-top: 4em;'>
+    <div class='col-lg-10 col-lg-offset-1 col-xs-12' style='margin-top: 4em;'>
         <div class="heading-section" style='margin: 0;'><h3 style='margin: 0; color: rgba(0,0,0,0.8);'>Libros del autor/a</h3> </div>
     </div>
-    <div class='col-lg-10 col-lg-offset-1' style='margin-top: 2em;'>
+    <div class='col-lg-10 col-lg-offset-1 col-xs-12' style='margin-top: 2em;'>
         <div class="owl-carousel libros">
         {% for libro in recomendados %}
             <div class="item">
                 <a href="{% url "libro" libro.id %}">
-					<div style='height: 270px;'><img src="{{ libro.imagen.url }}" alt="{{ libro }}"></div>
+                    {% if libro.imagen %}
+					<div style='owl-imagen'><img src="{{ libro.imagen.url }}" alt="{{ libro }}"></div>
+                    {% endif %}
                     <div class="desc">
                         <b>{{ libro.get_autores }}</b>
                         <p>{{ libro.titulo }}</p>
@@ -97,7 +109,7 @@
 {% endif %}
 
 
-<div class='col-lg-12'>&nbsp;</div>
+<div class='col-lg-12 col-xs-12'>&nbsp;</div>
 
 </div> <!-- row -->
 
@@ -132,6 +144,32 @@ h1, h2, h3, h4 {
 .nota strong {
     font-size: 1em;
 }
+
+.col-info {
+    background: #E6F0E6;
+    font-size: .9em;
+}
+@media (min-width: 1024px) {
+    .col-info {
+        margin-top: 30px;
+        padding: 20px;
+    }
+    .owl-imagen {
+        height: 270px;
+    }
+}
+@media screen and (max-width: 768px) {
+
+    .owl-imagen {
+        height: 160px;
+    }
+    .col-info {
+        margin-top: 0;
+        padding: 20px;
+    }
+}
+
+
 </style>
 {% endblock %}
 
@@ -161,7 +199,25 @@ $('.libros').owlCarousel({
     navText: [
         "<i class='icon-chevron-left owl-direction'></i>",
         "<i class='icon-chevron-right owl-direction'></i>"
-    ]
+    ],
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:3,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+
+
 })
 
 </script>
