@@ -37,7 +37,7 @@ class Autor(Model):
         return self.apellido
 
     def get_absolute_url(self):
-        return "https://www.elcuencodeplata.com.ar%s" % reverse("autor", args=[self.id])
+        return reverse("autor", args=[self.id])
 
     @property
     def libros(self):
@@ -74,7 +74,7 @@ class Coleccion(Model):
         return self.libro_set.all()[0:10]
 
     def get_absolute_url(self):
-        return "https://www.elcuencodeplata.com.ar%s" % reverse("colecciones", args=[self.slug])
+        return reverse("colecciones", args=[self.slug])
 
 
 FORMATOS = (
@@ -113,7 +113,7 @@ class Libro(Model):
         ordering = ['-fecha','-id',]
 
     def get_absolute_url(self):
-        return "https://www.elcuencodeplata.com.ar%s" % reverse("libro", args=[self.id])
+        return reverse("libro", args=[self.id])
 
     def get_autores(self):
         return " ".join([str(a) for a in self.autores.all()])
@@ -203,7 +203,7 @@ class Nota(Model):
         return self.titulo
 
     def get_absolute_url(self):
-        return "https://www.elcuencodeplata.com.ar%s" % reverse("nota", args=[self.id])
+        return reverse("nota", args=[self.id])
 
 class Contacto(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, editable=False)
