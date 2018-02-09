@@ -73,6 +73,9 @@ class Coleccion(Model):
     def get_10_libros(self):
         return self.libro_set.all()[0:10]
 
+    def get_absolute_url(self):
+        return "https://www.elcuencodeplata.com.ar%s" % reverse("colecciones", args=[self.slug])
+
 
 FORMATOS = (
     ("15,5x23", "155mm*230mm"),

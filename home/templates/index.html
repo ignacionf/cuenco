@@ -36,11 +36,22 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+    {% if not DEBUG %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113878835-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-113878835-1');
+    </script>
+    {% endif %}
 
     <style>
         #colecciones ul.dropdown-menu {
             opacity: 0.9;
-            width: 440px;
+            width: 350px;
         }
         #colecciones ul.dropdown-menu > li {
             width: 40%;
@@ -193,12 +204,12 @@
 					<li id="autores"><a href="{% url "autores" %}">Autores</a></li>
 					<li id="colecciones" class='dropdown'>
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Colecciones
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu" style='border-radius: 0;'>
                         {% for c in colecciones %}
-                          <li><a href="{% url "colecciones" c.slug %}"><span>.</span> {{ c.nombre }}</a></li>
+                          <li style='{% cycle '' 'padding-left: 15px;' %}'><a href="{% url "colecciones" c.slug %}"><span>.</span> {{ c.nombre }}</a></li>
                         {% endfor %}
                           <li role="separator" class="divider" style='width: 92%;'></li>
-                          <li style="width: 78%; font-size: 1em; text-align: right;"><a href="{% url "colecciones" %}">Ver todas las colecciones</a></li>
+                          <li style="width: 90%; font-size: 1em; text-align: right;"><a href="{% url "colecciones" %}">Ver todas las colecciones</a></li>
 
                         </ul>
                     </li>
