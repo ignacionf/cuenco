@@ -60,6 +60,8 @@ class Coleccion(Model):
     orden = models.PositiveSmallIntegerField("Orden", default=99)
     imagen = VersatileImageField('Imagen', upload_to="imagenes/coleccion/", blank=True, null=True)
 
+    autores = models.ManyToManyField(Autor, related_name="coleccion_autores")
+
     class Meta:
         verbose_name = "Colección"
         verbose_name_plural = "Colecciones"

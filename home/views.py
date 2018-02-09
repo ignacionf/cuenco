@@ -51,10 +51,7 @@ class ColeccionesView(ListView):
         context = super().get_context_data(**kwargs)
         try:
             context['coleccion']=self.coleccion
-            autores_ids=sorted(list(self.get_queryset().values("autores").annotate(cantidad=Count('autores')).order_by("autores")),
-                     key=lambda k: k['cantidad'], reverse=True)[0:6]
-    
-            context['autores']=[Autor.objects.get(pk=x['autores']) for x in autores_ids]
+            context['autores']=self.coleccion.autores.all()
             context['autores_len']=len(context['autores'])
         except AttributeError: 
             pass
