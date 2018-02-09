@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'home',
     'django_extensions',
     'tinymce',
+    'robots',
 ]
 
 MIDDLEWARE = [
