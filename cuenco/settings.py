@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sitemaps',
+    'django.contrib.sites',
     'haystack',
 	'isbn_field',
     'versatileimagefield',
@@ -168,6 +169,8 @@ CACHES = {
         'LOCATION': '127.0.0.1:11211',
     }
 }
+
+SITE_ID = 1
 
 # configuraciones por fuera de git
 try:

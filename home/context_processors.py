@@ -2,11 +2,14 @@ from .models import Coleccion, Autor, Libro
 from django.core.cache import cache
 
 from django.conf import settings
+from django.contrib.sites.models import Site
+
 
 def colecciones(request):
     return {
         'colecciones': Coleccion.objects.filter(orden__lt=9).order_by("orden"),
         "DEBUG": settings.DEBUG,
+        "site": Site.objects.get_current(),
     }
 
 def keywords(request):

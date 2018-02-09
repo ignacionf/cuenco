@@ -3,7 +3,6 @@
 
 {% block title %} | {{ object }} {% endblock %}
 {% block "content" %}
-
 <div class='row rowmain'>
     <div class="col-lg-10 col-lg-offset-1 col-xs-12">
         <div class='col-lg-4 col-xs-12' style='padding-top: 20px;'>
@@ -12,15 +11,15 @@
                 <img src='{{ object.imagen.url }}' />
                 <div class='col-lg-12 social col-xs-12'>
                     <a href="javascript:window.print()"><i class='icon-printer2'></i></a>
-                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ object.get_absolute_url|escape }}&src=sdkpreparse"><i class="icon-facebook2"></i></a>
-                    <a href="https://twitter.com/intent/tweet?hashtags=elcuencodeplata&original_referer={{ object.get_absolute_url|escape }}&ref_src=twsrc%5Etfw&related=twitterapi%2Ctwitter&text={{ object.titulo }}&tw_p=tweetbutton&url={{ object.get_absolute_url|escape }}&via=cuencodeplata" target="_blank"><i class="icon-twitter2"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{site}}{{ object.get_absolute_url|escape }}&src=sdkpreparse"><i class="icon-facebook2"></i></a>
+                    <a href="https://twitter.com/intent/tweet?hashtags=elcuencodeplata&original_referer={{ site }}{{ object.get_absolute_url|escape }}&ref_src=twsrc%5Etfw&related=twitterapi%2Ctwitter&text={{ object.titulo }}&tw_p=tweetbutton&url={{ site }}{{ object.get_absolute_url|escape }}&via=cuencodeplata" target="_blank"><i class="icon-twitter2"></i></a>
                 </div>
             </div>
     {% else %}
             <div class='col-lg-12 social col-xs-1'>
                 <a href="javascript:window.print()"><i class='icon-printer2'></i></a>
-                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ object.get_absolute_url|escape }}&src=sdkpreparse"><i class="icon-facebook2"></i></a>
-                <a href="https://twitter.com/intent/tweet?hashtags=elcuencodeplata&original_referer={{ object.get_absolute_url|escape }}&ref_src=twsrc%5Etfw&related=twitterapi%2Ctwitter&text={{ object.titulo }}&tw_p=tweetbutton&url={{ object.get_absolute_url|escape }}&via=cuencodeplata" target="_blank"><i class="icon-twitter2"></i></a>
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site }}{{ object.get_absolute_url|escape }}&src=sdkpreparse"><i class="icon-facebook2"></i></a>
+                <a href="https://twitter.com/intent/tweet?hashtags=elcuencodeplata&original_referer={{ site }}{{ object.get_absolute_url|escape }}&ref_src=twsrc%5Etfw&related=twitterapi%2Ctwitter&text={{ object.titulo }}&tw_p=tweetbutton&url={{ site }}{{ object.get_absolute_url|escape }}&via=cuencodeplata" target="_blank"><i class="icon-twitter2"></i></a>
             </div>
     {% endif %}
 

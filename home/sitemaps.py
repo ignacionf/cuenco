@@ -2,6 +2,7 @@ from django.contrib.sitemaps import Sitemap
 from .models import *
 
 class AutorSitemap(Sitemap):
+    protocol = "https"
     changefreq = "never"
     priority = 0.5
 
