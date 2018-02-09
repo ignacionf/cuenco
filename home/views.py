@@ -51,7 +51,7 @@ class ColeccionesView(ListView):
         context = super().get_context_data(**kwargs)
         try:
             context['coleccion']=self.coleccion
-            context['autores']=self.coleccion.autores.all()
+            context['autores']=self.coleccion.autores.all()[0:6]
             context['autores_len']=len(context['autores'])
         except AttributeError: 
             pass
