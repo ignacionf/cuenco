@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.text import slugify
 
 from django.contrib.auth.models import User
 from versatileimagefield.fields import VersatileImageField
@@ -37,7 +38,7 @@ class Autor(Model):
         return self.apellido
 
     def get_absolute_url(self):
-        return reverse("autor", args=[self.id])
+        return reverse("autor", args=[self.id, slugify(str(self))])
 
     @property
     def libros(self):
@@ -113,7 +114,7 @@ class Libro(Model):
         ordering = ['-fecha','-id',]
 
     def get_absolute_url(self):
-        return reverse("libro", args=[self.id])
+        return reverse("libro", args=[self.id, slugify(self.titulo)])
 
     def get_autores(self):
         return " ".join([str(a) for a in self.autores.all()])

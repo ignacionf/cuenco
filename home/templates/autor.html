@@ -36,7 +36,7 @@
         <div class="owl-carousel libros">
         {% for libro in object.libros %}
             <div class="item">
-                <a href="{% url "libro" libro.id %}">
+                <a href="{{ libro.get_absolute_url }}">
 					<div class='owl-imagen'><img src="{{ libro.imagen.url }}" alt="{{ libro }}"></div>
                     <div class="desc">
                         <b>{{ libro.autor }}</b>

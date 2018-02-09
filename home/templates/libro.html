@@ -53,7 +53,7 @@
     
         <div class='col-lg-8 col-xs-12'>
             {% for autor in object.autores.all %}
-            <div><h2><a href="{% url "autor" autor.id %}">{{ autor}}</a></h2></div>
+            <div><h2><a href="{{  autor.get_absolute_url }}">{{ autor}}</a></h2></div>
             {% endfor %}
             <div><h2>{{ object.titulo}}{% if object.subtitulo %}<br /><small>{{ object.subtitulo}}</small>{% endif %}</h2></div>
             {% if object.prologo %}
@@ -92,7 +92,7 @@
         <div class="owl-carousel libros">
         {% for libro in recomendados %}
             <div class="item">
-                <a href="{% url "libro" libro.id %}">
+                <a href="{{ libro.get_absolute_url }}">
                     {% if libro.imagen %}
 					<div style='owl-imagen'><img src="{{ libro.imagen.url }}" alt="{{ libro }}"></div>
                     {% endif %}

@@ -9,7 +9,7 @@
 <div class="row">
 {% for autor in object_list %}
     <div class='col-lg-2 {{ autor.apellido.0 }} col-xs-4' style='height: 250px; text-align: center;'>
-        <a href="{% url "autor" autor.id %}" class='autor-link'>
+        <a href="{{ autor.get_absolute_url }}" class='autor-link'>
         {% if autor.imagen %}<img src="{{ autor.imagen.crop.200x200 }}" class='img-circle' style='width: 100%; max-height: 200px;' />{% endif %}
 
         <p style='margin-top: 20px;'>{{ autor }}</p>

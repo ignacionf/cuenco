@@ -27,7 +27,7 @@
 			<div class="owl-carousel novedades" style='margin-bottom: .5em;'>
 {% for n in novedades %}
 				<div class="item">
-                    <a href="{% url "libro" n.id %}">
+                    <a href="{{ n.get_absolute_url }}">
 {% if n.imagen %}
 					    <div class='owl-imagen'><img src="{{ n.imagen.url }}" alt="{{ n }}"></div>
 {% else %}
@@ -53,7 +53,7 @@
 {% for n in recomendados %}
 				<div class="item">
 					<!-- <a href="#" class="image-popup"> -->
-                    <a href="{% url "libro" n.id %}">
+                    <a href="{{ n.get_absolute_url }}">
 {% if n.imagen %}
 					    <div class='owl-imagen'><img src="{{ n.imagen.url }}" alt="{{ n }}"></div>
 {% else %}
