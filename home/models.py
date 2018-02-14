@@ -88,6 +88,7 @@ FORMATOS = (
 
 EDICIONES = ((x, "%s°" %x) for x in range(1,51)) 
 
+from random import randint
 def libro_filename(instance, filename):
     ext = filename.split(".")[-1]
     if instance.isbn:
@@ -95,7 +96,7 @@ def libro_filename(instance, filename):
     else:
         name=slugify(instance.titulo)
 
-    return 'libros/{0}/{1}.{2}'.format(instance.id, name, ext)
+    return 'libros_new/{0}/{1}/{2}.{3}'.format(instance.id, randint(1000, 9999), name, ext)
 
 class Libro(Model):
     autores = models.ManyToManyField(Autor, related_name="autores_de_libros")
