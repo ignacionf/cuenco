@@ -32,7 +32,7 @@ class ColeccionAdmin(admin.ModelAdmin):
 class LibroAdmin(admin.ModelAdmin):
     date_hierarchy = 'created_at'
     search_fields = ("titulo", "isbn")#, "autor__nombre", "autor__apellido")
-    list_filter = ("recomendado",  "coleccion", "user",)
+    list_filter = ("recomendado", "disponible", "coleccion", "user",)
     list_display = ("titulo", "imagen_html_sized", "get_autores", "isbn", "recomendado", "disponible", "fecha", "updated_at")
     readonly_fields = ['imagen_html']
     autocomplete_fields = ['autores']
