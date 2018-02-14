@@ -13,6 +13,10 @@
                     <a href="javascript:window.print()"><i class='icon-printer2'></i></a>
                     <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://{{site}}{{ object.get_absolute_url|escape }}&src=sdkpreparse"><i class="icon-facebook2"></i></a>
                     <a href="https://twitter.com/intent/tweet?hashtags=elcuencodeplata&original_referer=https://{{ site }}{{ object.get_absolute_url|escape }}&ref_src=twsrc%5Etfw&related=twitterapi%2Ctwitter&text={{ object.titulo }}&tw_p=tweetbutton&url=https://{{ site }}{{ object.get_absolute_url|escape }}&via=cuencodeplata" target="_blank"><i class="icon-twitter2"></i></a>
+                {% if not object.disponible %}
+                <a href="#" title='No disponible'><i class="glyphicon glyphicon-remove-circle"></i></a>
+                {% endif %}
+ 
                 </div>
             </div>
     {% else %}
@@ -20,6 +24,10 @@
                 <a href="javascript:window.print()"><i class='icon-printer2'></i></a>
                 <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://{{ site }}{{ object.get_absolute_url|escape }}&src=sdkpreparse"><i class="icon-facebook2"></i></a>
                 <a href="https://twitter.com/intent/tweet?hashtags=elcuencodeplata&original_referer=https://{{ site }}{{ object.get_absolute_url|escape }}&ref_src=twsrc%5Etfw&related=twitterapi%2Ctwitter&text={{ object.titulo }}&tw_p=tweetbutton&url=https://{{ site }}{{ object.get_absolute_url|escape }}&via=cuencodeplata" target="_blank"><i class="icon-twitter2"></i></a>
+
+                {% if not object.disponible %}
+                <a href="#" title='No disponible'><i class="glyphicon glyphicon-remove-circle"></i></a>
+                {% endif %}
             </div>
     {% endif %}
 
@@ -44,7 +52,7 @@
                 <a href="{{ object.pdf.url }}"{%comment%} download="Fragmento {{ object.titulo }}.pdf"{%endcomment %}><i class="glyphicon glyphicon-eye-open" aria-hidden="true"></i> Lea un fragmento</a>
             </div>
             {% endif %}
-            {% if object.carrito %}
+            {% if object.carrito and object.disponible %}
             <div class='col-lg-12 col-xs-6 col-resp'  style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
                 <a href="{{ object.carrito }}" target="_blank"><i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i> Ir a tienda</a>
             </div>
@@ -77,7 +85,7 @@
                 <a href="{% url "nota" nota.id %}" class='nota'>
                 <span>{{ nota.medio}}</span>
                     {% if nota.firma %} | <span class='autor'>{{ nota.firma}}</span>{% endif %}<br />
-                <strong>{{ nota.titulo }}</strong>
+                {{ nota.titulo }}
                 </a>
             </div>
             {% endfor %}
@@ -97,7 +105,7 @@
 					<div style='owl-imagen'><img src="{{ libro.imagen.url }}" alt="{{ libro }}"></div>
                     {% endif %}
                     <div class="desc">
-                        <b>{{ libro.get_autores }}</b>
+                        {{ libro.get_autores }}
                         <p>{{ libro.titulo }}</p>
                     </div>
                 </a>

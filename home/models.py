@@ -88,13 +88,22 @@ FORMATOS = (
 
 EDICIONES = ((x, "%s°" %x) for x in range(1,51)) 
 
+def libro_filename(instance, filename):
+    ext = filename.split(".")[-1]
+    if instance.isbn:
+        name=instance.isbn
+    else:
+        name=slugify(instance.titulo)
+
+    return 'libros/{0}/{1}.{2}'.format(instance.id, name, ext)
+
 class Libro(Model):
     autores = models.ManyToManyField(Autor, related_name="autores_de_libros")
     coleccion = models.ManyToManyField(Coleccion)
     titulo = models.CharField("Titulo", max_length=500)
     isbn = ISBNField("ISBN", blank=True, null=True)
     texto = tinymce_models.HTMLField("Texto")
-    imagen = VersatileImageField('Foto', upload_to="libro/", blank=True, null=True)
+    imagen = VersatileImageField('Foto', upload_to=libro_filename, blank=True, null=True)
     fecha = models.DateField("Fecha publicación", null=True, blank=True)
 
     descripcion = models.CharField("Descripción (250 chars)", max_length=250, blank=True, null=True)
@@ -102,6 +111,7 @@ class Libro(Model):
     traductor = models.CharField("Traductor", max_length=500, blank=True, null=True)
     subtitulo = models.CharField("Sub Titulo", max_length=500, blank=True, null=True)
     recomendado = models.BooleanField("Recomendado", default=False)
+    disponible = models.BooleanField("Disponible", default=True)
 
     paginas = models.PositiveIntegerField("Páginas", blank=True, null=True)
     formato = models.CharField("Formato", max_length=20, choices=FORMATOS, blank=True, null=True)
