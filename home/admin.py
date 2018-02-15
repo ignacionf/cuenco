@@ -40,6 +40,24 @@ class LibroAdmin(admin.ModelAdmin):
                 "traductor", "subtitulo", "paginas", "formato", "edicion", "carrito",
                 "autores", "isbn", "recomendado", "fecha"])]
 
+    fieldsets = (
+        (None, {
+            "fields": ('titulo', 'autores', 'coleccion', 'isbn', 'texto') 
+        }),
+        ("Campos opcionales", {
+            "fields": ('fecha', 'descripcion', 'subtitulo', 'carrito', 'recomendado', 'disponible') 
+        }),
+        ("campos variables", {
+            "fields": (('campo1', 'prologo'), ('campo2', 'traductor'), ('campo3', 'campo3contenido')) 
+        }),
+        ("datos del libro", {
+            "fields": ('isbn', 'paginas', 'formato', 'edicion') 
+        }),
+        ("Archivos", {
+            "fields": ('imagen', 'pdf',) 
+        }),
+    )
+
     def get_autores(self, obj):
         return " ".join([str(a) for a in obj.autores.all()])
 
