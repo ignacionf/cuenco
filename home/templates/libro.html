@@ -39,7 +39,9 @@
     {% endif %}
 {%endfor %}
                 <div><strong>Publicado: </strong>{{ object.fecha|date:"F Y"}}</div>
+                {% if object.isbn %}
                 <div><strong>ISBN: </strong>{{ object.fISBN }}</div>
+                {% endif %}
     
                 {% if object.edicion %}<div><strong>Edición: </strong>{{ object.get_edicion_display }}</div>{% endif %}
                 {% if object.formato %}<div><strong>Formato: </strong>{{ object.formato}}</div>{% endif %}
