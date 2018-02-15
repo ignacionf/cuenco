@@ -128,7 +128,6 @@ class Libro(Model):
     prologo = models.CharField("Contenido Campo 1", max_length=500, blank=True, null=True)
     campo2 = models.PositiveSmallIntegerField("Campo 2", default=1, choices=CAMPOS)
     traductor = models.CharField("Contenido Campo 2", max_length=500, blank=True, null=True)
-
     campo3 = models.PositiveSmallIntegerField("Campo 3", default=1, choices=CAMPOS)
     campo3contenido = models.CharField("Contenido Campo 3", max_length=500, blank=True, null=True)
 
