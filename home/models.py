@@ -239,6 +239,11 @@ class Nota(Model):
     def get_absolute_url(self):
         return reverse("nota", args=[self.id])
 
+class Newletter(models.Model):
+    created_at = models.DateTimeField(auto_now_add=True, editable=False)
+    updated_at = models.DateTimeField(auto_now=True, editable=False)
+    email = models.EmailField("Email")
+ 
 class Contacto(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, editable=False)
     updated_at = models.DateTimeField(auto_now=True, editable=False)

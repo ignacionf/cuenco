@@ -107,7 +107,7 @@
         <div class='row'>
             <div class='col-md-8' style='padding-top: 10px;'>
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Ingresa tu email">
+                    <input type="text" class="form-control" placeholder="Ingrese su email">
                     <span class="input-group-btn">
                         <button class="btn btn-default" type="button">Recibir novedades</button>
                     </span>
@@ -123,6 +123,29 @@
             </div>
         </div>
     </div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="modalNewsletter">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p><h2>Bienvenidos a nuestra nueva pagina web.</h2></p>
+        <p>Si quiere recibir nuestras novedades</p>
+        <div class="input-group">
+             <input type="text" class="form-control" placeholder="Ingrese su email">
+             <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">Recibir novedades</button>
+             </span>
+        </div><!-- /input-group -->
+ 
+      </div>
+{% comment %}
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Gracias!</button>
+      </div>
+{% endcomment %}
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 {% endblock %}
 {% block "style" %}
@@ -168,13 +191,38 @@ h1, h2, h3, h4 {
     }
 }
 
+.modal {
+  text-align: center;
+}
 
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-content {
+    border-radius: 0;
+}
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+.modal-body h2 {
+    color: rgba(240,87,54, 0.8);
+}
 </style>
 {% endblock %}
 
 
 {% block "js" %}
 <script>
+$('#modalNewsletter').modal()
+
 $("#home > a").addClass("active");
 $('.novedades').owlCarousel({
     dots: false,
