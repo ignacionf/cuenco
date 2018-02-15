@@ -98,6 +98,22 @@ def libro_filename(instance, filename):
 
     return 'libros/{0}/{1}/{2}.{3}'.format(instance.id, randint(1000, 9999), name, ext)
 
+CAMPOS = (
+    (0,'Seleccione uno'),
+    (1,'Traducción de:'),
+    (2,'Prólogo de:'),
+    (3,'Edición de:'),
+    (4,'Compilación de:'),
+    (5,'Traducción y notas:'),
+    (6,'Prólogo y traducción de:'),
+    (7,'Prólogo, traducción y notas de:'),
+    (8,'Edición y traducción de:'),
+    (9,'Edición, traducción y prólogo de:'),
+    (10,'Compilación y traducción de:'),
+    (11,'Posfacio de:'),
+    (12,'Ilustraciones de:'),
+)
+
 class Libro(Model):
     autores = models.ManyToManyField(Autor, related_name="autores_de_libros")
     coleccion = models.ManyToManyField(Coleccion)
@@ -107,9 +123,15 @@ class Libro(Model):
     imagen = VersatileImageField('Foto', upload_to=libro_filename, blank=True, null=True)
     fecha = models.DateField("Fecha publicación", null=True, blank=True)
 
+    campo1 = models.PositiveSmallIntegerField("Campo 1", default=2, choices=CAMPOS)
+    prologo = models.CharField("Contenido Campo 1", max_length=500, blank=True, null=True)
+    campo2 = models.PositiveSmallIntegerField("Campo 2", default=1, choices=CAMPOS)
+    traductor = models.CharField("Contenido Campo 2", max_length=500, blank=True, null=True)
+
+    campo3 = models.PositiveSmallIntegerField("Campo 3", default=1, choices=CAMPOS)
+    campo3contenido = models.CharField("Contenido Campo 3", max_length=500, blank=True, null=True)
+
     descripcion = models.CharField("Descripción (250 chars)", max_length=250, blank=True, null=True)
-    prologo = models.CharField("Prologo de... ", max_length=500, blank=True, null=True)
-    traductor = models.CharField("Traductor", max_length=500, blank=True, null=True)
     subtitulo = models.CharField("Sub Titulo", max_length=500, blank=True, null=True)
     recomendado = models.BooleanField("Recomendado", default=False)
     disponible = models.BooleanField("Disponible", default=True)

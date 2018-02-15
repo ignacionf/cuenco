@@ -14,7 +14,7 @@
                     <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://{{site}}{{ object.get_absolute_url|escape }}&src=sdkpreparse"><i class="icon-facebook2"></i></a>
                     <a href="https://twitter.com/intent/tweet?hashtags=elcuencodeplata&original_referer=https://{{ site }}{{ object.get_absolute_url|escape }}&ref_src=twsrc%5Etfw&related=twitterapi%2Ctwitter&text={{ object.titulo }}&tw_p=tweetbutton&url=https://{{ site }}{{ object.get_absolute_url|escape }}&via=cuencodeplata" target="_blank"><i class="icon-twitter2"></i></a>
                 {% if not object.disponible %}
-                <a href="#" title='No disponible'><i class="glyphicon glyphicon-remove-circle"></i></a>
+                <a href="#" title='No disponible' style='color: rgba(255,40,40,0.5);'><i class="glyphicon glyphicon-remove-circle"></i></a>
                 {% endif %}
  
                 </div>
@@ -26,7 +26,7 @@
                 <a href="https://twitter.com/intent/tweet?hashtags=elcuencodeplata&original_referer=https://{{ site }}{{ object.get_absolute_url|escape }}&ref_src=twsrc%5Etfw&related=twitterapi%2Ctwitter&text={{ object.titulo }}&tw_p=tweetbutton&url=https://{{ site }}{{ object.get_absolute_url|escape }}&via=cuencodeplata" target="_blank"><i class="icon-twitter2"></i></a>
 
                 {% if not object.disponible %}
-                <a href="#" title='No disponible'><i class="glyphicon glyphicon-remove-circle"></i></a>
+                <a href="#" title='No disponible' style='color: rgba(255,40,40,0.5);'><i class="glyphicon glyphicon-remove-circle"></i></a>
                 {% endif %}
             </div>
     {% endif %}
@@ -56,6 +56,10 @@
             <div class='col-lg-12 col-xs-6 col-resp'  style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
                 <a href="{{ object.carrito }}" target="_blank"><i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i> Ir a tienda</a>
             </div>
+            {% elif not object.disponible %}
+            <div class='col-lg-12 col-xs-6 col-resp'  style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
+                    No Disponible
+            </div>
             {% endif %}
         </div> <!-- col-lg-4-->
     
@@ -64,11 +68,16 @@
             <div><h2><a href="{{  autor.get_absolute_url }}">{{ autor}}</a></h2></div>
             {% endfor %}
             <div><h2>{{ object.titulo}}{% if object.subtitulo %}<br /><small>{{ object.subtitulo}}</small>{% endif %}</h2></div>
+
             {% if object.prologo %}
-            <div style='margin-top: 1em;'><h4><small>Prologo de </small>{{ object.prologo }}</h4></div>
+            <div style='margin-top: 1em;'><h4><small>{{ object.get_campo1_display }} </small>{{ object.prologo }}</h4></div>
             {% endif %}
             {% if object.traductor %}
-            <div style='margin-top: 1em;'><h4><small>Traducción de </small>{{ object.traductor }}</h4></div>
+            <div style='margin-top: 1em;'><h4><small>{{ object.get_campo2_display }}</small>{{ object.traductor }}</h4></div>
+            {% endif %}
+
+            {% if object.campo3contenido %}
+            <div style='margin-top: 1em;'><h4><small>{{ object.get_campo3_display }}</small>{{ object.campo3contenido }}</h4></div>
             {% endif %}
     
             <div class='text-justify texto'>
