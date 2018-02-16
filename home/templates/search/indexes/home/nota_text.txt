@@ -1,0 +1,19 @@
+{{ object }}
+{{ object.texto }}
+{% if object.libro%}
+{{ object.libro }}
+{{ object.libro.get_autores }}
+{{ object.libro.get_colecciones }}
+{%endif %}
+{% if object.fuente%}
+{{ object.fuente}}
+{%endif %}
+{% if object.medio%}
+{{ object.medio }}
+{%endif %}
+{% if object.subtitulo %}
+{{ object.subtitulo }}
+{%endif %}
+{% if object.fecha%}
+{{ object.fecha }}
+{%endif %}

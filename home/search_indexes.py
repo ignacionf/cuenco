@@ -13,13 +13,13 @@ class AutorIndex(indexes.SearchIndex, indexes.Indexable):
     def index_queryset(self, using=None):
         """Used when the entire index for model is updated."""
         return self.get_model().objects.all()
-        return self.get_model().objects.filter(created_at__lte=datetime.datetime.now())
 
 class LibroIndex(indexes.SearchIndex, indexes.Indexable):
     text = indexes.CharField(document=True, use_template=True)
     titulo = indexes.CharField(model_attr='titulo')
     isbn = indexes.CharField(model_attr='isbn', null=True)
     autores = indexes.MultiValueField()
+    fecha = indexes.DateField(model_attr='fecha', null=True)
 
     def get_model(self):
         return Libro
@@ -27,8 +27,18 @@ class LibroIndex(indexes.SearchIndex, indexes.Indexable):
     def index_queryset(self, using=None):
         """Used when the entire index for model is updated."""
         return self.get_model().objects.all()
-        return self.get_model().objects.filter(created_at__lte=datetime.datetime.now())
 
     def prepare_autores(self, obj):
         return [p.pk for p in obj.autores.all()]
 
+class NotaIndex(indexes.SearchIndex, indexes.Indexable):
+    text = indexes.CharField(document=True, use_template=True)
+    titulo = indexes.CharField(model_attr='titulo')
+    libro = indexes.CharField(model_attr='libro', null=True)
+
+    def get_model(self):
+        return Nota
+
+    def index_queryset(self, using=None):
+        """Used when the entire index for model is updated."""
+        return self.get_model().objects.filter(publicado=True)
