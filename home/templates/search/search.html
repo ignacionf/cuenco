@@ -4,28 +4,59 @@
 {% block "content" %}
     <div class="heading-section text-center"><h2>Buscador</h2></div>
 
-    <div class='row'>
-        <div class='col-md-8 col-md-offset-2' id='search'>
+    <div class='row row-search'>
+        <div class='col-lg-8 col-lg-offset-2 col-xs-12' id='search'>
             <input type="text" class="form-control" placeholder="Buscar..." name="q" value="{% if query %}{{ query }}{% endif %}">
-        </div> <!-- col-md-6 col-md-offset-1 -->
+        </div> <!-- col-lg-6 col-lg-offset-1 -->
 
-        <div class='col-md-10  col-md-offset-1' style='padding: 2em 0;'>
+        <div class='col-lg-10  col-lg-offset-1 col-xs-12' style='padding: 2em 0;'>
         {% if query %}
             <h3>Resultados</h3>
 
-            {% for result in page.object_list %}
-                <p> {{ result.model_name }}
-                    <a href="{{ result.object.get_absolute_url }}">{{ result.object}}</a>
-                </p>
-            {% empty %}
+            {% if not page.object_list %}
                 <p>No se encontró nada.</p>
-            {% endfor %}
+           {% else%}
+
+                {% for result in page.object_list %}
+                    {% if result.model_name == "autor" %}
+                    <div class='row' style='margin-bottom: 1em;'>
+                        <div class='col-lg-2 col-xs-4'>
+                            <img class='img-circle' src="{{ result.object.imagen.url }}" style='width: 100%;' />
+                        </div>
+                        <div class='col-lg-10 col-xs-8'>
+                            <h3 style='padding-top: 1.5em;'><a href="{{ result.object.get_absolute_url }}">{{ result.object}}</a></h3>
+                        </div>
+                    </div>
+                    {% endif %}
+                {% endfor %}
+
+                {% for result in page.object_list %}
+                    {% if result.model_name == "libro" %}
+                    <div class='row' style='margin-bottom: 1em;'>
+                        <div class='col-lg-2 col-xs-4'>
+                            <img src="{{ result.object.imagen.url }}" style='width: 100%;' />
+                        </div>
+                        <div class='col-lg-10 col-xs-8'>
+                            <h3><a href="{{ result.object.get_absolute_url }}">{{ result.object}}</a></h3>
+                            <span>{{ result.object.get_autores }}</span>
+                            {% if result.object.fecha %}<div>{{ result.object.fecha|date:"F Y"}}</div>{% endif %}
+                            {% if result.object.isbn %}<div>{{ result.object.fISBN}}</div>{% endif %}
+                            {% if result.object.prologo %}<div>{{ result.object.get_campo1_display }}: {{ result.object.prologo }}</div>{% endif %}
+                            {% if result.object.traductor %}<div>{{ result.object.get_campo2_display }}: {{ result.object.traductor }}</div>{% endif %}
+                            {% if result.object.campo3contenido%}<div>{{ result.object.get_campo3_display }}: {{ result.object.campo3contenido}}</div>{% endif %}
+                        </div>
+                    </div>
+                    {% endif %}
+                {% endfor %}
+ 
+            {% endif%}
+
 
             {% if page.has_previous or page.has_next %}
                 <div>
-                    {% if page.has_previous %}<a href="?q={{ query }}&amp;page={{ page.previous_page_number }}">{% endif %}&laquo; Previous{% if page.has_previous %}</a>{% endif %}
+                    {% if page.has_previous %}<a href="?q={{ query }}&amp;page={{ page.previous_page_number }}">{% endif %}&laquo; Página previa{% if page.has_previous %}</a>{% endif %}
                     |
-                    {% if page.has_next %}<a href="?q={{ query }}&amp;page={{ page.next_page_number }}">{% endif %}Next &raquo;{% if page.has_next %}</a>{% endif %}
+                    {% if page.has_next %}<a href="?q={{ query }}&amp;page={{ page.next_page_number }}">{% endif %}Próxima página &raquo;{% if page.has_next %}</a>{% endif %}
                 </div>
             {% endif %}
         {% else %}
@@ -33,4 +64,14 @@
         {% endif %}
 
     </div> <!-- row -->
+{% endblock %}
+{% block "style" %}
+<style>
+@media screen and (max-width: 768px) {
+
+    .row-search {
+        padding: 0 1.5em;
+    }
+}
+</style>
 {% endblock %}
