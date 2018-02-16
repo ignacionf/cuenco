@@ -2,7 +2,17 @@
 {{ object.texto }}
 {{ object.prologo }}
 {{ object.get_autores }}
+{% if object.isbn %}
 {{ object.isbn}}
 {{ object.fISBN}}
+{%endif %}
 {{ object.get_colecciones }}
+{% if object.traductor %}
 {{ object.traductor }}
+{% endif %}
+{% if object.prologo %}
+{{ object.prologo }}
+{% endif %}
+{% if object.campo3contenido %}
+{{ object.campo3contenido }}
+{% endif %}

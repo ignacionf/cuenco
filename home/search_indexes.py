@@ -4,7 +4,7 @@ from .models import *
 
 class AutorIndex(indexes.SearchIndex, indexes.Indexable):
     text = indexes.CharField(document=True, use_template=True)
-    nombre = indexes.CharField(model_attr='nombre')
+    nombre = indexes.CharField(model_attr='nombre', null=True)
     apellido = indexes.CharField(model_attr='apellido')
 
     def get_model(self):
@@ -18,6 +18,7 @@ class AutorIndex(indexes.SearchIndex, indexes.Indexable):
 class LibroIndex(indexes.SearchIndex, indexes.Indexable):
     text = indexes.CharField(document=True, use_template=True)
     titulo = indexes.CharField(model_attr='titulo')
+    isbn = indexes.CharField(model_attr='isbn', null=True)
     autores = indexes.MultiValueField()
 
     def get_model(self):

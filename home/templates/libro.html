@@ -6,6 +6,11 @@
 <div class='row rowmain'>
     <div class="col-lg-10 col-lg-offset-1 col-xs-12">
         <div class='col-lg-4 col-xs-12' style='padding-top: 20px;'>
+    {% if request.user.is_authenticated %}
+            <div class='col-lg-12 col-xs-12 col-imagen'>
+                <a href='{% url "admin:home_libro_change" object.id %}' target="_blank">Editar</a>
+            </div>
+    {% endif %}
     {% if object.imagen %}
             <div class='col-lg-12 col-xs-12 col-imagen'>
                 <img src='{{ object.imagen.url }}' />
