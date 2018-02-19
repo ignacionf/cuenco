@@ -4,6 +4,12 @@
 {% block title %} | Autores y Autoras{% endblock %}
 {% block "content" %}
 
+{% if request.user.is_authenticated %}
+    <div class='col-md-12 text-right' style='font-size: .7em;'>
+         <a href='{% url "admin:home_autor_add" %}' target="_blank" style='margin-right: 20px;'><i class="glyphicon glyphicon-plus"></i> Nuevo Autor</a>
+    </div>
+{% endif %}
+
 <div class="heading-section text-center"><h2>Autores y Autoras</h2></div>
 
 <div class="row">

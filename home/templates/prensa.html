@@ -4,6 +4,11 @@
 {% block title %} | En los medios{% endblock %}
 {% block "content" %}
 <div class="row rowmain">
+{% if request.user.is_authenticated %}
+    <div class='col-md-12 text-right' style='font-size: .7em;'>
+         <a href='{% url "admin:home_nota_add" %}' target="_blank" style='margin-right: 20px;'><i class="glyphicon glyphicon-plus"></i> Nueva Nota</a>
+    </div>
+{% endif %}
 {% if destacados and  page_obj.has_previous == False %}
     <div class='col-md-12'>
         <div class="heading-section" style='margin: 0;'><h3 style='margin: 0;'>Artículos destacados</h3> </div>

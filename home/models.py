@@ -222,7 +222,7 @@ class Nota(Model):
     fuente = models.URLField("Fuente", null=True, blank=True)
     firma = models.CharField("Firma", max_length=500, null=True, blank=True)
     medio = models.CharField("Medio", max_length=500, null=True, blank=True)
-    subtitulo= tinymce_models.HTMLField("Subtitulo", null=True, blank=True)
+    subtitulo= tinymce_models.HTMLField("Volanta", null=True, blank=True)
 
     destacado = models.BooleanField("Destacado", default=False)
     publicado = models.BooleanField("Publicado", default=True)

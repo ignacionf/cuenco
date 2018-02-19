@@ -5,6 +5,11 @@
 {% block "content" %}
 
 <div class='rowmain'>
+{% if request.user.is_authenticated %}
+    <div class='col-md-12 text-right' style='font-size: .7em;'>
+         <a href='{% url "admin:home_libro_add" %}' target="_blank" style='margin-right: 20px;'><i class="glyphicon glyphicon-plus"></i> Nuevo Libro </a>
+    </div>
+{% endif %}
 {% if coleccion %}
     <div class="heading-section"><h1>{{ coleccion.nombre}}</h1></div>
     {% if coleccion.texto %}

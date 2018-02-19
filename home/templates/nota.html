@@ -20,6 +20,9 @@
         <div class="heading-section" style='margin: 5px 0;'><h4 style='margin: 0; color: rgba(0,0,0,0.5);'>
                 {{ object.medio}}{% if object.firma %} | {{ object.firma}}{% endif %}
              <div class='pull-right social'>
+                {% if request.user.is_authenticated %}
+                      <a href='{% url "admin:home_nota_change" object.id %}' target="_blank" style='margin-right: 20px;'><i class="glyphicon glyphicon-edit"></i> Editar</a>
+                {% endif %}
                 <a href="javascript:window.print()"><i class='icon-printer2'></i></a>
                 <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://{{ site }}{{ object.get_absolute_url|escape }}&src=sdkpreparse"><i class="icon-facebook2"></i></a>
                 <a href="https://twitter.com/intent/tweet?hashtags=elcuencodeplata&original_referer=https://{{ site }}{{ object.get_absolute_url|escape }}&ref_src=twsrc%5Etfw&related=twitterapi%2Ctwitter&text={{ object }}&tw_p=tweetbutton&url=https://{{ site }}{{ object.get_absolute_url|escape }}&via=cuencodeplata" target="_blank"><i class="icon-twitter2"></i></a>

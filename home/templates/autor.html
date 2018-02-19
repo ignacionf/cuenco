@@ -10,6 +10,11 @@
         <img src="{{ object.imagen.crop.160x160 }}" class='img-circle' />
         {% endif %}
  
+{% if request.user.is_authenticated %}
+    <div class='col-md-12 text-right' style='font-size: .7em; margin-top: 10px;'>
+         <a href='{% url "admin:home_autor_change" object.id %}' target="_blank" style='margin-right: 20px;'><i class="glyphicon glyphicon-edit"></i> Editar Autor</a>
+    </div>
+{% endif %}
     </div> <!-- col-lg-2 -->
     <div class='col-lg-8 col-xs-12' style='text-align: justify;'>
        <div class="heading-section" style='margin-top: 1em; padding-left: 20px;'><h1>{{ object }}
