@@ -84,6 +84,7 @@ class NotaAdmin(admin.ModelAdmin):
     list_filter = ("publicado", "destacado", "user",)
     list_display = ("titulo", "medio", "destacado", "publicado", "fecha", "user")
     autocomplete_fields = ['libro']
+    actions = [export_as_csv_action("Exportar CSV", fields=["id", "titulo","firma", "medio", "publicado", "destacado", "fecha" ])]
 
     fieldsets = (
         (None, {
