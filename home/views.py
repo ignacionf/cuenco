@@ -157,7 +157,7 @@ class LibroView(DetailView):
         autores = Q()
         for a in context['object'].autores.all():
             autores.add(Q(autores=a), Q.OR)
-        context['recomendados'] = self.get_queryset().filter(autores).exclude(id=context['object'].id)
+        context['recomendados'] = self.get_queryset().filter(autores,fecha__lte=date.today()).exclude(id=context['object'].id)
         context['recomendados'] = context['recomendados'][0:10]
 
         context['notas'] = Nota.objects.filter(libro=context['object'])[0:10]
