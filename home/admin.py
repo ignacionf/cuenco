@@ -84,6 +84,20 @@ class NotaAdmin(admin.ModelAdmin):
     list_filter = ("publicado", "destacado", "user",)
     list_display = ("titulo", "medio", "destacado", "publicado", "fecha", "user")
     autocomplete_fields = ['libro']
+
+    fieldsets = (
+        (None, {
+            "fields": ('titulo', 'subtitulo', 'texto',) 
+        }),
+        ("Campos opcionales", {
+            "fields": ('fecha', 'libro', 'fuente', 'firma', 'medio') 
+        }),
+        ("Metadatos", {
+            "fields": ('destacado', 'publicado',) 
+        }),
+    )
+
+
     def save_model(self, request, obj, form, change):
         flags = re.IGNORECASE | re.MULTILINE
         obj.texto = re.sub(r'<div\s*([^>]+)>', '<p>', obj.texto, flags=flags)
