@@ -58,7 +58,7 @@
         <div style='; padding: 10px;'>
             <a href="{% url "nota" i.id %}">
             <div style='margin: 0; color: rgba(240,87,54,1); font-size: .9em;'>
-                {{ i.medio }}{% if i.firma %}, {{ i.firma }}{% endif %}
+                {{ i.medio }}{% if i.firma %} | {{ i.firma }}{% endif %}
             </div>
             <div style='color: rgba(0,0,0,0.7); font-size: 1.1em;'>{{ i.titulo }}</div>
             </a>

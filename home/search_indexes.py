@@ -4,8 +4,8 @@ from .models import *
 
 class AutorIndex(indexes.SearchIndex, indexes.Indexable):
     text = indexes.CharField(document=True, use_template=True)
-    nombre = indexes.CharField(model_attr='nombre', null=True)
-    apellido = indexes.CharField(model_attr='apellido')
+    nombre = indexes.CharField(model_attr='nombre', null=True, boost=1.125)
+    apellido = indexes.CharField(model_attr='apellido', boost=2)
 
     def get_model(self):
         return Autor
@@ -16,8 +16,8 @@ class AutorIndex(indexes.SearchIndex, indexes.Indexable):
 
 class LibroIndex(indexes.SearchIndex, indexes.Indexable):
     text = indexes.CharField(document=True, use_template=True)
-    titulo = indexes.CharField(model_attr='titulo')
-    isbn = indexes.CharField(model_attr='isbn', null=True)
+    titulo = indexes.CharField(model_attr='titulo', boost=2)
+    isbn = indexes.CharField(model_attr='isbn', null=True, boost=10)
     autores = indexes.MultiValueField()
     fecha = indexes.DateField(model_attr='fecha', null=True)
 
@@ -33,7 +33,7 @@ class LibroIndex(indexes.SearchIndex, indexes.Indexable):
 
 class NotaIndex(indexes.SearchIndex, indexes.Indexable):
     text = indexes.CharField(document=True, use_template=True)
-    titulo = indexes.CharField(model_attr='titulo')
+    titulo = indexes.CharField(model_attr='titulo', boost=1.125)
     libro = indexes.CharField(model_attr='libro', null=True)
 
     def get_model(self):
