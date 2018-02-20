@@ -134,4 +134,5 @@ class NewsAdmin(admin.ModelAdmin):
     search_fields = ("email",)
     list_filter = ("revisado",)
     list_display = ("email", "revisado", "created_at", )
+    actions = [export_as_csv_action("Exportar CSV", fields=["email", "revisado", "created_at", ])]
 
