@@ -245,6 +245,8 @@ $(".btnNewsletter").click(function(){
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
 
+    var element = $(this);
+
     if( regex.test(email) ){
         $(this).parent().parent().removeClass("has-error");
         $(this).addClass("btn-default").removeClass("btn-danger");
@@ -256,7 +258,14 @@ $(".btnNewsletter").click(function(){
             setTimeout(function(){
                 $('#modalNewsletterOk').modal('hide')
             }, 5000)
-        }, 'json');
+        }, 'json').fail(function(errors){
+            element.parent().parent().addClass("has-error");
+            element.removeClass("btn-default").addClass("btn-danger");
+            if ( errors.responseJSON.email[0] == "Ya existe Newletter con este Email." )
+                alert("Dicho email ya se encuentra registrado en nuestro newsletter");
+            else
+                alert(errors.responseJSON.email[0]);
+        });
     }else{
         $(this).parent().parent().addClass("has-error");
         $(this).removeClass("btn-default").addClass("btn-danger");
