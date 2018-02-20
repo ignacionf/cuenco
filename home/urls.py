@@ -27,5 +27,6 @@ urlpatterns = [
     path('contacto/ventas/', ContactoView.as_view(template_name='contacto.ventas.html'), name='contacto.ventas'),
     path('contacto/derechos/', ContactoView.as_view(template_name='contacto.derechos.html'), name='contacto.derechos'),
     path('contacto/ok/', TemplateView.as_view(template_name="contacto.ok.html"), name='contacto_ok'),
+    path('newsletter/', NewsletterView.as_view(), name='newsletter_add'),
 
 ]

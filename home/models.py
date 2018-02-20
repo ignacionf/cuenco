@@ -243,6 +243,7 @@ class Newletter(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, editable=False)
     updated_at = models.DateTimeField(auto_now=True, editable=False)
     email = models.EmailField("Email")
+    revisado = models.BooleanField("Revisado", default=False)
  
 class Contacto(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, editable=False)

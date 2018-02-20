@@ -128,3 +128,10 @@ class DistribucionAdmin(admin.ModelAdmin):
         obj.save()
 
 
+@admin.register(Newletter)
+class NewsAdmin(admin.ModelAdmin):
+    date_hierarchy = 'created_at'
+    search_fields = ("email",)
+    list_filter = ("revisado",)
+    list_display = ("email", "revisado", "created_at", )
+

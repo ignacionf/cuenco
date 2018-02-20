@@ -109,7 +109,7 @@
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Ingrese su email">
                     <span class="input-group-btn">
-                        <button class="btn btn-default" type="button">Recibir novedades</button>
+                        <button class="btn btn-default btnNewsletter" type="button">Recibir novedades</button>
                     </span>
                 </div><!-- /input-group -->
             </div>
@@ -133,7 +133,7 @@
         <div class="input-group">
              <input type="text" class="form-control" placeholder="Ingrese su email">
              <span class="input-group-btn">
-                  <button class="btn btn-default" type="button">Recibir novedades</button>
+                  <button class="btn btn-default btnNewsletter" type="button">Recibir novedades</button>
              </span>
         </div><!-- /input-group -->
  
@@ -222,6 +222,21 @@ h1, h2, h3, h4 {
 {% block "js" %}
 <script>
 $('#modalNewsletter').modal()
+
+$(".btnNewsletter").click(function(){
+
+    var email = $("input", $(this).parent().parent()).val()
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    console.log(email);
+
+    if( regex.test(email) ){
+        $(this).parent().parent().removeClass("has-error");
+        $(this).addClass("btn-default").removeClass("btn-danger");
+    }else{
+        $(this).parent().parent().addClass("has-error");
+        $(this).removeClass("btn-default").addClass("btn-danger");
+    }
+})
 
 $("#home > a").addClass("active");
 $('.novedades').owlCarousel({

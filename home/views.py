@@ -11,6 +11,8 @@ from django.forms.utils import ErrorList
 from django import forms
 from django.core.mail import send_mail
 from datetime import date
+from django.http import JsonResponse
+
 
 class HomeView(TemplateView):
     template_name = "home.html"
@@ -80,6 +82,7 @@ class PrensaView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        context['div']=11
         context['destacados'] = self.model.objects.filter(publicado=True, destacado=True)[:10]
         #context['noticias'] = self.model.objects.select_related().filter(publicado=True, libro__isnull=True)
         return context
@@ -88,8 +91,16 @@ class NoticiasView(ListView):
     template_name = "prensa.html"
     model = Nota
     context_object_name = 'notas'
-    paginate_by =10 
+    paginate_by =20 
     queryset = Nota.objects.select_related().filter(publicado=True, libro__isnull=True)
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['div']=11
+        if len(context['paginator'].object_list) < 20:
+            context['div']=(len(context['paginator'].object_list)/2)+1
+        return context
+
 
 from django.db.models import Q
 class NotaView(DetailView):
@@ -204,3 +215,28 @@ class ContactoView(CreateView):
 
     def get_success_url(self):
         return "/contacto/ok/"
+
+class AjaxableResponseMixin:
+    def form_invalid(self, form):
+        response = super().form_invalid(form)
+        if self.request.is_ajax():
+            return JsonResponse(form.errors, status=400)
+        else:
+            return response
+
+    def form_valid(self, form):
+        response = super().form_valid(form)
+        if self.request.is_ajax():
+            data = {
+                'status': 200,
+            }
+            return JsonResponse(data)
+        else:
+            return response
+
+class NewsletterView(AjaxableResponseMixin, CreateView):
+    model = Newletter
+    fields = ['email',]
+
+    def form_valid(self, form):
+        return super().form_valid(form)
