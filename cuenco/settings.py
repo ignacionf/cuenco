@@ -173,6 +173,8 @@ CACHES = {
 
 SITE_ID = 1
 
+CSRF_USE_SESSIONS=True
+
 # configuraciones por fuera de git
 try:
     from cuenco.local_settings import *
