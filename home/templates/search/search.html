@@ -27,7 +27,10 @@
                             <h3 style='padding-top: 1.5em;'><a href="{{ result.object.get_absolute_url }}">{{ result.object}}</a></h3>
                         </div>
                     </div>
-                    {% elif result.model_name == "libro" %}
+                    {% endif %}
+                {% endfor %}
+                {% for result in page.object_list %}
+                    {% if result.model_name == "libro" %}
                     <div class='row' style='margin-bottom: 1em;'>
                         <div class='col-lg-2 col-xs-4'>
                             <img src="{{ result.object.imagen.url }}" style='width: 100%;' />
@@ -42,7 +45,10 @@
                             {% if result.object.campo3contenido%}<div>{{ result.object.get_campo3_display }}: {{ result.object.campo3contenido}}</div>{% endif %}
                         </div>
                     </div>
-                    {% elif result.model_name == "nota" %}
+                    {% endif %}
+                {% endfor %}
+                {% for result in page.object_list %}
+                    {% if result.model_name == "nota" %}
                     <div class='row' style='margin-bottom: 1em;'>
                         <a href="{{ result.object.get_absolute_url }}">
                         <div class='col-lg-10 col-lg-offset-2 col-xs-12'>
