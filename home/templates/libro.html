@@ -118,7 +118,7 @@
             <div class="item">
                 <a href="{{ libro.get_absolute_url }}">
                     {% if libro.imagen %}
-					<div style='owl-imagen'><img src="{{ libro.imagen.url }}" alt="{{ libro }}"></div>
+					<div style='owl-imagen'><img src="{{ libro.imagen.thumbnail.159x245}}" alt="{{ libro }}"></div>
                     {% endif %}
                     <div class="desc">
                         {{ libro.get_autores }}

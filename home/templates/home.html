@@ -29,7 +29,7 @@
 				<div class="item">
                     <a href="{{ n.get_absolute_url }}">
 {% if n.imagen %}
-					    <div class='owl-imagen'><img src="{{ n.imagen.url }}" alt="{{ n }}"></div>
+					    <div class='owl-imagen'><img src="{{ n.imagen.thumbnail.159x245}}" alt="{{ n }}"></div>
 {% else %}
 					    <div class='owl-imagen'><img src="http://via.placeholder.com/160x232?text={{ n.titulo }}" alt="{{ n }}"></div>
 {% endif %}
@@ -55,7 +55,7 @@
 					<!-- <a href="#" class="image-popup"> -->
                     <a href="{{ n.get_absolute_url }}">
 {% if n.imagen %}
-					    <div class='owl-imagen'><img src="{{ n.imagen.url }}" alt="{{ n }}"></div>
+					    <div class='owl-imagen'><img src="{{ n.imagen.thumbnail.159x245}}" alt="{{ n }}"></div>
 {% else %}
 					    <div class='owl-imagen'><img src="http://via.placeholder.com/160x232?text={{ n.titulo }}" alt="{{ n }}"></div>
 {% endif %}

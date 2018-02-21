@@ -177,6 +177,12 @@ SITE_ID = 1
 
 CSRF_USE_SESSIONS=True
 
+VERSATILEIMAGEFIELD_SETTINGS = {
+    'jpeg_resize_quality': 90,
+    'progressive_jpeg': True
+
+}
+
 # configuraciones por fuera de git
 try:
     from cuenco.local_settings import *

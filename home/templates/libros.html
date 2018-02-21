@@ -61,7 +61,7 @@
         <div class='col-lg-6 col-libro'>
             <div class='col-lg-5 col-xs-5 text-center'>
             {% if i.imagen %}
-                <img src='{{ i.imagen.url }}' />
+                <img src='{{ i.imagen.thumbnail.137x210}}' />
             {% else %}
                 <img src='http://via.placeholder.com/160x232?text={{ i.titulo }}' />
             {% endif %}
