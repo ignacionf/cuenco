@@ -5,6 +5,7 @@ from django.contrib.auth.models import User
 from versatileimagefield.fields import VersatileImageField
 from tinymce import models as tinymce_models
 from django.urls import reverse 
+from taggit.managers import TaggableManager
 
 from isbn_field import ISBNField
 
@@ -27,6 +28,8 @@ class Autor(Model):
     apellido = models.CharField("Apellido", max_length=255)
     texto = tinymce_models.HTMLField("Texto")
     imagen = VersatileImageField('Imagen', upload_to="imagenes/autor/", blank=True, null=True)
+
+    tags = TaggableManager(blank=True)
 
     class Meta:
         verbose_name_plural = "Autores"
@@ -142,6 +145,8 @@ class Libro(Model):
     carrito = models.URLField("URL Carrito de compras", null=True, blank=True)
     pdf = models.FileField("PDF", upload_to='uploads/pdf/', null=True, blank=True)
 
+    tags = TaggableManager(blank=True)
+
     class Meta:
         verbose_name_plural = "Libros"
         ordering = ['-fecha','-id',]
@@ -219,6 +224,10 @@ class Nota(Model):
     texto = tinymce_models.HTMLField("Texto")
 
     libro = models.ForeignKey(Libro, on_delete=models.CASCADE, null=True, blank=True)
+    libros = models.ManyToManyField(Libro, blank=True, related_name="libros_nota")
+    autores = models.ManyToManyField(Autor, blank=True)
+    tags = TaggableManager(blank=True)
+
     fuente = models.URLField("Fuente", null=True, blank=True)
     firma = models.CharField("Firma", max_length=500, null=True, blank=True)
     medio = models.CharField("Medio", max_length=500, null=True, blank=True)
@@ -238,6 +247,23 @@ class Nota(Model):
 
     def get_absolute_url(self):
         return reverse("nota", args=[self.id])
+
+    def get_notas_relacionadas(self):
+        return [{'titulo': x.titulo, 'nota': x.nota1.all().first()} for x in self.notarelacion_set.all()]
+
+    def get_notas_relacionadas_urls(self):
+        return [x for x in self.notaurlrelacion_set.all()]
+
+class NotaRelacion(models.Model):
+    titulo = models.CharField("Título Alternativo, sino usa el de la nota", max_length=500, null=True, blank=True)
+    nota1 = models.ManyToManyField(Nota, related_name="nota_relacionada")
+    nota = models.ForeignKey(Nota, on_delete=models.CASCADE)
+
+class NotaURLRelacion(models.Model):
+    titulo = models.CharField("Título", max_length=500)
+    medio = models.CharField("Medio y/o Autor", max_length=500, null=True, blank=True)
+    url = models.URLField("URL")
+    nota = models.ForeignKey(Nota, on_delete=models.CASCADE)
 
 class Newletter(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, editable=False)

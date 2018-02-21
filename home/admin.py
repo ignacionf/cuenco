@@ -12,7 +12,7 @@ class AutorAdmin(admin.ModelAdmin):
     list_filter = ("user",)
     list_display = ("__str__","imagen_html", "created_at", "user")
     readonly_fields = ['imagen_html']
-    actions = [export_as_csv_action("CSV Export", fields=["id", "nombre", "apellido", ])]
+    actions = [export_as_csv_action("CSV Export", fields=["id", "nombre", "apellido", "tags"])]
 
     def save_model(self, request, obj, form, change):
         obj.user = request.user
@@ -38,7 +38,7 @@ class LibroAdmin(admin.ModelAdmin):
     autocomplete_fields = ['autores']
     actions = [export_as_csv_action("CSV Export", fields=["id", "titulo", "prologo",
                 "traductor", "subtitulo", "paginas", "formato", "edicion", "carrito",
-                "autores", "isbn", "recomendado", "fecha"])]
+                "autores", "isbn", "recomendado", "fecha", "tags"])]
 
     fieldsets = (
         (None, {
@@ -51,7 +51,7 @@ class LibroAdmin(admin.ModelAdmin):
             "fields": (('campo1', 'prologo'), ('campo2', 'traductor'), ('campo3', 'campo3contenido')) 
         }),
         ("datos del libro", {
-            "fields": ('isbn', 'paginas', 'formato', 'edicion') 
+            "fields": ('isbn', 'paginas', 'formato', 'edicion', "tags") 
         }),
         ("Archivos", {
             "fields": ('imagen', 'pdf',) 
@@ -76,6 +76,13 @@ class SliderAdmin(admin.ModelAdmin):
         obj.user = request.user
         obj.save()
 
+class NotaRelacionInline(admin.TabularInline):
+    model = NotaRelacion
+    autocomplete_fields = ['nota1',]
+
+class NotaURLRelacionInline(admin.TabularInline):
+    model = NotaURLRelacion
+
 import re
 @admin.register(Nota)
 class NotaAdmin(admin.ModelAdmin):
@@ -83,18 +90,24 @@ class NotaAdmin(admin.ModelAdmin):
     search_fields = ("titulo","subtitulo", "libro__titulo", "texto")
     list_filter = ("publicado", "destacado", "user",)
     list_display = ("titulo", "medio", "destacado", "publicado", "fecha", "user")
-    autocomplete_fields = ['libro']
-    actions = [export_as_csv_action("Exportar CSV", fields=["id", "titulo","firma", "medio", "publicado", "destacado", "fecha" ])]
+    autocomplete_fields = ['libro', "autores", "libros",]
+    actions = [export_as_csv_action("Exportar CSV", fields=["id", "titulo","firma", "medio", "publicado", "destacado", "fecha", "tags"])]
+
+    inlines = [NotaRelacionInline, NotaURLRelacionInline]
 
     fieldsets = (
         (None, {
             "fields": ('titulo', 'subtitulo', 'texto',) 
         }),
+        ("Relaciones", {
+            "fields": ('libro', 'libros', 'autores',) 
+        }),
+ 
         ("Campos opcionales", {
-            "fields": ('fecha', 'libro', 'fuente', 'firma', 'medio') 
+            "fields": ('fecha',  'fuente', 'firma', 'medio') 
         }),
         ("Metadatos", {
-            "fields": ('destacado', 'publicado',) 
+            "fields": ('tags', 'destacado', 'publicado',) 
         }),
     )
 

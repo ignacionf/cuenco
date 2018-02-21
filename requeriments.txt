@@ -5,6 +5,8 @@ django-contact-form==1.4.2
 django-extensions==1.9.9
 django-haystack==2.6.1
 git+https://github.com/ignacionf/django-isbn-field.git
+git+https://github.com/jazzband/django-robots/
+django-taggit==0.22.2
 django-tinymce==2.7.0
 django-versatileimagefield==1.8.1
 idna==2.6
@@ -21,4 +23,3 @@ six==1.11.0
 typing==3.6.2
 urllib3==1.22
 uWSGI==2.0.15
-git+https://github.com/jazzband/django-robots/

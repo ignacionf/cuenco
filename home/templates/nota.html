@@ -49,21 +49,58 @@
     </div>
     <div class='col-lg-12'>&nbsp;</div>
 
-{% if notas %}
-    <div class='col-lg-10 col-lg-offset-1'>
-        <div class="heading-section" style='margin: 0;'><h3 style='margin: 0; color: rgba(0,0,0,0.8);'>Artículos relacionados</h3> </div>
-    </div>
-    <div class='col-lg-8 col-lg-offset-1' style='padding: 20px;'>
-    {% for i in notas %}
-        <div style='background: #F5F5E6; padding: 10px;'>
-            <a href="{% url "nota" i.id %}">
-            <div style='margin: 0; color: rgba(240,87,54,1);'>{{ i.medio}}{% if i.firma %}, {{ i.firma}}{% endif %}</div>
-            <div style='color: rgba(0,0,0,0.7)'>{{ i.titulo}}</div>
-            </a>
+    <div class='row'>
+
+{% if object.get_notas_relacionadas or object.get_notas_relacionadas %}
+        <div class='col-lg-6 col-xs-12'>
+            <div class='col-lg-12'>
+                <div class="heading-section" style='margin: 0;'><h3 style='margin: 0; color: rgba(0,0,0,0.8);'>Otros Artículos</h3> </div>
+            </div>
+            <div class='col-lg-12' style='padding: 20px;'>
+            {% for i in object.get_notas_relacionadas %}
+                <div style='background: #F5F5E6; padding: 10px;'>
+                    <a href="{% url "nota" i.nota.id %}">
+                    <div style='margin: 0; color: rgba(240,87,54,1);'>{{ i.nota.medio}}{% if i.nota.firma %} | {{ i.nota.firma}}{% endif %}</div>
+                    {% if i.titulo %}
+                    <div style='color: rgba(0,0,0,0.7)'>{{ i.titulo}}</div>
+                    {% else %}
+                    <div style='color: rgba(0,0,0,0.7)'>{{ i.nota.titulo}}</div>
+                    {% endif %}
+                    </a>
+                </div>
+            {% endfor %}
+            {% for i in object.get_notas_relacionadas_urls %}
+                <div style='background: #F5F5E6; padding: 10px;'>
+                    <a href="{{ i.url }}">
+                    {% if i.medio %}
+                    <div style='margin: 0; color: rgba(240,87,54,1);'>{{ i.medio}}</div>
+                    {% endif %}
+                    <div style='color: rgba(0,0,0,0.7)'>{{ i.titulo}}</div>
+                    </a>
+                </div>
+            {% endfor %}
+ 
+            </div>
         </div>
-    {% endfor %}
-    </div>
 {% endif %}
+        <div class='col-lg-6 col-xs-12'>
+{% if notas %}
+            <div class='col-lg-12'>
+                <div class="heading-section" style='margin: 0;'><h3 style='margin: 0; color: rgba(0,0,0,0.8);'>Artículos relacionados</h3> </div>
+            </div>
+            <div class='col-lg-12' style='padding: 20px;'>
+            {% for i in notas %}
+                <div style='background: #F5F5E6; padding: 10px;'>
+                    <a href="{% url "nota" i.id %}">
+                    <div style='margin: 0; color: rgba(240,87,54,1);'>{{ i.medio}}{% if i.firma %} | {{ i.firma}}{% endif %}</div>
+                    <div style='color: rgba(0,0,0,0.7)'>{{ i.titulo}}</div>
+                    </a>
+                </div>
+            {% endfor %}
+            </div>
+{% endif %}
+        </div>
+    </div> <!-- row -->
 
 
 </div> <!-- row -->
@@ -84,6 +121,7 @@
     color: rgba(0,0,0,0.8);
 }
 .html p {
+    text-indent: 1em;
     margin: .5em;
     color: rgba(0,0,0,0.7);
 }
