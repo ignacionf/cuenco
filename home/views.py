@@ -192,7 +192,7 @@ class ContactoView(CreateView):
         result = r.json()
 
         if tipo == 1:
-            email = "info@elcuencodeplata.com"
+            email = "web@elcuencodeplata.com"
         elif tipo == 2:
             email = "ventas@elcuencodeplata.com"
         elif tipo == 3:
