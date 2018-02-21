@@ -78,7 +78,7 @@ class PrensaView(ListView):
     model = Nota
     context_object_name = 'notas'
     paginate_by =20 
-    queryset = Nota.objects.select_related().filter(publicado=True, libro__isnull=False)
+    queryset = Nota.objects.select_related().filter(publicado=True).exclude(libros=None)
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -92,7 +92,7 @@ class NoticiasView(ListView):
     model = Nota
     context_object_name = 'notas'
     paginate_by =20 
-    queryset = Nota.objects.select_related().filter(publicado=True, libro__isnull=True)
+    queryset = Nota.objects.select_related().filter(publicado=True, libros=None)
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
