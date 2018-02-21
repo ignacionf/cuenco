@@ -87,7 +87,7 @@ import re
 @admin.register(Nota)
 class NotaAdmin(admin.ModelAdmin):
     date_hierarchy = 'created_at'
-    search_fields = ("titulo","subtitulo", "libro__titulo", "texto")
+    search_fields = ("titulo",)
     list_filter = ("publicado", "destacado", "user",)
     list_display = ("titulo", "medio", "destacado", "publicado", "fecha", "user")
     autocomplete_fields = ['libro', "autores", "libros",]
