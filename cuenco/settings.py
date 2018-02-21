@@ -148,7 +148,8 @@ TINYMCE_DEFAULT_CONFIG = {
     'custom_undo_redo_levels': 10,
     'width': '100%',
     'height': 300,
-    'force_root_block': 'div'
+    'force_root_block': 'div',
+    'content_style': '.mcecontentbody{font-size:14px;}',
 }
 TINYMCE_SPELLCHECKER = True
 TINYMCE_COMPRESSOR = True
