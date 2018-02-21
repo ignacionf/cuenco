@@ -22,8 +22,8 @@ class HomeView(TemplateView):
         context['novedades'] = Libro.objects.filter(fecha__lte=date.today()).order_by("-fecha")[:10]
         context['recomendados'] = Libro.objects.filter(recomendado=True).order_by("titulo")
         context['slider'] = Slider.objects.filter(activo=True).order_by("-created_at")
-        context['articulos'] = Nota.objects.filter(publicado=True, libro__isnull=False).order_by("-fecha")[0:5]
-        context['noticias'] = Nota.objects.filter(publicado=True, libro__isnull=True).order_by("-fecha")[0:5]
+        context['articulos'] = Nota.objects.filter(publicado=True).exclude( libros=None).order_by("-fecha")[0:5]
+        context['noticias'] = Nota.objects.filter(publicado=True, libros=None).order_by("-fecha")[0:5]
         return context
 
 class DistribucionesView(ListView):
@@ -84,7 +84,6 @@ class PrensaView(ListView):
         context = super().get_context_data(**kwargs)
         context['div']=11
         context['destacados'] = self.model.objects.filter(publicado=True, destacado=True)[:10]
-        #context['noticias'] = self.model.objects.select_related().filter(publicado=True, libro__isnull=True)
         return context
 
 class NoticiasView(ListView):
