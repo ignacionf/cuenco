@@ -7,7 +7,8 @@
     <div class='col-lg-10 col-lg-offset-1'>
     {% if object.libro %}
         <div class="heading-section" style='margin: 8px 0;'>
-            <h4 style='margin: 0; color: rgba(0,0,0,0.8);'>{{ object.libro}}
+            <h4 style='margin: 0; color: rgba(0,0,0,0.8);'>
+                {{ object.get_libros }}
             <small class='pull-right'>{{ object.fecha|date:"d M Y" }}</small></h4>
         </div>
     {% else %}

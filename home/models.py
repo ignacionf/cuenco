@@ -248,6 +248,9 @@ class Nota(Model):
     def get_absolute_url(self):
         return reverse("nota", args=[self.id])
 
+    def get_libros(self):
+        return " | ".join([str(x) for x in self.libros.all()])
+
     def get_notas_relacionadas(self):
         return [{'titulo': x.titulo, 'nota': x.nota1.all().first()} for x in self.notarelacion_set.all()]
 
