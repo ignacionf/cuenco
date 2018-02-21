@@ -100,7 +100,7 @@ class NotaAdmin(admin.ModelAdmin):
             "fields": ('titulo', 'subtitulo', 'texto',) 
         }),
         ("Relaciones", {
-            "fields": ('libro', 'libros', 'autores',) 
+            "fields": ('libros', 'autores',) 
         }),
  
         ("Campos opcionales", {
