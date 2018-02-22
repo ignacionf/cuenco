@@ -923,4 +923,19 @@ input[type="text"] {
   opacity: 0;
 }
 
+.modal-content {
+    border-radius: 0;
+}
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.modal {
+  text-align: center;
+}
+
+
+
 /*# sourceMappingURL=style.css.map */

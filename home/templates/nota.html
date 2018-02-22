@@ -25,6 +25,7 @@
                       <a href='{% url "admin:home_nota_change" object.id %}' target="_blank" style='margin-right: 20px;'><i class="glyphicon glyphicon-edit"></i> Editar</a>
                 {% endif %}
                 <a data-toggle="tooltip" data-placement="bottom" title="Imprimir Nota" href="javascript:window.print()"><i class='icon-printer2'></i></a>
+                <a data-toggle="tooltip" data-placement="bottom" title="Enviar por email" href="#enviarMail" id='btnEnviarEmail'><i class='icon-envelope2'></i></a>
                 <a data-toggle="tooltip" data-placement="bottom" title="Compartir en Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://{{ site }}{{ object.get_absolute_url|escape }}&src=sdkpreparse"><i class="icon-facebook2"></i></a>
                 <a data-toggle="tooltip" data-placement="bottom" title="Compartir en Twitter" href="https://twitter.com/intent/tweet?hashtags=elcuencodeplata&original_referer=https://{{ site }}{{ object.get_absolute_url|escape }}&ref_src=twsrc%5Etfw&related=twitterapi%2Ctwitter&text={{ object }}&tw_p=tweetbutton&url=https://{{ site }}{{ object.get_absolute_url|escape }}&via=cuencodeplata" target="_blank"><i class="icon-twitter2"></i></a>
                 {% if object.fuente %}
@@ -100,6 +101,41 @@
 
 </div> <!-- row -->
 
+<div class="modal fade" tabindex="-1" role="dialog" id="modalEmail">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+<form>
+  <div class="form-group">
+    <label for="inputEmail">Email destino</label>
+    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="inputTitulo">Subject</label>
+    <input type="text" class="form-control" id="inputTitulo" placeholder="Título" value="{{ object.titulo }}">
+  </div>
+  <div class="form-group">
+    <label for="inputMensaje">Mensaje</label>
+    <textarea class="form-control" rows="6" name="texto" id="inputMensaje">Hola, te recomiendo que leas lo siguiente:
+
+"{{ object.texto|striptags|truncatewords:30 }}"
+    </textarea>
+  </div>
+              <div class="g-recaptcha pull-right" data-sitekey="6LcyvkMUAAAAAKlR8yPob9rCz0ExDkbGLNHcfXKO"></div>
+              <br style="clear: both;">
+
+</form>
+ 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Envíar</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
 
 
 {% endblock %}
@@ -142,8 +178,13 @@
 {% endblock %}
 
 {% block "js" %}
+<script src='https://www.google.com/recaptcha/api.js'></script>
 <script>
 $("#prensa > a").addClass("active");
+$("#btnEnviarEmail").click(function(e){
+    e.preventDefault();
+    $("#modalEmail").modal();
+});
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
