@@ -170,7 +170,6 @@ class LibroView(DetailView):
         context['recomendados'] = self.get_queryset().filter(autores,fecha__lte=date.today()).exclude(id=context['object'].id)
         context['recomendados'] = context['recomendados'][0:10]
 
-        context['notas'] = Nota.objects.filter(libro=context['object'])[0:10]
         context['xcolecciones']=context['object'].coleccion.all()
  
         return context
