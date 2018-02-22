@@ -93,10 +93,10 @@
                 {% endautoescape %}
             </div>
     
-{% if object.nota_set.all %}
+{% if object.libros_nota.all %}
             <div class="heading-section" style='margin: 40px 0 30px 0;'><h3 style='margin: 0; color: rgba(0,0,0,0.8);'>En los medios</h3> </div>
     
-            {% for nota in object.nota_set.all %}
+            {% for nota in object.libros_nota.all %}
             <div style='margin-top: 1em;'>
                 <a href="{% url "nota" nota.id %}" class='nota'>
                 <span>{{ nota.medio}}</span>
