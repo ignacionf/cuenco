@@ -107,12 +107,16 @@
       <div class="modal-body">
 <form>
   <div class="form-group">
-    <label for="inputEmail">Para</label>
-    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+    <label for="inputEmail1">De</label>
+    <input type="email" name="from" class="form-control" id="inputEmail1" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="inputEmail2">Para</label>
+    <input type="email" name='to' class="form-control" id="inputEmail2" placeholder="Email">
   </div>
   <div class="form-group">
     <label for="inputTitulo">Subject</label>
-    <input type="text" class="form-control" id="inputTitulo" placeholder="Título" value="{{ object.titulo }}">
+    <input type="text" name='title' class="form-control" id="inputTitulo" placeholder="Título" value="{{ object.titulo }}">
   </div>
   <div class="form-group">
     <label for="inputMensaje">Mensaje</label>
