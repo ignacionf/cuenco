@@ -15,9 +15,9 @@
             <div class='col-lg-12 col-xs-12 col-imagen'>
                 <img src='{{ object.imagen.url }}' />
                 <div class='col-lg-12 social col-xs-12'>
-                    <a href="javascript:window.print()"><i class='icon-printer2'></i></a>
-                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://{{site}}{{ object.get_absolute_url|escape }}&src=sdkpreparse"><i class="icon-facebook2"></i></a>
-                    <a href="https://twitter.com/intent/tweet?hashtags=elcuencodeplata&original_referer=https://{{ site }}{{ object.get_absolute_url|escape }}&ref_src=twsrc%5Etfw&related=twitterapi%2Ctwitter&text={{ object.titulo }}&tw_p=tweetbutton&url=https://{{ site }}{{ object.get_absolute_url|escape }}&via=cuencodeplata" target="_blank"><i class="icon-twitter2"></i></a>
+                    <a data-toggle="tooltip" data-placement="bottom" title="Imprimir" href="javascript:window.print()"><i class='icon-printer2'></i></a>
+                    <a data-toggle="tooltip" data-placement="bottom" title="Compartir en Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://{{site}}{{ object.get_absolute_url|escape }}&src=sdkpreparse"><i class="icon-facebook2"></i></a>
+                    <a data-toggle="tooltip" data-placement="bottom" title="Compartir Twitter" href="https://twitter.com/intent/tweet?hashtags=elcuencodeplata&original_referer=https://{{ site }}{{ object.get_absolute_url|escape }}&ref_src=twsrc%5Etfw&related=twitterapi%2Ctwitter&text={{ object.titulo }}&tw_p=tweetbutton&url=https://{{ site }}{{ object.get_absolute_url|escape }}&via=cuencodeplata" target="_blank"><i class="icon-twitter2"></i></a>
                 {% if not object.disponible %}
                 <a href="#" title='No disponible' style='color: rgba(255,40,40,0.5);'><i class="glyphicon glyphicon-remove-circle"></i></a>
                 {% endif %}
@@ -26,9 +26,9 @@
             </div>
     {% else %}
             <div class='col-lg-12 social col-xs-1'>
-                <a href="javascript:window.print()"><i class='icon-printer2'></i></a>
-                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://{{ site }}{{ object.get_absolute_url|escape }}&src=sdkpreparse"><i class="icon-facebook2"></i></a>
-                <a href="https://twitter.com/intent/tweet?hashtags=elcuencodeplata&original_referer=https://{{ site }}{{ object.get_absolute_url|escape }}&ref_src=twsrc%5Etfw&related=twitterapi%2Ctwitter&text={{ object.titulo }}&tw_p=tweetbutton&url=https://{{ site }}{{ object.get_absolute_url|escape }}&via=cuencodeplata" target="_blank"><i class="icon-twitter2"></i></a>
+                <a data-toggle="tooltip" data-placement="bottom" title="Imprimir" href="javascript:window.print()"><i class='icon-printer2'></i></a>
+                <a data-toggle="tooltip" data-placement="bottom" title="Compartir en Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://{{ site }}{{ object.get_absolute_url|escape }}&src=sdkpreparse"><i class="icon-facebook2"></i></a>
+                <a data-toggle="tooltip" data-placement="bottom" title="Compartir en Twitter" href="https://twitter.com/intent/tweet?hashtags=elcuencodeplata&original_referer=https://{{ site }}{{ object.get_absolute_url|escape }}&ref_src=twsrc%5Etfw&related=twitterapi%2Ctwitter&text={{ object.titulo }}&tw_p=tweetbutton&url=https://{{ site }}{{ object.get_absolute_url|escape }}&via=cuencodeplata" target="_blank"><i class="icon-twitter2"></i></a>
 
                 {% if not object.disponible %}
                 <a href="#" title='No disponible' style='color: rgba(255,40,40,0.5);'><i class="glyphicon glyphicon-remove-circle"></i></a>
@@ -300,6 +300,8 @@ $('.libros').owlCarousel({
 
 
 })
-
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 </script>
 {% endblock %}
