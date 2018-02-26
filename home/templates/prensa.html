@@ -17,8 +17,11 @@
     <div class='col-md-6' style='padding: 20px;'>
         <div style='background: #E6F0E6; padding: 10px;'>
             <a href="{% url "nota" i.id %}">
-            {% if i.libro %}
-            <div style='color: rgba(240,87,54,1); font-size: .8em;'>{{ i.libro }}</div>
+            {% if i.libros %}
+            {% for libro in i.libros.all %}
+                <div style='color: rgba(240,87,54,1); font-size: .8em;'>{{ libro }}</div>
+                {% if not forloop.last %} | {% endif %}
+            {% endfor %}
             {% endif %}
             <div style='color: rgba(0,0,0,0.8); font-size: .9em;'>
                 {{ i.medio }}{% if i.firma %} | {{ i.firma }}{% endif %}
