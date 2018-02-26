@@ -114,7 +114,7 @@ class NotaView(DetailView):
         #medio = Q(medio=context['object'].medio)
         #notas = self.queryset.filter(libros | autor | medio).exclude(pk=context['object'].id)
         if context['object']:
-            notas = self.queryset.filter(libro=context['object'].libro).exclude(pk=context['object'].id)
+            notas = self.queryset.filter(libros__in=context['object'].libros.all()).exclude(pk=context['object'].id)
             context['notas'] = notas[0:5]
         else:
             context['notas'] = []
