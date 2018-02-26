@@ -7,6 +7,11 @@ class AutorIndex(indexes.SearchIndex, indexes.Indexable):
     nombre = indexes.CharField(model_attr='nombre', null=True, boost=1.125)
     apellido = indexes.CharField(model_attr='apellido', boost=2)
 
+    def prepare(self, obj):
+        data = super(AutorIndex, self).prepare(obj)
+        data['boost'] = 5
+        return data
+
     def get_model(self):
         return Autor
 
