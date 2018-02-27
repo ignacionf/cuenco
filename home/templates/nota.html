@@ -240,6 +240,7 @@ $("#btnSendMail").click(function(){
             csrfmiddlewaretoken:csrftoken,
             recaptcha:grecaptcha.getResponse()
         }, function(data){
+            $("#modalEmail").modal("hide");
         }, 'json').fail(function(errors){
         });
     }else{
