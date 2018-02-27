@@ -149,7 +149,25 @@
 <meta name="twitter:site" content="@Cuencodeplata" />
 <meta name="twitter:creator" content="@Cuencodeplata" />
 <meta property="og:locale"              content="es_AR" />
+<meta property="og:site_name"              content="{{ site.name }}" />
 {% block opengraph %}
+<meta property="og:type"               content="website" />
+{% if object %}
+<meta property="og:title"              content="{{ object}}" />
+<meta property="og:description"        content="{{ object.texto|striptags|truncatewords:60 }}" />
+{% else %}
+<meta property="og:title"              content="{{ site.name }}" />
+{% endif %}
+{% if object.imagen %}
+<meta property="og:image"              content="https://{{ site.domain }}{{ object.imagen.url }}" />
+<meta property="og:image:width"        content="160" />
+<meta property="og:image:height"        content="160" />
+{% else %}
+<meta property="og:image"              content="https://{{ site.domain }}{% static "images/logo_b_300.jpg" %}" />
+<meta property="og:image:width"        content="298" />
+<meta property="og:image:height"        content="92" />
+{% endif %}
+
 {% endblock %}
 	</head>
 	<body>
