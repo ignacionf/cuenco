@@ -115,7 +115,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
-<form>
+<form id='formMail'>
   <div class="form-group">
     <label for="inputEmail1">De</label>
     <input type="email" name="from" class="form-control" id="inputEmail1" placeholder="Email">
@@ -126,24 +126,26 @@
   </div>
   <div class="form-group">
     <label for="inputTitulo">Subject</label>
-    <input type="text" name='title' class="form-control" id="inputTitulo" placeholder="Título" value="{{ object.titulo }}">
+    <input type="text" name='subject' class="form-control" id="inputTitulo" placeholder="Título" value="{{ object.titulo }}">
   </div>
-  <div class="form-group">
-    <label for="inputMensaje">Mensaje</label>
-    <textarea class="form-control" rows="6" name="texto" id="inputMensaje">Hola, te recomiendo que leas lo siguiente:
-
-"{{ object.texto|striptags|truncatewords:30 }}"
-    </textarea>
-  </div>
+    <div>&nbsp;</div>
     <div style='width: 305px; margin: auto;'>
               <div class="g-recaptcha"  data-sitekey="6LcyvkMUAAAAAKlR8yPob9rCz0ExDkbGLNHcfXKO"></div>
     </div>
+
+<div id="msg" style='display: none;'>
+Hola, %%from%% quiere enviarte este <a href="https://{{ site.domain }}{{ object.get_absolute_url }}">enlace</a> para que veas!<br />
+Te dejo un adelanto:<br /><br />
+{% autoescape off %}
+<div>{{ object.texto|truncatewords_html:60 }}</div>
+{% endautoescape %}
+</div>
 
 </form>
  
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Envíar</button>
+        <button type="button" class="btn btn-default" id='btnSendMail'>Envíar</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -201,10 +203,49 @@
 $("#prensa > a").addClass("active");
 $("#btnEnviarEmail").click(function(e){
     e.preventDefault();
+    console.log("lala");
     $("#modalEmail").modal();
 });
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+
+$("#btnSendMail").click(function(){
+
+    var form = $("#formMail");
+    var from = $("[name='from']", form).val()
+    var to = $("[name='to']", form).val()
+    var subject  = $("[name='subject']", form).val()
+    var msg = $("#msg").html();
+    var csrftoken = $("[name=csrfmiddlewaretoken]", form).val();
+    var ok = false;
+
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+    if( regex.test(from) && regex.test(to) ){
+        ok=true;
+    }else{
+        ok=false;
+    }
+
+    if( ok ){
+
+        $.post("{% url 'sendmail' %}", {from: from,
+            to: to,
+            msg: msg,
+            subject: subject,
+            csrfmiddlewaretoken:csrftoken,
+            recaptcha:grecaptcha.getResponse()
+        }, function(data){
+        }, 'json').fail(function(errors){
+        });
+    }else{
+//        $(this).parent().parent().addClass("has-error");
+//        $(this).removeClass("btn-default").addClass("btn-danger");
+        console.log("error");
+    }
+})
+
+
 </script>
 {% endblock %}

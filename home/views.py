@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.views import View
 from django.views.generic import TemplateView
 from django.views.generic import ListView, DetailView
 from django.views.generic.edit import CreateView
@@ -241,3 +242,37 @@ class NewsletterView(AjaxableResponseMixin, CreateView):
 
     def get_success_url(self):
         return "/contacto/ok/"
+
+from django.views.decorators.csrf import csrf_exempt
+from django.utils.decorators import method_decorator
+
+@method_decorator(csrf_exempt, name='dispatch')
+class sendMailView(View):
+    @csrf_exempt
+    def post(self, request, *args, **kwargs):
+
+        print(request.POST)
+        recaptcha_response = request.POST.get('recaptcha', 0)
+        data = {
+            'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+            'response': recaptcha_response
+        }
+        r = requests.post('https://www.google.com/recaptcha/api/siteverify', data=data)
+        result = r.json()
+
+        if result['success']:
+            _from = request.POST.get('from', None)
+            to = request.POST.get('to', None)
+            subject = request.POST.get('subject', None)
+            msg = request.POST.get('msg', None)
+            send_mail(subject,
+                msg,
+                _from,
+                [_from,to],
+                fail_silently=True,
+                html_message=msg)
+            return JsonResponse({"status": 200})
+
+        return JsonResponse({"status": 500,
+            "error":'Debe completar reCAPTCHA '
+            })
