@@ -265,6 +265,9 @@ class sendMailView(View):
             to = request.POST.get('to', None)
             subject = request.POST.get('subject', None)
             msg = request.POST.get('msg', None)
+
+            if msg:
+                msg = msg.replace("%%from%%", _from)
             send_mail(subject,
                 msg,
                 _from,
