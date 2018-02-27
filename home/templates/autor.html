@@ -2,6 +2,17 @@
 {% load static %}
 
 {% block title %} | {{ object }}{% endblock %}
+{% block opengraph %}
+<meta property="og:url"                content="https://{{ site.domain }}{{ object.get_absolute_url }}" />
+<meta property="og:type"               content="books.author" />
+<meta property="og:title"              content="{{ object}}" />
+<meta property="og:description"        content="{{ object.texto|striptags|truncatewords:60 }}" />
+{% if object.imagen %}
+<meta property="og:image"              content="https://{{ site.domain }}{{ object.imagen.url }}" />
+{% endif %}
+{% endblock %}
+
+
 {% block "content" %}
 
 <div class="row">

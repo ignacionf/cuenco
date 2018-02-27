@@ -1,6 +1,19 @@
 {% extends "index.html" %}
 {% load static %}
 
+{% if coleccion %}
+{% block opengraph %}
+<meta property="og:url"                content="https://{{ site.domain }}{{ coleccion.get_absolute_url }}" />
+<meta property="og:type"               content="books.wants_to_read" />
+<meta property="og:title"              content="{{ coleccion.nombre}}" />
+<meta property="og:description"        content="{{ coleccion.texto|striptags|truncatewords:60 }}" />
+{% if coleccion.imagen %}
+<meta property="og:image"              content="https://{{ site.domain }}{{ coleccion.imagen.url }}" />
+{% endif %}
+{% endblock %}
+{% endif %}
+
+
 {% block title %} | {% if coleccion %}Colección {{ coleccion.nombre}}{% else %}{{ nombre|title }}{%endif %}{% endblock %}
 {% block "content" %}
 
