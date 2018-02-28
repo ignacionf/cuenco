@@ -137,9 +137,9 @@
 
     <div style='width: 80%; margin: auto; padding: 40px; font-size: 1.3em;'>
         Hola, %%from%% quiere enviarte este <a href="https://{{ site.domain }}{{ object.get_absolute_url }}">enlace</a>!<br /><br />
-        Te dejo un adelanto:<br /><br />
+        Esto es un adelanto:<br /><br />
         {% autoescape off %}
-        <div style='width: 80%; margin: auto;'>{{ object.texto|truncatewords_html:60 }}</div>
+        <div style='width: 80%; margin: auto;'>{{ object.texto|truncatewords_html:120 }}</div>
         {% endautoescape %}
     </div>
 </div>
