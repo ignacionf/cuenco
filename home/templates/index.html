@@ -240,7 +240,7 @@
 				    <li><a href="{% url "home" %}"><img src="{% static 'images/logo.png' %}" style='width: 200px; box-shadow: none; opacity: 0.9;' /></a></li>
 					<li id="destacados"><a href="{% url "libros_destacados" %}">Recomendados</a></li>
 					<li id="prensa"><a href="{% url "prensa" %}">En los medios</a></li>
-					<li id='search' class='dropdown'>
+					<li id='search' class='dropdown dropdown-search'>
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="glyphicon glyphicon-search"></i></a>
                         <ul class="dropdown-menu dropdown-menu-right">
                             <li>
@@ -300,6 +300,9 @@
 	<!-- Main JS (Do not remove) -->
 	<script src="{% static "js/main.js" %}"></script>
     <script>
+        $('.dropdown-search').on('shown.bs.dropdown', function () {
+            $('input', $(this)).focus();
+        })
         $('#search  input').bind("enterKey",function(e){
             var value = $(this).val();
             if ( value.length > 0 )
