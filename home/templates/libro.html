@@ -206,7 +206,7 @@
         <div style='width: 29%; float: left'>
             <img src='https://{{ site.domain }}{{ object.imagen.thumbnail.200x200 }}' style='width: 100%;' />
         </div>
-        <div style='width: 70%; padding: 30px;'>
+        <div style='width: 70%; padding: 5px 30px;'>
             {% autoescape off %}
             <div style='width: 80%; margin: auto;'>{{ object.texto|truncatewords_html:80 }}</div>
             {% endautoescape %}
