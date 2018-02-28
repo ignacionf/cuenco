@@ -203,10 +203,10 @@
     <div style='width: 80%; margin: auto; padding: 40px; font-size: 1.3em;'>
             Hola, %%from%% quiere enviarte este <a href="https://{{ site.domain }}{{ object.get_absolute_url }}">enlace</a>!<br /><br />
             Esto es un adelanto:<br /><br />
-        <div style='width: 29%; float: left'>
-            <img src='https://{{ site.domain }}{{ object.imagen.thumbnail.200x200 }}' style='width: 100%;' />
+        <div style='width: 10%; float: left; padding: 5px 30px;'>
+            <img src='https://{{ site.domain }}{{ object.imagen.thumbnail.200x200 }}' style='width: 80%;' />
         </div>
-        <div style='width: 70%; padding: 5px 30px;'>
+        <div style='width: 87%; padding: 5px 30px;'>
             {% autoescape off %}
             <div style='width: 80%; margin: auto;'>{{ object.texto|truncatewords_html:80 }}</div>
             {% endautoescape %}
