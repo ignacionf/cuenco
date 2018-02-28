@@ -17,3 +17,6 @@
 {% if object.fecha%}
 {{ object.fecha }}
 {%endif %}
+{% if object.firma %}
+{{ object.firma }}
+{%endif %}
