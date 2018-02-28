@@ -220,8 +220,8 @@
 -->
 			<nav id="fh5co-main-nav" role="navigation">
 				<ul>
-                    <li>{% if user.is_authenticated %}<a href='/admin/'>A</a>{% else %}&nbsp;{% endif %}</li>
 {% comment %}
+                    <li>{% if user.is_authenticated %}<a href='/admin/'>A</a>{% else %}&nbsp;{% endif %}</li>
 					<li id="home"><a href="{% url "home" %}">Inicio</a></li>
 {% endcomment %}
 					<li id="novedades"><a href="{% url "libros" %}">Novedades</a></li>
