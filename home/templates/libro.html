@@ -26,6 +26,7 @@
                 <img src='{{ object.imagen.url }}' />
                 <div class='col-lg-12 social col-xs-12'>
                     <a data-toggle="tooltip" data-placement="bottom" title="Imprimir" href="javascript:window.print()"><i class='icon-printer2'></i></a>
+                <a data-toggle="tooltip" data-placement="bottom" title="Enviar por email" href="#enviarMail" id='btnEnviarEmail'><i class='icon-envelope2'></i></a>
                     <a data-toggle="tooltip" data-placement="bottom" title="Compartir en Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://{{site}}{{ object.get_absolute_url|escape }}&src=sdkpreparse"><i class="icon-facebook2"></i></a>
                     <a data-toggle="tooltip" data-placement="bottom" title="Compartir Twitter" href="https://twitter.com/intent/tweet?hashtags=elcuencodeplata&original_referer=https://{{ site }}{{ object.get_absolute_url|escape }}&ref_src=twsrc%5Etfw&related=twitterapi%2Ctwitter&text={{ object.titulo }}&tw_p=tweetbutton&url=https://{{ site }}{{ object.get_absolute_url|escape }}&via=cuencodeplata" target="_blank"><i class="icon-twitter2"></i></a>
                 {% if not object.disponible %}
@@ -37,6 +38,7 @@
     {% else %}
             <div class='col-lg-12 social col-xs-1'>
                 <a data-toggle="tooltip" data-placement="bottom" title="Imprimir" href="javascript:window.print()"><i class='icon-printer2'></i></a>
+                <a data-toggle="tooltip" data-placement="bottom" title="Enviar por email" href="#enviarMail" id='btnEnviarEmail'><i class='icon-envelope2'></i></a>
                 <a data-toggle="tooltip" data-placement="bottom" title="Compartir en Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://{{ site }}{{ object.get_absolute_url|escape }}&src=sdkpreparse"><i class="icon-facebook2"></i></a>
                 <a data-toggle="tooltip" data-placement="bottom" title="Compartir en Twitter" href="https://twitter.com/intent/tweet?hashtags=elcuencodeplata&original_referer=https://{{ site }}{{ object.get_absolute_url|escape }}&ref_src=twsrc%5Etfw&related=twitterapi%2Ctwitter&text={{ object.titulo }}&tw_p=tweetbutton&url=https://{{ site }}{{ object.get_absolute_url|escape }}&via=cuencodeplata" target="_blank"><i class="icon-twitter2"></i></a>
 
@@ -173,6 +175,58 @@
             {% endif %}
     <div class='col-lg-12 col-xs-12'>&nbsp;</div>
 </div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="modalEmail">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+<form id='formMail'>
+  <div class="form-group">
+    <label for="inputEmail1">De</label>
+    <input type="email" name="from" class="form-control" id="inputEmail1" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="inputEmail2">Para</label>
+    <input type="email" name='to' class="form-control" id="inputEmail2" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="inputTitulo">Subject</label>
+    <input type="text" name='subject' class="form-control" id="inputTitulo" placeholder="Título" value="Libro '{{ object.titulo }}'">
+  </div>
+    <div>&nbsp;</div>
+    <div style='width: 305px; margin: auto;'>
+              <div class="g-recaptcha"  data-sitekey="6LcyvkMUAAAAAKlR8yPob9rCz0ExDkbGLNHcfXKO"></div>
+    </div>
+
+<div id="msg" style='display: ;'>
+
+    <div style='width: 80%; margin: auto; padding: 40px; font-size: 1.3em;'>
+            Hola, %%from%% quiere enviarte este <a href="https://{{ site.domain }}{{ object.get_absolute_url }}">enlace</a>!<br /><br />
+            Esto es un adelanto:<br /><br />
+        <div style='width: 29%; float: left'>
+            <img src='{{ object.imagen.thumbnail.200x200 }}' style='width: 100%;' />
+        </div>
+        <div style='width: 70%; padding: 30px;'>
+            {% autoescape off %}
+            <div style='width: 80%; margin: auto;'>{{ object.texto|truncatewords_html:120 }}</div>
+            {% endautoescape %}
+        </div>
+        <br style='clear: both;' />
+    </div>
+</div>
+
+</form>
+ 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" id='btnSendMail'>Envíar</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
 {% endblock %}
 
 
@@ -313,5 +367,52 @@ $('.libros').owlCarousel({
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+$("#btnEnviarEmail").click(function(e){
+    e.preventDefault();
+    console.log("lala");
+    $("#modalEmail").modal();
+});
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+$("#btnSendMail").click(function(){
+
+    var form = $("#formMail");
+    var from = $("[name='from']", form).val()
+    var to = $("[name='to']", form).val()
+    var subject  = $("[name='subject']", form).val()
+    var msg = $("#msg").html();
+    var csrftoken = $("[name=csrfmiddlewaretoken]", form).val();
+    var ok = false;
+
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+    if( regex.test(from) && regex.test(to) ){
+        ok=true;
+    }else{
+        ok=false;
+    }
+
+    if( ok ){
+
+        $.post("{% url 'sendmail' %}", {from: from,
+            to: to,
+            msg: msg,
+            subject: subject,
+            csrfmiddlewaretoken:csrftoken,
+            recaptcha:grecaptcha.getResponse()
+        }, function(data){
+            $("#modalEmail").modal("hide");
+        }, 'json').fail(function(errors){
+        });
+    }else{
+//        $(this).parent().parent().addClass("has-error");
+//        $(this).removeClass("btn-default").addClass("btn-danger");
+        console.log("error");
+    }
+})
+
+
 </script>
 {% endblock %}
