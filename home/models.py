@@ -123,6 +123,7 @@ class Libro(Model):
     titulo = models.CharField("Titulo", max_length=500)
     isbn = ISBNField("ISBN", blank=True, null=True)
     texto = tinymce_models.HTMLField("Texto")
+    indice = tinymce_models.HTMLField("Indice", blank=True, null=True)
 
     imagen = VersatileImageField('Foto', upload_to=libro_filename, blank=True, null=True)
     fecha = models.DateField("Fecha publicación", null=True, blank=True)

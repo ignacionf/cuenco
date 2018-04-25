@@ -45,7 +45,7 @@ class LibroAdmin(admin.ModelAdmin):
             "fields": ('titulo', 'autores', 'coleccion', 'isbn', 'texto') 
         }),
         ("Campos opcionales", {
-            "fields": ('fecha', 'descripcion', 'subtitulo', 'carrito', 'recomendado', 'disponible') 
+            "fields": ('indice', 'fecha', 'descripcion', 'subtitulo', 'carrito', 'recomendado', 'disponible') 
         }),
         ("campos variables", {
             "fields": (('campo1', 'prologo'), ('campo2', 'traductor'), ('campo3', 'campo3contenido')) 

@@ -71,6 +71,28 @@
                 <a href="{{ object.pdf.url }}"{%comment%} download="Fragmento {{ object.titulo }}.pdf"{%endcomment %}><i class="glyphicon glyphicon-eye-open" aria-hidden="true"></i> Lea un fragmento</a>
             </div>
             {% endif %}
+            {% if object.indice %}
+            <div class='col-lg-12 col-xs-6 col-resp'  style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
+                <a href="#" data-toggle="modal" data-target="#modalIndice"><i class="glyphicon glyphicon glyphicon-th-list" aria-hidden="true"></i> Ver índice</a>
+            </div>
+
+            <div class="modal fade" tabindex="-1" role="dialog" id='modalIndice'>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      {% comment %}<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>{% endcomment %}
+                    <h4 class="modal-title">Índice</h4>
+                  </div>
+                  <div class="modal-body">
+                      {% autoescape off %}
+                        {{ object.indice }}
+                      {% endautoescape %}
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+            {% endif %}
+ 
             {% if object.carrito and object.disponible %}
             <div class='col-lg-12 col-xs-6 col-resp'  style='background: #E6F0E6; margin-top: 30px; padding: 20px; font-size: .9em;'>
                 <a href="{{ object.carrito }}" target="_blank"><i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i> Ir a tienda</a>
